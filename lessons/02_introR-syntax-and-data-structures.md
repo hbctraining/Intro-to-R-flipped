@@ -1,7 +1,7 @@
 ---
 title: R Syntax and Data Structures
 authors: Meeta Mistry, Mary Piper
-date: "Friday, September 8, 2017"
+date: "Tuesday, April 21, 2020"
 ---
 Approximate time: 70 min
 
@@ -15,7 +15,7 @@ Approximate time: 70 min
 Now that we know how to talk with R via the script editor or the console, we want to use R for something more than adding numbers. To do this, we need to know more about the R syntax. 
 
 
-Below is an example script highlighting the many different "parts of speech" for R (syntax):
+The main "parts of speech" in R (syntax) include:
 
   - the **comments** `#` and how they are used to document function and its content
   - **variables** and **functions**
@@ -24,24 +24,7 @@ Below is an example script highlighting the many different "parts of speech" for
 
 _NOTE: indentation and consistency in spacing is used to improve clarity and legibility_
 
-
-### Example script
-
-```r
-# Load libraries
-library(Biobase)
-library(limma)
-library(ggplot2)
-
-# Setup directory variables
-baseDir <- getwd()
-dataDir <- file.path(baseDir, "data")
-metaDir <- file.path(baseDir, "meta")
-resultsDir <- file.path(baseDir, "results")
-
-# Load data
-meta <- read.delim(file.path(metaDir, '2015-1018_sample_key.csv'), header=T, sep="\t", row.names=1)
-```
+We will go through each of these "parts of speech" in more detail, starting with the assignment operator.
 
 ## Assignment operator
 
