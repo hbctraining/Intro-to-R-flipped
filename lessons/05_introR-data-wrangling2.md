@@ -1,7 +1,7 @@
 ---
 title: "Data wrangling: dataframes, matrices, and lists"
 authors: Meeta Mistry, Mary Piper
-date: "Wednesday, April, 4th, 2018"
+date: "Tuesday, April, 21, 2020"
 ---
 Approximate time: 60 min
 
@@ -16,103 +16,159 @@ Dataframes (and matrices) have 2 dimensions (rows and columns), so if we want to
 
 ![metadata](../img/metadata.png)
 
-For example:
+Let's say we wanted to extract the wild type (`Wt`) value that is present in the first row and the first column. To extract it, just like with vectors, we give the name of the data frame that we want to extract from, followed by the square brackets. Now inside the square brackets we give the coordinates or indices for the rows in which the value(s) are present, followed by a comma, then the coordinates or indices for the columns in which the value(s) are present. We know the wild type value is in the first row if we count from the top, so we put a one, then a comma. The wild type value is also in the first column, counting from left to right, so we put a one in the columns space too. 
+
 
 ```r
-metadata[1, 1]   # element from the first row in the first column of the data frame
-metadata[1, 3]   # element from the first row in the 3rd column
+# Extract value 'Wt'
+metadata[1, 1]
+```
+
+Now let's extract the value `1` from the first row and third column.
+
+```r
+# Extract value '1'
+metadata[1, 3] 
 ```
 
 Now if you only wanted to select based on rows, you would provide the index for the rows and leave the columns index blank. The key here is to include the comma, to let R know that you are accessing a 2-dimensional data structure:
 
 ```r
-metadata[3, ]    # vector containing all elements in the 3rd row
+# Extract third row
+metadata[3, ] 
 ```
+What kind of data structure does the output appear to be? We see that it is two-dimensional with row names and column names, so we can surmise that it's likely a data frame.
+
 
 If you were selecting specific columns from the data frame - the rows are left blank:
 
 ```r
-metadata[ , 3]    # vector containing all elements in the 3rd column
+# Extract third column
+metadata[ , 3]   
 ```
 
-Just like with vectors, you can select multiple rows and columns at a time. Within the square brackets, you need to provide a vector of the desired values:	
+What kind of data structure does this output appear to be? It looks different from the data frame, and we really just see a series of values output, indicating a vector data structure. This happens be default if just selecting a single column from a data frame. R will drop to the simplest data structure possible. Since a single column in a data frame is really just a vector, R will output a vector data structure as the simplest data structure. Oftentimes we would like to keep our single column as a data frame. To do this, there is an argument we can add when subsetting called `drop`, meaning do we want to drop down to the simplest data structure. By default it is `TRUE`, but we can change it's value to `FALSE` in order to keep the output as a data frame.
 
 ```r
-metadata[ , 1:2] # dataframe containing first two columns
-metadata[c(1,3,6), ] # dataframe containing first, third and sixth rows
+# Extract third column as a data frame
+metadata[ , 3, drop = FALSE] 
+```
+
+Just like with vectors, you can select multiple rows and columns at a time. Within the square brackets, you need to provide a vector of the desired values. 
+
+We can extract consecutive rows or columns using the colon (`:`) to create the vector of indices to extract.
+
+```r
+# Dataframe containing first two columns
+metadata[ , 1:2] 
+```
+
+Alternatively, we can use the combine function (`c()`) to extract any number of rows or columns. Let's extract the first, third, and sixth rows.
+
+```r
+# Data frame containing first, third and sixth rows
+metadata[c(1,3,6), ] 
 ```
 
 For larger datasets, it can be tricky to remember the column number that corresponds to a particular variable. (Is celltype in column 1
-or 2? oh, right... they are in column 1). In some cases, the column number for a variable can change if the script you are using adds or removes columns. It's therefore often better to use column names to refer to a particular variable, and it makes your code easier to read and your intentions clearer.
+or 2? oh, right... they are in column 1). In some cases, the column/row number for values can change if the script you are using adds or removes columns/rows. It's, therefore, often better to use column/row names to refer to extract particular values, and it makes your code easier to read and your intentions clearer.
 
 ```r
-metadata[1:3 , "celltype"] # elements of the celltype column corresponding to the first three samples
+# Extract the celltype column for the first three samples
+metadata[c("Sample1", "Sample2", "Sample3") , "celltype"] 
 ```
 
+It's important to type the names of the columns/rows in the exact way that they are typed in the data frame; for instance if I had spelled `celltype` with a capital `C`, it would not have worked.
 
-You can do operations on a particular column, by selecting it using the `$` sign. In this case, the entire column is a vector. For instance, to extract all the genotypes from our dataset, we can use: 
-
-```r
-metadata$genotype 
-```
-You can use `colnames(metadata)` or `names(metadata)` to remind yourself of the column names. We can then supply index values to select specific values from that vector. For example, if we wanted the genotype information for the first five samples in `metadata`:
+If you need to remind yourself of the column/row names, the following functions are helpful:
 
 ```r
+# Check column names of metadata data frame
 colnames(metadata)
 
+# Check row names of metadata data frame
+rownames(metadata)
+```
+
+If only a single column is to be extracted from a data frame, there is a useful shortcut available. If you type the name of the data frame, then the `$`, you have the option to choose which column to extract. For instance, let's extract the entire genotype column from our dataset:
+
+```r
+# Extract the genotype column
+metadata$genotype 
+```
+
+The output will always be a vector, and if desired, you can continue to treat it as a vector. For example, if we wanted the genotype information for the first five samples in `metadata`, we can use the square brackets (`[]`) with the indices for the values from the vector to extract:
+
+```r
+# Extract the first five values/elements of the genotype column
 metadata$genotype[1:5]
 ```
 
-The `$` allows you to select a single column by name. To select multiple columns by name, you need to  concatenate a vector of strings that correspond to column names: 
+Unfortunately, there is no equivalent `$` syntax to select a row by name. 
 
-```r
-metadata[, c("genotype", "celltype")]
-```
+***
+**Exercises**
 
-```r
-          genotype celltype
-sample1        Wt    typeA
-sample2        Wt    typeA
-sample3        Wt    typeA
-sample4        KO    typeA
-sample5        KO    typeA
-sample6        KO    typeA
-sample7        Wt    typeB
-sample8        Wt    typeB
-sample9        Wt    typeB
-sample10       KO    typeB
-sample11       KO    typeB
-sample12       KO    typeB
-```
+1. Return the `genotype` and `replicate` column values for `Sample2` and `Sample8`.
+2. Return the fourth and ninth values of the `replicate` column.
+3. Extract the `replicate` column as a data frame.
 
-While there is no equivalent `$` syntax to select a row by name, you can select specific rows using the row names. To remember the names of the rows, you can use the `rownames()` function:
-
-```r
-rownames(metadata)
-
-metadata[c("sample10", "sample12"),]
-```
+***
 
 #### Selecting using indices with logical operators
 
-With dataframes, similar to vectors, we can use logical vectors for specific columns in the dataframe to select only the rows in a dataframe with TRUE values at the same position or index as in the logical vector. We can then use the logical vector to return all of the rows in a dataframe where those values are TRUE.
+With data frames, similar to vectors, we can use logical expressions to extract the rows or columns in the data frame with specific values. First, we need to determine the indices in a rows or columns where a logical expression is `TRUE`, then we can extract those rows or columns from the data frame. 
+
+For example, if we want to return only those rows of the data frame with the `celltype` column having a value of `typeA`, we would perform two steps:
+
+1. Identify which rows in the celltype column have a value of `typeA`.
+2. Use those TRUE values to extract those rows from the data frame.
+
+To do this we would extract the column of interest as a vector, with the first value corresponding to the first row, the second value corresponding to the second row, so on and so forth. We use that vector in the logical expression. Here we are looking for values to be equal to `typeA`, so our logical expression would be:
 
 ```r
-idx <- metadata$celltype == "typeA"
-	
-metadata[idx, ]
+metadata$celltype == "typeA"
+```
+
+This will output TRUE and FALSE values for the values in the vector. The first six values are `TRUE`, while the last six are `FALSE`. This means the first six rows of our metadata have a vale of `typeA` while the last six do not. We can save these values to a variable, which we can call whatever we would like; let's call it `logical_idx`.
+
+```r
+logical_idx <- metadata$celltype == "typeA"
+```
+
+Now we can use those `TRUE` and `FALSE` values to extract the rows that correspond to the `TRUE` values from the metadata data frame. We will extract as we normally would a data frame with `metadata[ , ]`, and we need to make sure we put the `logical_idx` in the row's space, since those `TRUE` and `FALSE` values correspond to the ROWS for which the expression is `TRUE`/`FALSE`. We will leave the column's space blank to return all columns.
+
+```r
+metadata[logical_idx, ]
 ```
 
 ##### Selecting indices with logical operators using the `which()` function
+
 As you might have guessed, we can also use the `which()` function to return the indices for which the logical expression is TRUE. For example, we can find the indices where the `celltype` is `typeA` within the `metadata` dataframe:
 
 ```r
+which(metadata$celltype == "typeA")
+```
+
+This returns the values one through six, indicating that the first 6 values or rows are true, or equal to typeA.  We can save our indices for which rows the logical expression is true to a variable we'll call idx, but, again, you could call it anything you want.
+
+```r
 idx <- which(metadata$celltype == "typeA")
-	
+```
+
+Then, we can use these indices to indicate the rows that we would like to return by extracting that data as we have previously, giving the `idx` as the rows that we would like to extract, while returning all columns:
+
+```r
 metadata[idx, ]
 ```
 
-Or we could find the indices for the metadata replicates 2 and 3:
+Let's try another subsetting. Extract the rows of the metadata data frame for only the replicates 2 and 3. First, let's create the logical expression for the column of interest (`replicate`):
+
+```r
+which(metadata$replicate > 1)
+```
+
+This should return the indices for the rows in the `replicate` column within `metadata` that have a value of 2 or 3. Now, we can save those indices to a variable and use that variable to extract those corresponding rows from the `metadata` table.
 
 ```r
 idx <- which(metadata$replicate > 1)
@@ -120,10 +176,18 @@ idx <- which(metadata$replicate > 1)
 metadata[idx, ]
 ```
 
-Let's save this output to a variable:
+Alternatively, instead of doing this in two steps, we could use nesting to perform in a single step:
 
 ```r
-sub_meta <- metadata[idx, ]
+metadata[which(metadata$replicate > 1), ]
+```
+
+Either way works, so use the method that is most intuitive for you.
+
+So far we haven't stored as variables any of the extractions/subsettings that we have performed. Let's save this output to a variable called `sub_meta`:
+
+```r
+sub_meta <- metadata[which(metadata$replicate > 1), ]
 ```
 
 ***
@@ -171,51 +235,40 @@ You can also do the same for dataframes and matrices, although with larger datas
 
 > **NOTE:** Using the single bracket notation also works wth lists. The difference is the class of the information that is retrieved. Using single bracket notation i.e. `list1[1]` will return the contents in a list form and *not the original data structure*. The benefit of this notation is that it allows indexing by vectors so you can access multiple components of the list at once.
 
-
 ***
 
 **Exercises**  
 
-Let's practice inspecting lists. Create a list named `random` with the following components: `metadata`, `age`, `list1`, `samplegroup`, and `number`.
+1. Create a list named `random` with the following components: `metadata`, `age`, `list1`, `samplegroup`, and `number`.
 
-1. Print out the values stored in the `samplegroup` component.
-	
-2. From the `metadata` component of the list, extract the `celltype` column. From the celltype values select only the last 5 values.
+2. Extract the `samplegroup` component.
 	
 ***
 
 Assigning names to the components in a list can help identify what each list component contains, as well as, facilitating the extraction of values from list components. 
 
-Adding names to components of a list uses the same function as adding names to the columns of a dataframe, `names()`.
-	
-Let's check and see if the `list1` has names for the components:
+Adding names to components of a list uses the `names()` function. Let's check and see if the `list1` has names for the components:
 
 ```r
 names(list1) 
 ```
 
-When we created the list we had combined the `species` vector with  a dataframe `df` and the `number` variable. Let's assign the original names to the components:
+When we created the list we had combined the `species` vector with  a dataframe `df` and the `number` variable. Let's assign the original names to the components. To do this we can use the assignment operator in a new context. If we add `names(list1)` to the left side of the assignment arrow to be assigned to, then anything on the right side of the arrow will be assigned. Since we have three components in `list1`, we need three names to assign. We can create a vector of names using the combine (`c()`) function, and inside the combine function we give the names to assign to the components in the order we would like. So the first name is assigned to the first component of the list, and so on.
 
 ```r
+# Name components of the list
 names(list1) <- c("species", "df", "number")
 	
 names(list1)
 ```
 
-Now that we have named our list components, we can extract components using the `$` similar to extracting columns from a dataframe. To obtain a component of a list using the component name, use `list_name$component_name`:
+Now that we have named our list components, we can extract components using the `$` similar to extracting columns from a data frame. To obtain a component of a list using the component name, use `list_name$component_name`:
 
 To extract the `df` dataframe from the `list1` list:
 
 ```r
+# Extract 'df' component
 list1$df
-```
-
-Now we have three ways that we could extract a component from a list. Let's extract the `species` vector from `list1`:
-
-```r
-list1[[1]]
-list1[["species"]]
-list1$species
 ```
 
 ***
@@ -225,8 +278,8 @@ list1$species
 Let's practice combining ways to extract data from the data structures we have covered so far:
 
 1. Set names for the `random` list you created in the last exercise.
-2. Extract the third component of the `age` vector from the `random` list.
-3. Extract the genotype information from the `metadata` dataframe from the `random` list.
+
+2. Extract the `age` component using the `$` notation
 
 ***
 
@@ -234,20 +287,41 @@ Let's practice combining ways to extract data from the data structures we have c
 
 Everything we have done so far has only modified the data in R; the files have remained unchanged. Whenever we want to save our datasets to file, we need to use a `write` function in R. 
 
-To write our matrix to file in comma separated format (.csv), we can use the `write.csv` function. There are two required arguments: the variable name of the data structure you are exporting, and the path and filename that you are exporting to. By default the delimiter is set, and columns will be separated by a comma:
+To write our matrix to file in comma separated format (.csv), we can use the `write.csv` function. There are two required arguments: the variable name of the data structure you are exporting, and the path and filename that you are exporting to. By default the delimiter or column separator is set, and columns will be separated by a comma:
 
 ```r
+# Save a data frame to file
 write.csv(sub_meta, file="data/subset_meta.csv")
 ```
 
-Similar to reading in data, there are a wide variety of functions available allowing you to export data in specific formats. Another commonly used function is `write.table`, which allows you to specify the delimiter you wish to use. This function is commonly used to create tab-delimited files.
+Oftentimes the output is not exactly what you might want. You can modify the output using the arguments for the function. We can explore the arguments using the `?`. This can help elucidate what each of the arguments can adjust the output.
 
-> **NOTE:** Sometimes when writing a dataframe with row names to file, the column names will align starting with the row names column. To avoid this, you can include the argument `col.names = NA` when writing to file to ensure all of the column names line up with the correct column values.
+```r
+?write.csv`
+```
+
+Similar to reading in data, there are a wide variety of functions available allowing you to export data in specific formats. Another commonly used function is `write.table`, which allows you to specify the delimiter or separator you wish to use. This function is commonly used to create tab-delimited files.
+
+> **NOTE:** Sometimes when writing a data frame using row names to file with `write.table()`, the column names will align starting with the row names column. To avoid this, you can include the argument `col.names = NA` when writing to file to ensure all of the column names line up with the correct column values.
 
 Writing a vector of values to file requires a different function than the functions available for writing dataframes. You can use `write()` to save a vector of values to file. For example:
 
 ```r
-write(glengths, file="data/genome_lengths.txt", ncolumns=1)
+# Save a vector to file
+write(glengths, file="data/genome_lengths.txt")
+```
+
+If we wanted the vector to be output to a single column instead of five, we could explore the arguments:
+
+```r
+?write
+```
+
+Note, the `ncolumns` argument that it defaults to five columns unless specified, so to get a single column:
+
+```r
+# Save a vector to file as a single column
+write(glengths, file="data/genome_lengths.txt", ncolumns = 1)
 ```
 
 ***
