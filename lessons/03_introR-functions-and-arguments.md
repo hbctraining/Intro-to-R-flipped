@@ -156,6 +156,13 @@ square_it(5)
 
 Pretty simple, right? In this case, we only had one line of code that was run, but in theory you could have many lines of code to get obtain the final results that you want to "return" to the user. We have only scratched the surface here when it comes to creating functions! We will revisit this in later lessons, but if interested you can also find more detailed information on this [R-bloggers site](https://www.r-bloggers.com/how-to-write-and-debug-an-r-function/), which is where we adapted this example from.
 
+**Exercise** 
+
+1. Write a function called multiply_it, where it takes two inputs: one is numeric value `x`, one is multiplier `a`. The function will return the multiplier of that numeric value, which is `a * x`. Use this function and check if the result is as expected.
+2. Set the **default** value of multiplier `a` as 5 (hint: this can be done by asigning the value inside the input parentheses). Use this function by specifying only one input `x`, and check what the result is. Also see if you can **overwrite** the default value of multiplier by specifying both `x` and `a` values while using this function.
+
+***
+
 ## Packages and Libraries
 
 **Packages** are collections of R functions, data, and compiled code in a well-defined format, created to add specific functionality. There are 10,000+ user contributed packages and growing.
