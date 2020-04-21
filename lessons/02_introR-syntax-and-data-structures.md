@@ -127,7 +127,7 @@ Why does it matter the data type of your values? Values of specific data types w
 "5" + "3"
 ```
 
-We return an error relating to the data not being numeric. Similarly, other tasks require our values to be characters, while still different operations require values to be logical or integer. Therefore, the nature of our data and what tasks we would like to perform with it, will determine the best data type.
+We return an error relating to the data not being numeric. Similarly, other tasks require our values to be characters, while still different operations require values to be logical or integer. The nature of our data will dictate what operations can be performed using it.
 
 ## Data Structures
 
