@@ -103,10 +103,10 @@ avoid them.
 
 Variables can contain values of specific types within R. The six **data types** that R uses include: 
 
-* `"numeric"` for any numerical value 
-* `"character"` for text values, denoted by using quotes ("") around value   
-* `"integer"` for integer numbers (e.g., `2L`, the `L` indicates to R that it's an integer)
-* `"logical"` for `TRUE` and `FALSE` (the Boolean data type)
+* `"numeric"` for any numerical value, including whole numbers and decimals. This is the most common data type for performing mathematical operations.
+* `"character"` for text values, denoted by using quotes ("") around value. For instance, while 5 is a numeric value, if you were to put quotation marks around it, it would turn into a character value, and you could no longer use it for mathematical operations. Single or double quotes both work, as long as the same type is used at the beginning and end of the character value.
+* `"integer"` for whole numbers (e.g., `2L`, the `L` indicates to R that it's an integer). It behaves similar to the `numeric` data type for most tasks or functions; however, it takes up less storage space than numeric data, so often tools will output integers if the data is known to be comprised of whole numbers. Just know that integers behave similarly to numeric values. If you wanted to create your own, you could do so by providing the whole number, followed by an upper-case L.
+* `"logical"` for `TRUE` and `FALSE` (the Boolean data type). The `logical` data type can be specified using four values, `TRUE` in all capital letters, `FALSE` in all capital letters, a single capital `T` or a single capital `F`.
 * `"complex"` to represent complex numbers with real and imaginary parts (e.g.,
   `1+4i`) and that's all we're going to say about them
 * `"raw"` that we won't discuss further
@@ -120,14 +120,7 @@ The table below provides examples of each of the commonly used data types:
 | Integer:  | 2L, 500L, -17L|
 | Logical:  | TRUE, FALSE, T, F|
 
-Why does it matter the data type of your values? Values of specific data types will only be able to perform specific operations. For example, if we tried to add together character values, we wouldn't be able to do it.
-
-```r
-# Trying to add together character values
-"5" + "3"
-```
-
-We return an error relating to the data not being numeric. Similarly, other tasks require our values to be characters, while still different operations require values to be logical or integer. The nature of our data will dictate what operations can be performed using it.
+The type of data will determine what you can do with it. For example, if you want to perform mathematical operations, then your data type cannot be character or logical. Whereas if you want to search for a word or pattern in your data, then you data should be of the character data type. The task or function being performed on the data will determine what type of data can be used. 
 
 ## Data Structures
 
@@ -166,19 +159,38 @@ Let's create a vector of genome lengths and assign it to a variable called `glen
 
 Each element of this vector contains a single numeric value, and three values will be combined together into a vector using `c()` (the combine function). All of the values are put within the parentheses and separated with a comma.
 
-
 ```r
+# Create a numeric vector and store the vector as a variable called 'glengths'
 glengths <- c(4.6, 3000, 50000)
 glengths
 ```
-*Note your environment shows the `glengths` variable is numeric and tells you the `glengths` vector starts at element 1 and ends at element 3 (i.e. your vector contains 3 values).*
+
+*Note your environment shows the `glengths` variable is numeric (num) and tells you the `glengths` vector starts at element 1 and ends at element 3 (i.e. your vector contains 3 values) as denoted by the [1:3].*
 
 
 A vector can also contain characters. Create another vector called `species` with three elements, where each element corresponds with the genome sizes vector (in Mb).
 
 ```r
+# Create a character vector and store the vector as a variable called 'species'
 species <- c("ecoli", "human", "corn")
 species
+```
+What do you think would happen if we forgot to put quotations around one of the values? Let's test it out with corn.
+
+```r
+# Forget to put quotes around corn
+species <- c("ecoli", "human", corn)
+```
+
+Note that RStudio is quite helpful in color-coding the various data types. We can see that our numeric values are blue, the character values are green, and if we forget to surround corn with quotes, it's black. What does this mean? Let's try to run this code.
+
+When we try to run this code we get an error specifying that object 'corn' is not found. What this means is that R is looking for an object or variable in my Environment called 'corn', and when it doesn't find it, it returns an error. If we had a character vector called 'corn' in our Environment, then it would combine the contents of the 'corn' vector with the values "ecoli" and "human".
+
+Since we only want to add the value "corn" to our vector, we need to re-run the code with the quotation marks surrounding corn. A quick way to add quotes to both ends of a word in RStudio is to highlight the word, then press the quote key.
+
+```r
+# Create a character vector and store the vector as a variable called 'species'
+species <- c("ecoli", "human", "corn")
 ```
 
 ***
@@ -193,17 +205,21 @@ Print the `combined` vector in the console, what looks different compared to the
 
 A **factor** is a special type of vector that is used to **store categorical data**. Each unique category is referred to as a **factor level** (i.e. category = level). Factors are built on top of integer vectors such that each **factor level** is assigned an **integer value**, creating value-label pairs. 
 
+For instance, if we have four animals and the first animal is female, the second and third are male, and the fourth is female, we could create a factor that appears like a vector, but has integer values stored under-the-hood. The integer value assigned is a one for females and a two for males. The numbers are assigned in alphabetical order, so because the f- in females comes before the m- in males in the alphabet, females get assigned a one and males a two. In later lessons we will show you how you could change these assignments.
+
 ![factors](../img/factors_sm.png)
 
-Let's create a factor vector and explore a bit more.  We'll start by creating a character vector describing three different levels of expression:
+Let's create a factor vector and explore a bit more.  We'll start by creating a character vector describing three different levels of expression. Perhaps the first value represents expression in mouse1, the second value represents expression in mouse2, and so on and so forth:
 
 ```r
+# Create a character vector and store the vector as a variable called 'expression'
 expression <- c("low", "high", "medium", "high", "low", "medium", "high")
 ```
 
 Now we can convert this character vector into a *factor* using the `factor()` function:
 
 ```r
+# Turn 'expression' vector into a factor
 expression <- factor(expression)
 ```
 
@@ -215,6 +231,9 @@ The expression vector is categorical, in that all the values in the vector belon
 
 ![Factor variables in environment](../img/factors.png)
 
+So now that we have an idea of what factors are, when would you ever want to use them?
+
+Factors are extremely valuable for many operations often performed in R. For instance, factors can give order to values with no intrinsic order. In the previous 'expression' vector, if I wanted the low category to be less than the medium category, then we could do this using factors. Also, factors are necessary for many statistical methods. For example, descriptive statistics can be obtained for character vectors if you have the categorical information stored as a factor. Also, if you want to denote which category is your base level for a statistical comparison, then you would need to have your category variable stored as a factor with the base level assigned to 1. Anytime that it is helpful to have the categories thought of as groups in an analysis, the factor function makes this possible. For instance, if you want to color your plots by treatment type, then you would need the treatment variable to be a factor.
 
 ***
 **Exercises**
@@ -241,7 +260,7 @@ Matrices are used commonly as part of the mathematical machinery of statistics. 
 
 ### Data Frame
 
-A `data.frame` is the _de facto_ data structure for most tabular data and what we use for statistics and plotting. A `data.frame` is similar to a matrix in that it's a collection of vectors of the **same length** and each vector represents a column. However, in a dataframe **each vector can be of a different data type** (e.g., characters, integers, factors). 
+A `data.frame` is the _de facto_ data structure for most tabular data and what we use for statistics and plotting. A `data.frame` is similar to a matrix in that it's a collection of vectors of the **same length** and each vector represents a column. However, in a dataframe **each vector can be of a different data type** (e.g., characters, integers, factors). In the data frame pictured below, the first column is character, the second column is numeric, the third is character, and the fourth is logical.
 
 ![dataframe](../img/dataframe.png)
 
@@ -250,18 +269,21 @@ A data frame is the most common way of storing data in R, and if used systematic
 We can create a dataframe by bringing **vectors** together to **form the columns**. We do this using the `data.frame()` function, and giving the function the different vectors we would like to bind together. *This function will only work for vectors of the same length.*
 
 ```r
+# Create a data frame and store it as a variable called 'df'
 df <- data.frame(species, glengths)
 ```
 
-Beware of `data.frame()`’s default behaviour which turns **character vectors into factors**. Print your data frame to the console:
+We can see that a new variable called `df` has been created in our `Environment` within a new section called `Data`. In the `Environment`, it specifies that `df` has 3 observations of 2 variables. What does that mean? In R, rows always come first, so it means that `df` has 3 rows and 2 columns. We can get additional information if we click on the blue circle with the white triangle in the middle next to `df`. It will display information about each of the columns in the data frame, giving information about what the data type is of each of the columns and the first few values of those columns.
+
+Note that the species column is now a factor even though we added it as a character vector. It turns out that the `data.frame()` function will turn all **character vectors into factors** by default. There are ways that we can change the default behavior of the function as we will see in later lessons.
+
+Another handy feature in RStudio is that if we hover the cursor over the variable name in the `Environment`, `df`, it will turn into a pointing finger. If you click on `df`, it will open the data frame as it's own tab next to the script editor. We can explore the table interactively within this window. To close, just click on the X on the tab.
+
+As with any variable, we can print the values stored inside to the console if we type the variable's name and run. 
 
 ```r
 df
 ```
-
-Upon inspection of our dataframe, we see that although the species vector was a character vector, it automatically got converted into a factor inside the data frame (the removal of quotation marks). We will show you how to change the default behavior of a function in the next lesson.
-
-*Note that you can view your data.frame object by clicking on its name in the `Environment` window.*
 
 ### Lists
 
@@ -275,7 +297,14 @@ If you have variables of different data structures you wish to combine, you can 
 ```r
 list1 <- list(species, df, number)
 ```
-Print out the list to screen to take a look at the components:
+
+We see `list1` appear within the Data section of our environment as a list of 3 components or variables. If we click on the blue circle with a triangle in the middle, it's not quite as interpretable as it was for data frames. 
+
+Essentially, each component is preceded by a colon. The first colon give the `species` vector, the second colon precedes the `df` data frame, with the dollar signs indicating the different columns, the last colon gives the single value, `number`.
+
+If I click on `list1`, it opens a tab where you can explore the contents a bit more, but it's still not super intuitive. The easiest way to view small lists is to print to the console. 
+
+Let's type list1 and print to the console by running it.
 
 ```r
 list1
@@ -300,6 +329,12 @@ There are three components corresponding to the three different variables we pas
 **Exercise**
 
 Create a list called `list2` containing `species`, `glengths`, and `number`.
+
+***
+
+Now that we know what lists are, why would we ever want to use them? When getting started with R, you will most likely encounter lists with different tools or functions that you use. Oftentimes a tool will need a list as input, so that all the information needed to run the tool is present in a single variable. Sometimes a tool will output a list when working through an analysis. Knowing how to work with them and extract necessary information will be critically important. 
+
+As you become more comfortable with R, you will find yourself using lists more often. One common use of lists is to make iterative processes more efficient. For example, let's say you had multiple data frames containing the same weather information from different cities throughout North America. You wanted to perform the same task on each of the data frames, but that would take a long time to do individually. Instead you could create a list where each data frame is a component of the list. Then, you could perform the task on the list instead, which would be applied to each of the components.
 
 ---
 
