@@ -120,6 +120,15 @@ The table below provides examples of each of the commonly used data types:
 | Integer:  | 2L, 500L, -17L|
 | Logical:  | TRUE, FALSE, T, F|
 
+Why does it matter the data type of your values? Values of specific data types will only be able to perform specific operations. For example, if we tried to add together character values, we wouldn't be able to do it.
+
+```r
+# Trying to add together character values
+"5" + "3"
+```
+
+We return an error relating to the data not being numeric. Similarly, other tasks require our values to be characters, while still different operations require values to be logical or integer. Therefore, depending on the nature of our data and what tasks we would like to perform with it, will determine what data type it should be.
+
 ## Data Structures
 
 We know that variables are like buckets, and so far we have seen that bucket filled with a single value. Even when `number` was created, the result of the mathematical operation was a single value. **Variables can store more than just a single value, they can store a multitude of different data structures.** These include, but are not limited to, vectors (`c`), factors (`factor`), matrices (`matrix`), data frames (`data.frame`) and lists (`list`).
