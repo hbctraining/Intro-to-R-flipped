@@ -90,12 +90,16 @@ not related to a `data.frame`, you can save any other R data structure that you 
 	```r
 	# Create vector of work days
 	work_days <- c(Monday, Tuesday, Wednesday, Thursday, Friday)
+	```
 	
+	```r
 	# Create a function to round the output of the sum function
 	round_the_sum <- function(x){
 	        return(round(sum(x))
 	}
+	```
 	
+	```r
 	# Create a function to add together three numbers
 	add_numbers <- function(x,y,z){
 	        sum(x,y,z)
