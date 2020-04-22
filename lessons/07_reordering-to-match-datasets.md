@@ -3,7 +3,7 @@ title: "Advanced R, reordering to match datasets"
 authors: Meeta Mistry, Mary Piper
 date: "Wednesday, April 22, 2020"
 ---
-Approximate time: 110 min
+Approximate time: 45 min
 
 
 ## Learning Objectives
