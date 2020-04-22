@@ -160,7 +160,7 @@ We know that all samples are present, but are they in the same order:
 all(rownames(metadata) == colnames(rpkm_data))
 ```
 
-**Looks like all of the samples are there, but will need to be reordered. To reorder our genomic samples, we need to first learn different ways to reorder data. Therefore, we will step away from our genomic data briefly to learn about reordering, then return to it at the end of this lesson.**
+**Looks like all of the samples are there, but will need to be reordered. To reorder our genomic samples, we will learn different ways to reorder data in our next lesson. But before that, let's work on exercise 2 to consolidate concepts from this lesson.**
 
 ***
 [**Exercise 2**](../results/answer_keys/07_matching_answer_key.md#exercise-2-solution)
