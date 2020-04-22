@@ -1,7 +1,7 @@
 ---
 title: Functions in R
-author: Data Carpentry contributors
-date: "Friday, September 8, 2017"
+author: Data Carpentry contributors, Mary Piper
+date: "Wednesday, April 22, 2020"
 ---
 Approximate time: 30 min
 
@@ -101,7 +101,7 @@ not related to a `data.frame`, you can save any other R data structure that you 
 	        sum(x,y,z)
 	}
 	
-	add_numbers(5,9
+	add_numbers(5,9)
 	
 	```
 
