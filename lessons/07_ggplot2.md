@@ -101,7 +101,7 @@ When we are working with large sets of numbers it can be useful to display that 
 
 > If you are interested in learning about plotting with base R functions, we have a short lesson [available here](basic_plots_in_r.md). 
 
-The `ggplot2` syntax takes some getting used to, but once you get it, you will find it's extremely powerful and flexible. We will start with drawing a simple x-y scatterplot of `samplemeans` versus `age_in_days` from the `new_metadata` data frame. Please note that `ggplot2` expects a data frame as input.
+The `ggplot2` syntax takes some getting used to, but once you get it, you will find it's extremely powerful and flexible. We will start with drawing a simple x-y scatterplot of `samplemeans` versus `age_in_days` from the `new_metadata` data frame. Please note that `ggplot2` expects a "data frame" or "tibble" (you can find out more about tibbles in the lesson on [tidyverse](https://hbctraining.github.io/Training-modules/Tidyverse_ggplot2/lessons/intro_tidyverse.html)) as input.
 
 Let's start by loading the `ggplot2` library:
 
