@@ -46,8 +46,8 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:45 | Review of homework exercises | Radhika |
-| 10:45 - 11:30 | Tidyverse | Mary |
+| 10:00 - 10:30 | Review of homework exercises | Radhika |
+| 10:30 - 11:30 | Tidyverse | Mary |
 | 11:30 - 12:00 | Discussion/Office hours | All |
 
 ### Final Exercises
