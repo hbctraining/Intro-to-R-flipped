@@ -8,7 +8,6 @@ Approximate time: 60 min
 ## Learning Objectives
 
 * Demonstrate how to subset, merge, and create new datasets from existing data structures in R.
-* Export data tables and plots for use outside of the R environment.
 
 ### Dataframes
 
@@ -280,49 +279,6 @@ Let's practice combining ways to extract data from the data structures we have c
 1. Set names for the `random` list you created in the last exercise.
 
 2. Extract the `age` component using the `$` notation
-
-***
-
-### Writing to file 
-
-Everything we have done so far has only modified the data in R; the files have remained unchanged. Whenever we want to save our datasets to file, we need to use a `write` function in R. 
-
-To write our matrix to file in comma separated format (.csv), we can use the `write.csv` function. There are two required arguments: the variable name of the data structure you are exporting, and the path and filename that you are exporting to. By default the delimiter or column separator is set, and columns will be separated by a comma:
-
-```r
-# Save a data frame to file
-write.csv(sub_meta, file="data/subset_meta.csv")
-```
-
-Oftentimes the output is not exactly what you might want. You can modify the output using the arguments for the function. We can explore the arguments using the `?`. This can help elucidate what each of the arguments can adjust the output.
-
-```r
-?write.csv`
-```
-
-Similar to reading in data, there are a wide variety of functions available allowing you to export data in specific formats. Another commonly used function is `write.table`, which allows you to specify the delimiter or separator you wish to use. This function is commonly used to create tab-delimited files.
-
-> **NOTE:** Sometimes when writing a data frame using row names to file with `write.table()`, the column names will align starting with the row names column. To avoid this, you can include the argument `col.names = NA` when writing to file to ensure all of the column names line up with the correct column values.
-
-Writing a vector of values to file requires a different function than the functions available for writing dataframes. You can use `write()` to save a vector of values to file. For example:
-
-```r
-# Save a vector to file
-write(glengths, file="data/genome_lengths.txt")
-```
-
-If we wanted the vector to be output to a single column instead of five, we could explore the arguments:
-
-```r
-?write
-```
-
-Note, the `ncolumns` argument that it defaults to five columns unless specified, so to get a single column:
-
-```r
-# Save a vector to file as a single column
-write(glengths, file="data/genome_lengths.txt", ncolumns = 1)
-```
 
 ***
 
