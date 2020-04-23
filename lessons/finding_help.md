@@ -85,7 +85,7 @@ not related to a `data.frame`, you can save any other R data structure that you 
 
 **Exercises**
 
-1. Run the following code and fix all of the errors.
+1. Run the following code chunks and fix all of the errors. (Note: The code chunks are independent from one another.)
 
 	```r
 	# Create vector of work days
@@ -117,11 +117,11 @@ not related to a `data.frame`, you can save any other R data structure that you 
 	
 	What would you do to remedy the error?
 	
-3. You would like to ask for help on a forum. To do this you want the users of the forum to reproduce your problem. Make sure to output the following:
+3. You would like to ask for help on an online forum. To do this you want the users of the forum to reproduce your problem, so you want to provide them as much relevant information and data as possible.
 
-	- the versions and packages that you currently have loaded
-	- include a small data frame that reproduces the error. Use the data frame, `df`, and save it as an RData object calle `df.RData`. 
-	- write the code you would use to read into R the `df.RData` object you just created
+	- You want to provide them with the list of packages that you currently have loaded, the version of R, your OS and package versions. Use the appropriate function(s) to obtain this information.
+	- You want to also provide a small data frame that reproduces the error (if working with a large data frame, you'll need to subset it down to something small). For this exercse use the data frame `df`, and save it as an RData object called `df.RData`. 
+	- What code should the people looking at your help request should use to read in `df.RData`?
 
 ---
 
