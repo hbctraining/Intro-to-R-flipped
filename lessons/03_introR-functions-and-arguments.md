@@ -104,7 +104,7 @@ round(3.14159, digits=2)
 
 > *NOTE:* If you provide the arguments in the exact same order as they are defined (in the help manual) you don't have to name them:
 >
-	round(3.14159, 2)
+>	round(3.14159, 2)
 >
 >However, it's usually not recommended practice because it involves a lot of memorization. In addition, it makes your code difficult to read for your future self and others, especially if your code includes functions that are not commonly used. (It's however OK to not include the names of the arguments for basic functions like `mean`, `min`, etc...). Another advantage of naming arguments, is that the order doesn't matter. This is useful when a function has many arguments. 
 
@@ -159,8 +159,6 @@ Pretty simple, right? In this case, we only had one line of code that was run, b
 
 1. Write a function called `multiply_it`, which takes two inputs: a numeric value `x`, and a numeric value `y`. The function will return the product of these two numeric values, which is `x * y`. Apply this function and check if the result is as expected.
 2. Set the **default** value of `y` as 5 in the `multiply_it` function (hint: this can be done by assigning the value inside the input parentheses). Apply this function by specifying only one input `x`, and check if the result is as expected. Also see if you can **overwrite** the default value of `y` by specifying both `x` and `y` values when applying this function.
-
-***
 
 ---
 
