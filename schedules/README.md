@@ -24,7 +24,6 @@
 ### Self-Learning Part 2
 1. Reading in and inspecting data
 1. Data wrangling: data frames, matrices and lists
-1. Finding help
 1. The %in% operator
 1. Reordering and matching
 1. Setting up a data frame to plot (+ the `map()` function)
@@ -40,6 +39,7 @@
 ### Self-Learning Part 3
 1. Generating a boxplot with ggplot2
 1. Writing to file and exporting plots
+1. Finding help
 1. Tidyverse
 
 
