@@ -1,4 +1,4 @@
-# Workshop Schedule 
+# Course Schedule & Content
 
 ## Day 1
 
@@ -40,15 +40,15 @@
 ### Self-Learning Part 3
 1. Generating a boxplot with ggplot2
 1. Writing to file and exporting plots
+1. Tidyverse
 
 
 ## Day 4
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:30 | Review of homework exercises | Radhika |
-| 10:30 - 11:30 | Tidyverse | Mary |
-| 11:30 - 12:00 | Discussion/Office hours | All |
+| 10:00 - 10:45 | Review of homework exercises | Radhika |
+| 10:45 - 12:00 | Discussion/Office hours | All |
 
 ### Final Exercises
 1. Exercises and Answer Key
