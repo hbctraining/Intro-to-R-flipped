@@ -3,7 +3,7 @@ title: Functions in R
 author: Data Carpentry contributors
 date: "Friday, September 8, 2017"
 ---
-Approximate time: 50 min
+Approximate time: 30 min
 
 ## Learning Objectives
 
@@ -11,9 +11,6 @@ Approximate time: 50 min
 * Modify default behavior of functions using arguments in R.
 * Identify R-specific sources of help to get more information about functions.
 * Demonstrate how to create user-defined functions in R
-* Demonstrate how to install external packages to extend R’s functionality. 
-* Identify different R-specific and external sources of help to (1) troubleshoot errors and (2) get more information about functions and packages.
-
 
 ## Functions and their arguments
 
@@ -75,7 +72,7 @@ Let's try another function, this time using one that we can change some of the *
 round(3.14159)
 ```
 
-We can see that we get `3`. That's because the default is to round to the nearest whole number. **What if we want a different number of significant digits?**
+We can see that we get `3`. That's because the default is to round to the nearest whole number. **What if we want a different number of significant digits?** Let's first learn how to find available arguments for a function.
 
 
 ### Seeking help on arguments for functions
@@ -85,6 +82,7 @@ The best way of finding out this information is to use the `?` followed by the n
 ```r
 ?round
 ```	
+
 Alternatively, if you are familiar with the function but just need to remind yourself of the names of the arguments, you can use:
 
 ```r
@@ -114,14 +112,14 @@ round(3.14159, digits=2)
 ***
 **Exercise** 
 
-1. Let's use base R function to calculate **mean** average of the `glengths` vector. You might need to search online to find what function can perform this task.
+1. Let's use base R function to calculate **mean** value of the `glengths` vector. You might need to search online to find what function can perform this task.
 2. Another commonly used base function is `sort()`. Use this function to sort the `glengths` vector in **descending** order.
 
 ***
 
 ### User-defined Functions
 
-One of the great strengths of R is the user's ability to add functions. Sometimes there is a small task (or series of tasks) you need done and you find yourself having to repeat it multiple times. In these types of situations it can be helpful to create your own custom function. The **structure of a function is given below**:
+One of the great strengths of R is the user's ability to add functions. Sometimes there is a small task (or series of tasks) you need done and you find yourself having to repeat it multiple times. In these types of situations, it can be helpful to create your own custom function. The **structure of a function is given below**:
 
 ```r
 name_of_function <- function(argument1, argument2) {
@@ -148,7 +146,7 @@ square_it <- function(x) {
 }
 ```
 
-Now, we can use the function as we would any other function. We type out the name of the function, and inside the parentheses  we provide a numeric value `x`:
+Once you run the code, you should see a function named `square_it` in the Environment panel (located at the top right of Rstudio interface). Now, we can use this function as any other base R functions. We type out the name of the function, and inside the parentheses  we provide a numeric value `x`:
 
 ```r
 square_it(5)
@@ -156,128 +154,13 @@ square_it(5)
 
 Pretty simple, right? In this case, we only had one line of code that was run, but in theory you could have many lines of code to get obtain the final results that you want to "return" to the user. We have only scratched the surface here when it comes to creating functions! We will revisit this in later lessons, but if interested you can also find more detailed information on this [R-bloggers site](https://www.r-bloggers.com/how-to-write-and-debug-an-r-function/), which is where we adapted this example from.
 
+***
 **Exercise** 
 
-1. Write a function called multiply_it, where it takes two inputs: one is numeric value `x`, one is multiplier `a`. The function will return the multiplier of that numeric value, which is `a * x`. Use this function and check if the result is as expected.
-2. Set the **default** value of multiplier `a` as 5 (hint: this can be done by asigning the value inside the input parentheses). Use this function by specifying only one input `x`, and check what the result is. Also see if you can **overwrite** the default value of multiplier by specifying both `x` and `a` values while using this function.
+1. Write a function called `multiply_it`, which takes two inputs: a numeric value `x`, and a numeric value `y`. The function will return the product of these two numeric values, which is `x * y`. Apply this function and check if the result is as expected.
+2. Set the **default** value of `y` as 5 in the `multiply_it` function (hint: this can be done by assigning the value inside the input parentheses). Apply this function by specifying only one input `x`, and check if the result is as expected. Also see if you can **overwrite** the default value of `y` by specifying both `x` and `y` values when applying this function.
 
 ***
-
-## Packages and Libraries
-
-**Packages** are collections of R functions, data, and compiled code in a well-defined format, created to add specific functionality. There are 10,000+ user contributed packages and growing.
-
-There are a set of **standard (or base) packages** which are considered part of the R source code and automatically available as part of your R installation. Base packages contain the **basic functions** that allow R to work, and enable standard statistical and graphical functions on datasets; for example, all of the functions that we have been using so far in our examples. 
-
-The directories in R where the packages are stored are called the **libraries**. The terms *package* and *library* are sometimes used synonymously and there has been [discussion](http://www.r-bloggers.com/packages-v-libraries-in-r/) amongst the community to resolve this. It is somewhat counter-intuitive to _load a package_ using the `library()` function and so you can see how confusion can arise.
-
-
-You can check what libraries are loaded in your current R session by typing into the console:
-
-```r
-sessionInfo() #Print version information about R, the OS and attached or loaded packages
-
-# OR
-
-search() #Gives a list of attached packages
-```
-
-In this workshop we have introduced you to functions from the standard base packages. However, the more you work with R you will come to realize that there is a cornucopia of R packages that offer a wide variety of functionality. To use additional packages will require installation. Many packages can be installed from the [CRAN](http://cran.r-project.org/) or [Bioconductor](https://www.bioconductor.org/) repositories.
-
-### Package installation from CRAN 
-
-CRAN is a repository where the latest downloads of R (and legacy versions) are found in addition to source code for thousands of different user contributed R packages.
-
-<img src="../img/cran_packages.png" width="600">
-
-Packages for R can be installed from the [CRAN](http://cran.r-project.org/) package repository using the `install.packages` function. This function will download the source code from on the CRAN mirrors and install the package (and any dependencies) locally on your computer. 
-
-An example is given below for the `ggplot2` package that will be required for some plots we will create later on. Run this code to install `ggplot2`.
-
-```r
-install.packages("ggplot2")
-```
-
-### Package installation from Bioconductor
-Alternatively, packages can also be installed from [Bioconductor](https://www.bioconductor.org/), another repository of packages which provides tools for the analysis and comprehension of high-throughput **genomic data**. These packages includes (but is not limited to) tools for performing statistical analysis, annotation packages, and accessing public datasets.
-
-<img src="../img/bioconductor_logo.png" width="300">
-
-There are many packages that are available in CRAN and Bioconductor, but there are also packages that are specific to one repository. Generally, you can find out this information with a Google search or by trial and error. 
-
-To install from Bioconductor, you will first need to install BiocManager. *This only needs to be done once ever for your R installation.* 
-
-```r
-# DO NOT RUN THIS!
-
-install.packages("BiocManager")
-```
-
-Now you can use the `install()` function from the `BiocManager` package to install a package by providing the name in quotations. 
-
-Here we have the code to install `ggplot2`, through Bioconductor:
-
-```r
-# DO NOT RUN THIS!
-
-BiocManager::install("ggplot2")
-```
-
-> The code above may not be familiar to you - it is essentially using a new operator, a double colon `::` to execute a function from a particular package. This is the syntax: `package::function_name()`. 
-
-### Package installation from source
-
-Finally, R packages can also be installed from source. This is useful when you do not have an internet connection (and have the source files locally), since the other two methods are retrieving the source files from remote sites. 
-
-To install from source, we use the same `install.packages` function but we have additional arguments that provide *specifications* to *change from defaults*:
-
-```r
-# DO NOT RUN THIS!
-
-install.packages("~/Downloads/ggplot2_1.0.1.tar.gz", type="source", repos=NULL)
-```
-
-### Loading libraries
-Once you have the package installed, you can **load the library** into your R session for use. Any of the functions that are specific to that package will be available for you to use by simply calling the function as you would for any of the base functions. *Note that quotations are not required here.*
-
-
-```r
-library(ggplot2)
-```
-
-You can also check what is loaded in your current environment by using `sessionInfo()` or `search()` and you should see your package listed as:
-
-```r
-other attached packages:
-[1] ggplot2_2.0.0
-```
-
-In this case there are several other packages that were also loaded along with `ggplot2`.
-
-We only need to install a package once on our computer. However, to use the package, we need to load the library every time we start a new R/RStudio environment. You can think of this as **installing a bulb** versus **turning on the light**. 
-
-<img src="../img/install_vs_library.jpeg" width="600">
-
-*Analogy and image credit to [Dianne Cook](https://twitter.com/visnut/status/1248087845589274624) of [Monash University](https://www.monash.edu/).* 
-
-### Finding functions specific to a package
-
-This is your first time using `ggplot2`, how do you know where to start and what functions are available to you? One way to do this, is by using the `Package` tab in RStudio. If you click on the tab, you will see listed all packages that you have installed. For those *libraries that you have loaded*, you will see a blue checkmark in the box next to it. Scroll down to `ggplot2` in your list:
-
-<img src="../img/ggplot_help.png" width="300">  
-
-
-If your library is successfully loaded you will see the box checked, as in the screenshot above. Now, if you click on `ggplot2` RStudio will open up the help pages and you can scroll through.
-
-An alternative is to find the help manual online, which can be less technical and sometimes easier to follow. For example, [this website](https://ggplot2.tidyverse.org/reference/index.html) is much more comprehensive for ggplot2 and is the result of a Google search. Many of the Bioconductor packages also have very helpful vignettes that include comprehensive tutorials with mock data that you can work with.
-
-If you can't find what you are looking for, you can use the [rdocumention.org](https://www.rdocumentation.org/) website that search through the help files across all packages available.
-
-***
-
-**Exercise**
-
-The `ggplot2` package is part of the [`tidyverse` suite of integrated packages](https://www.tidyverse.org/packages/) which was designed to work together to make common data science operations more user-friendly. **We will be using the `tidyverse` suite in later lessons, and so let's install it**. _NOTE: This suite of packages is only available in CRAN._ 
 
 ---
 
