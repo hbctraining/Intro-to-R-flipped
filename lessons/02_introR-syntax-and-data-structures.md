@@ -281,6 +281,18 @@ As with any variable, we can print the values stored inside to the console if we
 df
 ```
 
+***
+**Exercise**
+
+Create a data frame called `favorite_books` with the following vectors as columns:
+
+  ```r
+  titles <- c("Catch-22", "Pride and Prejudice", "Nineteen Eighty Four")
+  pages <- c(453, 432, 328)
+  ```
+  
+***
+
 ### Lists
 
 Lists are a data structure in R that can be perhaps a bit daunting at first, but soon become amazingly useful. A list is a data structure that can hold any number of any types of other data structures.
