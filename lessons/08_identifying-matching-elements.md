@@ -1,10 +1,10 @@
 ---
 title: "Advanced R, logical operators for matching"
-authors: Meeta Mistry, Mary Piper
+authors: Meeta Mistry, Mary Piper, Jihe Liu
 date: "Wednesday, April 22, 2020"
 ---
 
-Approximate time: 110 min
+Approximate time: 45 min
 
 
 ## Learning Objectives
@@ -43,13 +43,13 @@ What we want to know is, **do we have data for every sample that we have metadat
 
 ## The `%in%` operator
  
-Although lacking in [documentation](http://dr-k-lo.blogspot.com/2013/11/) this operator is well-used and convenient once you get the hang of it. The operator is used with the following syntax: 
+Although lacking in [documentation](http://dr-k-lo.blogspot.com/2013/11/), this operator is well-used and convenient once you get the hang of it. The operator is used with the following syntax: 
 
 ```r
-vector1_of_values %in% vector2_of_values
+vector1 %in% vector2
 ```
 
-It will take a vector as input to the left and will **evaluate each element to see if there is a match in the vector that follows on the right of the operator.** *The two vectors do not have to be the same size.* This operation will return a vector of the same length as vector1 containing logical values to indicate whether or not there was a match. Take a look at the example below:
+It will take each element from vector1 as input, one at a time, and **evaluate if the element is present in vector2.** *The two vectors do not have to be the same size.* This operation will return a vector containing logical values to indicate whether or not there is a match. The new vector will be of the same length as vector1. Take a look at the example below:
 
 ```r
 A <- c(1,3,5,7,9,11)   # odd numbers
@@ -63,7 +63,7 @@ A %in% B
 ## [1] FALSE FALSE FALSE FALSE FALSE FALSE
 ```
 
-Since vector A contains only odd numbers and vector B contains only even numbers, there is no overlap and so the vector returned contains a `FALSE` for each element. Let's change a couple of numbers inside vector B to match vector A:
+Since vector A contains only odd numbers and vector B contains only even numbers, the operation returns a logical vector containing six `FALSE`, suggesting that no element in vector A is present in vector B. Let's change a couple of numbers inside vector B to match vector A:
 
 
 ```r
@@ -99,13 +99,13 @@ A[intersection]
 
 ![matching3](../img/in-operator3.png)
 
-In these previous examples, the vectors were small and so it's easy to count by eye; but when we work with large datasets this is not practical. A quick way to assess whether or not we had any matches would be to use the `any` function to see if **any of the values contained in vector A are also in vector B**:
+In these previous examples, the vectors were so small that it's easy to check every logical value by eye; but this is not practical when we work with large datasets (e.g. a vector with 1000 logical values). Instead, we can use `any` function. Given a logical vector, this function will tell you whether **at least one value** is `TRUE`. It provides us a quick way to assess if **any of the values contained in vector A are also in vector B**:
 
 ```r
 any(A %in% B)
 ```
 
-The `all` function is also useful. Given a logical vector, it will tell you whether all values returned are `TRUE`. If there is at least one `FALSE` value, the `all` function will return a `FALSE` and you know that all of A are not contained in B.
+The `all` function is also useful. Given a logical vector, it will tell you whether **all values** are `TRUE`. If there is at least one `FALSE` value, the `all` function will return a `FALSE`. We can use this function to assess whether **all elements from vector A are contained in vector B**.
 
 ```r
 all(A %in% B)
@@ -118,7 +118,7 @@ all(A %in% B)
 2. Subset the `B` vector to only return those values that are also in `A`.
 
 ***
-Suppose we had **two vectors that had the same values but just not in the same order**. We could also use `all` to test for that. Rather than using the `%in%` operator we would use `==` and compare each element to the same position in the other vector. Unlike the `%in%` operator, **for this to work you must have two vectors that are of equal length**.
+Suppose we had two vectors containing same values. How can we check **if those values are in the same order in each vector**? In this case, we can use `==` operator to compare each element of the same position from two vectors. The operator returns a logical vector indicating TRUE/FALSE at each position. Then we can use `all()` function to check if all values in the returned vector are TRUE. If all values are TRUE, we know that these two vectors are the same. Unlike `%in%` operator, `==` operator requires that **two vectors are of equal length**.  
 
 ```r
 A <- c(10,20,30,40,50)
@@ -135,7 +135,7 @@ all(A == B)
 
 ```
 
-Let's try this on our data and see whether we have metadata information for all samples in our expression data. We'll start by creating two vectors; one with the `rownames` of the metadata and `colnames` of the RPKM data. These are base functions in R which allow you to extract the row and column names as a vector:
+Let's try this on our genomic data, and see whether we have metadata information for all samples in our expression data. We'll start by creating two vectors: one is the `rownames` of the metadata, and one is the `colnames` of the RPKM data. These are base functions in R which allow you to extract the row and column names as a vector:
 
 ```r
 x <- rownames(metadata)
@@ -148,24 +148,25 @@ Now check to see that all of `x` are in `y`:
 all(x %in% y)
 ```
 
-*Note that we can use nested functions in place of `x` and `y`:*
+*Note that we can use nested functions in place of `x` and `y` and still get the same result:*
 
 ```r
 all(rownames(metadata) %in% colnames(rpkm_data))
 ```
 
-We know that all samples are present, but are they in the same order:
+We know that all samples are present, but are they in the same order?
 
 ```r
-all(rownames(metadata) == colnames(rpkm_data))
+x == y
+all(x == y)
 ```
 
-**Looks like all of the samples are there, but will need to be reordered. To reorder our genomic samples, we will learn different ways to reorder data in our next lesson. But before that, let's work on exercise 2 to consolidate concepts from this lesson.**
+**Looks like all of the samples are there, but they need to be reordered. To reorder our genomic samples, we will learn different ways to reorder data in our next lesson. But before that, let's work on exercise 2 to consolidate concepts from this lesson.**
 
 ***
 [**Exercise 2**](../results/answer_keys/07_matching_answer_key.md#exercise-2-solution)
 
-We have a list of 6 marker genes that we are very interested in. Our goal is to extract count data for these genes using the `%in%` operator from the `rpkm_data` data frame, instead scrolling through `rpkm_data` and finding them.
+We have a list of 6 marker genes that we are very interested in. Our goal is to extract count data for these genes using the `%in%` operator from the `rpkm_data` data frame, instead of scrolling through `rpkm_data` and finding them manually.
 
 First, let's create a vector called `important_genes` with the Ensembl IDs of the 6 genes we are interested in:
 
@@ -173,7 +174,7 @@ First, let's create a vector called `important_genes` with the Ensembl IDs of th
 important_genes <- c("ENSMUSG00000083700", "ENSMUSG00000080990", "ENSMUSG00000065619", "ENSMUSG00000047945", "ENSMUSG00000081010", "ENSMUSG00000030970")
 ```
 
-1. Use the `%in%` operator to determine if all of these genes are in the row names of the `rpkm_data` data frame.	
+1. Use the `%in%` operator to determine if all of these genes are present in the row names of the `rpkm_data` data frame.
 	
 2. Extract the rows from `rpkm_data` that correspond to these 6 genes using `[]` and the `%in%` operator. Double check the row names to ensure that you are extracting the correct rows.
 
