@@ -80,7 +80,7 @@ A %in% B
 ## [1]  TRUE FALSE  TRUE FALSE FALSE FALSE
 ```
 
-The logical vector returned denotes which elements in `A` are also in `B` and which are not.  
+The returned logical vector denotes which elements in `A` are also in `B` - the first and third elements, which are 1 and 5.  
 
 We saw previously that we could use the output from a logical expression to subset data by returning only the values corresponding to `TRUE`. Therefore, we can use the output logical vector to subset our data, and return only those elements in `A`, which are also in `B` by returning only the TRUE values:
 
