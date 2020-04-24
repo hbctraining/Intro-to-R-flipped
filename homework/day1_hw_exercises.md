@@ -16,10 +16,10 @@
 
 5. Create a data frame called `favorite_books` with the following vectors as columns:
 
-  ```r
-  titles <- c("Catch-22", "Pride and Prejudice", "Nineteen Eighty Four")
-  pages <- c(453, 432, 328)
-  ```
+     ```r
+     titles <- c("Catch-22", "Pride and Prejudice", "Nineteen Eighty Four")
+     pages <- c(453, 432, 328)
+     ```
   
 6. Create a list called `list2` containing `species`, `glengths`, and `number`.
 
