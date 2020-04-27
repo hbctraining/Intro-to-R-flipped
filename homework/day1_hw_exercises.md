@@ -2,7 +2,7 @@
 
 ***
 - The exercises below should be uploaded to the [R_nanocourse_assignment#1 Dropbox folder](https://www.dropbox.com/request/mCrMcxx6WM9NPTBBirsW) by **5pm** on **Wednesday, April 29th**.
-- Add your solutions to the exercises in the [downloaded .R file](https://github.com/hbctraining/Intro-to-R-flipped/blob/master/homework/day1_hw_exercises.R) and upload the saved file, **renamed with your initials/name** to Dropbox.
+- Add your solutions to the exercises in the [downloaded .R file](https://hbctraining.github.io/Intro-to-R-flipped/homework/day1_hw_exercises.R) and upload the saved file, **renamed with your initials/name** to Dropbox.
 - Full attendance and submission of all assignments are required for course completion.
 - Questions regarding the homework to be reviewed in class can be asked [here](https://pollev.com/discourses/uCqzZCBo9jQqdM3B9j5T1/respond).
 ***
