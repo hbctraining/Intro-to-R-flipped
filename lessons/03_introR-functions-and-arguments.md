@@ -114,7 +114,7 @@ round(3.14159, digits=2)
 
 1. Let's use base R function to calculate **mean** value of the `glengths` vector. You might need to search online to find what function can perform this task.
 2. Create a new vector `test <- c(1, NA, 2, 3, NA, 4)`. Use the same base R function from exercise 1 (with addition of proper argument), and calculate mean value of the `test` vector.
-> Note: In R, missing values are represented by the symbol `NA` (not available). It’s a way to make sure that users know they have missing data, and make a conscious decision on how to deal with it. There are ways to ignore `NA` during statistical calculation, or to remove `NA` from the vector. More functions related to missing data can be found [here](https://www.statmethods.net/input/missingdata.html).
+> *NOTE:* In R, missing values are represented by the symbol `NA` (not available). It’s a way to make sure that users know they have missing data, and make a conscious decision on how to deal with it. There are ways to ignore `NA` during statistical calculation, or to remove `NA` from the vector. More functions related to missing data can be found [here](https://www.statmethods.net/input/missingdata.html).
 3. Another commonly used base function is `sort()`. Use this function to sort the `glengths` vector in **descending** order.
 
 ***
@@ -137,7 +137,7 @@ When **defining the function** you will want to provide the **list of arguments 
 
 Finally, you can **“return” the value of the object from the function**, meaning pass the value of it into the global environment. The important idea behind functions is that objects that are created within the function are local to the environment of the function – they don’t exist outside of the function. 
 
-> **NOTE:** You can also have a function that doesn't require any arguments, nor will it return anything.
+> *NOTE:* You can also have a function that doesn't require any arguments, nor will it return anything.
 
 Let's try creating a simple example function. This function will take in a numeric value as input, and return the squared value.
 
