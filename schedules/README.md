@@ -4,7 +4,7 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:30 | Workshop Introduction | Radhika |
+| 10:00 - 10:30 | [Workshop Introduction](../lectures/Intro_to_nanocourse.pdf) | Radhika |
 | 10:30 - 11:15 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Radhika |
 | 11:15 - 11:30 | Overview of self-learning materials and homework submission |  Mary |
 
