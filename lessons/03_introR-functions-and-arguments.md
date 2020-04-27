@@ -114,7 +114,7 @@ round(3.14159, digits=2)
 
 1. Let's use base R function to calculate **mean** value of the `glengths` vector. You might need to search online to find what function can perform this task.
 2. Create a new vector `test <- c(1, NA, 2, 3, NA, 4)`. Use the same base R function from exercise 1 (with addition of proper argument), and calculate mean value of the `test` vector.
-	> *NOTE:* In R, missing values are represented by the symbol `NA` (not available). It’s a way to make sure that users know they have missing data, and make a conscious decision on how to deal with it. There are ways to ignore `NA` during statistical calculation, or to remove `NA` from the vector. More functions related to missing data can be found [here](https://www.statmethods.net/input/missingdata.html).
+	> *NOTE:* In R, missing values are represented by the symbol `NA` (not available). It’s a way to make sure that users know they have missing data, and make a conscious decision on how to deal with it. There are ways to ignore `NA` during statistical calculation, or to remove `NA` from the vector. More information related to missing data can be [found here](https://www.statmethods.net/input/missingdata.html).
 3. Another commonly used base function is `sort()`. Use this function to sort the `glengths` vector in **descending** order.
 
 ***
