@@ -5,12 +5,16 @@
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 10:00 - 10:30 | Workshop Introduction | Radhika |
-| 10:30 - 11:15 | Introduction to R and RStudio | Radhika |
+| 10:30 - 11:15 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Radhika |
 | 11:15 - 11:30 | Overview of self-learning materials and homework submission |  Mary |
 
 ### Self-Learning Part 1
-1. R Syntax and Data Structure
-1. Functions and Arguments
+1. [R Syntax and Data Structure](../lessons/02_introR-syntax-and-data-structures.md	)
+1. [Functions and Arguments](../lessons/03_introR-functions-and-arguments.md)
+
+### Homework
+* All exercises from above lessons have been put together in [html format](../homework/day1_hw_exercises.html) (web access) and [R script format](../homework/day1_hw_exercises.R) (download for local access).
+* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file, renamed with your initials/name** to [Dropbox](https://www.dropbox.com/request/mCrMcxx6WM9NPTBBirsW).
 
 ## Day 2
 
