@@ -10,9 +10,9 @@
   
 # 4. Let's say that in our experimental analyses, we are working with three different sets of cells: normal, cells knocked out for geneA (a very exciting gene), and cells overexpressing geneA. We have three replicates for each celltype.
 
-#   a. Create a vector named `samplegroup` with nine elements: 3 control ("CTL") values, 3 knock-out ("KO") values, and 3 over-expressing ("OE") values.
+#   i. Create a vector named `samplegroup` with nine elements: 3 control ("CTL") values, 3 knock-out ("KO") values, and 3 over-expressing ("OE") values.
  
-#   b. Turn `samplegroup` into a factor data structure.
+#   ii. Turn `samplegroup` into a factor data structure.
  
 # 5. Create a data frame called `favorite_books` with the following vectors as columns:
  
