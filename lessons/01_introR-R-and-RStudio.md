@@ -36,6 +36,10 @@ R is a powerful, extensible environment. It has a wide range of statistics and g
 * Easy to install on any platform and use (and it’s free!)
 * Open source with a large and growing community of peers
 
+#### Examples of R used in the media and science
+* *"At the BBC data team, we have developed an R package and an R cookbook to make the process of creating publication-ready graphics in our in-house style..."* - [BBC Visual and Data Journalism cookbook for R graphics](https://bbc.github.io/rcookbook/)
+* *"R package of data and code behind the stories and interactives at FiveThirtyEight.com, a data-driven journalism website founded by Nate Silver and owned by ESPN..."* - [fivethirtyeight Package](https://cran.r-project.org/web/packages/fivethirtyeight/vignettes/fivethirtyeight.html)
+* [Single Cell RNA-seq Data analysis](https://satijalab.org/seurat/)
 
 ## What is RStudio?
 
