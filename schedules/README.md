@@ -9,7 +9,7 @@
 | 11:15 - 11:30 | Overview of self-learning materials and homework submission |  Mary |
 
 ### Self-Learning Part 1
-1. [R Syntax and Data Structure](../lessons/02_introR-syntax-and-data-structures.md	)
+1. [R Syntax and Data Structure](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html)
 1. [Functions and Arguments](../lessons/03_introR-functions-and-arguments.md)
 
 Have any questions as you work through the lessons? [Please post them here or upvote existing questions!](https://PollEv.com/discourses/uCqzZCBo9jQqdM3B9j5T1/respond) We will answer them in the next class.
