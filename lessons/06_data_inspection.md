@@ -27,7 +27,7 @@ Many functions exist to read data in, and the function in R you use will depend 
 
 For example, if we have text file where the columns are separated by commas (comma-separated values or comma-delimited), you could use the function `read.csv`. However, if the data are separated by a different delimiter in a text file (e.g. ":", ";", " "), you could use the generic `read.table` function and specify the delimiter (`sep = " "`) as an argument in the function. 
 
-In the above table we refer to base R functions as being contained in the "utils" package. In addition to base R functionals, we have also listed functions from some other packages that can be used for a importing data, specifically the "readr" package that installs when you install the "tidyverse" suite of packages.
+In the above table we refer to base R functions as being contained in the "utils" package. In addition to base R functions, we have also listed functions from some other packages that can be used to import data, specifically the "readr" package that installs when you install the "tidyverse" suite of packages.
 
 In addition to plain text files, you can also import data from other statistical analysis packages and Excel using functions from different packages. 
 
@@ -63,7 +63,7 @@ First, check the arguments for the function using the `?` to ensure that you are
 
 The first thing you will notice is that you've pulled up the documentation for `read.table()`, this is because that is the parent function and all the other functions are in the same family. 
 
-The next is the function description wherein it specifies the the output of this function is going to be a data frame - "*Reads a file in table format and **creates a data frame from it**, with cases corresponding to lines and variables to fields in the file.*"
+The next is the function description which specifies that the output of this set of functions is going to be a data frame - "*Reads a file in table format and **creates a data frame from it**, with cases corresponding to lines and variables to fields in the file.*"
 
 In usage, all of the arguments listed for `read.table()` are the default values for all of the family members unless otherwise specified for a given function. Let's take a look at 2 examples:
 1. **The separator** - 
@@ -73,11 +73,11 @@ In usage, all of the arguments listed for `read.table()` are the default values 
 	* in the case of `read.table()` it is `header = FALSE` (by default, it assumes you do not have column names)
 	* whereas for `read.csv()` it is `header = TRUE` (by default, it assumes that all your columns have names listed). 
 
-The usage takehome for `read.csv()` is that it has one mandatory argument, the path to the file and filename in quotations. In our case that is `data/mouse_exp_design.csv` or `data/mouse_exp_design.txt`. 
+The take-home from the "Usage" section for `read.csv()` is that it has one mandatory argument, the path to the file and filename in quotations. In our case that is `data/mouse_exp_design.csv` or `data/mouse_exp_design.txt`. 
 
 > Note that this family of functions will coerces columns that contain character values into a column of `factor` or categorical data type. Depending on what you want to do with the data, you may want to keep these columns as `character` values (e.g. gene names are usually not categorical data); to do so, you can set `stringsAsFactors = FALSE`.
 
-At this point, please check which extension the `mouse_exp_design` file has in your `data` folder. You will have to type it in accordingly within the `read.csv()` function.
+At this point, please check within your data folder the extension for the `mouse_exp_design` file. You will have to type it accordingly within the `read.csv()` function.
 
 > `read.csv` is not fussy about extensions for plain text files, so even though the file we are reading in is a comma-separated value file, it will be read in properly even with a `.txt` extension.
 
