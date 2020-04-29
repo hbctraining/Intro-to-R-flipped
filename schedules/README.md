@@ -36,7 +36,7 @@ Have any questions as you work through the lessons? [Please post them here or up
 
 ### Homework
 * All exercises from above lessons have been put together in [R script format]().
-* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox]() by **5pm** on **Monday, May 4th**.
+* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox](https://www.dropbox.com/request/Yrzq9CmSj62dO1YHFwKJ) by **5pm** on **Monday, May 4th**.
 * Specific questions regarding the homework that you would like to have reviewed in class can be asked [here](https://pollev.com/discourses/uCqzZCBo9jQqdM3B9j5T1/respond).
 
 ## Day 3
