@@ -90,6 +90,22 @@ metadata <- read.csv(file="data/mouse_exp_design.csv")
 # metadata <- read.csv(file="data/mouse_exp_design.txt")
 ```
 
+Go to your Global environment and click on the name of the data frame you just created. 
+
+<img src="../img/metadata_env.png" width="300">
+
+When you do this the metadata table will pop up on the top left hand corner of RStudio, right next to the R script.
+
+<img src="../img/metadata_display.png" width="300">
+
+You should see a subtle coloring (blue-gray) of the first row and first column, the rest of the table will have a white background. This is because your first row and first columns have different properties than the rest of the table, they are the names of the rows and columns respectively. 
+
+<img src="../img/metadata_display_row_cols.png" width="300">
+
+We already noted that this file had column headers and how `read.csv()` deals with that. It also assumes that the first column contains the row names. Not all functions in the `read.table()` family of functions will do this and depending on which one you use, you may have to specify and additional argument to properly assign the row names.
+
+> Row names and column names are really handy ways to subset data and also to identify samples or genes. We almost always use them with data frames.
+
 ***
 **Exercise 1**
 
