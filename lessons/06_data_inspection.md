@@ -149,34 +149,20 @@ Suppose we had a larger file, we might not want to display all the contents in t
 head(metadata)
 ```
 
-Previously, we had mentioned that character values get converted to factors by default using `data.frame`. One way to assess this change would be to use the __`str`__ucture function. You will get specific details on each column:
-
-
-```r
-str(metadata)
-
-'data.frame':	12 obs. of  3 variables:
- $ genotype : Factor w/ 2 levels "KO","Wt": 2 2 2 1 1 1 2 2 2 1 ...
- $ celltype : Factor w/ 2 levels "typeA","typeB": 1 1 1 1 1 1 2 2 2 2 ...
- $ replicate: num  1 2 3 1 2 3 1 2 3 1 ...
-```
-
-As you can see, the columns `genotype` and `celltype` are of the `factor` class, whereas the replicate column has been interpreted as integer data type.
-
-__You can also get this information from the "Environment" tab in RStudio.__
-
 ### List of functions for data inspection
 
-We already saw how the functions `head()` and `str()` can be useful to check the
-content and the structure of a `data.frame`. Here is a non-exhaustive list of
-functions to get a sense of the content/structure of data.
+We already saw how the functions `head()  can be useful to check the content and the structure of a `data.frame`. Here is a non-exhaustive list of functions to get a sense of the content/structure of data. 
+
+The list has been divided into functions that work on all types of objects, some that work only on vectors/factors (1 dimensional objects), and others that work on data frames and matrices (2 dimensional objects).
+
+We have some exercises below that will allow you to gain more familiarity with these. You will definitely be using some of them in the next few homework sections.
 
 * All data structures - content display:
 	- **`str()`:** compact display of data contents (env.)
 	- **`class()`:** data type (e.g. character, numeric, etc.) of vectors and data structure of dataframes, matrices, and lists.
 	- **`summary()`:** detailed display, including descriptive statistics, frequencies
-	- **`head()`:** will print the beginning entries for the variable
-	- **`tail()`:** will print the end entries for the variable
+	- **`head()`:** will print the first 6 entries (elements for 1-D objects, rows for 2-D objects)
+	- **`tail()`:** will print the last 6 entries (elements for 1-D objects, rows for 2-D objects)
 * Vector and factor variables: 
 	- **`length()`:** returns the number of elements in the vector or factor
 * Dataframe and matrix variables:
@@ -186,6 +172,14 @@ functions to get a sense of the content/structure of data.
 	- **`rownames()`:** returns the row names in the dataset  
 	- **`colnames()`:** returns the column names in the dataset
 
+***
+Exercise 2
+
+* 
+
+
+
+***
 ---
 
 *This lesson has been developed by members of the teaching team at the [Harvard Chan Bioinformatics Core (HBC)](http://bioinformatics.sph.harvard.edu/). These are open access materials distributed under the terms of the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.*
