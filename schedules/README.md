@@ -22,17 +22,22 @@ Have any questions as you work through the lessons? [Please post them here or up
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:20 | Review of data structures and functions | Radhika |
-| 10:20 - 10:50 | Review of homework exercises | Mary |
-| 10:50 - 11:15 | Packages and libraries | Jihe |
-| 11:15 - 12:00 | Data Wrangling: Subsetting Vectors and Factors | Radhika |
+| 10:00 - 10:25 | Poll everywhere questions and review of homework exercises (R syntax etc.) | Mary |
+| 10:25 - 10:50 | Poll everywhere questions and review of homework exercises (Functions etc.) | Jihe |
+| 10:50 - 11:15 | [Packages and libraries](../lessons/04_introR_packages.md) | Jihe |
+| 11:15 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Radhika |
 
 ### Self-Learning Part 2
 1. Reading in and inspecting data
-1. Data wrangling: data frames, matrices and lists
-1. The %in% operator
-1. Reordering and matching
-1. Setting up a data frame to plot (+ the `map()` function)
+1. [Data wrangling: data frames, matrices and lists](../lessons/07_introR-data-wrangling2.md)
+1. [The %in% operator](../lessons/08_identifying-matching-elements.md)
+1. [Reordering and matching](../lessons/09_reordering-to-match-datasets.md)
+1. [Setting up a data frame to plot (+ the `map()` function)](../lessons/10_setting_up_to_plot.md)
+
+### Homework
+* All exercises from above lessons have been put together in [R script format]().
+* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox]() by **5pm** on **Monday, May 4th**.
+* Specific questions regarding the homework that you would like to have reviewed in class can be asked [here](https://pollev.com/discourses/uCqzZCBo9jQqdM3B9j5T1/respond).
 
 ## Day 3
 
