@@ -90,6 +90,17 @@ metadata <- read.csv(file="data/mouse_exp_design.csv")
 # metadata <- read.csv(file="data/mouse_exp_design.txt")
 ```
 
+***
+**Exercise 1**
+
+* Download [this tab-delimited `.txt` file](https://www.dropbox.com/s/k2mlcqn4823g400/project-summary.txt?dl=1) and save it in your  project's `data` folder.
+* Read it in to R using `read.table()` and store is as the variable `proj_summary`, keeping in mind that -
+	- all the columns have column names
+	- you want the first column to be used as rownames (*hint: look up the `row.names =` argument*)
+* Display the contents of `proj_summary` in your console
+
+***
+
 ## Inspecting data structures
 
 There are a wide selection of base functions in R that are useful for inspecting your data and summarizing it. Let's use the `metadata` file that we created to test out data inspection functions. 
