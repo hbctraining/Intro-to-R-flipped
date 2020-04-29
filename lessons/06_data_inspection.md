@@ -10,7 +10,11 @@ authors: Meeta Mistry, Mary Piper, Radhika Khetani
 * Utilize base R functions to inspect data structures
 
 ## Reading data into R
-Regardless of the specific analysis in R we are performing, we usually need to bring data in for the analysis. The function in R we use will depend on the type of data file we are bringing in (e.g. text, Stata, SPSS, SAS, Excel, etc.) and how the data in that file are separated, or delimited. The table below lists functions that can be used to import data from common file formats.
+
+### The basics
+Regardless of the specific analysis in R we are performing, we usually need to bring data in for any analysis being done in T, so learning how to read in data is a crucial component of learning to use R.
+
+Many functions exist to read data in, and the function in R you use will depend on the file format being read in. Below we have a table with some examples of functions that can be used for importing some common text data types (plain text).
 
 | Data type               | Extension | Function          | Package            |
 |:------------------------|:----------|:------------------|:-------------------|
@@ -20,29 +24,71 @@ Regardless of the specific analysis in R we are performing, we usually need to b
 | Other delimited formats | txt       | `read.table()`    | utils              |
 |                         |           | `read_table()`    | readr              |
 |                         |           | `read_delim()`    | readr              |
+
+For example, if we have text file where the columns are separated by commas (comma-separated values or comma-delimited), you could use the function `read.csv`. However, if the data are separated by a different delimiter in a text file (e.g. ":", ";", " "), you could use the generic `read.table` function and specify the delimiter (`sep = " "`) as an argument in the function. 
+
+In the above table we refer to base R functions as being contained in the "utils" package. In addition to base R functionals, we have also listed functions from some other packages that can be used for a importing data, specifically the "readr" package that installs when you install the "tidyverse" suite of packages.
+
+In addition to plain text files, you can also import data from other statistical analysis packages and Excel using functions from different packages. 
+
+| Data type               | Extension | Function          | Package            |
+|:------------------------|:----------|:------------------|:-------------------|
 | Stata version 13-14     | dta       | `readdta()`       | haven              |
 | Stata version 7-12      | dta       | `read.dta()`      | foreign            |
 | SPSS                    | sav       | `read.spss()`     | foreign            |
 | SAS                     | sas7bdat  | `read.sas7bdat()` | sas7bdat           |
 | Excel                   | xlsx, xls | `read_excel()`    | readxl (tidyverse) |
 
-For example, if we have text file separated by commas (comma-separated values), we could use the function `read.csv`. However, if the data are separated by a different delimiter in a text file, we could use the generic `read.table` function and specify the delimiter as an argument in the function. 
+Note, that these lists are not comprehensive, and may other functions exist for importing data. Once you have been using R for a bit, maybe you will have a preference for which functions you prefer to use for which data type.
 
-When working with genomic data, we often have a metadata file containing information on each sample in our dataset. Let's bring in the metadata file using the `read.csv` function. Check the arguments for the function to get an idea of the function options:
+### Metadata
+
+When working with large datasets, you will very likely be working with "metadata" file which contains the information about each sample in our dataset.
+
+<img src="../img/metadata_view.png" width="400"> 
+
+The metadata is very important information and we encourage you to think about creating a document with as much metadata you can record before you bring the data into R. [Here is some additional reading on metadata](https://datamanagement.hms.harvard.edu/metadata-overview) from the [HMS Data Management Working Group](https://datamanagement.hms.harvard.edu/).
+
+### The `read.csv()` function
+
+Let's bring in the metadata file we downloaded earlier (`mouse_exp_design.csv` or `mouse_exp_design.txt`) using the `read.csv` function. 
+
+First, check the arguments for the function using the `?` to ensure that you are entering all the information appropriately:
 
 ```r
 ?read.csv
 ```
 
-The `read.csv` function has *one required argument* and several *options* that can be specified. The mandatory argument is a path to the file and filename, which in our case is `data/mouse_exp_design.csv`. We will put the function to the right of the assignment operator, meaning that **any output will be saved as the variable name provided on the left**.
+<img src="../img/read.table-help.png" width="450"> 
+
+The first thing you will notice is that you've pulled up the documentation for `read.table()`, this is because that is the parent function and all the other functions are in the same family. 
+
+The next is the function description wherein it specifies the the output of this function is going to be a data frame - "*Reads a file in table format and **creates a data frame from it**, with cases corresponding to lines and variables to fields in the file.*"
+
+In usage, all of the arguments listed for `read.table()` are the default values for all of the family members unless otherwise specified for a given function. Let's take a look at 2 examples:
+1. **The separator** - 
+	* in the case of `read.table()` it is `sep = ""` (space or tab)
+	* whereas for `read.csv()` it is `sep = ","` (a comma).
+2. **The `header`** - This argument refers to the column headers that may (`TRUE`) or may not (`FALSE`) exist **in the plain text file you are reading in**. 
+	* in the case of `read.table()` it is `header = FALSE` (by default, it assumes you do not have column names)
+	* whereas for `read.csv()` it is `header = TRUE` (by default, it assumes that all your columns have names listed). 
+
+The usage takehome for `read.csv()` is that it has one mandatory argument, the path to the file and filename in quotations. In our case that is `data/mouse_exp_design.csv` or `data/mouse_exp_design.txt`. 
+
+> Note that this family of functions will coerces columns that contain character values into a column of `factor` or categorical data type. Depending on what you want to do with the data, you may want to keep these columns as `character` values (e.g. gene names are usually not categorical data); to do so, you can set `stringsAsFactors = FALSE`.
+
+At this point, please check which extension the `mouse_exp_design` file has in your `data` folder. You will have to type it in accordingly within the `read.csv()` function.
+
+> `read.csv` is not fussy about extensions for plain text files, so even though the file we are reading in is a comma-separated value file, it will be read in properly even with a `.txt` extension.
+
+Let's read in the `mouse_exp_design` file and create a new data frame called `metadata`.
 
 ```r
 metadata <- read.csv(file="data/mouse_exp_design.csv")
+
+# OR 
+# metadata <- read.csv(file="data/mouse_exp_design.txt")
 ```
-
-> *Note: By default, `read.csv` converts (= coerces) columns that contain characters (i.e., text) into the `factor` data type. Depending on what you want to do with the data, you may want to keep these columns as `character`. To do so, `read.csv()` and `read.table()` have an argument called `stringsAsFactors` which can be set to `FALSE`.*
-> 
-
 
 ## Inspecting data structures
 
