@@ -15,7 +15,7 @@
 Have any questions as you work through the lessons? [Please post them here or upvote existing questions!](https://PollEv.com/discourses/uCqzZCBo9jQqdM3B9j5T1/respond) We will answer them in the next class.
 
 ### Homework
-* All exercises from above lessons have been put together in [html format](../homework/day1_hw_exercises.html) (web access) and [R script format](../homework/day1_hw_exercises.R) (download for local access).
+* All exercises from above lessons have been put together in [html format](../homework/day1_hw_exercises.md) (web access) and [R script format](../homework/day1_hw_exercises.R) (download for local access).
 * Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file, renamed with your initials/name** to [Dropbox](https://www.dropbox.com/request/mCrMcxx6WM9NPTBBirsW).
 
 ## Day 2
