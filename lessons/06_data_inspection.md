@@ -12,7 +12,7 @@ authors: Meeta Mistry, Mary Piper, Radhika Khetani
 ## Reading data into R
 
 ### The basics
-Regardless of the specific analysis in R we are performing, we usually need to bring data in for any analysis being done in T, so learning how to read in data is a crucial component of learning to use R.
+Regardless of the specific analysis in R we are performing, we usually need to bring data in for any analysis being done in R, so learning how to read in data is a crucial component of learning to use R.
 
 Many functions exist to read data in, and the function in R you use will depend on the file format being read in. Below we have a table with some examples of functions that can be used for importing some common text data types (plain text).
 
