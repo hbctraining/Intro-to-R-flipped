@@ -1,0 +1,57 @@
+## Day 1 Homework Exercises
+
+### R syntax and data structures
+
+# 1. Try changing the value of the variable `x` to 5. What happens to `number`?
+x <- 5
+
+# 2. Now try changing the value of variable `y` to contain the value 10. What do you need to do, to update the variable `number`?
+y <- 10
+number <- x + y
+
+# 3. Try to create a vector of numeric and character values by combining the two vectors that we just created (`glengths` and `species`). Assign this combined vector to a new variable called `combined`. Hint: you will need to use the combine `c()` function to do this. Print the `combined` vector in the console, what looks different compared to the original vectors?
+combined <- c(glengths, species)
+
+# 4. Let's say that in our experimental analyses, we are working with three different sets of cells: normal, cells knocked out for geneA (a very exciting gene), and cells overexpressing geneA. We have three replicates for each celltype.
+
+#   a. Create a vector named `samplegroup` with nine elements: 3 control ("CTL") values, 3 knock-out ("KO") values, and 3 over-expressing ("OE") values.
+samplegroup <- c("CTL", "CTL", "CTL", "KO", "KO", "KO", "OE", "OE", "OE")
+
+#   b. Turn `samplegroup` into a factor data structure.
+samplegroup <- factor(samplegroup)
+
+# 5. Create a data frame called `favorite_books` with the following vectors as columns:
+
+titles <- c("Catch-22", "Pride and Prejudice", "Nineteen Eighty Four")
+pages <- c(453, 432, 328)
+favorite_books <- data.frame(titles, pages)
+
+# 6. Create a list called `list2` containing `species`, `glengths`, and `number`.
+list2 <- list(species, glengths, number)
+
+### Functions and arguments
+
+# 1. Let's use base R function to calculate **mean** value of the `glengths` vector. You might need to search online to find what function can perform this task.
+mean(glengths)
+
+# 2. Create a new vector `test <- c(1, NA, 2, 3, NA, 4)`. Use the same base R function from exercise 1 (with addition of proper argument), and calculate mean value of the `test` vector.
+#	*NOTE:* In R, missing values are represented by the symbol `NA` (not available). It’s a way to make sure that users know they have missing data, and make a conscious decision on how to deal with it. There are ways to ignore `NA` during statistical calculations, or to remove `NA` from the vector. More information related to missing data can be found at this link -> https://www.statmethods.net/input/missingdata.html.
+test <- c(1, NA, 2, 3, NA, 4)
+mean(test, na.rm=TRUE)
+
+# 3. Another commonly used base function is `sort()`. Use this function to sort the `glengths` vector in **descending** order.
+sort(glengths, decreasing = TRUE)
+
+# 4. Write a function called `multiply_it`, which takes two inputs: a numeric value `x`, and a numeric value `y`. The function will return the product of these two numeric values, which is `x * y`. Apply this function and check if the result is as expected.
+multiply_it <- function(x,y) {
+  product <- x * y
+  return(product)
+}
+
+# 5. Set the **default** value of `y` as 5 in the `multiply_it` function (hint: this can be done by assigning the value inside the input parentheses). Apply this function by specifying only one input `x`, and check if the result is as expected. Also see if you can **overwrite** the default value of `y` by specifying both `x` and `y` values when applying this function.
+multiply_it <- function(x,y=5) {
+  product <- x * y
+  return(product)
+}
+multiply_it(x = 4)
+multiply_it(x = 4, y = 8)
