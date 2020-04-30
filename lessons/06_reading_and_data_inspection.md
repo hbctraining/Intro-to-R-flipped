@@ -149,22 +149,22 @@ head(metadata)
 
 ### List of functions for data inspection
 
-We already saw how the functions `head()  can be useful to check the content and the structure of a `data.frame`. Here is a non-exhaustive list of functions to get a sense of the content/structure of data. 
-
-The list has been divided into functions that work on all types of objects, some that work only on vectors/factors (1 dimensional objects), and others that work on data frames and matrices (2 dimensional objects).
+We already saw how the functions `head()` and `str()` (in the releveling section) can be useful to check the content and the structure of a `data.frame`. Below is a non-exhaustive list of functions to get a sense of the content/structure of data. The list has been divided into functions that work on all types of objects, some that work only on vectors/factors (1 dimensional objects), and others that work on data frames and matrices (2 dimensional objects).
 
 We have some exercises below that will allow you to gain more familiarity with these. You will definitely be using some of them in the next few homework sections.
 
 * All data structures - content display:
-	- **`str()`:** compact display of data contents (env.)
-	- **`class()`:** data type (e.g. character, numeric, etc.) of vectors and data structure of dataframes, matrices, and lists.
-	- **`summary()`:** detailed display, including descriptive statistics, frequencies
-	- **`head()`:** will print the first 6 entries (elements for 1-D objects, rows for 2-D objects)
-	- **`tail()`:** will print the last 6 entries (elements for 1-D objects, rows for 2-D objects)
+	- **`str()`:** compact display of data contents (similar to what you see in the Global environment)
+	- **`class()`:** displays the data type for vectors (e.g. character, numeric, etc.) and data structure for dataframes, matrices, lists
+	- **`summary()`:** detailed display of the contents of a given object, including descriptive statistics, frequencies
+	- **`head()`:**  prints the first 6 entries (elements for 1-D objects, rows for 2-D objects)
+	- **`tail()`:** prints the last 6 entries (elements for 1-D objects, rows for 2-D objects)
+
 * Vector and factor variables: 
-	- **`length()`:** returns the number of elements in the vector or factor
+	- **`length()`:** returns the number of elements in a vector or factor
+
 * Dataframe and matrix variables:
-	- **`dim()`:** returns dimensions of the dataset
+	- **`dim()`:** returns dimensions of the dataset (number_of_rows, number_of_columns) [Note, row numbers will always be displayed before column numbers in R]
 	- **`nrow()`:** returns the number of rows in the dataset
 	- **`ncol()`:** returns the number of columns in the dataset
 	- **`rownames()`:** returns the row names in the dataset  
@@ -173,9 +173,14 @@ We have some exercises below that will allow you to gain more familiarity with t
 ***
 Exercise 2
 
-* 
-
-
+* Use the `class()` function on `glengths` and `metadata`, how does the output differ between the two?
+* Use the `summary()` function on the `proj_summary` dataframe
+	* What is the median rRNA_rate?
+	* How many samples got the "low" level of treatment
+* How long is the `samplegroup` factor?
+* What are the dimensions of the `proj_summary` dataframe?
+* When you use the `rownames()` function on `metadata`, what is the data structure of the output?
+* How many elements in (how long is) the output of `colnames(proj_summary)`? Don't count, but use another function to determine this.
 
 ***
 ---
