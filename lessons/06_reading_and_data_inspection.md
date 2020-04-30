@@ -171,7 +171,7 @@ We have some exercises below that will allow you to gain more familiarity with t
 	- **`colnames()`:** returns the column names in the dataset
 
 ***
-Exercise 2
+**Exercise 2**
 
 * Use the `class()` function on `glengths` and `metadata`, how does the output differ between the two?
 * Use the `summary()` function on the `proj_summary` dataframe
