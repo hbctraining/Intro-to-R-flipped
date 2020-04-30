@@ -101,16 +101,15 @@ When you do this the metadata table will pop up on the top left hand corner of R
 You should see a subtle coloring (blue-gray) of the first row and first column, the rest of the table will have a white background. This is because your first row and first columns have different properties than the rest of the table, they are the names of the rows and columns respectively. 
 
 <img src="../img/metadata_display_row_cols.png" width="300">
+Earlier we noted that the file we just read in had column names (first row of values) and how `read.csv()` deals with "headers". In addition to column headers, `read.csv()` also assumes that the first column contains the row names. Not all functions in the `read.table()` family of functions will do this and depending on which one you use, you may have to specify an additional argument to properly assign the row names and column names.
 
-We already noted that this file had column headers and how `read.csv()` deals with that. It also assumes that the first column contains the row names. Not all functions in the `read.table()` family of functions will do this and depending on which one you use, you may have to specify and additional argument to properly assign the row names.
-
-> Row names and column names are really handy ways to subset data and also to identify samples or genes. We almost always use them with data frames.
+> Row names and column names are really handy when subsetting data structures and they are also helpful to identify samples or genes. We almost always use them with data frames.
 
 ***
 **Exercise 1**
 
 * Download [this tab-delimited `.txt` file](https://www.dropbox.com/s/k2mlcqn4823g400/project-summary.txt?dl=1) and save it in your  project's `data` folder.
-* Read it in to R using `read.table()` and store is as the variable `proj_summary`, keeping in mind that -
+* Read it in to R using `read.table()` and store it as the variable `proj_summary`, keeping in mind that -
 	- all the columns have column names
 	- you want the first column to be used as rownames (*hint: look up the `row.names =` argument*)
 * Display the contents of `proj_summary` in your console
@@ -122,7 +121,6 @@ We already noted that this file had column headers and how `read.csv()` deals wi
 There are a wide selection of base functions in R that are useful for inspecting your data and summarizing it. Let's use the `metadata` file that we created to test out data inspection functions. 
 
 Take a look at the dataframe by typing out the variable name `metadata` and pressing return; the variable contains information describing the samples in our study. Each row holds information for a single sample, and the columns contain categorical information about the sample `genotype`(WT or KO),  `celltype` (typeA or typeB), and `replicate number` (1,2, or 3).
-
 
 ```r
 metadata
