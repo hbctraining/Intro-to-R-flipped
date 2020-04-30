@@ -17,8 +17,7 @@ Have any questions as you work through the lessons? [Please post them here or up
 ### Homework
 * All exercises from above lessons have been put together in [html format](../homework/day1_hw_exercises.md) (web access) and [R script format](../homework/day1_hw_exercises.R) (download for local access).
 * Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file, renamed with your initials/name** to [Dropbox](https://www.dropbox.com/request/mCrMcxx6WM9NPTBBirsW).
-
-**[Answer Key](../homework/day1_hw_answer-key.R)**
+* **[Answer Key](../homework/day1_hw_answer-key.R)**
 
 ## Day 2
 
