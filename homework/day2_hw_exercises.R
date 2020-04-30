@@ -17,7 +17,7 @@
 
 ### Reading in and inspecting data
 
-# 1. Download this tab-delimited .txt file and save it in your project’s data folder.
+# 1. Download this tab-delimited .txt file (https://www.dropbox.com/s/k2mlcqn4823g400/project-summary.txt?dl=1) and save it in your project’s data folder.
 #       i. Read it in to R using read.table() and store it as the variable proj_summary, keeping in mind that: 
 #               a. all the columns have column names 
 #               b. you want the first column to be used as rownames (hint: look up the row.names = argument)
