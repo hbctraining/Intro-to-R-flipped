@@ -29,7 +29,7 @@ Have any questions as you work through the lessons? [Please post them here or up
 | 11:15 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Radhika |
 
 ### Self-Learning Part 2
-1. Reading in and inspecting data
+1. [Reading in and inspecting data](../lessons/06_reading_and_data_inspection.md)
 1. [Data wrangling: data frames, matrices and lists](../lessons/07_introR-data-wrangling2.md)
 1. [The %in% operator](../lessons/08_identifying-matching-elements.md)
 1. [Reordering and matching](../lessons/09_reordering-to-match-datasets.md)
