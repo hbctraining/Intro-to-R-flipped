@@ -23,8 +23,8 @@ Have any questions as you work through the lessons? [Please post them here or up
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:25 | Poll everywhere questions and review of homework exercises (R syntax etc.) | Mary |
-| 10:25 - 10:50 | Poll everywhere questions and review of homework exercises (Functions etc.) | Jihe |
+| 10:00 - 10:15 | [R refresher](https://docs.google.com/spreadsheets/d/1LFKCBA_huYUZUWWgVQIb6j2_UeAu7UKOQlPsZGTl1IY/edit#gid=0) | Mary |
+| 10:15 - 10:50 | Poll everywhere questions and review of homework exercises | Mary |
 | 10:50 - 11:15 | [Packages and libraries](../lessons/04_introR_packages.md) | Jihe |
 | 11:15 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Radhika |
 
