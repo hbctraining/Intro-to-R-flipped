@@ -74,7 +74,7 @@ or 2? oh, right... they are in column 1). In some cases, the column/row number f
 
 ```r
 # Extract the celltype column for the first three samples
-metadata[c("Sample1", "Sample2", "Sample3") , "celltype"] 
+metadata[c("sample1", "sample2", "sample3") , "celltype"] 
 ```
 
 It's important to type the names of the columns/rows in the exact way that they are typed in the data frame; for instance if I had spelled `celltype` with a capital `C`, it would not have worked.
@@ -108,7 +108,7 @@ Unfortunately, there is no equivalent `$` syntax to select a row by name.
 ***
 **Exercises**
 
-1. Return the `genotype` and `replicate` column values for `Sample2` and `Sample8`.
+1. Return the `genotype` and `replicate` column values for `sample2` and `sample8`.
 2. Return the fourth and ninth values of the `replicate` column.
 3. Extract the `replicate` column as a data frame.
 
