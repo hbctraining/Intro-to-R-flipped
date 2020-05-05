@@ -81,7 +81,7 @@ random[[4]]
 names(random) <- c("metadata", "age", "list1", "samplegroup", "number")
 
 # 8. Extract the age component using the $ notation
-random$samplegroup
+random$age
 
 ############################
 
