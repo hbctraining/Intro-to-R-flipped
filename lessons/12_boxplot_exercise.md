@@ -43,16 +43,16 @@ You can color the boxplot differently by using some specific layers:
 	* Do you observe a change?
 2. Add another layer called `scale_fill_manual(values=c("purple","orange"))`.
 	* What do you think is the difference between `scale_color_manual()` and `scale_fill_manual()`?
-3. Change the colors in the `scale_fill_manual()` function to be your favorite 2 colors.
-	* Are there any colors that you tried that did not work?
+3. Change the colors in the `scale_fill_manual()` function to be your 2 favorite colors.
+	* Are there any colors that you tried that did not work? 
 
-You are not restricted to using colors by writing them out as character vectors. You have the choice of a lot of colors in R, and you can do so by using their *hexadecimal code*, [click here for more information about color palettes in R](http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/).
+You are not restricted to using colors by writing them out as character vectors. You have the choice of a lot of colors in R, and you can do so by using their *hexadecimal code*. For example, "#FF0000" would be red and "#00FF00" would be green similarly, "#FFFFFF" would be white and "#000000" would be black. [click here for more information about color palettes in R](http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/#hexadecimal-color-code-chart).
+
+**OPTIONAL Exercise:**
+
+* Find the hexadecimal code for your 2 favourite colors (from exercise 3 above) and replace the color names with the hexadecimal codes within the ggplot2 code chunk.
 
 We have [a separate lesson about using color palettes from the package RColorBrewer](https://hbctraining.github.io/Training-modules/Tidyverse_ggplot2/lessons/ggplot2.html#customizing-data-point-colors), if you are interested.
-
-### 3. Create a custom function
-
-Create a new custom function for all the thematic elements for the boxplot and rewrite the code.
 
 ---
 *This lesson has been developed by members of the teaching team at the [Harvard Chan Bioinformatics Core (HBC)](http://bioinformatics.sph.harvard.edu/). These are open access materials distributed under the terms of the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.*
