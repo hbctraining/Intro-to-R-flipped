@@ -46,7 +46,7 @@ Have any questions as you work through the lessons? [Please post them here or up
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 10:00 - 10:30 | [Review of subsetting data frames](../lessons/animal_table.md) | Mary |
-| 10:30 - 11:10 | Review of homework exercises | Mary |
+| 10:30 - 11:10 | Review of homework exercises | Mary/Jihe |
 | 11:10 - 12:00 | [Plotting with the ggplot2 package](../lessons/11_ggplot2.md) | Radhika |
 
 ### Self-Learning Part 3
