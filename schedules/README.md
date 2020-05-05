@@ -56,8 +56,9 @@ Have any questions as you work through the lessons? [Please post them here or up
 1. [Tidyverse](https://hbctraining.github.io/Training-modules/Tidyverse_ggplot2/lessons/intro_tidyverse.html)
 
 ### Homework
+* R script with ggplot2 exercise questions can be [downloaded from here](../homework/ggplot_exercise.R)
 * **Create an R script with comments and exercise solutions** similar to the R scripts we provided previously.
-* **Upload the R script file above** to [Dropbox](https://www.dropbox.com/request/GWiR8WVHbULRWsctxXjV) by **5pm** on **Wednesday, May 6th**.
+* **Upload the R script files from above** to [Dropbox](https://www.dropbox.com/request/GWiR8WVHbULRWsctxXjV) by **5pm** on **Wednesday, May 6th**.
 * Email us about questions regarding the homework that you need answered before the next class.
 * Post questions that you would like to have reviewed in class [here](https://pollev.com/discourses/uCqzZCBo9jQqdM3B9j5T1/respond).
 
