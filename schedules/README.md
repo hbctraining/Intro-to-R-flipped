@@ -39,21 +39,27 @@ Have any questions as you work through the lessons? [Please post them here or up
 * All exercises from above lessons have been put together in [R script format](../homework/day2_hw_exercises.R).
 * Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox](https://www.dropbox.com/request/Yrzq9CmSj62dO1YHFwKJ) by **5pm** on **Monday, May 4th**.
 * Specific questions regarding the homework that you would like to have reviewed in class can be asked [here](https://pollev.com/discourses/uCqzZCBo9jQqdM3B9j5T1/respond).
+* Answer key coming soon!
 
 ## Day 3
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:30 | Review of subsetting data frames | Mary |
+| 10:00 - 10:30 | [Review of subsetting data frames](../lessons/animal_table.md) | Mary |
 | 10:30 - 11:10 | Review of homework exercises | Mary |
-| 11:10 - 12:00 | Plotting with the ggplot2 package | Radhika |
+| 11:10 - 12:00 | [Plotting with the ggplot2 package](../lessons/11_ggplot2.md) | Radhika |
 
 ### Self-Learning Part 3
-1. Generating a boxplot with ggplot2
-1. Writing to file and exporting plots
-1. Finding help
-1. Tidyverse
+1. [Generating a boxplot with ggplot2](../lessons/12_boxplot_exercise.md)
+1. [Writing to file and exporting plots](../lessons/13_exporting_data_and_plots.md)
+1. [Finding help](../lessons/14_finding_help.md)
+1. [Tidyverse](https://hbctraining.github.io/Training-modules/Tidyverse_ggplot2/lessons/intro_tidyverse.html)
 
+### Homework
+* All exercises from above lessons have been put together in R script format (link coming soon!).
+* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox](https://www.dropbox.com/request/GWiR8WVHbULRWsctxXjV) by **5pm** on **Wednesday, May 6th**.
+* Email us about questions regarding the homework that you need answered before the next class.
+* Post questions that you would like to have reviewed in class [here](https://pollev.com/discourses/uCqzZCBo9jQqdM3B9j5T1/respond).
 
 ## Day 4
 
@@ -64,7 +70,6 @@ Have any questions as you work through the lessons? [Please post them here or up
 
 ### Final Exercises
 1. Exercises and Answer Key
-
 
 ## Building on the basic R knowledge
 * DGE workshop
