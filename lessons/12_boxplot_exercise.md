@@ -42,8 +42,8 @@ You can color the boxplot differently by using some specific layers:
 1. Add a new layer `scale_color_manual(values=c("purple","orange"))`. 
 	* Do you observe a change?
 2. Add another layer called `scale_fill_manual(values=c("purple","orange"))`.
-	* What do you think is the difference between these 2?
-3. Change the colors in `scale_fill_manual()` to be your favorite 2 colors.
+	* What do you think is the difference between `scale_color_manual()` and `scale_fill_manual()`?
+3. Change the colors in the `scale_fill_manual()` function to be your favorite 2 colors.
 	* Are there any colors that you tried that did not work?
 
 You are not restricted to using colors by writing them out as character vectors. You have the choice of a lot of colors in R, and you can do so by using their *hexadecimal code*, [click here for more information about color palettes in R](http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/).
