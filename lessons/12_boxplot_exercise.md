@@ -22,17 +22,17 @@ Generate a boxplot using the data in the new_metadata dataframe. Create a ggplot
 1. Use the `geom_boxplot()` layer to plot the differences in sample means between the Wt and KO genotypes.
 2. Use the `fill` *aesthetic* to look at differences in sample means between the celltypes within each genotype.
 3. Add a title to your plot.
-4. Add labels, 'Genotype'for the x-axis and 'Mean expression' for the y-axis.
+4. Add labels, 'Genotype' for the x-axis and 'Mean expression' for the y-axis.
 5. Make the following `theme()` changes:
 	* Use the `theme_bw()` function to make the background white.
-	* Change the size of your axes labels to 1.5x larger than the default.
+	* Change the size of your axes labels to 1.25x larger than the default.
 	* Change the size of your plot title to 1.5x larger than default.
 	* Center the plot title.
 
 **After running the above code the boxplot should look something like that provided below.**
 
 <p align="center">
-<img src="../img/ggboxplot_new.png" width="600">
+<img src="../img/ggboxplot_flip.png" width="600">
 </p>
 
 ### 2. Changing default colors
