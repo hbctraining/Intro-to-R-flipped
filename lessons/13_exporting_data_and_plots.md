@@ -25,7 +25,7 @@ write.csv(sub_meta, file="data/subset_meta.csv")
 Oftentimes the output is not exactly what you might want. You can modify the output using the arguments for the function. We can explore the arguments using the `?`. This can help elucidate what each of the arguments can adjust the output.
 
 ```r
-?write.csv`
+?write.csv
 ```
 
 Similar to reading in data, there are a wide variety of functions available allowing you to export data in specific formats. Another commonly used function is `write.table`, which allows you to specify the delimiter or separator you wish to use. This function is commonly used to create tab-delimited files.
