@@ -19,9 +19,9 @@ ggplot(new_metadata) +
 
 # 3. Add the following new layer to the plot theme(plot.title=element_text(hjust=0.5)).
 #  * What does it change?
-## It places the title to the center of the plot
+    ## It places the title to the center of the plot
 #  * How many theme() layers can be added to a ggplot code chunk, in your estimation?
-## You can add as many theme() layers as you need
+    ## You can add as many theme() layers as you need
 
 # Creating a boxplot
 #1. boxplot
@@ -39,19 +39,19 @@ ggplot(new_metadata) +
 
 #Add a new layer scale_color_manual(values=c("purple","orange")).
 #Do you observe a change?
-## No
+    ## No
 
 #Replace scale_color_manual(values=c("purple","orange")) with scale_fill_manual(values=c("purple","orange")).
 #Do you observe a change?
-## Yes
+    ## Yes
 
 #In the scatterplot we drew in class, add a new layer scale_color_manual(values=c("purple","orange")), do you observe a difference?
-## Yes
+    ## Yes
 
 #What do you think is the difference between scale_color_manual() and scale_fill_manual()?
-## scale_color_manual() works with scatter plot, and scale_fill_#manual() works with box plot is what it appears to be
-## 
-## Actually, scale_color_manual() works if the "color" argument is used , whereas scale_fill_manual() works if the "fill" argument is used
+    ## scale_color_manual() works with scatter plot, and scale_fill_#manual() works with box plot is what it appears to be
+    ## 
+    ## Actually, scale_color_manual() works if the "color" argument is used , whereas scale_fill_manual() works if the "fill" argument is used
 
 
 ## Boxplot using "color" instead of "fill"
@@ -89,6 +89,7 @@ scale_fill_manual(values=c("#FF3333", "#3333FF"))
 # Create vector of work days
 #work_days <- c(Monday, Tuesday, Wednesday, Thursday, Friday)
 work_days <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
+
 # Create a function to round the output of the sum function
 #round_the_sum <- function(x){
 #  return(round(sum(x))
@@ -96,6 +97,7 @@ work_days <- c("Monday", "Tuesday", "Wednesday", "Thursday", "Friday")
 round_the_sum <- function(x){
   return(round(sum(x)))
 }
+
 # Create a function to add together three numbers
 #add_numbers <- function(x,y,z){
 #  sum(x,y,z)
