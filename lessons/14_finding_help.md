@@ -120,7 +120,7 @@ not related to a `data.frame`, you can save any other R data structure that you 
 3. You would like to ask for help on an online forum. To do this you want the users of the forum to reproduce your problem, so you want to provide them as much relevant information and data as possible.
 
 	- You want to provide them with the list of packages that you currently have loaded, the version of R, your OS and package versions. Use the appropriate function(s) to obtain this information.
-	- You want to also provide a small data frame that reproduces the error (if working with a large data frame, you'll need to subset it down to something small). For this exercse use the data frame `df`, and save it as an RData object called `df.RData`. 
+	- You want to also provide a small data frame that reproduces the error (if working with a large data frame, you'll need to subset it down to something small). For this exercise use the data frame `df`, and save it as an RData object called `df.RData`. 
 	- What code should the people looking at your help request should use to read in `df.RData`?
 
 ---
