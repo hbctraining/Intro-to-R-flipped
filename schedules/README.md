@@ -61,26 +61,27 @@ Have any questions as you work through the lessons? [Please post them here or up
 * **Upload the R script files from above** to [Dropbox](https://www.dropbox.com/request/GWiR8WVHbULRWsctxXjV) by **5pm** on **Wednesday, May 6th**.
 * Email us about questions regarding the homework that you need answered before the next class.
 * Post questions that you would like to have reviewed in class [here](https://pollev.com/discourses/uCqzZCBo9jQqdM3B9j5T1/respond).
+* **[Answer Key](../homework/day3_hw_answer-key.R)**
 
 ## Day 4
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 10:00 - 10:45 | Review of homework exercises | Radhika |
-| 10:45 - 12:00 | Discussion/Office hours | All |
+| 10:45 - 11:15 | Discussion/Office hours | All |
+| 11:15 - 11:30 | [Wrap Up](../lectures/R_nanocourse_wrapup_online.pdf) | Radhika |
 
 ### Final Exercises
-1. Exercises and Answer Key
+1. [Exercises](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html) and [Answer Key](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_key.html)
 
 ## Building on the basic R knowledge
-* DGE workshop
-* single-cell RNA-seq workshop
-* RMarkdown
-* Functional analysis
-* More ggplot2 and tidyverse
-* RShiny
+* [DGE workshop](https://hbctraining.github.io/DGE_workshop_salmon/)
+* [single-cell RNA-seq workshop](https://hbctraining.github.io/scRNA-seq/)
+* [RMarkdown](https://hbctraining.github.io/Training-modules/Rmarkdown/)
+* [Functional analysis](https://hbctraining.github.io/Training-modules/DGE-functional-analysis/)
+* [More ggplot2](https://hbctraining.github.io/Training-modules/Tidyverse_ggplot2/lessons/ggplot2.html)
 
 ## Resources
-* Online learning resources
-* All hbctraining materials
+* [Online learning resources](https://hbctraining.github.io/bioinformatics_online/lists/online_trainings.html)
+* [All hbctraining materials](https://hbctraining.github.io/main)
 
