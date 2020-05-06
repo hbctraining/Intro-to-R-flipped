@@ -72,7 +72,7 @@ Have any questions as you work through the lessons? [Please post them here or up
 | 11:15 - 11:30 | [Wrap Up](../lectures/R_nanocourse_wrapup_online.pdf) | Radhika |
 
 ### Final Exercises
-1. [Exercises](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html) and [Answer Key](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_key.html)
+* [Exercises](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html) and [Answer Key](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_key.html)
 
 ## Building on the basic R knowledge
 * [DGE workshop](https://hbctraining.github.io/DGE_workshop_salmon/)
