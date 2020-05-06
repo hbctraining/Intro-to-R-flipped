@@ -46,7 +46,7 @@ not related to a `data.frame`, you can save any other R data structure that you 
 		```r
 		# DO NOT RUN THIS!
 
-		some_data <- load(file="~/Downloads/iris.RData")
+		load(file="~/Downloads/iris.RData")
 		```
 
 ### Where to ask for help?
