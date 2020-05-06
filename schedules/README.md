@@ -76,7 +76,7 @@ Have any questions as you work through the lessons? [Please post them here or up
 
 ## Building on the basic R knowledge
 * [DGE workshop](https://hbctraining.github.io/DGE_workshop_salmon/)
-* [single-cell RNA-seq workshop](https://hbctraining.github.io/scRNA-seq/)
+* [Single-cell RNA-seq workshop](https://hbctraining.github.io/scRNA-seq/)
 * [RMarkdown](https://hbctraining.github.io/Training-modules/Rmarkdown/)
 * [Functional analysis](https://hbctraining.github.io/Training-modules/DGE-functional-analysis/)
 * [More ggplot2](https://hbctraining.github.io/Training-modules/Tidyverse_ggplot2/lessons/ggplot2.html)
