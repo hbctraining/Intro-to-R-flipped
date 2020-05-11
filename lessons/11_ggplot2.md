@@ -115,7 +115,7 @@ The labels on the x- and y-axis are also quite small and hard to read. To change
 
 There are built-in themes we can use (i.e. `theme_bw()`) that mostly change the background/foreground colours, by adding it as additional layer. Or we can adjust specific elements of the current default theme by adding the `theme()` layer and passing in arguments for the things we wish to change. Or we can use both.
 
-Let's add a layer `theme_bw()`. Do the axis labels or the tick labels get any larger by changing themes?
+Let's add a layer `theme_bw()`. 
 
 ```r
 ggplot(new_metadata) +
@@ -124,7 +124,11 @@ ggplot(new_metadata) +
   theme_bw() 
 ```
 
-Not in this case. But we can add arguments using `theme()` to change the size of axis labels ourselves. Since we are adding this layer on top (i.e later in sequence), any features we change will override what is set in the `theme_bw()`. Here we'll **increase the size of the axes titles to be 1.5 times the default size.** When modifying the size of text we often use the `rel()` function. In this way the size we specify is relative to the default. We can also provide the number vaue as we did with the data point size, but can be cumbersome if you don't know what the default font size is to begin with. 
+Do the axis labels or the tick labels get any larger by changing themes?
+
+No, they don't. But, we can add arguments using `theme()` to change the size of axis labels ourselves. Since we will be adding this layer "on top", or after `theme_bw()`, any features we change will override what is set by the `theme_bw()` layer. 
+
+Let's **increase the size of both the axes titles to be 1.5 times the default size.** When modifying the size of text the `rel()` function is commonly used to specify a change relative to the default.
 
 ```r
 ggplot(new_metadata) +
@@ -148,8 +152,8 @@ ggplot(new_metadata) +
 **Exercise**
 
 1. The current axis label text defaults to what we gave as input to `geom_point` (i.e the column headers). We can change this by **adding additional layers** called `xlab()` and `ylab()` for the x- and y-axis, respectively. Add these layers to the current plot such that the x-axis is labeled "Age (days)" and the y-axis is labeled "Mean expression".
-2. Use the `ggtitle` layer to add a title to your plot. 
-3. Add the following new layer to the plot `theme(plot.title=element_text(hjust=0.5))`.
+2. Use the `ggtitle` layer to add a plot title of your choice. 
+3. Add the following new layer to the code chunk `theme(plot.title=element_text(hjust=0.5))`.
   * What does it change?
   * How many theme() layers can be added to a ggplot code chunk, in your estimation?
 
