@@ -3,7 +3,7 @@
 1. Change the `animals` data frame to a tibble called `animals_tb`. Save the row names to a column called `animal_names` before turning it into a tibble.
 
 	<p align="center">
-  	<img src="../img/animals_tb_unordered.png" width="425"/>
+  	<img src="../img/animals_tb_unordered.png" width="400"/>
 	</p>
 
 2. Use ggplot2 to plot the animal names (x-axis) versus the speed of the animal (y-axis) in `animals_tb` using a scatterplot. Customize the plot to display as shown below.
@@ -36,9 +36,8 @@
 
 	**a.** Extract the rows of `animals_tb` tibble with color of grey or tan, order the rows based from slowest to fastest speed, and save to a variable called `animals_gray_tan`.
 	
-	**b.** Save `animals_gray_tan` as a comma-separated value file.
-	
 	<p align="center">
-  	<img src="../img/animals_tb_ordered.png" width="425"/>
+  	<img src="../img/animals_tb_ordered.png" width="300"/>
 	</p>	
 	
+	**b.** Save `animals_gray_tan` as a comma-separated value file.	
