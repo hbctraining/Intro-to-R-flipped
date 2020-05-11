@@ -1,4 +1,4 @@
-# Course Schedule & Content
+# Workshop Schedule
 
 ## Day 1
 
