@@ -20,20 +20,25 @@
 
 	**c.** Extract the row names of the `animals` data frame as a vector of animal names.
 	
-	**d.** Use to the indices for how to reorder the values of the `speed` column to reorder the animal names so that they go from the slowest to the fastest animal.
+	**d.** Use to the indices for how to reorder the values of the `speed` column to reorder the animal names so that they go from the slowest to the fastest animal, and save to a variable called `names_ordered_by_speed`.
 	
 	**e.** Turn the `animal_names` column into a factor and specify the levels as the animal names in order from slowest to fastest (output in part d).
 	
 	**f.** Re-plot the scatterplot with the animal names in order from slowest to fastest.
 	
+	<p align="center">
+  	<img src="../img/animals_ordered_ggplot2.png" width="425"/>
+	</p>
+	
 4. Save the plot as a PDF called `animals_by_speed_scatterplot.pdf ` to the results folder.
 
 5. Use the functions from the `dplyr` package to perform the following tasks:
 
-	**a.** Extract the rows of `animals_tb` tibble with color of grey or tan and save to variable `animals_gray_tan`.
+	**a.** Extract the rows of `animals_tb` tibble with color of grey or tan, order the rows based from slowest to fastest speed, and save to a variable called `animals_gray_tan`.
 	
-	**b.** Order the rows based from slowest to fastest speed and overwrite `animals_gray_tan`.
+	**b.** Save `animals_gray_tan` as a comma-separated value file.
 	
-	**c.** Save `animals_gray_tan` as a comma-separated value file.
-	
+	<p align="center">
+  	<img src="../img/animals_tb_ordered.png" width="425"/>
+	</p>	
 	
