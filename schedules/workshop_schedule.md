@@ -53,6 +53,7 @@
 | 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/11_ggplot2.md) | Radhika |
 
 ### Self-Learning Part 3
+1. [Using custom functions for consistent plots](../lessons/11b_Custom_Functions_ggplot2.md)
 1. [Generating a boxplot with ggplot2](../lessons/12_boxplot_exercise.md)
 1. [Writing to file and exporting plots](../lessons/13_exporting_data_and_plots.md)
 1. [Finding help](../lessons/14_finding_help.md)
