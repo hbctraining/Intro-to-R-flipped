@@ -30,7 +30,7 @@
   	<img src="../img/animals_ordered_ggplot2.png" width="425"/>
 	</p>
 	
-4. Save the plot as a PDF called `animals_by_speed_scatterplot.pdf ` to the results folder.
+4. Save the plot as a PDF called `animals_by_speed_scatterplot.pdf ` to the `results` folder.
 
 5. Use the functions from the `dplyr` package to perform the following tasks:
 
@@ -40,4 +40,4 @@
   	<img src="../img/animals_tb_ordered.png" width="300"/>
 	</p>	
 	
-	**b.** Save `animals_gray_tan` as a comma-separated value file.	
+	**b.** Save `animals_gray_tan` as a comma-separated value file called `animals_tb_ordered.csv` to the `results` folder.	
