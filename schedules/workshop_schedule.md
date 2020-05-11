@@ -18,6 +18,8 @@
 * [Email us](mailto: hbctraining@hsph.harvard.edu) about questions regarding the homework that you need answered before the next class.
 * Post questions that you would like to have reviewed in class [here]().
 
+---
+
 ## Day 2
 
 | Time            |  Topic  | Instructor |
@@ -40,6 +42,8 @@
 * [Email us](mailto: hbctraining@hsph.harvard.edu)  about questions regarding the homework that you need answered before the next class.
 * Post questions that you would like to have reviewed in class [here]().
 
+---
+
 ## Day 3
 
 | Time            |  Topic  | Instructor |
@@ -59,6 +63,8 @@
 * **Upload the R script files from above** to [Dropbox]() by **5pm** on **Wednesday before the next class**.
 * [Email us](mailto: hbctraining@hsph.harvard.edu)  about questions regarding the homework that you need answered before the next class.
 * Post questions that you would like to have reviewed in class [here]().
+
+---
 
 ## Day 4
 
