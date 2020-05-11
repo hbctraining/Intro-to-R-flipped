@@ -14,9 +14,9 @@
 
 ### Assignment #1
 * All exercises from above lessons have been put together in [html format](../homework/day1_hw_exercises.md) (web access) and [R script format](../homework/day1_hw_exercises.R) (download for local access).
-* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox]() by **5pm** on **Wednesday before the next class**.
+* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox](https://www.dropbox.com/request/fu2sxxovlihR2WMxoNJP) by **5pm** on **Wednesday before the next class**.
 * [Email us](mailto: hbctraining@hsph.harvard.edu) about questions regarding the homework that you need answered before the next class.
-* Post questions that you would like to have reviewed in class [here]().
+* Post questions that you would like to have reviewed in class [here](PollEv.com/hbctraining945).
 
 ---
 
@@ -38,9 +38,9 @@
 
 ### Assignment #2
 * All exercises from above lessons have been put together in [R script format](../homework/day2_hw_exercises.R).
-* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox]() by **5pm** on **Monday before the next class**.
+* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox](https://www.dropbox.com/request/ozN5bDDPYhrFgDkN9jJn) by **5pm** on **Monday before the next class**.
 * [Email us](mailto: hbctraining@hsph.harvard.edu)  about questions regarding the homework that you need answered before the next class.
-* Post questions that you would like to have reviewed in class [here]().
+* Post questions that you would like to have reviewed in class [here](PollEv.com/hbctraining945).
 
 ---
 
@@ -60,9 +60,9 @@
 
 ### Assignment #3
 * **Create an R script with comments and exercise solutions** similar to the R scripts we provided previously.
-* **Upload the R script files from above** to [Dropbox]() by **5pm** on **Wednesday before the next class**.
+* **Upload the R script files from above** to [Dropbox](https://www.dropbox.com/request/zrl94pV9RdEubnLE3IUF) by **5pm** on **Wednesday before the next class**.
 * [Email us](mailto: hbctraining@hsph.harvard.edu)  about questions regarding the homework that you need answered before the next class.
-* Post questions that you would like to have reviewed in class [here]().
+* Post questions that you would like to have reviewed in class [here](PollEv.com/hbctraining945).
 
 ---
 
