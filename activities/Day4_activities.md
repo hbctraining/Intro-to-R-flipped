@@ -34,7 +34,7 @@
 
 5. Use the functions from the `dplyr` package to perform the following tasks:
 
-	**a.** Extract the rows of `animals_tb` tibble with color of grey or tan, order the rows based from slowest to fastest speed, and save to a variable called `animals_gray_tan`.
+	**a.** Extract the rows of `animals_tb` tibble with color of gray or tan, order the rows based from slowest to fastest speed, and save to a variable called `animals_gray_tan`.
 	
 	<p align="center">
   	<img src="../img/animals_tb_ordered.png" width="300"/>
