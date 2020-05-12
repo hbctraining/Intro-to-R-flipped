@@ -1,5 +1,4 @@
 #1.
-animals[animals$color == "Grey", "color"] <- "Gray"
 animals_tb <- animals %>%
         rownames_to_column(var = "animal_names") %>%
         as_tibble()
