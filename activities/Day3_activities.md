@@ -29,3 +29,8 @@ ctrl_samples <- data.frame(row.names = c("sample3", "sample10", "sample8", "samp
 3. Keep only the rows in `proj_summary` which correspond to those in `ctrl_samples`. Do this with the %in% operator. Save it to a variable called `proj_summary_ctrl`.
 4. We would like to add in the batch information for the samples in `proj_summary_ctrl`. Find the rows that match in `ctrl_samples`.
 5. Use `cbind()` to add a column called `batch` to the `proj_summary_ctrl` dataframe. Assign this new dataframe back to `proj_summary_ctrl`.
+
+## BONUS: Using `map()` for statistical computation
+
+1. Subset `proj_summary` to keep only the "high" and "low" samples based on the treament column. Save the new dataframe to a variable called `proj_summary_noctl`.
+2. Further subset the dataframe to remove the non-numeric columns "Quality_format", and "treatment". Try to do this using the `map_lgl()` function in addition to `is.numeric()`. Save the new dataframe back to `proj_summary_noctl`.
