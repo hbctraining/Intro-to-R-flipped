@@ -22,7 +22,8 @@
 1. In your environment you should have a dataframe called `proj_summary` which contains quality metric information for an RNA-seq dataset. We have obtained batch information for the control samples in this dataset. **Copy and paste the code below to create a dataframe of control samples with the associated batch information**:
 
 ```
-ctrl_samples <- data.frame(row.names = c("sample3", "sample10", "sample9", "sample7", "sample15"), date = c("01/13/2018", "03/15/2018", "01/13/2018", "09/20/2018","03/15/2018"))
+ctrl_samples <- data.frame(row.names = c("sample3", "sample10", "sample9", "sample7", "sample15"), 
+                           date = c("01/13/2018", "03/15/2018", "01/13/2018", "09/20/2018","03/15/2018"))
 ```
 
 2. How many of the control samples are also in the `proj_summary` dataframe? Use the %in% operator to check.
