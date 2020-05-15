@@ -24,9 +24,9 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:20 | Questions about self-learning lessons | Mary |
-| 10:20 - 11:00 | In-class exercises |  |
-| 11:00 - 11:30 | [Packages and libraries](../lessons/04_introR_packages.md) | Jihe |
+| 10:00 - 10:20 | Questions about self-learning lessons | Mary/Jihe |
+| 10:20 - 11:00 | In-class exercises | Jihe |
+| 11:00 - 11:30 | [Packages and libraries](../lessons/04_introR_packages.md) | Meeta |
 | 11:30 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Radhika |
 
 ### Self-Learning Part 2
@@ -48,8 +48,8 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:20 | Questions about self-learning lessons |  |
-| 10:20 - 11:15 | In-class exercises |  |
+| 10:00 - 10:20 | Questions about self-learning lessons | Jihe |
+| 10:20 - 11:15 | In-class exercises | Meeta  |
 | 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/11_ggplot2.md) | Radhika |
 
 ### Self-Learning Part 3
@@ -71,9 +71,9 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:20 | Questions about self-learning lessons |  |
-| 10:20 - 11:15 | In-class exercises |  |
-| 11:15 - 11:45 | Discussion, Q & A |  |
+| 10:00 - 10:20 | Questions about self-learning lessons | Meeta |
+| 10:20 - 11:15 | In-class exercises | Mary |
+| 11:15 - 11:45 | Discussion, Q & A | All |
 | 11:45 - 12:00 | [Wrap Up](../lectures/R_nanocourse_wrapup_online.pdf) | Radhika |
 
 ### Final Exercises
