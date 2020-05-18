@@ -5,8 +5,8 @@
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 10:00 - 10:30 | Workshop Introduction | Radhika |
-| 10:30 - 11:15 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Radhika |
-| 11:15 - 11:30 | Overview of self-learning materials and homework submission |  Mary |
+| 10:30 - 11:15 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Meeta |
+| 11:15 - 11:30 | Overview of self-learning materials and homework submission |  Radhika |
 
 ### Self-Learning Part 1
 1. [R Syntax and Data Structure](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html)
@@ -24,7 +24,7 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:20 | Questions about self-learning lessons | Mary/Jihe |
+| 10:00 - 10:20 | Questions about self-learning lessons | Radhika |
 | 10:20 - 11:00 | In-class exercises | Jihe |
 | 11:00 - 11:30 | [Packages and libraries](../lessons/04_introR_packages.md) | Meeta |
 | 11:30 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Radhika |
