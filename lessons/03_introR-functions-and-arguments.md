@@ -159,8 +159,8 @@ Pretty simple, right? In this case, we only had one line of code that was run, b
 ***
 **Exercise** 
 
-1. Write a function called `multiply_it`, which takes two inputs: a numeric value `x`, and a numeric value `y`. The function will return the product of these two numeric values, which is `x * y`. Apply this function and check if the result is as expected.
-2. Set the **default** value of `y` as 5 in the `multiply_it` function (hint: this can be done by assigning the value inside the input parentheses). Apply this function by specifying only one input `x`, and check if the result is as expected. Also see if you can **overwrite** the default value of `y` by specifying both `x` and `y` values when applying this function.
+1. Write a function called `multiply_it`, which takes two inputs: a numeric value `x`, and a numeric value `y`. The function will return the product of these two numeric values, which is `x * y`. For example, `multiply_it(x=4, y=6)` will return output `24`.
+2. Re-write the function `multiply_it`, where `y` is set with a **default** value of 6 (hint: assign the value when defining the input). Apply this function by providing only one input `x`. For example, `multiply_it(x=4)` will return output `24`. Also test if you can **overwrite** the default value of `y` by providing both `x` and `y` values as arguments in the function. For example, `multiply_it(x=4, y=8)` will return output `32`, but not `24`.
 
 ---
 
