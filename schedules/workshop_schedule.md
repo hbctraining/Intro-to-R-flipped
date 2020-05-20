@@ -25,7 +25,7 @@
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 10:00 - 10:20 | Questions about self-learning lessons | Radhika |
-| 10:20 - 11:00 | In-class exercises | Jihe |
+| 10:20 - 11:00 | [In-class exercises](../activities/Day2_activities.md) | Jihe |
 | 11:00 - 11:30 | [Packages and libraries](../lessons/04_introR_packages.md) | Meeta |
 | 11:30 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Radhika |
 
