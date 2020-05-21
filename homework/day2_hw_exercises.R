@@ -1,5 +1,13 @@
 ## Day 2 Homework Exercises
 
+### Packages and Libraries
+
+# 1. Install the tidyverse, it is a suite of packages we will be going over later. NOTE: This suite of packages is only available in CRAN.
+
+# 2. Load the tidyverse library. Do you see anything unusual when it loads?
+
+# 3. Run sessionInfo().
+
 ### Data wrangling: Subsetting vectors and factors
 
 # 1. Create a vector called alphabets with the following letters, C, D, X, L, F.
@@ -11,7 +19,7 @@
 
 # 3. Extract only those elements in samplegroup that are not KO (nesting the logical operation is optional).
 
-# 4. Use the samplegroup factor we created in a previous lesson, and relevel it such that KO is the first level followed by CTL and OE.
+# 4. *[OPTIONAL- will be covered in class]* Use the samplegroup factor we created in a previous lesson, and relevel it such that KO is the first level followed by CTL and OE.
 
 ############################
 
