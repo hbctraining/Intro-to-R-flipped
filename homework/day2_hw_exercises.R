@@ -2,7 +2,7 @@
 
 ### Packages and Libraries
 
-# 1. Install the tidyverse, it is a suite of packages we will be going over later. NOTE: This suite of packages is only available in CRAN.
+# 1. Install the tidyverse package (it is actually a suite of packages). NOTE: This suite of packages is only available in CRAN.
 
 # 2. Load the tidyverse library. Do you see anything unusual when it loads?
 
