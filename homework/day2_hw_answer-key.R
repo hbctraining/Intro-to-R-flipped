@@ -1,5 +1,17 @@
 ## Day 2 Homework Exercises
 
+### Packages and Libraries
+
+# 1. Install the tidyverse package (it is actually a suite of packages). NOTE: This suite of packages is only available in CRAN.
+install.packages("tidyverse")
+
+# 2. Load the tidyverse library. Do you see anything unusual when it loads?
+library(tidyverse)
+#Some functions from dyplyr (part of tidyverse package) mask the same functions from the basic stats. But that is fine! If you need to use filter function from stats, you can type 'stats::filter()'
+
+# 3. Run sessionInfo().
+sessionInfo()
+
 ### Data wrangling: Subsetting vectors and factors
 
 # 1. Create a vector called alphabets with the following letters, C, D, X, L, F.
