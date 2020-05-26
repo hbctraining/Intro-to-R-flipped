@@ -32,7 +32,7 @@ Let's start:
 ggplot(new_metadata) # what happens? 
 ```
 
-> If you don't have the new_metadata object, you can right-click to download and save an `rds` file [from here](https://www.dropbox.com/s/xwsaisraubghawt/new_metadata.rds?dl=1) into the project `data` folder, and load it in using the `readRDS("data/new_metadata.rds")`.
+> If you don't have the new_metadata object, you can right-click to download and save an `rds` file [from here](https://www.dropbox.com/s/xwsaisraubghawt/new_metadata.rds?dl=1) into the project `data` folder, and load it in using the `new_metadata <- readRDS("data/new_metadata.rds")`.
 
 You get an blank plot, because you need to **specify additional layers** using the `+` operator.
 
