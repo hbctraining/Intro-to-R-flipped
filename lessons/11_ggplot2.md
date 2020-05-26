@@ -32,6 +32,8 @@ Let's start:
 ggplot(new_metadata) # what happens? 
 ```
 
+> If you don't have the new_metadata object, you can right-click to download and save an `rds` file [from here](https://www.dropbox.com/s/xwsaisraubghawt/new_metadata.rds?dl=1) into the project `data` folder, and load it in using the `readRDS("data/new_metadata.rds")`.
+
 You get an blank plot, because you need to **specify additional layers** using the `+` operator.
 
 The **geom (geometric) object** is the layer that specifies what kind of plot we want to draw. A plot **must have at least one `geom`**; there is no upper limit. Examples include:
