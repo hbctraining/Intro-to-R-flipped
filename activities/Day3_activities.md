@@ -3,7 +3,7 @@
 ## Reading in and inspecting data
 
 1. Download the [animals.csv](https://raw.githubusercontent.com/hbctraining/Intro-to-R-flipped/master/data/animals.csv), by right-clicking on the link and "Save Link As..." to place the file into the `data` directory.
-2. Read the csv file into your environment and assign it to a variable called `animals`. Be sure to check that your row names are the different animals.
+2. Read the `.csv` file into your environment and assign it to a variable called `animals`. **Be sure to check that your row names are the different animals.**
 3. Check to make sure that `animals` is a dataframe.
 4. How many rows are in the `animals` dataframe? How many columns?
 
@@ -33,4 +33,4 @@ ctrl_samples <- data.frame(row.names = c("sample3", "sample10", "sample8", "samp
 ## BONUS: Using `map_lgl()`
 
 1. Subset `proj_summary` to keep only the "high" and "low" samples based on the treament column. Save the new dataframe to a variable called `proj_summary_noctl`.
-2. Further subset the dataframe to remove the non-numeric columns "Quality_format", and "treatment". Try to do this using the `map_lgl()` function in addition to `is.numeric()`. Save the new dataframe back to `proj_summary_noctl`.
+2. Further, subset the dataframe to remove the non-numeric columns "Quality_format", and "treatment". Try to do this using the `map_lgl()` function in addition to `is.numeric()`. Save the new dataframe back to `proj_summary_noctl`.
