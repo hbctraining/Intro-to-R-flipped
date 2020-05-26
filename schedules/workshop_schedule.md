@@ -63,8 +63,8 @@
 1. [Tidyverse](https://hbctraining.github.io/Training-modules/Tidyverse_ggplot2/lessons/intro_tidyverse.html)
 
 ### Assignment #3
-* **Create an R script with comments and exercise solutions** similar to the R scripts we provided previously.
-* **Upload the R script files from above** to [Dropbox](https://www.dropbox.com/request/zrl94pV9RdEubnLE3IUF) on **Wednesday before the next class**.
+* All exercises from above lessons have been put together in [R script format](../homework/day3_hw_exercises.R).
+* Add your solutions to the exercises in the downloaded `.R` file. **Upload the R script files** to [Dropbox](https://www.dropbox.com/request/zrl94pV9RdEubnLE3IUF) on **Wednesday before the next class**.
 * [Email us](mailto:hbctraining@hsph.harvard.edu)  about questions regarding the homework that you need answered before the next class.
 * Post questions that you would like to have reviewed in class [here](https://PollEv.com/hbctraining945).
 
