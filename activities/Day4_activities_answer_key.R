@@ -1,9 +1,9 @@
-#1.
+#1. Change the animals data frame to a tibble called animals_tb. Save the row names to a column called animal_names before turning it into a tibble.
 animals_tb <- animals %>%
         rownames_to_column(var = "animal_names") %>%
         as_tibble()
 
-#2.
+#2. Use ggplot2 to plot the animal names (x-axis) versus the speed of the animal (y-axis) in animals_tb using a scatterplot. Customize the plot to display as shown below.
 ggplot(animals_tb) +
         geom_point(aes(x = animal_names, y = speed), color = "purple") +
         theme_bw() +
@@ -12,25 +12,25 @@ ggplot(animals_tb) +
         xlab("Animal") +
         theme(plot.title=element_text(hjust=0.5))
 
-#3.
+#3. We decide that our plot would look better with the animal names ordered from slowest to fastest. Using the animals_tb data frame, reorder the animals on the x-axis to start with the slowest animal on the left-hand side of the plot to the fastest animal on the right-hand side of the plot by completing the following steps:
 
-#a.
+#a. Extract the speed column as a vector.
 animals_tb$speed
 
-#b.
+#b. Determine the indices for how to reorder the values of the speed vector to go from the slowest animal to the fastest animal using the order() function.
 order(animals_tb$speed)
 
-#c.
+#c. Extract the row names of the animals data frame as a vector of animal names.
 animals_tb$animal_names
 
-#d.
+#d. Use to the indices for how to reorder the values of the speed column to reorder the animal names so that they go from the slowest to the fastest animal, and save to a variable called names_ordered_by_speed.
 names_ordered_by_speed <- animals_tb$animal_names[order(animals_tb$speed)]
 
-#e.
+#e. Turn the animal_names column into a factor and specify the levels as the animal names in order from slowest to fastest (output in part d).
 animals_tb$animal_names <- factor(animals_tb$animal_names, 
                                   levels = names_ordered_by_speed)
 
-#f.
+#f. Re-plot the scatterplot with the animal names in order from slowest to fastest.
 ggplot(animals_tb) +
         geom_point(aes(x = animal_names, y = speed), color = "purple") +
         theme_bw() +
@@ -39,7 +39,7 @@ ggplot(animals_tb) +
         xlab("Animal") +
         theme(plot.title=element_text(hjust=0.5))
 
-#4. 
+#4. Save the plot as a PDF called animals_by_speed_scatterplot.pdf to the results folder.
 pdf("results/animals_by_speed_scatterplot.pdf")
 
 ggplot(animals_tb) +
@@ -52,10 +52,15 @@ ggplot(animals_tb) +
 
 dev.off()
 
-#5. 
+#5. Use the functions from the dplyr package to perform the following tasks:
+
+#a. Extract the rows of animals_tb tibble with color of gray or tan, order the rows based from slowest to fastest speed, and save to a variable called animals_gray_tan.
+
 animals_gray_tan <- animals_tb %>% 
         filter(color == "Gray" | color == "Tan") %>%
         arrange(speed)
+
+#b. Save animals_gray_tan as a comma-separated value file called animals_tb_ordered.csv to the results folder.
 
 write.csv(animals_gray_tan,
           file = "~/Desktop/animals_tb_ordered.csv",
