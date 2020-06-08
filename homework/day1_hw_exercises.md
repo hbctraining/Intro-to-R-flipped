@@ -44,3 +44,26 @@
 4. Write a function called `multiply_it`, which takes two inputs: a numeric value `x`, and a numeric value `y`. The function will return the product of these two numeric values, which is `x * y`. For example, `multiply_it(x=4, y=6)` will return output `24`.
 
 5. Re-write the function `multiply_it`, where `y` is set with a **default** value of 6 (hint: assign the value when defining the input). Apply this function by providing only one input `x`. For example, `multiply_it(x=4)` will return output `24`. Also test if you can **overwrite** the default value of `y` by providing both `x` and `y` values as arguments in the function. For example, `multiply_it(x=4, y=8)` will return output `32`, but not `24`.
+
+
+### Reading in and inspecting data
+
+1. Download [this tab-delimited .txt file](https://www.dropbox.com/s/k2mlcqn4823g400/project-summary.txt?dl=1) and save it in your project’s "data" folder.
+      i. Read it in to R using `read.table()` and store it as the variable `proj_summary`. As you use `read.table()`, keep in mind that: 
+              a. all the columns in the input text file have column names 
+              b. you want the first column of the text file to be used as row names (hint: look up the row.names = argument)
+      ii. Display the contents of `proj_summary` in your console
+
+2. Use the `class()` function on the `glengths` and `metadata` objects, how does the output differ between the two?
+
+3. Use the `summary()` function on the `proj_summary` dataframe
+      i. What is the median "rRNA_rate"?
+      ii. How many samples got the “low” level of treatment?
+
+4. How long is the `samplegroup` factor?
+
+5. What are the dimensions of the ``proj_summary` dataframe?
+
+6. When you use the `rownames()` function on `metadata`, what is the *data structure* of the output?
+
+7. [Optional] How many elements in (how long is) the output of `colnames(proj_summary)`? Don’t count, but use another function to determine this.
