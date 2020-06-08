@@ -109,9 +109,9 @@ Earlier we noted that the file we just read in had column names (first row of va
 **Exercise 1**
 
 * Download [this tab-delimited `.txt` file](https://www.dropbox.com/s/k2mlcqn4823g400/project-summary.txt?dl=1) and save it in your  project's `data` folder.
-* Read it in to R using `read.table()` and store it as the variable `proj_summary`, keeping in mind that -
-	- all the columns have column names
-	- you want the first column to be used as rownames (*hint: look up the `row.names =` argument*)
+* Read it in to R using `read.table()` and store it as the variable `proj_summary`. As you use `read.table()`, keep in mind that:
+	- all the columns in the input text file have column names
+	- you want the first column of the text file to be used as row names (hint: look up the row.names = argument)
 * Display the contents of `proj_summary` in your console
 
 ***
@@ -175,12 +175,12 @@ We have some exercises below that will allow you to gain more familiarity with t
 
 * Use the `class()` function on `glengths` and `metadata`, how does the output differ between the two?
 * Use the `summary()` function on the `proj_summary` dataframe
-	* What is the median rRNA_rate?
+	* What is the median "rRNA_rate"?
 	* How many samples got the "low" level of treatment
 * How long is the `samplegroup` factor?
 * What are the dimensions of the `proj_summary` dataframe?
-* When you use the `rownames()` function on `metadata`, what is the data structure of the output?
-* How many elements in (how long is) the output of `colnames(proj_summary)`? Don't count, but use another function to determine this.
+* When you use the `rownames()` function on `metadata`, what is the *data structure* of the output?
+* [Optional] How many elements in (how long is) the output of `colnames(proj_summary)`? Don't count, but use another function to determine this.
 
 ***
 ---
