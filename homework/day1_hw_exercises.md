@@ -51,15 +51,15 @@
 1. Download [this tab-delimited .txt file](https://www.dropbox.com/s/k2mlcqn4823g400/project-summary.txt?dl=1) and save it in your project’s "data" folder.
 
     1. Read it in to R using `read.table()` and store it as the variable `proj_summary`. As you use `read.table()`, keep in mind that:       
-        1. all the columns in the input text file have column names 
-        1. you want the first column of the text file to be used as row names (hint: look up the row.names = argument
+        * all the columns in the input text file have column names 
+        * you want the first column of the text file to be used as row names (hint: look up the row.names = argument
     1. Display the contents of `proj_summary` in your console
 
 2. Use the `class()` function on the `glengths` and `metadata` objects, how does the output differ between the two?
 
 3. Use the `summary()` function on the `proj_summary` dataframe
-      i. What is the median "rRNA_rate"?
-      ii. How many samples got the “low” level of treatment?
+      * What is the median "rRNA_rate"?
+      * How many samples got the “low” level of treatment?
 
 4. How long is the `samplegroup` factor?
 
