@@ -11,6 +11,7 @@
 ### Self-Learning Part 1
 1. [R Syntax and Data Structure](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html)
 1. [Functions and Arguments](../lessons/03_introR-functions-and-arguments.md)
+1. [Reading in and inspecting data](../lessons/06_reading_and_data_inspection.md)
 
 ### Assignment #1
 * All exercises from above lessons have been put together in [html format](../homework/day1_hw_exercises.md) (web access) and [R script format](../homework/day1_hw_exercises.R) (download for local access).
@@ -31,7 +32,6 @@
 | 11:30 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Radhika |
 
 ### Self-Learning Part 2
-1. [Reading in and inspecting data](../lessons/06_reading_and_data_inspection.md)
 1. [Data wrangling: data frames, matrices and lists](../lessons/07_introR-data-wrangling2.md)
 1. [The %in% operator](../lessons/08_identifying-matching-elements.md)
 1. [Reordering and matching](../lessons/09_reordering-to-match-datasets.md)
