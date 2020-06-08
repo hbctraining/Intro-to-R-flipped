@@ -28,8 +28,8 @@
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 10:00 - 10:20 | Questions about self-learning & [cheatsheet creation](https://docs.google.com/spreadsheets/d/18XCZ7mSCHm1JUZ6rRwRAD5c1-Fm773oONianSeMcQkg/edit#gid=0) | Radhika |
 | 10:20 - 11:00 | [In-class exercises](../activities/Day2_activities.md) + [Answer key](../activities/Day2_activities_answer_key.R) | Jihe |
-| 11:00 - 11:30 | [Packages and libraries](../lessons/04_introR_packages.md) | Meeta |
-| 11:30 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Radhika |
+| 11:00 - 11:30 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Radhika |
+| 11:30 - 12:00 | [Packages and libraries](../lessons/04_introR_packages.md) | Meeta |
 
 ### Self-Learning Part 2
 1. [Data wrangling: data frames, matrices and lists](../lessons/07_introR-data-wrangling2.md)
