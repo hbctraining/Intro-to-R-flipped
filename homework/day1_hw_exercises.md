@@ -62,7 +62,7 @@
 
 4. How long is the `samplegroup` factor?
 
-5. What are the dimensions of the ``proj_summary` dataframe?
+5. What are the dimensions of the `proj_summary` dataframe?
 
 6. When you use the `rownames()` function on `metadata`, what is the *data structure* of the output?
 
