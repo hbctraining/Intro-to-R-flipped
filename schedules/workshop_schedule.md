@@ -15,10 +15,10 @@
 
 ### Assignment #1
 * All exercises from above lessons have been put together in [html format](../homework/day1_hw_exercises.md) (web access) and [R script format](../homework/day1_hw_exercises.R) (download for local access).
-* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox](https://www.dropbox.com/request/fu2sxxovlihR2WMxoNJP) on **Wednesday before the next class**.
+* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to Dropbox on **Wednesday before the next class**.
 * [Email us](mailto:hbctraining@hsph.harvard.edu) about questions regarding the homework that you need answered before the next class.
 * Post questions that you would like to have reviewed in class [here](https://PollEv.com/hbctraining945).
-* **[Answer Key](../homework/day1_hw_answer-key.R)**
+* Answer Key
 
 ---
 
@@ -40,10 +40,10 @@
 
 ### Assignment #2
 * All exercises from above lessons have been put together in [R script format](../homework/day2_hw_exercises.R).
-* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox](https://www.dropbox.com/request/ozN5bDDPYhrFgDkN9jJn) on **Monday before the next class**.
+* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to Dropbox.
 * [Email us](mailto:hbctraining@hsph.harvard.edu)  about questions regarding the homework that you need answered before the next class.
 * Post questions that you would like to have reviewed in class [here](https://PollEv.com/hbctraining945).
-* **[Answer Key](../homework/day2_hw_answer-key.R)**
+* Answer Key
 
 ---
 
@@ -52,7 +52,7 @@
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 10:00 - 10:20 | Questions about self-learning lessons | Jihe |
-| 10:20 - 11:15 | [In-class exercises](../activities/Day3_activities.md) + [Answer key](../activities/Day3_activities_answer_key.R)| Meeta  |
+| 10:20 - 11:15 | [In-class exercises](../activities/Day3_activities.md) + [Answer key](../activities/Day3_activities_answer_key.R)| Mary  |
 | 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/11_ggplot2.md) | Radhika |
 
 ### Self-Learning Part 3
@@ -64,10 +64,10 @@
 
 ### Assignment #3
 * All exercises from above lessons have been put together in [R script format](../homework/day3_hw_exercises.R).
-* Add your solutions to the exercises in the downloaded `.R` file. **Upload the R script files** to [Dropbox](https://www.dropbox.com/request/zrl94pV9RdEubnLE3IUF) on **Wednesday before the next class**.
-* [Email us](mailto:hbctraining@hsph.harvard.edu)  about questions regarding the homework that you need answered before the next class.
+* Add your solutions to the exercises in the downloaded `.R` file. **Upload the R script files** to Dropbox.
+* [Email us](mailto:hbctraining@hsph.harvard.edu) about questions regarding the homework that you need answered before the next class.
 * Post questions that you would like to have reviewed in class [here](https://PollEv.com/hbctraining945).
-* **[Answer Key](../homework/day3_hw_answer-key.R)**
+* Answer Key
 
 ---
 
@@ -75,10 +75,10 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:20 | Questions about self-learning lessons | Meeta |
-| 10:20 - 11:15 | [In-class exercises](../activities/Day4_activities.md) + [Answer key](../activities/Day4_activities_answer_key.R) | Mary |
+| 10:00 - 10:20 | Questions about self-learning lessons | Mary |
+| 10:20 - 11:15 | [In-class exercises](../activities/Day4_activities.md) + [Answer key](../activities/Day4_activities_answer_key.R) | Jihe |
 | 11:15 - 11:45 | Discussion, Q & A | All |
-| 11:45 - 12:00 | [Wrap Up](https://github.com/hbctraining/Intro-to-R-flipped/raw/master/lectures/R_workshop_wrapup_online.pdf) | Mary |
+| 11:45 - 12:00 | [Wrap Up](https://github.com/hbctraining/Intro-to-R-flipped/raw/master/lectures/R_workshop_wrapup_online.pdf) | Radhika |
 
 ### Final Exercises
 * [Exercises](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html) and [Answer Key](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_key.html)
