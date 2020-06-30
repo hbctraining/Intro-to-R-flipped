@@ -14,23 +14,17 @@ ggplot(animals_tb) +
 
 #3. We decide that our plot would look better with the animal names ordered from slowest to fastest. Using the animals_tb data frame, reorder the animals on the x-axis to start with the slowest animal on the left-hand side of the plot to the fastest animal on the right-hand side of the plot by completing the following steps:
 
-#a. Extract the speed column as a vector.
-animals_tb$speed
+#a. Use the `arrange()` function to order the rows by speed from slowest to fastest and save to `animals_arranged`.
+animals_arranged <- animals_tb %>% arrange(speed)
 
-#b. Determine the indices for how to reorder the values of the speed vector to go from the slowest animal to the fastest animal using the order() function.
-order(animals_tb$speed)
-
-#c. Extract the row names of the animals data frame as a vector of animal names.
-animals_tb$animal_names
-
-#d. Use to the indices for how to reorder the values of the speed column to reorder the animal names so that they go from the slowest to the fastest animal, and save to a variable called names_ordered_by_speed.
-names_ordered_by_speed <- animals_tb$animal_names[order(animals_tb$speed)]
-
-#e. Turn the animal_names column into a factor and specify the levels as the animal names in order from slowest to fastest (output in part d).
+#b. Extract the animal names as a vector called `names_ordered_by_speed`.
+names_ordered_by_speed <- animals_arranged$animal_names
+	
+#c. Turn the `animal_names` column into a factor and specify the levels as `names_ordered_by_speed` from slowest to fastest (output in part b).
 animals_tb$animal_names <- factor(animals_tb$animal_names, 
-                                  levels = names_ordered_by_speed)
+                                        levels = names_ordered_by_speed)
 
-#f. Re-plot the scatterplot with the animal names in order from slowest to fastest.
+#d. Re-plot the scatterplot with the animal names in order from slowest to fastest.
 ggplot(animals_tb) +
         geom_point(aes(x = animal_names, y = speed), color = "purple") +
         theme_bw() +
