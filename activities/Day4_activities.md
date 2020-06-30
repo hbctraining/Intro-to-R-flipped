@@ -16,9 +16,9 @@
 
 	**a.** Use the `arrange()` function to order the rows by speed from slowest to fastest and save to `animals_arranged`.
 
-	**b.** Extract the animal names as a vector called `names_ordered_by_speed`.
+	**b.** Extract the animal names from `animals_arranged` as a vector called `names_ordered_by_speed`.
 	
-	**c.** Turn the `animal_names` column into a factor and specify the levels as `names_ordered_by_speed` from slowest to fastest (output in part b).
+	**c.** Turn the `animal_names` column of `animals_tb` into a factor and specify the levels as `names_ordered_by_speed` from slowest to fastest (output in part b).
 	
 	**d.** Re-plot the scatterplot with the animal names in order from slowest to fastest.
 	
