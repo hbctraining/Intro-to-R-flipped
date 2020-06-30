@@ -17,12 +17,12 @@ ggplot(animals_tb) +
 #a. Use the `arrange()` function to order the rows by speed from slowest to fastest and save to `animals_arranged`.
 animals_arranged <- animals_tb %>% arrange(speed)
 
-#b. Extract the animal names as a vector called `names_ordered_by_speed`.
+#b. Extract the animal names from `animals_arranged` as a vector called `names_ordered_by_speed`.
 names_ordered_by_speed <- animals_arranged$animal_names
 	
-#c. Turn the `animal_names` column into a factor and specify the levels as `names_ordered_by_speed` from slowest to fastest (output in part b).
+#c. Turn the `animal_names` column of `animals_tb` into a factor and specify the levels as `names_ordered_by_speed` from slowest to fastest (output in part b).
 animals_tb$animal_names <- factor(animals_tb$animal_names, 
-                                        levels = names_ordered_by_speed)
+                                  levels = names_ordered_by_speed)
 
 #d. Re-plot the scatterplot with the animal names in order from slowest to fastest.
 ggplot(animals_tb) +
