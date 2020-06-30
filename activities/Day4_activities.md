@@ -14,17 +14,13 @@
 
 3. We decide that our plot would look better with the animal names ordered from slowest to fastest. Using the `animals_tb` data frame, reorder the animals on the x-axis to start with the slowest animal on the left-hand side of the plot to the fastest animal on the right-hand side of the plot by completing the following steps:
 
-	**a.** Extract the `speed` column as a vector.
-	
-	**b.** Determine the indices for how to reorder the values of the `speed` vector to go from the slowest animal to the fastest animal using the `order()` function. 
+	**a.** Use the `arrange()` function to order the rows by speed from slowest to fastest.
 
-	**c.** Extract the row names of the `animals` data frame as a vector of animal names.
+	**b.** Extract the animal names as a vector called `animals_ordered`.
 	
-	**d.** Use to the indices for how to reorder the values of the `speed` column to reorder the animal names so that they go from the slowest to the fastest animal, and save to a variable called `names_ordered_by_speed`.
+	**c.** Turn the `animal_names` column into a factor and specify the levels as `animals_ordered` from slowest to fastest (output in part b).
 	
-	**e.** Turn the `animal_names` column into a factor and specify the levels as the animal names in order from slowest to fastest (output in part d).
-	
-	**f.** Re-plot the scatterplot with the animal names in order from slowest to fastest.
+	**d.** Re-plot the scatterplot with the animal names in order from slowest to fastest.
 	
 	<p align="center">
   	<img src="../img/animals_ordered_ggplot2.png" width="425"/>
