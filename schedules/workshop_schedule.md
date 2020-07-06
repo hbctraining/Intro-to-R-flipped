@@ -4,7 +4,7 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:30 | [Workshop Introduction](../lectures/Intro_to_workshop_online.pdf) | Radhika |
+| 10:00 - 10:30 | [Workshop Introduction](../lectures/Intro_to_workshop_dfhcc.pdf) | Radhika |
 | 10:30 - 11:15 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Meeta |
 | 11:15 - 11:30 | Overview of self-learning materials and homework submission |  Radhika |
 
@@ -75,7 +75,7 @@
 | 10:00 - 10:20 | Questions about self-learning lessons | Mary |
 | 10:20 - 11:15 | [In-class exercises](../activities/Day4_activities.md) + [Answer key](../activities/Day4_activities_answer_key.R) | Jihe |
 | 11:15 - 11:45 | Discussion, Q & A | All |
-| 11:45 - 12:00 | [Wrap Up](https://github.com/hbctraining/Intro-to-R-flipped/raw/master/lectures/R_workshop_wrapup_online.pdf) | Radhika |
+| 11:45 - 12:00 | Wrap Up | Radhika |
 
 ### Final Exercises
 * [Exercises](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html) and [Answer Key](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_key.html)
