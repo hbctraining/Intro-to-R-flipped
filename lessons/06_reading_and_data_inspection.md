@@ -174,9 +174,7 @@ We have some exercises below that will allow you to gain more familiarity with t
 **Exercise 2**
 
 * Use the `class()` function on `glengths` and `metadata`, how does the output differ between the two?
-* Use the `summary()` function on the `proj_summary` dataframe
-	* What is the median "rRNA_rate"?
-	* How many samples got the "low" level of treatment
+* Use the `summary()` function on the `proj_summary` dataframe, what is the median "rRNA_rate"?
 * How long is the `samplegroup` factor?
 * What are the dimensions of the `proj_summary` dataframe?
 * When you use the `rownames()` function on `metadata`, what is the *data structure* of the output?
