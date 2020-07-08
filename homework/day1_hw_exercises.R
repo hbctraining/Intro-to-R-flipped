@@ -48,9 +48,7 @@ pages <- c(453, 432, 328)
 
 # 2. Use the class() function on glengths and metadata, how does the output differ between the two?
 
-# 3. Use the summary() function on the proj_summary dataframe
-#       i. What is the median rRNA_rate?
-#       ii. How many samples got the “low” level of treatment
+# 3. Use the summary() function on the proj_summary dataframe, what is the median rRNA_rate?
 
 # 4. How long is the samplegroup factor?
 
