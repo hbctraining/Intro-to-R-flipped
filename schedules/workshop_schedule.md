@@ -25,7 +25,7 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:20 | Questions about self-learning & cheatsheet creation | Radhika |
+| 10:00 - 10:20 | Questions about self-learning & [cheatsheet](https://docs.google.com/spreadsheets/d/1nZtAOWxYV0ocQeAIyb0OHIMliji7zWM_3-olXetvBzE/edit?usp=sharing) creation | Radhika |
 | 10:20 - 11:00 | [In-class exercises](../activities/Day2_activities.md) + [Answer key](../activities/Day2_activities_answer_key.R) | Jihe |
 | 11:00 - 11:30 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Radhika |
 | 11:30 - 12:00 | [Packages and libraries](../lessons/04_introR_packages.md) | Meeta |
