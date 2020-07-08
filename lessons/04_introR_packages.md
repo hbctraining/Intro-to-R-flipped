@@ -30,6 +30,13 @@ search() #Gives a list of attached packages
 
 Previously we have introduced you to functions from the standard base packages. However, the more you work with R, you will come to realize that there is a cornucopia of R packages that offer a wide variety of functionality. To use additional packages will require installation. Many packages can be installed from the [CRAN](http://cran.r-project.org/) or [Bioconductor](https://www.bioconductor.org/) repositories.
 
+> ### Helpful tips for package installations
+> * Package names are case sensitive!
+> * At any point (especially if you’ve used R/Bioconductor in the past), in the console R may ask you if you want to **"update any old packages by asking Update all/some/none? [a/s/n]:". If you see this, type "a" at the prompt and hit Enter** to update any old packages. _Updating packages can sometimes take awhile to run._ If you are short on time, you can choose "n" and proceed. Without updating, you run the risk of conflicts between your old packages and the ones from your updated R version later down the road. 
+> * If you see a message in your console along the lines of “binary version available but the source version is later”, followed by a question, **“Do you want to install from sources the package which needs compilation? y/n”, type n for no, and hit enter.**
+
+
+
 ### Package installation from CRAN 
 
 CRAN is a repository where the latest downloads of R (and legacy versions) are found in addition to source code for thousands of different user contributed R packages.
@@ -70,11 +77,6 @@ BiocManager::install("ggplot2")
 ```
 
 > The code above may not be familiar to you - it is essentially using a new operator, a double colon `::` to execute a function from a particular package. This is the syntax: `package::function_name()`. 
-
-> ### Helpful tips for package installations
-> * Package names are case sensitive!
-> * At any point (especially if you’ve used R/Bioconductor in the past), in the console R may ask you if you want to **"update any old packages by asking Update all/some/none? [a/s/n]:". If you see this, type "a" at the prompt and hit Enter** to update any old packages. _Updating packages can sometimes take awhile to run._ If you are short on time, you can choose "n" and proceed. Without updating, you run the risk of conflicts between your old packages and the ones from your updated R version later down the road. 
-> * If you see a message in your console along the lines of “binary version available but the source version is later”, followed by a question, **“Do you want to install from sources the package which needs compilation? y/n”, type n for no, and hit enter.**
 
 
 ### Package installation from source
