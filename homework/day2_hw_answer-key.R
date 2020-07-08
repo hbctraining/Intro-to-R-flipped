@@ -1,5 +1,14 @@
 ## Day 2 Homework Exercises
 
+### Data wrangling
+
+# 1. Extract only those elements in `samplegroup` that are not KO (*nesting the logical operation is optional*).
+idx <- samplegroup != "KO"
+samplegroup[idx]
+
+# 2. Use the `samplegroup` factor we created in a previous lesson, and relevel it such that KO is the first level followed by CTL and OE.
+factor(samplegroup, levels = c("KO", "CTL", "OE"))
+
 ### Packages and Libraries
 
 # 1. Install the tidyverse package (it is actually a suite of packages). NOTE: This suite of packages is only available in CRAN.
@@ -11,58 +20,6 @@ library(tidyverse)
 
 # 3. Run sessionInfo().
 sessionInfo()
-
-### Data wrangling: Subsetting vectors and factors
-
-# 1. Create a vector called alphabets with the following letters, C, D, X, L, F.
-alphabets <- c("C", "D", "X", "L", "F")
-
-# 2. Use the associated indices along with [ ] to do the following:
-#       i. only display C, D and F
-alphabets[c(1, 2, 5)]
-#       ii. display all except X
-alphabets[-3]
-#       iii. display the letters in the opposite order (F, L, X, D, C)
-alphabets[5:1]
-
-# 3. Extract only those elements in samplegroup that are not KO (nesting the logical operation is optional).
-idx <- samplegroup != "KO"
-samplegroup[idx]
-
-# 4. Use the samplegroup factor we created in a previous lesson, and relevel it such that KO is the first level followed by CTL and OE.
-factor(samplegroup, levels = c("KO", "CTL", "OE"))
-
-############################
-
-### Reading in and inspecting data
-
-# 1. Download this tab-delimited .txt file and save it in your project’s data folder.
-#       i. Read it in to R using read.table() and store it as the variable proj_summary, keeping in mind that: 
-#               a. all the columns have column names 
-#               b. you want the first column to be used as rownames (hint: look up the row.names = argument)
-#       ii. Display the contents of proj_summary in your console
-proj_summary <- read.table(file = "data/project-summary.txt", header = TRUE, row.names = 1)
-
-# 2. Use the class() function on glengths and metadata, how does the output differ between the two?
-class(glengths)
-class(metadata)
-
-# 3. Use the summary() function on the proj_summary dataframe
-#       i. What is the median rRNA_rate?
-#       ii. How many samples got the “low” level of treatment
-summary(proj_summary)
-
-# 4. How long is the samplegroup factor?
-length(samplegroup)
-
-# 5. What are the dimensions of the proj_summary dataframe?
-dim(proj_summary)
-
-# 6. When you use the rownames() function on metadata, what is the data structure of the output?
-str(rownames(metadata))
-
-# 7. How many elements in (how long is) the output of colnames(proj_summary)? Don’t count, but use another function to determine this.
-length(colnames(proj_summary))
 
 ############################
 
