@@ -83,6 +83,12 @@ To install from source, we use the same `install.packages` function but we have 
 install.packages("~/Downloads/ggplot2_1.0.1.tar.gz", type="source", repos=NULL)
 ```
 
+> ### Helpful tips for package installations
+> * Package names are case sensitive!
+> * At any point (especially if you’ve used R/Bioconductor in the past), in the console R may ask you if you want to **"update any old packages by asking Update all/some/none? [a/s/n]:". If you see this, type "a" at the prompt and hit Enter** to update any old packages. _Updating packages can sometimes take awhile to run._ If you are short on time, you can choose "n" and proceed. Without updating, you run the risk of conflicts between your old packages and the ones from your updated R version later down the road. 
+> * If you see a message in your console along the lines of “binary version available but the source version is later”, followed by a question, **“Do you want to install from sources the package which needs compilation? y/n”, type n for no, and hit enter.**
+
+
 ### Loading libraries
 Once you have the package installed, you can **load the library** into your R session for use. Any of the functions that are specific to that package will be available for you to use by simply calling the function as you would for any of the base functions. *Note that quotations are not required here.*
 
