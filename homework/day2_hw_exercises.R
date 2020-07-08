@@ -1,5 +1,11 @@
 ## Day 2 Homework Exercises
 
+### Data wrangling
+
+# 1. Extract only those elements in `samplegroup` that are not KO (*nesting the logical operation is optional*).
+
+# 2. Use the `samplegroup` factor we created in a previous lesson, and relevel it such that KO is the first level followed by CTL and OE. 
+
 ### Packages and Libraries
 
 # 1. Install the tidyverse package (it is actually a suite of packages). NOTE: This suite of packages is only available in CRAN.
