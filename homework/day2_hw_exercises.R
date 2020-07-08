@@ -14,19 +14,6 @@
 
 # 3. Run sessionInfo().
 
-### Data wrangling: Subsetting vectors and factors
-
-# 1. Create a vector called alphabets with the following letters, C, D, X, L, F.
-
-# 2. Use the associated indices along with [ ] to do the following:
-#       i. only display C, D and F
-#       ii. display all except X
-#       iii. display the letters in the opposite order (F, L, X, D, C)
-
-# 3. Extract only those elements in samplegroup that are not KO (nesting the logical operation is optional).
-
-# 4. *[OPTIONAL- will be covered in class]* Use the samplegroup factor we created in a previous lesson, and relevel it such that KO is the first level followed by CTL and OE.
-
 ############################
 
 ### Data wrangling: data frames, matrices, and lists
