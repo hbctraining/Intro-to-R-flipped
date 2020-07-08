@@ -32,6 +32,7 @@
 | 11:30 - 12:00 | [Packages and libraries](../lessons/04_introR_packages.md) | Meeta |
 
 ### Self-Learning Part 2
+1. [Packages and libraries](../lessons/04_introR_packages.md)
 1. [Data wrangling: data frames, matrices and lists](../lessons/07_introR-data-wrangling2.md)
 1. [The %in% operator](../lessons/08_identifying-matching-elements.md)
 1. [Reordering and matching](../lessons/09_reordering-to-match-datasets.md)
