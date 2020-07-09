@@ -1,0 +1,28 @@
+1. [Introduction to R and RStudio] If a command is not complete at the end of a line, R will give a different prompt, by default it is:
+a. *
+b. –
+c. + (correct)
+d. /
+
+2. [R Syntax and Data Structure] Which R-object can contain many different types of elements inside it?
+a. Vector
+b. Lists
+c. Matrix
+d. Functions
+
+
+3. [Functions and Arguments] 
+
+2. What will be the output of the following R program?
+r<-0:10
+r[2]
+a. 0
+b. 1
+c. 2
+d. 3
+
+3. What is the function to set column names for a matrix?
+a. names()
+b. colnames()
+c. col.names()
+d. column name cannot be set for a matrix
