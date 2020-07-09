@@ -6,23 +6,38 @@ d. /
 
 2. [R Syntax and Data Structure] Which R-object can contain many different types of elements inside it?
 a. Vector
-b. Lists
+b. Lists (correct)
 c. Matrix
 d. Functions
 
 
 3. [Functions and Arguments] 
 
-2. What will be the output of the following R program?
+5. [Data Wrangling: Subsetting Vectors and Factors] What will be the output of the following R program?
 r<-0:10
 r[2]
 a. 0
-b. 1
+b. 1 (correct)
 c. 2
 d. 3
 
-3. What is the function to set column names for a matrix?
-a. names()
-b. colnames()
-c. col.names()
-d. column name cannot be set for a matrix
+4. [Data Wrangling: Subsetting Vectors and Factors] We defined x <- c("a", "b", "c", "c", "d", "a"). Which of the following will NOT output the first four elements "a""b""c""c"?
+a. x[c(1,2,3,4)]
+b. x[-5,-6] (correct)
+c. x[1:4]
+d. x[-c(5,6)]
+
+
+
+[Tidyverse] Which of the following function extracts a subset of rows from a dataframe based on logical conditions?
+a. rename
+b. filter
+c. select
+d. subset
+
+[Tidyverse] Which of the following function add new variables/columns through transforming existing variables?
+a. mutate
+b. add
+c. append
+d. arrange
+
