@@ -48,12 +48,12 @@ d. ggplot(new_metadata) +
 
 8. [Tidyverse] Which of the following function extracts a subset of rows from a dataframe based on logical conditions?
 a. rename
-b. filter
+b. filter (correct)
 c. select
 d. subset
 
 9. [Tidyverse] Which of the following function add new variables/columns through transforming existing variables?
-a. mutate
+a. mutate (correct)
 b. add
 c. append
 d. arrange
