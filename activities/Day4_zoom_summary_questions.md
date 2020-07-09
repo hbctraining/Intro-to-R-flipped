@@ -1,7 +1,7 @@
-If a command is not complete at the end of a line, R will give a different prompt, by default it is:
+[Introduction to R and RStudio] If a command is not complete at the end of a line, R will give a different prompt, by default it is:
 a. *
 b. –
-c. +
+**c. +**
 d. /
 
 What will be the output of the following R program?
