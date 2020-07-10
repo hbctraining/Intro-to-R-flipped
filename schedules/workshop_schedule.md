@@ -44,6 +44,7 @@
 * Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox](https://www.dropbox.com/request/64CNVamnL0Xo5BiSkfAh).
 * [Email us](mailto:hbctraining@hsph.harvard.edu)  about questions regarding the homework that you need answered before the next class.
 * Post questions that you would like to have reviewed in class [here](https://PollEv.com/hbctraining945).
+* [**Answer Key**](../homework/day2_hw_answer-key.R)
 
 ---
 
