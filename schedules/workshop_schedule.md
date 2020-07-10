@@ -93,3 +93,7 @@
 ## Resources
 * [Online learning resources](https://hbctraining.github.io/bioinformatics_online/lists/online_trainings.html)
 * [All hbctraining materials](https://hbctraining.github.io/main)
+
+## Cheatsheets
+* [RStudio cheatsheet](https://rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf)
+* [ggplot2 cheatsheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
