@@ -76,7 +76,7 @@
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 10:00 - 10:20 | Questions about self-learning lessons | Meeta |
-| 10:20 - 11:15 | [In-class exercises](../activities/Day4_activities.md)[(Rscript)](../activities/day4_activities_skeleton.R) + [Answer key](../activities/Day4_activities_answer_key.R) | Jihe |
+| 10:20 - 11:15 | [In-class exercises](../activities/Day4_activities.md) [(Rscript)](../activities/day4_activities_skeleton.R) + [Answer key](../activities/Day4_activities_answer_key.R) | Jihe |
 | 11:15 - 11:45 | Discussion, Q & A | All |
 | 11:45 - 12:00 | [Wrap Up](../lectures/R_workshop_wrapup_dfhcc.pdf) | Radhika |
 
