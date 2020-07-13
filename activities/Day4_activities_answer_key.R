@@ -57,5 +57,5 @@ animals_gray_tan <- animals_tb %>%
 #b. Save animals_gray_tan as a comma-separated value file called animals_tb_ordered.csv to the results folder.
 
 write.csv(animals_gray_tan,
-          file = "~/Desktop/animals_tb_ordered.csv",
+          file = "results/animals_tb_ordered.csv",
           quote = FALSE)
