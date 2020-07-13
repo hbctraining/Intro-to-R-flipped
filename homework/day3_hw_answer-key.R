@@ -1,28 +1,5 @@
 ## ggplot2 exercise
 
-# 1. The current axis label text defaults to what we gave as input to geom_point (i.e the column headers). We can change this by **adding additional layers** called xlab() and ylab() for the x- and y-axis, respectively. Add these layers to the current plot such that the x-axis is labeled "Age (days)" and the y-axis is labeled "Mean expression".
-ggplot(new_metadata) +
-  geom_point(aes(x = age_in_days, y=samplemeans, color = genotype, shape = celltype), size = 2.25) +
-  theme_bw() +
-  theme(axis.title = element_text(size=rel(1.5))) +
-  xlab("Age (days)") +
-  ylab("Mean expression")
-
-# 2. Use the ggtitle() layer to add a title to your plot. 
-ggplot(new_metadata) +
-  geom_point(aes(x = age_in_days, y=samplemeans, color = genotype, shape = celltype), size = 2.25) +
-  theme_bw() +
-  theme(axis.title = element_text(size=rel(1.5))) +
-  xlab("Age (days)") +
-  ylab("Mean expression") +
-  ggtitle("Expression summary")
-
-# 3. Add the following new layer to the plot theme(plot.title=element_text(hjust=0.5)).
-#  * What does it change?
-    ## It places the title to the center of the plot
-#  * How many theme() layers can be added to a ggplot code chunk, in your estimation?
-    ## You can add as many theme() layers as you need
-
 # Creating a boxplot
 #1. boxplot
 ggplot(new_metadata) +
