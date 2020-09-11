@@ -4,7 +4,7 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:30 | [Workshop Introduction](../lectures/Intro_to_workshop_dfhcc.pdf) | Radhika |
+| 10:00 - 10:30 | Workshop Introduction | Radhika |
 | 10:30 - 11:15 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Meeta |
 | 11:15 - 11:30 | Overview of self-learning materials and homework submission |  Radhika |
 
@@ -18,7 +18,6 @@
 * Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox](https://www.dropbox.com/request/1mnPzffWdyYOe6pIo0XA) **day before the next class**.
 * [Email us](mailto:hbctraining@hsph.harvard.edu) about questions regarding the homework that you need answered before the next class.
 * Post questions that you would like to have reviewed in class [here](https://PollEv.com/hbctraining945).
-* [**Answer Key**](../homework/day1_hw_answer-key.R)
 
 ---
 
@@ -44,7 +43,6 @@
 * Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox](https://www.dropbox.com/request/64CNVamnL0Xo5BiSkfAh).
 * [Email us](mailto:hbctraining@hsph.harvard.edu)  about questions regarding the homework that you need answered before the next class.
 * Post questions that you would like to have reviewed in class [here](https://PollEv.com/hbctraining945).
-* [**Answer Key**](../homework/day2_hw_answer-key.R)
 
 ---
 
@@ -53,7 +51,7 @@
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 10:00 - 10:20 | Questions about self-learning lessons | Jihe |
-| 10:20 - 11:15 | [In-class exercises](../activities/Day3_activities.md) + [Answer key](../activities/Day3_activities_answer_key.R)| Mary  |
+| 10:20 - 11:15 | [In-class exercises](../activities/Day3_activities.md) + [Answer key](../activities/Day3_activities_answer_key.R)| Meeta  |
 | 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/11_ggplot2.md) | Radhika |
 
 ### Self-Learning Part 3
@@ -68,7 +66,6 @@
 * Add your solutions to the exercises in the downloaded `.R` file. **Upload the R script files** to [Dropbox](https://www.dropbox.com/request/uaDDYsJkH6mgNgGoT7rA).
 * [Email us](mailto:hbctraining@hsph.harvard.edu) about questions regarding the homework that you need answered before the next class.
 * Post questions that you would like to have reviewed in class [here](https://PollEv.com/hbctraining945).
-* [**Answer Key**](../homework/day3_hw_answer-key.R)
 
 ---
 
@@ -79,7 +76,7 @@
 | 10:00 - 10:20 | Questions about self-learning lessons | Meeta |
 | 10:20 - 11:15 | [In-class exercises](../activities/Day4_activities.md) / [Rscript](../activities/day4_activities_skeleton.R) + [Answer key](../activities/Day4_activities_answer_key.R) | Jihe |
 | 11:15 - 11:45 | Discussion, Q & A | All |
-| 11:45 - 12:00 | [Wrap Up](../lectures/R_workshop_wrapup_dfhcc.pdf) | Radhika |
+| 11:45 - 12:00 | Wrap Up | Radhika |
 
 ### Final Exercises
 * [Exercises](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html) and [Answer Key](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_key.html)
