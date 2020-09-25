@@ -40,7 +40,7 @@ names(animals_list) <- colnames(animals)
 ## The %in% operator, reordering and matching
 
 # 2. How many of the control samples are also in the `proj_summary` dataframe? Use the %in% operator to check.
-length(rownames(ctrl_samples) %in% rownames(proj_summary))
+length(which(rownames(ctrl_samples) %in% rownames(proj_summary)))
 
 # 3. Keep only the rows in `proj_summary` which correspond to control samples. Do this with the %in% operator. Save it to a variable called `proj_summary_ctrl`.
 proj_summary_ctrl <- proj_summary[which(rownames(proj_summary) %in% rownames(ctrl_samples)),]
