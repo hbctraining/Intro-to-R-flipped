@@ -34,8 +34,6 @@ pages <- c(453, 432, 328)
  
 # 4. Write a function called `multiply_it`, which takes two inputs: a numeric value `x`, and a numeric value `y`. The function will return the product of these two numeric values, which is `x * y`. For example, `multiply_it(x=4, y=6)` will return output `24`.
 
-# 5. Re-write the function `multiply_it`, where `y` is set with a **default** value of 6 (hint: assign the value when defining the input). Apply this function by providing only one input `x`. For example, `multiply_it(x=4)` will return output `24`. Also test if you can **overwrite** the default value of `y` by providing both `x` and `y` values as arguments in the function. For example, `multiply_it(x=4, y=8)` will return output `32`, but not `24`.
-
 ############################
 
 ### Reading in and inspecting data
