@@ -41,6 +41,10 @@
 ### Assignment #2
 * All exercises from above lessons have been put together in [R script format](../homework/day2_hw_exercises.R).
 * Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox](https://www.dropbox.com/request/iK80ioI3Lz489ZDAWgUr).
+* Preparation for the upcoming in-class exercise [**important**]
+  * Download the [animals.csv](https://raw.githubusercontent.com/hbctraining/Intro-to-R-flipped/master/data/animals.csv), by right-clicking on the link and "Save Link As..." to place the file into the `data` directory.
+  * Read the `.csv` file into your environment and assign it to a variable called `animals`. **Be sure to check that your row names are the different animals.**
+  * Save the R project when you close Rstudio.
 * [Email us](mailto:hbctraining@hsph.harvard.edu)  about questions regarding the homework that you need answered before the next class.
 * Post questions that you would like to have reviewed in class [here](https://PollEv.com/hbctraining945).
 * [Answer Key](../homework/day2_hw_answer-key.R)
