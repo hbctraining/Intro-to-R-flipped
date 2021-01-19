@@ -48,14 +48,6 @@ multiply_it <- function(x,y) {
   return(product)
 }
 
-# 5. Re-write the function `multiply_it`, where `y` is set with a **default** value of 6 (hint: assign the value when defining the input). Apply this function by providing only one input `x`. For example, `multiply_it(x=4)` will return output `24`. Also test if you can **overwrite** the default value of `y` by providing both `x` and `y` values as arguments in the function. For example, `multiply_it(x=4, y=8)` will return output `32`, but not `24`.
-multiply_it <- function(x,y=6) {
-  product <- x * y
-  return(product)
-}
-multiply_it(x = 4)
-multiply_it(x = 4, y = 8)
-
 ### Reading in and inspecting data
 
 # 1. Download this tab-delimited .txt file and save it in your project’s data folder.
