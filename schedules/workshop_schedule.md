@@ -15,7 +15,7 @@
 
 ### Assignment #1
 * All exercises from above lessons have been put together in [html format](../homework/day1_hw_exercises.md) (web access) and [R script format](../homework/day1_hw_exercises.R) (download for local access).
-* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox](https://www.dropbox.com/request/sFRRPh9tfhPXmnOHErCe) **day before the next class**.
+* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox](https://www.dropbox.com/request/QEc7CYhFckOmy9a6LWlW) **day before the next class**.
 * [Email us](mailto:hbctraining@hsph.harvard.edu) about questions regarding the homework that you need answered before the next class.
 * Post questions that you would like to have reviewed in class [here](https://PollEv.com/hbctraining945).
 
@@ -39,7 +39,7 @@
 
 ### Assignment #2
 * All exercises from above lessons have been put together in R script format.
-* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to Dropbox.
+* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox](https://www.dropbox.com/request/bKrJgTqHtSqRgcZKvyl3).
 * Preparation for the upcoming in-class exercise [**important**]
   * Download the [animals.csv](https://raw.githubusercontent.com/hbctraining/Intro-to-R-flipped/master/data/animals.csv), by right-clicking on the link and "Save Link As..." to place the file into the `data` directory.
   * Read the `.csv` file into your environment and assign it to a variable called `animals`. **Be sure to check that your row names are the different animals.**
@@ -66,7 +66,7 @@
 
 ### Assignment #3
 * All exercises from above lessons have been put together in R script format.
-* Add your solutions to the exercises in the downloaded `.R` file. **Upload the R script files** to Dropbox.
+* Add your solutions to the exercises in the downloaded `.R` file. **Upload the R script files** to [Dropbox](https://www.dropbox.com/request/p4uMpuaZodXF8UFZNIwp).
 * [Email us](mailto:hbctraining@hsph.harvard.edu) about questions regarding the homework that you need answered before the next class.
 * Post questions that you would like to have reviewed in class here.
 
