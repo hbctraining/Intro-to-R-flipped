@@ -18,7 +18,6 @@
 * Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox](https://www.dropbox.com/request/sFRRPh9tfhPXmnOHErCe) **day before the next class**.
 * [Email us](mailto:hbctraining@hsph.harvard.edu) about questions regarding the homework that you need answered before the next class.
 * Post questions that you would like to have reviewed in class [here](https://PollEv.com/hbctraining945).
-* [Answer Key](../homework/day1_hw_answer-key.R)
 
 ---
 
@@ -26,28 +25,27 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:50 | Questions about self-learning & [cheatsheet](https://docs.google.com/spreadsheets/d/1nZtAOWxYV0ocQeAIyb0OHIMliji7zWM_3-olXetvBzE/edit?usp=sharing) creation | Radhika |
-| 10:50 - 11:15 | [In-class exercises](../activities/Day2_activities.md) + [Answer key](../activities/Day2_activities_answer_key.R) | Jihe |
-| 11:15 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Radhika |
+| 10:00 - 10:50 | Questions about self-learning & cheatsheet creation | Radhika |
+| 10:50 - 11:15 | In-class exercises + Answer key | Jihe |
+| 11:15 - 12:00 | Data Wrangling: Subsetting Vectors and Factors | Radhika |
 
 ### Self-Learning Part 2
-1. [Packages and libraries](../lessons/04_introR_packages.md)
-1. [Data wrangling: data frames, matrices and lists](../lessons/07_introR-data-wrangling2.md)
-1. [The %in% operator](../lessons/08_identifying-matching-elements.md)
-1. [Reordering and matching](../lessons/09_reordering-to-match-datasets.md)
-1. [Setting up a data frame to plot (+ the `map()` function)](../lessons/10_setting_up_to_plot.md)
+1. Packages and libraries
+1. Data wrangling: data frames, matrices and lists
+1. The %in% operator
+1. Reordering and matching
+1. Setting up a data frame to plot (+ the `map()` function)
 
 
 ### Assignment #2
-* All exercises from above lessons have been put together in [R script format](../homework/day2_hw_exercises.R).
-* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox](https://www.dropbox.com/request/iK80ioI3Lz489ZDAWgUr).
+* All exercises from above lessons have been put together in R script format.
+* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to Dropbox.
 * Preparation for the upcoming in-class exercise [**important**]
   * Download the [animals.csv](https://raw.githubusercontent.com/hbctraining/Intro-to-R-flipped/master/data/animals.csv), by right-clicking on the link and "Save Link As..." to place the file into the `data` directory.
   * Read the `.csv` file into your environment and assign it to a variable called `animals`. **Be sure to check that your row names are the different animals.**
   * Save the R project when you close Rstudio.
 * [Email us](mailto:hbctraining@hsph.harvard.edu)  about questions regarding the homework that you need answered before the next class.
-* Post questions that you would like to have reviewed in class [here](https://PollEv.com/hbctraining945).
-* [Answer Key](../homework/day2_hw_answer-key.R)
+* Post questions that you would like to have reviewed in class here.
 
 ---
 
@@ -56,15 +54,15 @@
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 10:00 - 10:35 | Questions about self-learning lessons | Jihe |
-| 10:35 - 11:15 | [In-class exercises](../activities/Day3_activities.md) + [Answer key](../activities/Day3_activities_answer_key.R)| Meeta  |
-| 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/11_ggplot2.md) | Radhika |
+| 10:35 - 11:15 | In-class exercises + Answer key| Meeta  |
+| 11:15 - 12:00 | Plotting with the ggplot2 package | Radhika |
 
 ### Self-Learning Part 3
-1. [Using custom functions for consistent plots](../lessons/11b_Custom_Functions_ggplot2.md)
-1. [Generating a boxplot with ggplot2](../lessons/12_boxplot_exercise.md)
-1. [Writing to file and exporting plots](../lessons/13_exporting_data_and_plots.md)
-1. [Finding help](../lessons/14_finding_help.md)
-1. [Tidyverse](https://hbctraining.github.io/Training-modules/Tidyverse_ggplot2/lessons/intro_tidyverse.html)
+1. Using custom functions for consistent plots
+1. Generating a boxplot with ggplot2
+1. Writing to file and exporting plots
+1. Finding help
+1. Tidyverse
 
 ### Assignment #3
 * All exercises from above lessons have been put together in [R script format](../homework/day3_hw_exercises.R).
