@@ -81,6 +81,7 @@ When a project is **(re) opened** within RStudio the following actions are taken
 * Previously edited source documents are restored into editor tabs
 * Other RStudio settings (e.g. active tabs, splitter positions, etc.) are restored to where they were the last time the project was closed.
 
+*Information adapted from [RStudio Support Site](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects)*
 
 ## RStudio Interface
 
