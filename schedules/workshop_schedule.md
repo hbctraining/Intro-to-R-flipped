@@ -6,7 +6,7 @@
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 10:00 - 10:30 | Workshop Introduction | Radhika |
 | 10:30 - 11:15 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Meeta |
-| 11:15 - 11:30 | Overview of self-learning materials and homework submission |  Radhika |
+| 11:15 - 11:30 | Overview of self-learning materials and homework submission | Jihe |
 
 ### Self-Learning Part 1
 1. [R Syntax and Data Structure](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html)
