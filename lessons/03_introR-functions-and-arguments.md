@@ -137,7 +137,6 @@ When **defining the function** you will want to provide the **list of arguments 
 
 Finally, you can **“return” the value of the object from the function**, meaning pass the value of it into the global environment. The important idea behind functions is that objects that are created within the function are local to the environment of the function – they don’t exist outside of the function. 
 
-> *NOTE:* You can also have a function that doesn't require any arguments, nor will it return anything.
 
 Let's try creating a simple example function. This function will take in a numeric value as input, and return the squared value.
 
