@@ -154,7 +154,17 @@ Once you run the code, you should see a function named `square_it` in the Enviro
 square_it(5)
 ```
 
-Pretty simple, right? In this case, we only had one line of code that was run, but in theory you could have many lines of code to get obtain the final results that you want to "return" to the user. We have only scratched the surface here when it comes to creating functions! We will revisit this in later lessons, but if interested you can also find more detailed information on this [R-bloggers site](https://www.r-bloggers.com/how-to-write-and-debug-an-r-function/), which is where we adapted this example from.
+Pretty simple, right? In this case, we only had one line of code that was run, but in theory you could have many lines of code to get obtain the final results that you want to "return" to the user. 
+
+In the example above, we created a new variable called `square` inside the function, and then return the value of `square`. If you don't use `return`, by default R will return the value of the last line of code inside that function. That is to say, the following function will also work. However, we **recommend** always using `return` at the end of a function as the best practice.
+
+```r
+square_it <- function(x) {
+    x * x
+}
+```
+
+We have only scratched the surface here when it comes to creating functions! We will revisit this in later lessons, but if interested you can also find more detailed information on this [R-bloggers site](https://www.r-bloggers.com/how-to-write-and-debug-an-r-function/), which is where we adapted this example from.
 
 ***
 **Exercise** 
