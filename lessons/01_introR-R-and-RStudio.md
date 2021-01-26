@@ -70,9 +70,9 @@ Let's create a new project directory for our "Introduction to R" lesson today.
 
 ### What is a project in RStudio?
 
-It is simply a directory that contains everything related your analyses for a specific project. RStudio projects are useful when you are working on context- specific analyses and you wish to keep them separate. When creating a project in RStudio you associate it with a working directory of your choice. A `. RProj file` is created and that icon can be used to open the project in its current state but at a later date.
+It is simply a directory that contains everything related your analyses for a specific project. RStudio projects are useful when you are working on context- specific analyses and you wish to keep them separate. When creating a project in RStudio you associate it with a working directory of your choice (either an existing one, or a new one). A `. RProj file` is created within that directory and that keeps track of your command history and variables in the environment. The `. RProj file` can be used to open the project in its current state but at a later date.
 
-When a project is opened within RStudio the following actions are taken:
+When a project is **(re) opened** within RStudio the following actions are taken:
  
 * A new R session (process) is started
 * The .RData file in the project's main directory is loaded, populating the environment with any objects that were present when the project was closed. 
