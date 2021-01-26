@@ -53,18 +53,6 @@ RStudio is freely available open-source Integrated Development Environment (IDE)
 * Platform agnostic
 * Open source
 
-## RStudio Projects
-
-RStudio projects make it straightforward to divide your work into multiple contexts, each with their own working directory, workspace, history, and source documents. When creating a project you associate it with a working directory of your choice. A `. RProj file` is created and that icon can be used to open the project in its current state but at a later date.
-
-When a project is opened within RStudio the following actions are taken:
- 
-* A new R session (process) is started
-* The .RData file in the project's main directory is loaded, populating the environment with any objects that were present when the project was closed. 
-* The .Rhistory file in the project's main directory is loaded into the RStudio History pane (and used for Console Up/Down arrow command history).
-* The current working directory is set to the project directory.
-* Previously edited source documents are restored into editor tabs
-* Other RStudio settings (e.g. active tabs, splitter positions, etc.) are restored to where they were the last time the project was closed.
 
 ## Creating a new project directory in RStudio
 
@@ -79,6 +67,20 @@ Let's create a new project directory for our "Introduction to R" lesson today.
 7. Go to the `File` menu and select `New File`, and select `R Script`. The RStudio interface should now look like the screenshot below.
 
 ![RStudio interface](../img/Rstudio_interface.png)
+
+### What is a project in RStudio?
+
+It is simply a directory that contains everything related your analyses for a specific project. RStudio projects are useful when you are working on context- specific analyses and you wish to keep them separate. When creating a project in RStudio you associate it with a working directory of your choice. A `. RProj file` is created and that icon can be used to open the project in its current state but at a later date.
+
+When a project is opened within RStudio the following actions are taken:
+ 
+* A new R session (process) is started
+* The .RData file in the project's main directory is loaded, populating the environment with any objects that were present when the project was closed. 
+* The .Rhistory file in the project's main directory is loaded into the RStudio History pane (and used for Console Up/Down arrow command history).
+* The current working directory is set to the project directory.
+* Previously edited source documents are restored into editor tabs
+* Other RStudio settings (e.g. active tabs, splitter positions, etc.) are restored to where they were the last time the project was closed.
+
 
 ## RStudio Interface
 
