@@ -73,7 +73,9 @@ important_genes %in% rownames(rpkm_data)
         
 #       iii. Extract the rows from rpkm_data that correspond to these 6 genes using [] and the %in% operator. Double check the row names to ensure that you are extracting the correct rows.
 idx <- rownames(rpkm_data) %in% important_genes
-ans2 <- rpkm_data[idx, ]
+ans <- rpkm_data[idx, ]
+idx2 <- which(rownames(rpkm_data) %in% important_genes)
+ans2 <- rpkm_data[idx2, ]
 
 #       iv. Bonus question: Extract the rows from rpkm_data that correspond to these 6 genes using [], but without using the %in% operator.
 ans3 <- rpkm_data[important_genes, ]
