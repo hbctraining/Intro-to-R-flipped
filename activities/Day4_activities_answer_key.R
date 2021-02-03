@@ -14,18 +14,14 @@ ggplot(animals_tb) +
 
 #3. We decide that our plot would look better with the animal names ordered from slowest to fastest. Using the animals_tb data frame, reorder the animals on the x-axis to start with the slowest animal on the left-hand side of the plot to the fastest animal on the right-hand side of the plot by completing the following steps:
 
-#a. Use the `arrange()` function to order the rows by speed from slowest to fastest and save to `animals_arranged`.
+#a. Use the `arrange()` function to order the rows by speed from slowest to fastest. Save the new variable as `animals_arranged`.
 animals_arranged <- animals_tb %>% arrange(speed)
 
-#b. Extract the animal names from `animals_arranged` as a vector called `names_ordered_by_speed`.
-names_ordered_by_speed <- animals_arranged$animal_names
-	
-#c. Turn the `animal_names` column of `animals_tb` into a factor and specify the levels as `names_ordered_by_speed` from slowest to fastest (output in part b).
-animals_tb$animal_names <- factor(animals_tb$animal_names, 
-                                  levels = names_ordered_by_speed)
+#b. Use the `mutate()` function to turn `animal_names` column in `animals_arranged` into a factor, specifying the levels as the order of `animal_names`. Save the new variable as `animals_factored`. Note: this step is crucial, because ggplot2 uses `factor` as plotting order, instead of the order we observe in data frame.
+animals_factored <- animals_arranged %>% mutate(animal_names = factor(animal_names, levels = animal_names))
 
-#d. Re-plot the scatterplot with the animal names in order from slowest to fastest.
-ggplot(animals_tb) +
+#c. Re-plot the scatterplot with the animal names in order from slowest to fastest, using `animals_factored` object.
+ggplot(animals_factored) +
         geom_point(aes(x = animal_names, y = speed), color = "purple") +
         theme_bw() +
         ggtitle("Speed Comparisons Between Animals") + 
@@ -36,7 +32,7 @@ ggplot(animals_tb) +
 #4. Save the plot as a PDF called animals_by_speed_scatterplot.pdf to the results folder.
 pdf("results/animals_by_speed_scatterplot.pdf")
 
-ggplot(animals_tb) +
+ggplot(animals_factored) +
         geom_point(aes(x = animal_names, y = speed), color = "purple") +
         theme_bw() +
         ggtitle("Speed Comparisons Between Animals") + 
