@@ -41,7 +41,7 @@ Let's say you wanted to have the "Wt" boxplots displayed first on the left side,
 
 To do this, your first question should be - *How does ggplot2 determine what to place where on the X-axis?*
 * The order of the genotype on the X axis is in alphabetical order. 
-* To change it, you need to make sure that the genotype column is factor 
+* To change it, you need to make sure that the genotype column is a factor
 * And, the factor levels for that column are in the order you want on the X-axis
 
 1. Factor the `new_metadata$genotype` column without creating any extra variables/objects and change the levels to `c("Wt", "KO")`
