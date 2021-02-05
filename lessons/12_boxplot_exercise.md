@@ -35,7 +35,19 @@ Generate a boxplot using the data in the new_metadata dataframe. Create a ggplot
 <img src="../img/ggboxplot_flip.png" width="600">
 </p>
 
-### 2. Changing default colors
+### 2. Changing the order of genotype on the Boxplot
+
+Let's say you wanted to have the "Wt" boxplots displayed first on the left side, and "KO" on the right. How might you go about doing this?
+
+To do this, your first question should be - *How does ggplot2 determine what to place where on the X-axis?*
+* The order of the genotype on the X axis is in alphabetical order. 
+* To change it, you need to make sure that the genotype column is factor 
+* And, the factor levels for that column are in the order you want on the X-axis
+
+1. Factor the `new_metadata$genotype` column without creating any extra variables/objects and change the levels to `c("Wt", "KO")`
+2. Re-run the boxplot code chunk you created for the "Boxplot!" exercise above.
+
+### 3. Changing default colors
 
 You can color the boxplot differently by using some specific layers:
 
