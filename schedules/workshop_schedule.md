@@ -42,7 +42,7 @@
 
 ### Assignment #2
 * All exercises from above lessons have been put together in [R script format](../homework/day2_hw_exercises.R).
-* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox](https://www.dropbox.com/request/bKrJgTqHtSqRgcZKvyl3).
+* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox](https://www.dropbox.com/request/N3z2PwAYFWwTDLaXtUoQ).
 * Preparation for the upcoming in-class exercise [**important**]
   * Download the [animals.csv](https://raw.githubusercontent.com/hbctraining/Intro-to-R-flipped/master/data/animals.csv), by right-clicking on the link and "Save Link As..." to place the file into the `data` directory.
   * Read the `.csv` file into your environment and assign it to a variable called `animals`. **Be sure to check that your row names are the different animals.**
