@@ -15,7 +15,7 @@
 
 ### Assignment #1
 * All exercises from above lessons have been put together in [html format](../homework/day1_hw_exercises.md) (web access) and [R script format](../homework/day1_hw_exercises.R) (download for local access).
-* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox](https://www.dropbox.com/request/QEc7CYhFckOmy9a6LWlW) **day before the next class**.
+* Add your solutions to the exercises in the downloaded `.R` file and **upload the saved file** to [Dropbox](https://www.dropbox.com/request/d4s6478ATbNhggbOFVLW) **day before the next class**.
 * [Email us](mailto:hbctraining@hsph.harvard.edu) about questions regarding the homework that you need answered before the next class.
   * *This is the best way to reach us if you are having any **technical issues** that prevent you from moving forward with the lessons*
 * Post questions that you would like to have reviewed in class [here](https://PollEv.com/hbctraining945).
