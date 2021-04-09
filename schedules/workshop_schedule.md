@@ -8,10 +8,12 @@
 | 10:30 - 11:45 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Meeta |
 | 11:45 - 12:00 | Overview of self-learning materials and homework submission | Radhika |
 
-### Self-Learning Part 1
-1. [R Syntax and Data Structure](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html)
-1. [Functions and Arguments](../lessons/03_introR-functions-and-arguments.md)
-1. [Reading in and inspecting data](../lessons/06_reading_and_data_inspection.md)
+### Before the next class:
+
+* Please **study the contents** and **work through all the exercises** within the following lessons:
+ 1. [R Syntax and Data Structure](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html)
+ 1. [Functions and Arguments](../lessons/03_introR-functions-and-arguments.md)
+ 1. [Reading in and inspecting data](../lessons/06_reading_and_data_inspection.md)
 
 ### Assignment #1
 * All exercises from above lessons have been put together in [html format](../homework/day1_hw_exercises.md) (web access) and [R script format](../homework/day1_hw_exercises.R) (download for local access).
