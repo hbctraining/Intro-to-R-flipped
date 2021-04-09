@@ -72,7 +72,7 @@
 
 ### Assignment #3
 * All exercises from above lessons have been put together in [R script format](../homework/day3_hw_exercises.R).
-* Add your solutions to the exercises in the downloaded `.R` file. **Upload the R script files** to [Dropbox](https://www.dropbox.com/request/p4uMpuaZodXF8UFZNIwp).
+* Add your solutions to the exercises in the downloaded `.R` file. **Upload the R script files** to [Dropbox](https://www.dropbox.com/request/9AVwr4cMJIbHv04b2cYz).
 * [Email us](mailto:hbctraining@hsph.harvard.edu) about questions regarding the homework that you need answered before the next class.
   * *This is the best way to reach us if you are having any **technical issues** that prevent you from moving forward with the lessons*
 * Post questions that you would like to have reviewed in class [here](https://PollEv.com/hbctraining945).
