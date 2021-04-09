@@ -90,6 +90,8 @@ metadata <- read.csv(file="data/mouse_exp_design.csv")
 # metadata <- read.csv(file="data/mouse_exp_design.txt")
 ```
 
+> **NOTE:** RStudio supports the automatic completion of code using the <kbd>Tab</kbd> key. This is especially helpful for when reading in files to ensure the correct file path. The tab completion feature also provides a shortcut to listing objects, and inline help for functions. Tab completion is your friend! We encourage you to use it whenever possible.
+
 Go to your Global environment and click on the name of the data frame you just created. 
 
 <img src="../img/metadata_env.png" width="300">
