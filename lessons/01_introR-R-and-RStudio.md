@@ -207,6 +207,17 @@ a complete command. Often this can be due to you having not 'closed' a parenthes
 
 If you're in Rstudio and you can't figure out why your command isn't running, you can click inside the console window and press `esc` to escape the command and bring back a new prompt `>`.
 
+### Keyboard shortcuts in RStudio
+In addition to some of the shortcuts described earlier in this lesson, we have listed a few more that can be helpful as you work in RStudio.
+
+| key              | action                 |
+| ---------------- | ---------------------- |
+| <kbd>Ctrl</kbd>+<kbd>Enter</kbd>     | Run command from script editor in console |
+| <kbd>ESC</kbd> | Escape the current command to return to the command prompt          |
+| <kbd>Ctrl</kbd>+<kbd>1</kbd>      | Move cursor from console to script editor        |
+| <kbd>Ctrl</kbd>+<kbd>2</kbd>     | Move cursor from script editor to console |
+| <kbd>Tab</kbd>     | Use this key to complete a file path       |
+| <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>     | Comment the block of highlighted text               |
 
 ***
 **Exercise**
@@ -249,7 +260,7 @@ Before we move on to more complex concepts and getting familiar with the languag
 
 * Code and workflow are more reproducible if we can document everything that we do. Our end goal is not just to "do stuff", but to do it in a way that anyone can easily and exactly replicate our workflow and results. **All code should be written in the script editor and saved to file, rather than working in the console.** 
 * The **R console** should be mainly used to inspect objects, test a function or get help. 
-* Use `#` signs to comment. **Comment liberally** in your R scripts. This will help future you and other collaborators know what each line of code (or code block) was meant to do. Anything to the right of a `#` is ignored by R. *A shortcut for this is `Ctrl + Shift + C` if you want to comment an entire chunk of text.*
+* Use `#` signs to comment. **Comment liberally** in your R scripts. This will help future you and other collaborators know what each line of code (or code block) was meant to do. Anything to the right of a `#` is ignored by R. *A shortcut for this is <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd> if you want to comment an entire chunk of text.*
 
 ---
 
