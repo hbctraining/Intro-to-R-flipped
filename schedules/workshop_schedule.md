@@ -97,13 +97,13 @@
 | 11:45 - 12:00 | [Wrap Up](../lectures/R_workshop_wrapup_all.pdf) | Mary |
 
 ### Final Exercises
-* [Exercises](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html)
+* [**Exercises**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html)
 
 ### Answer Keys
 * [**Day 1 homework**](../homework/day1_hw_answer-key.R)
 * [**Day 2 homework**](../homework/day2_hw_answer-key.R)
 * [**Day 3 homework**](../homework/day3_hw_answer-key.R)
-* [**Final exercises](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_key.html)
+* [**Final exercises**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_key.html)
 
 ## Building on the basic R knowledge
 * [DGE workshop](https://hbctraining.github.io/DGE_workshop_salmon/)
