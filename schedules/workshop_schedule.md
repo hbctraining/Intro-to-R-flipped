@@ -11,9 +11,9 @@
 ### Before the next class:
 
 1. Please **study the contents** and **work through all the code** within the following lessons:
-  * [R Syntax and Data Structure](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html)
-  * [Functions and Arguments](../lessons/03_introR-functions-and-arguments.md)
-  * [Reading in and inspecting data](../lessons/06_reading_and_data_inspection.md)
+   * [R Syntax and Data Structure](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html)
+   * [Functions and Arguments](../lessons/03_introR-functions-and-arguments.md)
+   * [Reading in and inspecting data](../lessons/06_reading_and_data_inspection.md)
 
 2. **Complete the exercises**:
    * Each lesson above contain exercises; please go through each of them.
