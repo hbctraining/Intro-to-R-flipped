@@ -11,10 +11,9 @@
 ### Before the next class:
 
 1. Please **study the contents** and **work through all the code** within the following lessons:
-
-* [R Syntax and Data Structure](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html)
-* [Functions and Arguments](../lessons/03_introR-functions-and-arguments.md)
-* [Reading in and inspecting data](../lessons/06_reading_and_data_inspection.md)
+  * [R Syntax and Data Structure](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html)
+  * [Functions and Arguments](../lessons/03_introR-functions-and-arguments.md)
+  * [Reading in and inspecting data](../lessons/06_reading_and_data_inspection.md)
 
 2. **Complete the exercises**:
    * Each lesson above contain exercises; please go through each of them.
@@ -38,22 +37,21 @@
 ### Before the next class:
 
 1. Please **study the contents** and **work through all the code** within the following lessons:
-
- 1. [Packages and libraries](../lessons/04_introR_packages.md)
- 1. [Data wrangling: data frames, matrices and lists](../lessons/07_introR-data-wrangling2.md)
- 1. [The %in% operator](../lessons/08_identifying-matching-elements.md)
- 1. [Reordering and matching](../lessons/09_reordering-to-match-datasets.md)
- 1. [Setting up a data frame to plot (+ the `map()` function)](../lessons/10_setting_up_to_plot.md)
+    * [Packages and libraries](../lessons/04_introR_packages.md)
+    * [Data wrangling: data frames, matrices and lists](../lessons/07_introR-data-wrangling2.md)
+    * [The %in% operator](../lessons/08_identifying-matching-elements.md)
+    * [Reordering and matching](../lessons/09_reordering-to-match-datasets.md)
+    * [Setting up a data frame to plot (+ the `map()` function)](../lessons/10_setting_up_to_plot.md)
 
 2. **Complete the exercises**:
    * Each lesson above contain exercises; please go through each of them.
    * **Copy over** your code from the exercises into a text file. 
    * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/N3z2PwAYFWwTDLaXtUoQ) the **day before the next class**.
 
-3. Prepare for in-class exercise:
-  * Download the [animals.csv](https://raw.githubusercontent.com/hbctraining/Intro-to-R-flipped/master/data/animals.csv), by right-clicking on the link and "Save Link As..." to place the file into the `data` directory.
-  * Read the `.csv` file into your environment and assign it to a variable called `animals`. **Be sure to check that your row names are the different animals.**
-  * Save the R project when you close Rstudio.
+3. Prepare for **in-class exercise**:
+      * Download the [animals.csv](https://raw.githubusercontent.com/hbctraining/Intro-to-R-flipped/master/data/animals.csv), by right-clicking on the link and "Save Link As..." to place the file into the `data` directory.
+      * Read the `.csv` file into your environment and assign it to a variable called `animals`. **Be sure to check that your row names are the different animals.**
+      * Save the R project when you close Rstudio.
    
 ### Questions?
 * ***If you get stuck due to an error*** while runnning code in the lesson, [email us](mailto:hbctraining@hsph.harvard.edu) 
@@ -69,21 +67,23 @@
 | 10:35 - 11:15 | [In-class exercises](../activities/Day3_activities.md) + [Answer key](../activities/Day3_activities_answer_key.R)| Mary |
 | 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/11_ggplot2.md) | Meeta |
 
-### Self-Learning Part 3
-1. [Using custom functions for consistent plots](../lessons/11b_Custom_Functions_ggplot2.md)
-1. [Generating a boxplot with ggplot2](../lessons/12_boxplot_exercise.md)
-1. [Writing to file and exporting plots](../lessons/13_exporting_data_and_plots.md)
-1. [Finding help](../lessons/14_finding_help.md)
-1. [Tidyverse](https://hbctraining.github.io/Training-modules/Tidyverse_ggplot2/lessons/intro_tidyverse.html)
+### Before the next class:
 
-### Assignment #3
-* All exercises from above lessons have been put together in [R script format](../homework/day3_hw_exercises.R).
-* Add your solutions to the exercises in the downloaded `.R` file. **Upload the R script files** to [Dropbox](https://www.dropbox.com/request/9AVwr4cMJIbHv04b2cYz).
-* [Email us](mailto:hbctraining@hsph.harvard.edu) about questions regarding the homework that you need answered before the next class.
-  * *This is the best way to reach us if you are having any **technical issues** that prevent you from moving forward with the lessons*
-* Post questions that you would like to have reviewed in class [here](https://PollEv.com/hbctraining945).
-  * *This space is reserved for **questions about concepts covered** and big picture questions*
-* [**Answer Key**](../homework/day3_hw_answer-key.R)
+1. Please **study the contents** and **work through all the code** within the following lessons:
+    * [Using custom functions for consistent plots](../lessons/11b_Custom_Functions_ggplot2.md)
+    * [Generating a boxplot with ggplot2](../lessons/12_boxplot_exercise.md)
+    * [Writing to file and exporting plots](../lessons/13_exporting_data_and_plots.md)
+    * [Finding help](../lessons/14_finding_help.md)
+    * [Tidyverse](https://hbctraining.github.io/Training-modules/Tidyverse_ggplot2/lessons/intro_tidyverse.html)
+
+2. **Complete the exercises**:
+   * Each lesson above contain exercises; please go through each of them.
+   * **Copy over** your code from the exercises into a text file. 
+   * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/9AVwr4cMJIbHv04b2cYz) the **day before the next class**.
+   
+### Questions?
+* ***If you get stuck due to an error*** while runnning code in the lesson, [email us](mailto:hbctraining@hsph.harvard.edu) 
+* Post any **conceptual questions** that you would like to have **reviewed in class** [here](https://PollEv.com/hbctraining945).
 
 ---
 
@@ -97,12 +97,14 @@
 | 11:45 - 12:00 | [Wrap Up](../lectures/R_workshop_wrapup_all.pdf) | Mary |
 
 ### Final Exercises
-* [Exercises](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html) and [Answer Key](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_key.html)
+* [Exercises](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html)
 
+### Answer Keys
+* [**Day 1 homework**](../homework/day1_hw_answer-key.R)
+* [**Day 2 homework**](../homework/day2_hw_answer-key.R)
+* [**Day 3 homework**](../homework/day3_hw_answer-key.R)
+* [**Final exercises](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_key.html)
 
-* [**Answer key**](../homework/day1_hw_answer-key.R)
-* [**Answer Key**](../homework/day2_hw_answer-key.R)
-* 
 ## Building on the basic R knowledge
 * [DGE workshop](https://hbctraining.github.io/DGE_workshop_salmon/)
 * [Single-cell RNA-seq workshop](https://hbctraining.github.io/scRNA-seq/)
