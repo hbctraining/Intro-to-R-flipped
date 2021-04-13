@@ -43,7 +43,7 @@ Note, that these lists are not comprehensive, and may other functions exist for 
 
 ### Metadata
 
-When working with large datasets, you will very likely be working with "metadata" file which contains the information about each sample in our dataset.
+When working with large datasets, you will very likely be working with "metadata" file which contains the information about each sample in your dataset.
 
 <img src="../img/metadata_view.png" width="400"> 
 
@@ -63,7 +63,7 @@ First, check the arguments for the function using the `?` to ensure that you are
 
 The first thing you will notice is that you've pulled up the documentation for `read.table()`, this is because that is the parent function and all the other functions are in the same family. 
 
-The next is the function description which specifies that the output of this set of functions is going to be a data frame - "*Reads a file in table format and **creates a data frame from it**, with cases corresponding to lines and variables to fields in the file.*"
+The next item on the documentation page is the function **Description**, which specifies that the output of this set of functions is going to be a **data frame** - "*Reads a file in table format and **creates a data frame from it**, with cases corresponding to lines and variables to fields in the file.*"
 
 In usage, all of the arguments listed for `read.table()` are the default values for all of the family members unless otherwise specified for a given function. Let's take a look at 2 examples:
 1. **The separator** - 
@@ -73,11 +73,17 @@ In usage, all of the arguments listed for `read.table()` are the default values 
 	* in the case of `read.table()` it is `header = FALSE` (by default, it assumes you do not have column names)
 	* whereas for `read.csv()` it is `header = TRUE` (by default, it assumes that all your columns have names listed). 
 
-The take-home from the "Usage" section for `read.csv()` is that it has one mandatory argument, the path to the file and filename in quotations. In our case that is `data/mouse_exp_design.csv` or `data/mouse_exp_design.txt`. 
+***The take-home from the "Usage" section for `read.csv()` is that it has one mandatory argument, the path to the file and filename in quotations; in our case that is `data/mouse_exp_design.csv` or `data/mouse_exp_design.txt`.***
 
-> Note that this family of functions will coerces columns that contain character values into a column of `factor` or categorical data type. Depending on what you want to do with the data, you may want to keep these columns as `character` values (e.g. gene names are usually not categorical data); to do so, you can set `stringsAsFactors = FALSE`.
+> Note that this family of functions has an argument called `stringsAsFactors`, which by default will take the value of `default.stringsAsFactors()`. 
+> 
+> Type out `default.stringsAsFactors()` in the console to check what the default value is for your current R session. Is it `TRUE` or `FALSE`?
+> 
+> If `default.stringsAsFactors()` is set to `TRUE`, then `stringsAsFactors = TRUE`. In that case any function in this family of functions will coerce `character` columns in the data you are reading in to `factor` columns (i.e. coerce from `vector` to `factor`) in the resulting data frame. 
+> 
+> If you want to maintain the `character vector` data structure (e.g. for gene names), you will want to make sure that `stringsAsFactors = FALSE` (or that `default.stringsAsFactors()` is set to `FALSE`).
 
-At this point, please check within your data folder the extension for the `mouse_exp_design` file. You will have to type it accordingly within the `read.csv()` function.
+At this point, please check the extension for the `mouse_exp_design` file within your `data` folder. You will have to type it accordingly within the `read.csv()` function.
 
 > `read.csv` is not fussy about extensions for plain text files, so even though the file we are reading in is a comma-separated value file, it will be read in properly even with a `.txt` extension.
 
@@ -90,7 +96,7 @@ metadata <- read.csv(file="data/mouse_exp_design.csv")
 # metadata <- read.csv(file="data/mouse_exp_design.txt")
 ```
 
-> **NOTE:** RStudio supports the automatic completion of code using the <kbd>Tab</kbd> key. This is especially helpful for when reading in files to ensure the correct file path. The tab completion feature also provides a shortcut to listing objects, and inline help for functions. Tab completion is your friend! We encourage you to use it whenever possible.
+> **NOTE:** RStudio supports the automatic completion of code using the <kbd>Tab</kbd> key. This is especially helpful for when reading in files to ensure the correct file path. The tab completion feature also provides a shortcut to listing objects, and inline help for functions. **Tab completion is your friend!** We encourage you to use it whenever possible.
 
 Go to your Global environment and click on the name of the data frame you just created. 
 
