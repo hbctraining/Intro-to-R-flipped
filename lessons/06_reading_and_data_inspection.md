@@ -88,7 +88,7 @@ If you want to maintain the `character vector` data structure (e.g. for gene nam
 
 ***
 
-#### Create a data frame by reading in the file
+### Create a data frame by reading in the file
 
 At this point, please check the extension for the `mouse_exp_design` file within your `data` folder. You will have to type it accordingly within the `read.csv()` function.
 
