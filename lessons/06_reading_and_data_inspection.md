@@ -126,7 +126,7 @@ Earlier we noted that the file we just read in had column names (first row of va
 * Download [this tab-delimited `.txt` file](https://www.dropbox.com/s/k2mlcqn4823g400/project-summary.txt?dl=1) and save it in your  project's `data` folder.
 * Read it in to R using `read.table()` and store it as the variable `proj_summary`. As you use `read.table()`, keep in mind that:
 	- all the columns in the input text file have column names
-	- you want the first column of the text file to be used as row names (hint: look up the row.names = argument)
+	- you want the first column of the text file to be used as row names (hint: look up the input for the `row.names =` argument in `read.table()`)
 * Display the contents of `proj_summary` in your console
 
 ***
