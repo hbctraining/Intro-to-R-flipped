@@ -135,7 +135,7 @@ Let's **increase the size of both the axes titles to be 1.5 times the default si
 ```r
 ggplot(new_metadata) +
   geom_point(aes(x = age_in_days, y= samplemeans, color = genotype,
-  			shape=celltype), size=3.0) +
+  			shape=celltype), size=2.25) +
   theme_bw() +
   theme(axis.title = element_text(size=rel(1.5)))			
 ```
