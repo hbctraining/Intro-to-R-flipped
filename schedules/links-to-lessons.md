@@ -8,8 +8,8 @@ All the pertinent lessons for this workshop as listed here in the order we recom
 4. [Reading in and inspecting data](../lessons/06_reading_and_data_inspection.md)
      
      > [Solution to exercises in above lessons](../homework/day1_hw_answer-key.R)
-     
-     | [Practice exercises I](../activities/Day2_activities.md) | [Answer key](../activities/Day2_activities_answer_key.R)|
+          
+| [Practice exercises I](../activities/Day2_activities.md) | [Answer key](../activities/Day2_activities_answer_key.R)|
      
 5. [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md)
 5. [Packages and libraries](../lessons/04_introR_packages.md)
