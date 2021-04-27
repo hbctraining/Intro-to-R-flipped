@@ -9,8 +9,9 @@ All the pertinent lessons for this workshop as listed here in the order we recom
      
      > [Solution to exercises in above lessons](../homework/day1_hw_answer-key.R)
      
-     > [Practice exercises I](../activities/Day2_activities.md) + [Answer key](../activities/Day2_activities_answer_key.R)
-5. [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Radhika |
+     | [Practice exercises I](../activities/Day2_activities.md) | [Answer key](../activities/Day2_activities_answer_key.R)|
+     
+5. [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md)
 5. [Packages and libraries](../lessons/04_introR_packages.md)
 6. [Data wrangling: data frames, matrices and lists](../lessons/07_introR-data-wrangling2.md)
 7. [The %in% operator](../lessons/08_identifying-matching-elements.md)
