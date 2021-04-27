@@ -1,6 +1,20 @@
-## Lesson list
+# Introduction to R
 
-All the pertinent lessons for this workshop as listed here in the order we recommend self-learning to follow.
+## Learning Objectives
+
+1. **R syntax**: Understand the different 'parts of speech'.
+2. **Data types structures in R**: Describe the various data types and data structures.
+3. **Data inspection and wrangling**: Demonstrate the utilization of functions and indices to inspect and subset data from various data structures.
+4. **Visualizing data**: Demonstrate the use of the ggplot2 package to create plots for easy data visualization.
+
+## Installations
+
+Download the most recent versions of R and RStudio:
+
+ - [R](https://cran.r-project.org/) 
+ - [RStudio](https://www.rstudio.com/products/rstudio/download/#download)
+
+## Lessons
 
 ### Part 1
 1. [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md)
