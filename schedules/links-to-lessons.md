@@ -32,6 +32,7 @@ All the pertinent lessons for this workshop as listed here in the order we recom
     > [Solution to exercises in above lessons](../homework/day1_hw_answer-key.R)
     
     | [Practice exercises III](../activities/Day4_activities.md) | [Answer key III](../activities/Day4_activities_answer_key.R) |
+    
     | [Practice exercises IV](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html) | [Answer key IV](../Intro-to-R/homework/Intro_to_R_key.md) |
 
 *** 
