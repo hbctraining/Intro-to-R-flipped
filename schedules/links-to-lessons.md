@@ -9,7 +9,7 @@ All the pertinent lessons for this workshop as listed here in the order we recom
      
      > [Solution to exercises in above lessons](../homework/day1_hw_answer-key.R)
           
-| [Practice exercises I](../activities/Day2_activities.md) | [Answer key](../activities/Day2_activities_answer_key.R)|
+     | [Practice exercises I](../activities/Day2_activities.md) | [Answer key I](../activities/Day2_activities_answer_key.R) |
      
 5. [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md)
 5. [Packages and libraries](../lessons/04_introR_packages.md)
@@ -20,7 +20,7 @@ All the pertinent lessons for this workshop as listed here in the order we recom
      
      > [Solution to exercises in above lessons](../homework/day2_hw_answer-key.R)
 
-     > [Practice exercises II](../activities/Day3_activities.md) + [Answer key](../activities/Day3_activities_answer_key.R)
+     | [Practice exercises II](../activities/Day3_activities.md) | [Answer key II](../activities/Day3_activities_answer_key.R) |
               
 10. [Plotting with the ggplot2 package](../lessons/11_ggplot2.md)
 1. [Using custom functions for consistent plots](../lessons/11b_Custom_Functions_ggplot2.md)
@@ -31,9 +31,8 @@ All the pertinent lessons for this workshop as listed here in the order we recom
     
     > [Solution to exercises in above lessons](../homework/day1_hw_answer-key.R)
     
-    > [Practice exercises III](../activities/Day4_activities.md) + [Answer key](../activities/Day4_activities_answer_key.R) 
-
-    > [Practice exercises IV](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html) + [Answer key](../Intro-to-R/homework/Intro_to_R_key.md) 
+    | [Practice exercises III](../activities/Day4_activities.md) | [Answer key III](../activities/Day4_activities_answer_key.R) |
+    | [Practice exercises IV](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html) | [Answer key IV](../Intro-to-R/homework/Intro_to_R_key.md) |
 
 *** 
 
