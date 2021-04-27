@@ -2,6 +2,8 @@
 
 All the pertinent lessons for this workshop as listed here in the order we recommend self-learning to follow.
 
+### Part 1
+
 1. [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md)
 2. [R Syntax and Data Structure](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html)
 3. [Functions and Arguments](../lessons/03_introR-functions-and-arguments.md)
@@ -10,7 +12,10 @@ All the pertinent lessons for this workshop as listed here in the order we recom
      > [Solution to exercises in above lessons](../homework/day1_hw_answer-key.R)
           
      | [Practice exercises I](../activities/Day2_activities.md) | [Answer key I](../activities/Day2_activities_answer_key.R) |
-     
+
+***
+
+### Part II
 5. [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md)
 5. [Packages and libraries](../lessons/04_introR_packages.md)
 6. [Data wrangling: data frames, matrices and lists](../lessons/07_introR-data-wrangling2.md)
@@ -20,8 +25,12 @@ All the pertinent lessons for this workshop as listed here in the order we recom
      
      > [Solution to exercises in above lessons](../homework/day2_hw_answer-key.R)
 
-     | [Practice exercises II](../activities/Day3_activities.md) | [Answer key II](../activities/Day3_activities_answer_key.R) |
+| [Practice exercises II](../activities/Day3_activities.md) | [Answer key II](../activities/Day3_activities_answer_key.R) |
               
+***
+
+### Part III
+
 10. [Plotting with the ggplot2 package](../lessons/11_ggplot2.md)
 1. [Using custom functions for consistent plots](../lessons/11b_Custom_Functions_ggplot2.md)
 1. [Generating a boxplot with ggplot2](../lessons/12_boxplot_exercise.md)
