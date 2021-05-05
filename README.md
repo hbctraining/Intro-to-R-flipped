@@ -9,8 +9,6 @@ This repository has teaching materials for a hands-on **Introduction to R** work
 
 **Note for Trainers:** Please note that the schedule linked below assumes that learners will spend between 2-3 hours on reading through, and completing exercises from selected lessons between classes. The online component of the workshop focuses on more exercises and discussion/Q & A.
 
-> These materials are developed for a trainer-led workshop, but also amenable to self-guided learning.
-
 ### Learning Objectives
 
 1. **R syntax**: Understand the different 'parts of speech'.
@@ -19,7 +17,8 @@ This repository has teaching materials for a hands-on **Introduction to R** work
 4. **Visualizing data**: Demonstrate the use of the ggplot2 package to create plots for easy data visualization.
 
 ### Lessons
-**[Click here](schedules/workshop_schedule.md) for links to lessons and the suggested schedule**
+* [Workshop schedule (trainer-led learning)](schedules/workshop_schedule.md)
+* [Self-learning](schedules/links-to-lessons.md)
 
 ### Installation Requirements
 
