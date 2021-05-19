@@ -1,6 +1,26 @@
 # R workshop with the Harvard Chan Bioinformatics Core
 
-## Day 1
+## Learning Objectives
+
+1. **R syntax**: Understand the different 'parts of speech'.
+2. **Data types structures in R**: Describe the various data types and data structures.
+3. **Data inspection and wrangling**: Demonstrate the utilization of functions and indices to inspect and subset data from various data structures.
+4. **Visualizing data**: Demonstrate the use of the ggplot2 package to create plots for easy data visualization.
+
+## Instructors
+
+[Dr. Radhika S. Khetani](https://bioinformatics.sph.harvard.edu/people/radhika-khetani) and [Dr. Mary E. Piper](https://bioinformatics.sph.harvard.edu/people/mary-piper)
+
+## Installations
+
+Download the most recent versions of R and RStudio:
+
+ - [R](https://cran.r-project.org/) 
+ - [RStudio](https://www.rstudio.com/products/rstudio/download/#download)
+
+## Lessons
+
+### Day 1
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
@@ -8,7 +28,7 @@
 | 10:30 - 11:45 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Meeta |
 | 11:45 - 12:00 | Overview of self-learning materials and homework submission | Radhika |
 
-### Before the next class:
+#### Before the next class:
 
 1. Please **study the contents** and **work through all the code** within the following lessons:
    * [R Syntax and Data Structure](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html)
@@ -20,13 +40,13 @@
    * **Copy over** your code from the exercises into a text file. 
    * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/d4s6478ATbNhggbOFVLW) the **day before the next class**.
    
-### Questions?
+#### Questions?
 * ***If you get stuck due to an error*** while runnning code in the lesson, [email us](mailto:hbctraining@hsph.harvard.edu) 
 * Post any **conceptual questions** that you would like to have **reviewed in class** [here](https://PollEv.com/hbctraining945).
 
 ---
 
-## Day 2
+### Day 2
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
@@ -34,7 +54,7 @@
 | 10:50 - 11:15 | [In-class exercises](../activities/Day2_activities.md) + [Answer key](../activities/Day2_activities_answer_key.R) | Mary |
 | 11:15 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Radhika |
 
-### Before the next class:
+#### Before the next class:
 
 1. Please **study the contents** and **work through all the code** within the following lessons:
     * [Packages and libraries](../lessons/04_introR_packages.md)
@@ -53,13 +73,13 @@
       * Read the `.csv` file into your environment and assign it to a variable called `animals`. **Be sure to check that your row names are the different animals.**
       * Save the R project when you close Rstudio.
    
-### Questions?
+#### Questions?
 * ***If you get stuck due to an error*** while runnning code in the lesson, [email us](mailto:hbctraining@hsph.harvard.edu) 
 * Post any **conceptual questions** that you would like to have **reviewed in class** [here](https://PollEv.com/hbctraining945).
 
 ---
 
-## Day 3
+### Day 3
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
@@ -67,7 +87,7 @@
 | 10:35 - 11:15 | [In-class exercises](../activities/Day3_activities.md) + [Answer key](../activities/Day3_activities_answer_key.R)| Mary |
 | 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/11_ggplot2.md) | Meeta |
 
-### Before the next class:
+#### Before the next class:
 
 1. Please **study the contents** and **work through all the code** within the following lessons:
     * [Using custom functions for consistent plots](../lessons/11b_Custom_Functions_ggplot2.md)
@@ -81,13 +101,13 @@
    * **Copy over** your code from the exercises into a text file. 
    * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/9AVwr4cMJIbHv04b2cYz) the **day before the next class**.
    
-### Questions?
+#### Questions?
 * ***If you get stuck due to an error*** while runnning code in the lesson, [email us](mailto:hbctraining@hsph.harvard.edu) 
 * Post any **conceptual questions** that you would like to have **reviewed in class** [here](https://PollEv.com/hbctraining945).
 
 ---
 
-## Day 4
+### Day 4
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
@@ -96,10 +116,10 @@
 | 11:15 - 11:45 | Discussion, Q & A | All |
 | 11:45 - 12:00 | [Wrap Up](../lectures/R_workshop_wrapup_all.pdf) | Mary |
 
-### Final Exercises
+#### Final Exercises
 * [**Exercises**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html)
 
-### Answer Keys
+#### Answer Keys
 * [**Day 1 homework**](../homework/day1_hw_answer-key.R)
 * [**Day 2 homework**](../homework/day2_hw_answer-key.R)
 * [**Day 3 homework**](../homework/day3_hw_answer-key.R)
