@@ -4,7 +4,7 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:30 | [Workshop Introduction]() |  |
+| 10:00 - 10:30 | Workshop Introduction |  |
 | 10:30 - 11:45 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) |  |
 | 11:45 - 12:00 | Overview of self-learning materials and homework submission |  |
 
@@ -18,7 +18,7 @@
 2. **Complete the exercises**:
    * Each lesson above contain exercises; please go through each of them.
    * **Copy over** your code from the exercises into a text file. 
-   * **Upload the saved text file** to [Dropbox]() the **day before the next class**.
+   * **Upload the saved text file** to Dropbox the **day before the next class**.
    
 ### Questions?
 * ***If you get stuck due to an error*** while runnning code in the lesson, [email us](mailto:hbctraining@hsph.harvard.edu) 
@@ -79,7 +79,7 @@
 2. **Complete the exercises**:
    * Each lesson above contain exercises; please go through each of them.
    * **Copy over** your code from the exercises into a text file. 
-   * **Upload the saved text file** to [Dropbox]() the **day before the next class**.
+   * **Upload the saved text file** to Dropbox the **day before the next class**.
    
 ### Questions?
 * ***If you get stuck due to an error*** while runnning code in the lesson, [email us](mailto:hbctraining@hsph.harvard.edu) 
@@ -94,7 +94,7 @@
 | 10:00 - 10:35 | Questions about self-learning lessons |  |
 | 10:35 - 11:15 | [In-class exercises](../activities/Day4_activities.md) / [Rscript](../activities/day4_activities_skeleton.R) + [Answer key](../activities/Day4_activities_answer_key.R) |  |
 | 11:15 - 11:45 | Discussion, Q & A |  |
-| 11:45 - 12:00 | [Wrap Up](../lectures/R_workshop_wrapup_all.pdf) |  |
+| 11:45 - 12:00 | Wrap Up |  |
 
 ### Final Exercises
 * [**Exercises**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html)
