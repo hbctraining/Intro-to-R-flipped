@@ -1,4 +1,4 @@
-# Workshop Schedule
+# R workshop with the Harvard Chan Bioinformatics Core
 
 ## Day 1
 
@@ -104,6 +104,9 @@
 * [**Day 2 homework**](../homework/day2_hw_answer-key.R)
 * [**Day 3 homework**](../homework/day3_hw_answer-key.R)
 * [**Final exercises**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_key.html)
+
+## Learning resource (requires log in with Harvard Key)
+[HBC and Harvard Catalyst's R learning resource](https://projects.iq.harvard.edu/hcatrresource/video-library)
 
 ## Building on the basic R knowledge
 * [DGE workshop](https://hbctraining.github.io/DGE_workshop_salmon/)
