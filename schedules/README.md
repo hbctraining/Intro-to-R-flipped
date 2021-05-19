@@ -4,9 +4,9 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:30 | [Workshop Introduction](../lectures/Intro_to_workshop_all.pdf) | Mary |
-| 10:30 - 11:45 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Meeta |
-| 11:45 - 12:00 | Overview of self-learning materials and homework submission | Radhika |
+| 10:00 - 10:30 | [Workshop Introduction]() |  |
+| 10:30 - 11:45 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) |  |
+| 11:45 - 12:00 | Overview of self-learning materials and homework submission |  |
 
 ### Before the next class:
 
@@ -18,7 +18,7 @@
 2. **Complete the exercises**:
    * Each lesson above contain exercises; please go through each of them.
    * **Copy over** your code from the exercises into a text file. 
-   * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/d4s6478ATbNhggbOFVLW) the **day before the next class**.
+   * **Upload the saved text file** to [Dropbox]() the **day before the next class**.
    
 ### Questions?
 * ***If you get stuck due to an error*** while runnning code in the lesson, [email us](mailto:hbctraining@hsph.harvard.edu) 
@@ -30,9 +30,9 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:50 | Questions about self-learning & [cheatsheet](https://docs.google.com/spreadsheets/d/1nZtAOWxYV0ocQeAIyb0OHIMliji7zWM_3-olXetvBzE/edit?usp=sharing) creation | Meeta |
-| 10:50 - 11:15 | [In-class exercises](../activities/Day2_activities.md) + [Answer key](../activities/Day2_activities_answer_key.R) | Mary |
-| 11:15 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Radhika |
+| 10:00 - 10:40 | Questions about self-learning & [cheatsheet](https://docs.google.com/spreadsheets/d/1nZtAOWxYV0ocQeAIyb0OHIMliji7zWM_3-olXetvBzE/edit?usp=sharing) creation |  |
+| 10:40 - 11:15 | In-class exercises |  |
+| 11:15 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) |  |
 
 ### Before the next class:
 
@@ -46,7 +46,7 @@
 2. **Complete the exercises**:
    * Each lesson above contain exercises; please go through each of them.
    * **Copy over** your code from the exercises into a text file. 
-   * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/N3z2PwAYFWwTDLaXtUoQ) the **day before the next class**.
+   * **Upload the saved text file** to [Dropbox]() the **day before the next class**.
 
 3. Prepare for **in-class exercise**:
       * Download the [animals.csv](https://raw.githubusercontent.com/hbctraining/Intro-to-R-flipped/master/data/animals.csv), by right-clicking on the link and "Save Link As..." to place the file into the `data` directory.
@@ -63,9 +63,9 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:35 | Questions about self-learning lessons | Mary and Meeta |
-| 10:35 - 11:15 | [In-class exercises](../activities/Day3_activities.md) + [Answer key](../activities/Day3_activities_answer_key.R)| Mary |
-| 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/11_ggplot2.md) | Meeta |
+| 10:00 - 10:35 | Questions about self-learning lessons |  |
+| 10:35 - 11:15 | [In-class exercises](../activities/Day3_activities.md) + [Answer key](../activities/Day3_activities_answer_key.R)|  |
+| 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/11_ggplot2.md) |  |
 
 ### Before the next class:
 
@@ -79,7 +79,7 @@
 2. **Complete the exercises**:
    * Each lesson above contain exercises; please go through each of them.
    * **Copy over** your code from the exercises into a text file. 
-   * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/9AVwr4cMJIbHv04b2cYz) the **day before the next class**.
+   * **Upload the saved text file** to [Dropbox]() the **day before the next class**.
    
 ### Questions?
 * ***If you get stuck due to an error*** while runnning code in the lesson, [email us](mailto:hbctraining@hsph.harvard.edu) 
@@ -91,10 +91,10 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:35 | Questions about self-learning lessons | All |
-| 10:35 - 11:15 | [In-class exercises](../activities/Day4_activities.md) / [Rscript](../activities/day4_activities_skeleton.R) + [Answer key](../activities/Day4_activities_answer_key.R) | Radhika |
-| 11:15 - 11:45 | Discussion, Q & A | All |
-| 11:45 - 12:00 | [Wrap Up](../lectures/R_workshop_wrapup_all.pdf) | Mary |
+| 10:00 - 10:35 | Questions about self-learning lessons |  |
+| 10:35 - 11:15 | [In-class exercises](../activities/Day4_activities.md) / [Rscript](../activities/day4_activities_skeleton.R) + [Answer key](../activities/Day4_activities_answer_key.R) |  |
+| 11:15 - 11:45 | Discussion, Q & A |  |
+| 11:45 - 12:00 | [Wrap Up](../lectures/R_workshop_wrapup_all.pdf) |  |
 
 ### Final Exercises
 * [**Exercises**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html)
