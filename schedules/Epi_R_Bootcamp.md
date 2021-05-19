@@ -65,5 +65,5 @@ Download the most recent versions of R and RStudio:
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 09:30 - 10:15 | Zoom polls, Q&A, Discussion | All |
-| 10:15 - 11:00 | [Subsetting Vectors and Factors](../lessons/11_ggplot2.pdf) | Radhika |
-| 11:00 - 11:30 | [Viz exercise](../lessons/12_boxplot_exercise.md) | Mary |
+| 10:15 - 11:00 | [Data visualization with ggplot2](../lessons/11_ggplot2.pdf) | Radhika |
+| 11:00 - 11:30 | [Data visualization exercise](../lessons/12_boxplot_exercise.md) | Mary |
