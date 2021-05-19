@@ -1,4 +1,4 @@
-# R workshop with the Harvard Chan Bioinformatics Core
+# Workshop schedule
 
 ## Day 1
 
