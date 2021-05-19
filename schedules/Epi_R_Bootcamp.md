@@ -9,8 +9,7 @@
 
 ## Instructors
 
-1. Radhika Khetani, PhD
-1. Mary Piper, PhD
+[Dr. Radhika S. Khetani](https://bioinformatics.sph.harvard.edu/people/radhika-khetani) and [Dr. Mary E. Piper](https://bioinformatics.sph.harvard.edu/people/mary-piper)
 
 ## Installations
 
