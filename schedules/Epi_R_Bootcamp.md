@@ -1,4 +1,5 @@
-# R Bootcamp with the Harvard Chan Bioinformatics Core
+# R Bootcamp!
+For HSPH's summer internship in Epidemiology
 
 ## Learning Objectives
 
