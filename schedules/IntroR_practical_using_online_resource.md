@@ -38,8 +38,8 @@ Download the most recent versions of R and RStudio:
 1. [Subsetting One-Dimensional Data Structures Using Logical Expressions](https://projects.iq.harvard.edu/hcatrresource/segment-3-subsetting-one-dimensional-data-structures-using-logical-expressions)
 1. [Subsetting Two-Dimensional Data Structures Using Indices](https://projects.iq.harvard.edu/hcatrresource/segment-4-wrangling-two-dimensional-data-structures-using-indices)
 1. [Subsetting Two-Dimensional Data Structures Using Logical Expressions](https://projects.iq.harvard.edu/hcatrresource/segment-5-subsetting-two-dimensional-data-structures-using-logical-expressions)
-1. (Optional)[Finding Overlap Between Vectors Using %in% Operator](https://projects.iq.harvard.edu/hcatrresource/segment-1-finding-overlap-between-vectors-using-operator)
-1. (Optional)[Reordering and Matching Datasets](https://projects.iq.harvard.edu/hcatrresource/segment-2-reordering-and-matching-datasets)
+1. **(Optional)** [Finding Overlap Between Vectors Using %in% Operator](https://projects.iq.harvard.edu/hcatrresource/segment-1-finding-overlap-between-vectors-using-operator)
+1. **(Optional)** [Reordering and Matching Datasets](https://projects.iq.harvard.edu/hcatrresource/segment-2-reordering-and-matching-datasets)
 
 
 #### Questions?
