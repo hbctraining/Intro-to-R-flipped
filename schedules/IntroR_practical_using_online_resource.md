@@ -15,9 +15,7 @@ Download the most recent versions of R and RStudio:
 
 ## Lessons
 
-### Prior to the in-class practical:
-
-**Please follow the video tutorials (requires Harvard Key log in) listed below *in order* and work on all the code:**
+### Prior to the practical Introduction to R workshop, please follow the video tutorials (requires Harvard Key log in) listed below *in order* and work on all the code:**
 
 1. [Getting Started in RStudio](https://projects.iq.harvard.edu/hcatrresource/segment-1-getting-started-rstudio)
 1. [Interacting with R](https://projects.iq.harvard.edu/hcatrresource/segment-2-interacting-r)
