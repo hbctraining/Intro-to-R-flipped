@@ -1,8 +1,15 @@
+## Description
+
+This workshop will give participants an overview of the basics of R and RStudio. R is a simple programming environment that enables the effective handling of data, while providing excellent graphical support. RStudio is a tool that provides a user-friendly environment for working with R.
+
+These materials are intended to provide a quick overview of the R programming language.
+
 ## Learning Objectives
 
-1. **R syntax**: Understand the different 'parts of speech'.
-2. **Data types structures in R**: Describe the various data types and data structures.
-3. **Data inspection and wrangling**: Demonstrate the utilization of functions and indices to inspect and subset data from various data structures
+* **R syntax:** Understanding the different 'parts of speech' in R; introducing variables and functions, demonstrating how functions work, and modifying arguments for specific use cases.
+* **Data structures in R:** Getting a handle on the classes of data structures and the types of data used by R.
+* **Data inspection and wrangling:** Reading in data from files. Using indices and various functions to subset, merge, and create datasets.
+* **Exporting data:** Generating new data tables for use outside of the R environment.
 
 ## Installations
 
