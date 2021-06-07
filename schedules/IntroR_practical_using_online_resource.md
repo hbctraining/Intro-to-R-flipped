@@ -2,8 +2,7 @@
 
 1. **R syntax**: Understand the different 'parts of speech'.
 2. **Data types structures in R**: Describe the various data types and data structures.
-3. **Data inspection and wrangling**: Demonstrate the utilization of functions and indices to inspect and subset data from various data structures.
-4. **Visualizing data**: Demonstrate the use of the ggplot2 package to create plots for easy data visualization.
+3. **Data inspection and wrangling**: Demonstrate the utilization of functions and indices to inspect and subset data from various data structures
 
 ## Installations
 
