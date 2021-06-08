@@ -50,7 +50,7 @@ Download the most recent versions of R and RStudio:
 | 10:15 - 11:00 | [Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Radhika |
 | 11:00 - 11:30 | [Reading data into R + Common functions to inspect data](../lessons/06_reading_and_data_inspection.md) | Mary |
 
-* [Video turotial on inspecting data structures](https://projects.iq.harvard.edu/hcatrresource/segment-1-inspecting-data-structures)
+* [Video tutorial on inspecting data structures](https://projects.iq.harvard.edu/hcatrresource/segment-1-inspecting-data-structures)
 
 ### Before next class:
 
