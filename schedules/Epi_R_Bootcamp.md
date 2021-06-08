@@ -46,7 +46,7 @@ Download the most recent versions of R and RStudio:
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 09:30 - 10:15 | Zoom polls, Q&A, Discussion | All |
+| 09:30 - 10:15 | Zoom polls, Q&A, Discussion, [Refresher](https://docs.google.com/spreadsheets/d/1k3xjbIgtPYopcpOSUmczgQFhSzu3eadIAjLOIsJyXrc/edit#gid=0) | All |
 | 10:15 - 11:00 | [Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Radhika |
 | 11:00 - 11:30 | [Reading data into R + Common functions to inspect data](../lessons/06_reading_and_data_inspection.md) | Mary |
 
