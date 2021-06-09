@@ -118,6 +118,6 @@
 * [All hbctraining materials](https://hbctraining.github.io/main)
 
 ## Cheatsheets
-* [base R cheatsheet](../img/base-r.pdf)
-* [RStudio cheatsheet](https://rstudio.com/wp-content/uploads/2016/01/rstudio-IDE-cheatsheet.pdf)
-* [ggplot2 cheatsheet](https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf)
+* [base R cheatsheet](../cheatsheets/base-r.pdf)
+* [RStudio cheatsheet](../cheatsheets/rstudio-ide.pdf)
+* [ggplot2 cheatsheet](../cheatsheets/data-visualization-2.1.pdf)
