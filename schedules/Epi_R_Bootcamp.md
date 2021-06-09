@@ -72,3 +72,21 @@ Download the most recent versions of R and RStudio:
 | 09:30 - 10:15 | Zoom polls, Q&A, Discussion | All |
 | 10:15 - 11:00 | [Data visualization with ggplot2](../lessons/11_ggplot2.md) | Radhika |
 | 11:00 - 11:30 | [Data visualization exercise](../lessons/12_boxplot_exercise.md) | Mary |
+
+### Final Exercises
+* [**Exercises**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html)
+* [**Answer Key**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_key.html)
+
+## Learning resource (requires log in with Harvard Key)
+[HBC and Harvard Catalyst's R learning resource](https://projects.iq.harvard.edu/hcatrresource/video-library)
+
+## Resources
+* [R for Data Science online book](https://r4ds.had.co.nz/)
+* [RMarkdown](https://hbctraining.github.io/Training-modules/Rmarkdown/)
+* [More ggplot2](https://hbctraining.github.io/Training-modules/Tidyverse_ggplot2/lessons/ggplot2.html)
+* [ggplot2 cookbook](http://www.cookbook-r.com/Graphs/)
+
+## Cheatsheets
+* [base R cheatsheet](../img/base-r.pdf)
+* [RStudio cheatsheet](../cheatsheets/rstudio-ide.pdf)
+* [ggplot2 cheatsheet](../cheatsheets/data-visualization-2.1.pdf)
