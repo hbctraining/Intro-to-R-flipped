@@ -12,6 +12,28 @@ Approximate time: 60 minutes
 
 ## Data Visualization with `ggplot2`
 
+***
+
+For this lesson, you will need the `new_metadata` data frame. Please download it [from here](https://github.com/hbctraining/Intro-to-R-flipped/raw/master/data/new_metadata.RData) to your project's data folder by right-clicking and "save file as" or "download file as".
+
+Once you have downloaded it, load it into your environment as follows:
+
+```r
+## load the new_metadata data frame into your environment from a .Rdata object
+load("data/new_metadata.RData")
+```
+
+Next, let's check if it was successfully loaded into the environment:
+
+```r
+# this data frame should have 12 rows and 5 columns
+View(new_metadata)
+```
+
+Great, we are now ready to move forward!
+
+***
+
 When we are working with large sets of numbers it can be useful to display that information graphically to gain more insight. In this lesson we will be plotting with the popular Bioconductor package [`ggplot2`](http://docs.ggplot2.org/).
 
 > If you are interested in learning about plotting with base R functions, we have a short lesson [available here](basic_plots_in_r.md). 
