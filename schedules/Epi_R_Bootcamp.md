@@ -70,5 +70,5 @@ Download the most recent versions of R and RStudio:
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 09:30 - 10:15 | Zoom polls, Q&A, Discussion | All |
-| 10:15 - 11:00 | [Data visualization with ggplot2](../lessons/11_ggplot2.html) | Radhika |
+| 10:15 - 11:00 | [Data visualization with ggplot2](../lessons/11_ggplot2.md) | Radhika |
 | 11:00 - 11:30 | [Data visualization exercise](../lessons/12_boxplot_exercise.md) | Mary |
