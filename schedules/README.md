@@ -121,6 +121,6 @@
 * [All hbctraining materials](https://hbctraining.github.io/main)
 
 ## Cheatsheets
-* [base R cheatsheet](../img/base-r.pdf)
+* [base R cheatsheet](../cheatsheets/base-r.pdf)
 * [RStudio cheatsheet](../cheatsheets/rstudio-ide.pdf)
 * [ggplot2 cheatsheet](../cheatsheets/data-visualization-2.1.pdf)
