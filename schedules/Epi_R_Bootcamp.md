@@ -77,8 +77,14 @@ Download the most recent versions of R and RStudio:
 * [**Exercises**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html)
 * [**Answer Key**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_key.html)
 
-## Learning resource (requires log in with Harvard Key)
-[HBC and Harvard Catalyst's R learning resource](https://projects.iq.harvard.edu/hcatrresource/video-library)
+## Additional video tutorials (requires log in with Harvard Key)
+* [Importing and exporting data](https://projects.iq.harvard.edu/hcatrresource/importing-and-exporting-data)
+* [Data visualization basics](https://projects.iq.harvard.edu/hcatrresource/segment-2-basics-ggplot2)
+* [Altering appearance of plots](https://projects.iq.harvard.edu/hcatrresource/segment-3-altering-appearance-plots)
+* [Asking for, and finding help with R](https://projects.iq.harvard.edu/hcatrresource/segment-2-getting-help-r)
+
+## Written lessons
+* [All content as written lessons (instead of on video)](https://hbctraining.github.io/Intro-to-R-flipped/schedules/links-to-lessons.html)
 
 ## Resources
 * [R for Data Science online book](https://r4ds.had.co.nz/)
