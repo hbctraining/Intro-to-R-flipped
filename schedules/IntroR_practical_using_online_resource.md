@@ -22,25 +22,7 @@ Download the most recent versions of R and RStudio:
 
 ## Pre-requisites:
 
-### Please follow the video tutorials (requires Harvard Key log in) listed below *in order* and work on all the code:
-
-1. [Getting Started in RStudio](https://projects.iq.harvard.edu/hcatrresource/segment-1-getting-started-rstudio)
-1. [Interacting with R](https://projects.iq.harvard.edu/hcatrresource/segment-2-interacting-r)
-1. [Variables](https://projects.iq.harvard.edu/hcatrresource/segment-2-introduction-r-variables)
-1. [Basic Data Structures](https://projects.iq.harvard.edu/hcatrresource/segment-2-introduction-basic-data-structures)
-1. [Complex Data Structures](https://projects.iq.harvard.edu/hcatrresource/segment-3-introduction-complex-data-structures)
-1. [Introduction to Functions](https://projects.iq.harvard.edu/hcatrresource/segment-1-working-functions-r)
-1. [Creating Your Own Functions](https://projects.iq.harvard.edu/hcatrresource/segment-2-creating-your-own-functions-r)
-1. [Packages and Libraries to Extend R's Functionality](https://projects.iq.harvard.edu/hcatrresource/segment-1-packages-and-libraries)
-1. [Getting Help](https://projects.iq.harvard.edu/hcatrresource/segment-2-getting-help-r)
-1. [Inspecting Data Structures](https://projects.iq.harvard.edu/hcatrresource/segment-1-inspecting-data-structures)
-1. [Subsetting One-Dimensional Data Structures Using Indices](https://projects.iq.harvard.edu/hcatrresource/segment-2-selecting-data-using-indices-and-sequences)
-1. [Subsetting One-Dimensional Data Structures Using Logical Expressions](https://projects.iq.harvard.edu/hcatrresource/segment-3-subsetting-one-dimensional-data-structures-using-logical-expressions)
-1. [Subsetting Two-Dimensional Data Structures Using Indices](https://projects.iq.harvard.edu/hcatrresource/segment-4-wrangling-two-dimensional-data-structures-using-indices)
-1. [Subsetting Two-Dimensional Data Structures Using Logical Expressions](https://projects.iq.harvard.edu/hcatrresource/segment-5-subsetting-two-dimensional-data-structures-using-logical-expressions)
-1. [Importing and Exporting Data](https://projects.iq.harvard.edu/hcatrresource/importing-and-exporting-data) (only watch the first 12:30 minutes).
-3. **(Optional)** [Finding Overlap Between Vectors Using %in% Operator](https://projects.iq.harvard.edu/hcatrresource/segment-1-finding-overlap-between-vectors-using-operator)
-4. **(Optional)** [Reordering and Matching Datasets](https://projects.iq.harvard.edu/hcatrresource/segment-2-reordering-and-matching-datasets)
+**Complete all video lessons (requires Harvard Key log in) and work through all the code in the Introduction to R online resource: https://projects.iq.harvard.edu/hcatrresource/**
 
 
 #### Questions?
