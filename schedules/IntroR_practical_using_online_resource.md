@@ -10,6 +10,7 @@ These materials are intended to provide a quick overview of the R programming la
 * **Data structures in R:** Getting a handle on the classes of data structures and the types of data used by R.
 * **Data inspection and wrangling:** Reading in data from files. Using indices and various functions to subset, merge, and create datasets.
 * **Exporting data:** Generating new data tables for use outside of the R environment.
+* **Visualizing data:** Demonstrate the use of the ggplot2 package to create plots for easy data visualization.
 
 ## Installations
 
