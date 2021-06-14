@@ -50,7 +50,7 @@ Download the most recent versions of R and RStudio:
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 14:00 - 14:50 | Questions about self-learning & [cheatsheet]() creation | Mary and Jihe |
+| 14:00 - 14:50 | Questions about self-learning & [cheatsheet](https://docs.google.com/spreadsheets/d/1ShwZj0EmzNS9CyrelypryEVwxwLDi8RpZ_eqAHKzG78/edit?usp=sharing) creation | Mary and Jihe |
 | 14:50 - 15:15 | [In-class exercises](../activities/Day2_activities.md) + [Answer key](../activities/Day2_activities_answer_key.R) | Jihe |
 | 15:15 - 16:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Mary |
 
