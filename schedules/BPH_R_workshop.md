@@ -9,7 +9,7 @@
 
 ## Instructors
 
-[Dr. Radhika S. Khetani](https://bioinformatics.sph.harvard.edu/people/radhika-khetani) and [Dr. Mary E. Piper](https://bioinformatics.sph.harvard.edu/people/mary-piper)
+[Dr. Mary E. Piper](https://bioinformatics.sph.harvard.edu/people/mary-piper) and [Dr. Jihe Liu](https://bioinformatics.sph.harvard.edu/people/jihe-liu)
 
 ## Installations
 
