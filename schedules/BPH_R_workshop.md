@@ -38,7 +38,7 @@ Download the most recent versions of R and RStudio:
 2. **Complete the exercises**:
    * Each lesson above contain exercises; please go through each of them.
    * **Copy over** your code from the exercises into a text file. 
-   * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/d4s6478ATbNhggbOFVLW) the **day before the next class**.
+   * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/FMuCw1CHhNHiG8y2i5CO) the **before noon**.
    
 #### Questions?
 * ***If you get stuck due to an error*** while runnning code in the lesson, [email us](mailto:hbctraining@hsph.harvard.edu) 
