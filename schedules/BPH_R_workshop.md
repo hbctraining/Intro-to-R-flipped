@@ -24,7 +24,7 @@ Download the most recent versions of R and RStudio:
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 14:00 - 14:30 | [Workshop Introduction](../lectures/Intro_to_workshop_all.pdf) | Mary |
+| 14:00 - 14:30 | [Workshop Introduction]() | Mary |
 | 14:30 - 15:45 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Jihe |
 | 15:45 - 16:00 | Overview of self-learning materials and homework submission | Mary |
 
