@@ -1,29 +1,29 @@
-## Introduction to R and RStudio
+## Introduction to R and RStudio (RSK)
 
-## R Syntax and Data Structure
+## R Syntax and Data Structure (MP)
 
-## Functions and Arguments
+## Functions and Arguments (MP)
 
-## Reading in and inspecting data
+## Reading in and inspecting data (RSK)
 
-## Data Wrangling: Subsetting Vectors and Factors
+## Data Wrangling: Subsetting Vectors and Factors (RSK)
 
-## Packages and libraries
+## Packages and libraries (JHL)
 
-## Data wrangling: data frames, matrices and lists
+## Data wrangling: data frames, matrices and lists (MP)
 
-## The %in% operator
+## The %in% operator (MP)
 
-## Reordering and matching
+## Reordering and matching (MP)
 
-## Setting up a data frame to plot (+ the map() function)
+## Setting up a data frame to plot (+ the map() function) (RSK)
 
-## Plotting with the ggplot2 package
+## Plotting with the ggplot2 package (RSK)
 
-## Using custom functions for consistent plots
+## Using custom functions for consistent plots (JHL)
 
-## Generating a boxplot with ggplot2
+## Generating a boxplot with ggplot2 (RSK)
 
-## Writing to file and exporting plots
+## Writing to file and exporting plots (RSK)
 
-## Finding help
+## Finding help (JHL)
