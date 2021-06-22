@@ -108,7 +108,7 @@ Unfortunately, there is no equivalent `$` syntax to select a row by name.
 ***
 **Exercises**
 
-1. Return the `genotype` and `replicate` column values for `sample2` and `sample8`.
+1. Return a data frame with only the `genotype` and `replicate` column values for `sample2` and `sample8`.
 2. Return the fourth and ninth values of the `replicate` column.
 3. Extract the `replicate` column as a data frame.
 
