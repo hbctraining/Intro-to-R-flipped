@@ -1,6 +1,7 @@
 ## Introduction to R and RStudio (RSK)
 
 ## R Syntax and Data Structure (MP)
+
 1. Which statement is FALSE regarding vectors?
     - Vectors are created using the combine function (`c()`)
     - Vectors can only have values of a single data type
@@ -17,6 +18,14 @@
 
 ## Functions and Arguments (MP)
 
+1. The `grep()` function searches for characters or a pattern within each element of a character vector. Which argument for the grep() function can we change if we want the matching elements in the vector returned rather than the indices for the matching elements?
+    - `pattern`
+    - `x`
+    - `ignore.case`
+    - `perl`
+    - **`value`**
+    - `fixed`
+    
 ## Reading in and inspecting data (RSK)
 
 ## Data Wrangling: Subsetting Vectors and Factors (RSK)
