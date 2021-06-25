@@ -65,12 +65,19 @@
     
 ## Reordering and matching (MP)
 
-1. Which statement is FALSE regarding data frames?
-    - **Data frames can only have values of single data type**
-    - Data frames are created by combining together vectors/factors into the columns of the data frame
-    - Data frames are two-dimensional objects
-    - There is no limit to the number of rows/columns in a data frame
-    - Variables in your environment can be data frames
+1. We have the two vectors: x and y, which are given below.
+    * x <- c(4, 8, 6, 10, 2)
+    * y <- c(8, 5, 9, 2, 4, 7, 10, 6)
+
+    Which code would reorder `y` to match the order of `x`?
+    
+    - **`y[c(5,1,8,7,4)]`**
+    - `y[c(2,NA,NA,5,1,NA,4,3)]`
+    - `y[c(4,8,6,10,2)]`
+    - `y[5,1,8,7,4]`
+    - `match(y,x)`
+    - `y[2,NA,NA,5,1,NA,4,3]`
+    - `y[4,8,6,10,2]`
 
 ## Setting up a data frame to plot (+ the map() function) (RSK)
 
