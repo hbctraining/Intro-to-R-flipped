@@ -111,10 +111,10 @@ Download the most recent versions of R and RStudio:
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 14:00 - 14:35 | Questions about self-learning lessons | Mary and Jihe |
+| 14:00 - 14:35 | Questions about self-learning lessons | Mary |
 | 14:35 - 15:15 | [In-class exercises](../activities/Day4_activities.md) / [Rscript](../activities/day4_activities_skeleton.R) + [Answer key](../activities/Day4_activities_answer_key.R) | Jihe |
 | 15:15 - 15:45 | Discussion, Q & A | Mary and Jihe |
-| 15:45 - 16:00 | [Wrap Up]() | Mary |
+| 15:45 - 16:00 | [Wrap Up](https://github.com/hbctraining/Intro-to-R-flipped/raw/master/lectures/R_workshop_wrapup_bph.pdf) | Mary |
 
 #### Final Exercises
 * [**Exercises**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html)
