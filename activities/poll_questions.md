@@ -42,9 +42,9 @@
    Which of the following code lines does NOT return the element in the 3rd row and 1st column?
     
     - `metadata$genotype[3]`
-    - `metadata[1, 3]
-    - `metadata["sample3", "genotype"]
-    - `metadata[rownames(metadata) == "sample3", colnames(metadata) == "genotype"]
+    - **`metadata[1, 3]`**
+    - `metadata["sample3", "genotype"]`
+    - `metadata[rownames(metadata) == "sample3", colnames(metadata) == "genotype"]`
   
   
 ## The %in% operator (MP)
