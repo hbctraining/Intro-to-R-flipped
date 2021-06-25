@@ -31,6 +31,7 @@
 ## Data Wrangling: Subsetting Vectors and Factors (RSK)
 
 ## Packages and libraries (JHL)
+1. (**True** or False) If you exit the Rstudio environment, reopen it, and check sessionInfo(), the libraries that were loaded previously will not show up.
 
 ## Data wrangling: data frames, matrices and lists (MP)
 
