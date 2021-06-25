@@ -10,8 +10,8 @@
     - Variables in your environment can be vectors
 
 1. Which statement is FALSE regarding data frames?
-    - **Data frames can only have values of single data type**
-    - Data frames are created by combining together vectors/factors into the columns of the data frame
+    - **Data frames can only have values of a single data type**
+    - Data frames are created by combining together vectors/factors into the columns of the data frame using the `data.frame()` function
     - Data frames are two-dimensional objects
     - There is no limit to the number of rows/columns in a data frame
     - Variables in your environment can be data frames
