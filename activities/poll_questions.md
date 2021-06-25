@@ -18,7 +18,7 @@
 
 ## Functions and Arguments (MP)
 
-1. The `grep()` function searches for characters or a pattern within each element of a character vector. Which argument for the grep() function can we change if we want the matching elements in the vector returned rather than the indices for the matching elements?
+1. The `grep()` function searches for characters or a pattern within each element of a character vector. Which argument for the `grep()` function can we change if we want the matching elements in the vector returned rather than the indices for the matching elements?
     - `pattern`
     - `x`
     - `ignore.case`
@@ -34,6 +34,17 @@
 
 ## Data wrangling: data frames, matrices and lists (MP)
 
+1. In the metadata data frame has the following features:
+        * The output of `colnames(metadata)` is: `[1] "genotype" "celltype" "replicate"`
+        * The output of `rownames(metadata)` is: `[1] "sample1" "sample2" "sample3" "sample4" "sample5" "sample6" "sample7" "sample8" "sample9" "sample10" "sample11" "sample12"`
+   Which of the following code lines does NOT return the element in the 3rd row and 1st column?
+    
+    - `metadata$genotype[3]`
+    - `metadata[1, 3]
+    - `metadata["sample3", "genotype"]
+    - `metadata[rownames(metadata) == "sample3", colnames(metadata) == "genotype"]
+  
+  
 ## The %in% operator (MP)
 
 ## Reordering and matching (MP)
