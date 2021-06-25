@@ -36,8 +36,8 @@
 
 1. In the metadata data frame has the following features:
 
-        * The output of `colnames(metadata)` is: `[1] "genotype" "celltype" "replicate"`
-        * The output of `rownames(metadata)` is: `[1] "sample1" "sample2" "sample3" "sample4" "sample5" "sample6" "sample7" "sample8" "sample9" "sample10" "sample11" "sample12"`
+    * The output of `colnames(metadata)` is: `[1] "genotype" "celltype" "replicate"`
+    * The output of `rownames(metadata)` is: `[1] "sample1" "sample2" "sample3" "sample4" "sample5" "sample6" "sample7" "sample8" "sample9" "sample10" "sample11" "sample12"`
         
    Which of the following code lines does NOT return the element in the 3rd row and 1st column?
     
