@@ -49,19 +49,28 @@
   
 ## The %in% operator (MP)
 
-1. We have two data frame, and  we want to extract the columns from `df1` with the column names that are present in the row names of `df2`. Which code below would achieve this?
+1. We have two data frames, and  we want to extract the columns from `df1` with the column names that are present in the row names of `df2`. Which code below would achieve this?
 
     - `df1[df1 %in% df2]`
-    - `df2[rownames(df2) %in% colnames(df1)]`
-    - `df1[rownames(df2) %in% colnames(df1)]`
+    - `df2[ , rownames(df2) %in% colnames(df1)]`
+    - `df1[ , rownames(df2) %in% colnames(df1)]`
     - `colnames(df2)[rownames(df2) %in% colnames(df1)]`
     - `colnames(df1)[rownames(df2) %in% colnames(df1)]`
-    - `df1[colnames(df1) %in% rownames(df2)]`
-    - `df2[colnames(df1) %in% rownames(df2)]`
+    - **`df1[ , colnames(df1) %in% rownames(df2)]`**
+    - `df2[ , colnames(df1) %in% rownames(df2)]`
+    - `df1[colnames(df1) %in% rownames(df2), ]`
+    - `df2[colnames(df1) %in% rownames(df2), ]`
     - `df1[df2 %in% df1]`
   
     
 ## Reordering and matching (MP)
+
+1. Which statement is FALSE regarding data frames?
+    - **Data frames can only have values of single data type**
+    - Data frames are created by combining together vectors/factors into the columns of the data frame
+    - Data frames are two-dimensional objects
+    - There is no limit to the number of rows/columns in a data frame
+    - Variables in your environment can be data frames
 
 ## Setting up a data frame to plot (+ the map() function) (RSK)
 
