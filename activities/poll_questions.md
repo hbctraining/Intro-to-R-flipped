@@ -91,3 +91,8 @@
 ## Writing to file and exporting plots (RSK)
 
 ## Finding help (JHL)
+1. Which of the following is **NOT** the best practice when finding help:
+    - Include sessionInfo() output
+    - Attach a representative, yet smaller dataset if needed
+    - Be precise about the terminology
+    - Post the question online without checking previous solutions
