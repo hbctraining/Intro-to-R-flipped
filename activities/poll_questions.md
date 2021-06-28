@@ -95,4 +95,4 @@
     - Include sessionInfo() output
     - Attach a representative, yet smaller dataset if needed
     - Be precise about the terminology
-    - Post the question online without checking previous solutions
+    - **Post the question online without checking previous solutions**
