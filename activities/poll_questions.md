@@ -1,5 +1,17 @@
 ## Introduction to R and RStudio (RSK)
 
+1. Which of the following panels in RStudio are directly connected to the R interface? 
+    - **the console**
+    - the script editor
+    - **the environment**
+    - the files tab
+
+1. If you run an incomplete line of code, the prompt in the Console will change from ">" to something else. What is it?
+    - *
+    - –
+    - **+**
+    - /
+
 ## R Syntax and Data Structure (MP)
 
 1. Which statement is FALSE regarding vectors?
@@ -28,7 +40,11 @@
     
 ## Reading in and inspecting data (RSK)
 
+
+
 ## Data Wrangling: Subsetting Vectors and Factors (RSK)
+
+
 
 ## Packages and libraries (JHL)
 1. (**True** or False) If you exit the Rstudio environment, reopen it, and check sessionInfo(), libraries that were loaded in the previous previous session will not show up.
