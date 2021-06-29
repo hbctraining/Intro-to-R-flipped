@@ -130,7 +130,32 @@
 
 ## Plotting with the ggplot2 package (RSK)
 
-## Writing to file and exporting plots (RSK)
+1. Which of the following lines of code will **initialize** a plot?
+    - ggplot2(name_of_data_frame)
+    - **ggplot(name_of_data_frame)**
+    - name_of_data_frame
+    - geom_point(name_of_data_frame)
+
+1. Which of the following will plot a scatterplot without an error? (multiple answers)
+    - ggplot(data_frame) + geom_point(x=column1, y=column3)
+    - **ggplot(data_frame, aes(x=column1, y=column3)) + geom_point()**
+    - ggplot(data_frame) + scatterplot(aes(x=column1, y=column3)) 
+    - **ggplot(data_frame) + geom_point(aes(x=column1, y=column3))**
+
+1. I have used the following code to make a barplot
+    ggplot(data_frame) + geom_bar(aes(x = column1, y = column6, fill = column3))
+  
+  What function (layer) should I add to make sure that my selected colors are used for the plot?
+    - color(c("purple", "white", "orange"))
+    - fill(c("purple", "white", "orange"))
+    - scale_color_manual(c("purple", "white", "orange"))
+    - **scale_fill_manual(c("purple", "white", "orange"))**
+    
+1. How many theme() layers can you have in a ggplot code chunk?
+    - 3
+    - 8
+    - **no limit**
+    - 1
 
 ## Finding help (JHL)
 1. Which of the following is **NOT** the best practice when finding help:
