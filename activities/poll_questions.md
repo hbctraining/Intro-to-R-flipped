@@ -39,11 +39,29 @@
     - `fixed`
     
 ## Reading in and inspecting data (RSK)
+1. Which of these functions will output the data type of a vector and the data structure of a non-vector object?
+    - **class()**
+    - str()
+    - summary()
+    - dim()
 
-
+1. What is the data structure of the output of colnames() or rownames()
+    - list
+    - data frame
+    - **vector**
+    - matrix
 
 ## Data Wrangling: Subsetting Vectors and Factors (RSK)
-
+1. What is the output of 
+    
+    > 3:7
+    
+    - a vector with the following elements 3, 7
+     - the numbers 3. 7
+     - **a vector with the following elements 3, 4, 5, 6, 7**
+     - the numbers 3. 4. 5. 6. 7
+   
+2. 
 
 
 ## Packages and libraries (JHL)
@@ -56,7 +74,7 @@
     * The output of `colnames(metadata)` is: `[1] "genotype" "celltype" "replicate"`
     * The output of `rownames(metadata)` is: `[1] "sample1" "sample2" "sample3" "sample4" "sample5" "sample6" "sample7" "sample8" "sample9" "sample10" "sample11" "sample12"`
         
-   Which of the following code lines does NOT return the element in the 3rd row and 1st column?
+   Which of the following code lines does **NOT** return the element in the 3rd row and 1st column?
     
     - `metadata$genotype[3]`
     - **`metadata[1, 3]`**
