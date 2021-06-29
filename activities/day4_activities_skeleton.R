@@ -8,20 +8,17 @@
 
 #3. We decide that our plot would look better with the animal names ordered from slowest to fastest. Using the animals_tb data frame, reorder the animals on the x-axis to start with the slowest animal on the left-hand side of the plot to the fastest animal on the right-hand side of the plot by completing the following steps:
 
-#a. Use the `arrange()` function to order the rows by speed from slowest to fastest and save to `animals_arranged`.
-
-
-
-#b. Extract the animal names from `animals_arranged` as a vector called `names_ordered_by_speed`.
-
-
-
-#c. Turn the `animal_names` column of `animals_tb` into a factor and specify the levels as `names_ordered_by_speed` from slowest to fastest (output in part b).
+#a. Use the `arrange()` function to order the rows by speed from slowest to fastest. Then use the `pull()` function to extract the `animal_names` column as a vector of character values. Save the new variable as `names_ordered_by_speed`.
 
 
 
 
-#d. Re-plot the scatterplot with the animal names in order from slowest to fastest.
+#b. Turn the `animal_names` column of `animals_tb` into a factor and specify the levels as `names_ordered_by_speed` from slowest to fastest (output in part a). Note: this step is crucial, because ggplot2 uses factor as plotting order, instead of the order we observe in data frame.
+
+
+
+
+#c. Re-plot the scatterplot with the animal names in order from slowest to fastest.
 
 
 
