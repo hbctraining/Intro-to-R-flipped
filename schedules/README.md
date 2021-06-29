@@ -4,7 +4,7 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:30 | Workshop Introduction | Jihe |
+| 10:00 - 10:30 | [Workshop Introduction](https://github.com/hbctraining/Intro-to-R-flipped/raw/master/lectures/Intro_to_workshop_all.pdf) | Jihe |
 | 10:30 - 11:45 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Meeta |
 | 11:45 - 12:00 | Overview of self-learning materials and homework submission | Mary |
 
