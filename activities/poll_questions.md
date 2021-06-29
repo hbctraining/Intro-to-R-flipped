@@ -1,12 +1,18 @@
 ## Introduction to R and RStudio (RSK)
 
-1. Which of the following panels in RStudio are directly connected to the R interface? 
+1. Which of the following panels in the RStudio interface directly communicate with R? 
     - **the console**
     - the script editor
     - **the environment**
     - the files tab
 
-1. If you run an incomplete line of code, the prompt in the Console will change from ">" to something else. What is it?
+1. The command prompt is represented by which symbol?
+    - %
+    - $
+    - >
+    - #
+
+1. If you run an incomplete line of code, the command prompt in the Console will change to something else. What is it?
     - *
     - –
     - **+**
@@ -39,13 +45,13 @@
     - `fixed`
     
 ## Reading in and inspecting data (RSK)
-1. Which of these functions will output the data type of a vector and the data structure of a non-vector object?
+1. Which of these functions will output the data type of a vector or the data structure of a non-vector object? (select all that apply)
     - **class()**
-    - str()
+    - **str()**
     - summary()
     - dim()
 
-1. What is the data structure of the output of colnames() or rownames()
+1. What is the data structure output by colnames() or rownames()?
     - list
     - data frame
     - **vector**
@@ -68,6 +74,7 @@
     - [1] "C" "C"   
     - **[1] FALSE FALSE TRUE FALSE TRUE FALSE FALSE**
     - "C" "C"
+    - [1] 3 5
 
 1. Given a vector `bike <- c("B", "I", "C", "Y", "C", "L", "E")`
    
@@ -76,6 +83,7 @@
     - [1] "C" "C"   
     - [1] FALSE FALSE TRUE FALSE TRUE FALSE FALSE
     - **[1] 3 5**
+    - "C" "C"
 
 
 ## Packages and libraries (JHL)
@@ -83,7 +91,7 @@
 
 ## Data wrangling: data frames, matrices and lists (MP)
 
-1. In the metadata data frame has the following features:
+1. The metadata data frame has the following features:
 
     * The output of `colnames(metadata)` is: `[1] "genotype" "celltype" "replicate"`
     * The output of `rownames(metadata)` is: `[1] "sample1" "sample2" "sample3" "sample4" "sample5" "sample6" "sample7" "sample8" "sample9" "sample10" "sample11" "sample12"`
