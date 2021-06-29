@@ -87,7 +87,7 @@
 
 
 ## Packages and libraries (JHL)
-1. (**True** or False) If you exit the Rstudio environment, reopen it, and check sessionInfo(), libraries that were loaded in the previous previous session will not show up.
+1. (**True** or False) If you exit the Rstudio environment, reopen it, and check sessionInfo(), libraries that were loaded in the previous session will not show up.
 
 ## Data wrangling: data frames, matrices and lists (MP)
 
