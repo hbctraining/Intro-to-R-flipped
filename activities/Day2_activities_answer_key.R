@@ -1,4 +1,4 @@
-# Day 3 Activities - Answer Key
+# Day 2 Activities - Answer Key
 
 # 1. Let's first create a function fahrenheit_to_celsius, which converts temperature from Fahrenheit to Celsius. The formula is as follows: Temp_Celsius = (Temp_Fahrenheit - 32) * 5 / 9. Test your function - fahrenheit_to_celsius(32) should give output of 0.
 fahrenheit_to_celsius <- function(temp_F) {
