@@ -52,16 +52,30 @@
     - matrix
 
 ## Data Wrangling: Subsetting Vectors and Factors (RSK)
-1. What is the output of 
-    
-    > 3:7
-    
-    - a vector with the following elements 3, 7
-     - the numbers 3. 7
-     - **a vector with the following elements 3, 4, 5, 6, 7**
-     - the numbers 3. 4. 5. 6. 7
+1. Given a vector `bike <- c("B", "I", "C", "Y", "C", "L", "E")`
    
-2. 
+   What is the exact output of `bike[3:7`]?
+   
+   - CYCLE
+   - **[1] "C" "Y" "C" "L" "E"**
+   - [3] "C" "Y" "C" "L" "E"
+   - [1] FALSE FALSE TRUE TRUE TRUE TRUE TRUE
+
+1. Given a vector `bike <- c("B", "I", "C", "Y", "C", "L", "E")`
+   
+   What is the exact output of `bike == "C"`?
+   
+    - [1] "C" "C"   
+    - **[1] FALSE FALSE TRUE FALSE TRUE FALSE FALSE**
+    - "C" "C"
+
+1. Given a vector `bike <- c("B", "I", "C", "Y", "C", "L", "E")`
+   
+   What is the exact output of `which(bike == "C")`?
+   
+    - [1] "C" "C"   
+    - [1] FALSE FALSE TRUE FALSE TRUE FALSE FALSE
+    - **[1] 3 5**
 
 
 ## Packages and libraries (JHL)
@@ -114,13 +128,7 @@
     - `y[2,NA,NA,5,1,NA,4,3]`
     - `y[4,8,6,10,2]`
 
-## Setting up a data frame to plot (+ the map() function) (RSK)
-
 ## Plotting with the ggplot2 package (RSK)
-
-## Using custom functions for consistent plots (JHL)
-
-## Generating a boxplot with ggplot2 (RSK)
 
 ## Writing to file and exporting plots (RSK)
 
