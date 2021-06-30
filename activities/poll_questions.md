@@ -108,16 +108,12 @@
 
 1. We have two data frames, and  we want to extract the columns from `df1` with the column names that are present in the row names of `df2`. Which code below would achieve this?
 
-    - `df1[df1 %in% df2]`
     - `df2[ , rownames(df2) %in% colnames(df1)]`
     - `df1[ , rownames(df2) %in% colnames(df1)]`
-    - `colnames(df2)[rownames(df2) %in% colnames(df1)]`
-    - `colnames(df1)[rownames(df2) %in% colnames(df1)]`
+    - `colnames(df1)[colnames(df1) %in% rownames(df2)]`
     - **`df1[ , colnames(df1) %in% rownames(df2)]`**
     - `df2[ , colnames(df1) %in% rownames(df2)]`
     - `df1[colnames(df1) %in% rownames(df2), ]`
-    - `df2[colnames(df1) %in% rownames(df2), ]`
-    - `df1[df2 %in% df1]`
   
     
 ## Reordering and matching (MP)
@@ -130,11 +126,8 @@
     
     - **`y[c(5,1,8,7,4)]`**
     - `y[c(2,NA,NA,5,1,NA,4,3)]`
-    - `y[c(4,8,6,10,2)]`
     - `y[5,1,8,7,4]`
     - `match(y,x)`
-    - `y[2,NA,NA,5,1,NA,4,3]`
-    - `y[4,8,6,10,2]`
 
 ## Plotting with the ggplot2 package (RSK)
 
