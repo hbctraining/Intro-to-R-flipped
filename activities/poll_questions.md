@@ -20,14 +20,14 @@
 
 ## R Syntax and Data Structure (MP)
 
-1. Which statement is FALSE regarding vectors?
+1. Which of these statements about vectors is FALSE?
     - Vectors are created using the combine function (`c()`)
     - Vectors can only have values of a single data type
     - There is no limit to the number of elements in a vector
     - **Vectors are two-dimensional objects**
     - Variables in your environment can be vectors
 
-1. Which statement is FALSE regarding data frames?
+1. Which of these statements about data frames is FALSE?
     - **Data frames can only have values of a single data type**
     - Data frames are created by combining together vectors/factors into the columns of the data frame using the `data.frame()` function
     - Data frames are two-dimensional objects
@@ -36,7 +36,7 @@
 
 ## Functions and Arguments (MP)
 
-1. The `grep()` function searches for characters or a pattern within each element of a character vector. Which argument for the `grep()` function can we change if we want the matching elements in the vector returned rather than the indices for the matching elements?
+1. The grep() function searches for characters or a pattern in each element of a vector. Which argument for the grep() function should we change if we want the matching elements in the vector returned rather than the indices for the matching elements?
     - `pattern`
     - `x`
     - `ignore.case`
