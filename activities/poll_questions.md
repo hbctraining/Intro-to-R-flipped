@@ -138,6 +138,7 @@
     - `geom_point(name_of_data_frame)`
 
 1. Which of the following will plot a scatterplot without an error? (multiple answers)
+
     - `ggplot(data_frame) + geom_point(x=column1, y=column3)`
     - **`ggplot(data_frame, aes(x=column1, y=column3)) + geom_point()`**
     - `ggplot(data_frame) + scatterplot(aes(x=column1, y=column3))`
@@ -147,6 +148,7 @@
     `ggplot(data_frame) + geom_bar(aes(x = column1, y = column6, fill = column3))`
   
   What function (layer) should I add to make sure that my selected colors are used for the plot?
+  
     - `color(c("purple", "white", "orange"))`
     - `fill(c("purple", "white", "orange"))`
     - `scale_color_manual(c("purple", "white", "orange"))`
