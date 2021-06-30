@@ -51,7 +51,7 @@
     - summary()
     - dim()
 
-1. What is the data structure output by colnames() or rownames()?
+1. What is the data structure output by `colnames()` or `rownames()`?
     - list
     - data frame
     - **vector**
@@ -87,7 +87,7 @@
 
 
 ## Packages and libraries (JHL)
-1. (**True** or False) If you exit the Rstudio environment, reopen it, and check sessionInfo(), libraries that were loaded in the previous session will not show up.
+1. (**True** or False) If you exit the Rstudio environment, reopen it, and check `sessionInfo()`, libraries that were loaded in the previous session will not show up.
 
 ## Data wrangling: data frames, matrices and lists (MP)
 
@@ -118,9 +118,9 @@
     
 ## Reordering and matching (MP)
 
-1. We have the two vectors: x and y, which are given below.
-    * x <- c(4, 8, 6, 10, 2)
-    * y <- c(8, 5, 9, 2, 4, 7, 10, 6)
+1. We have the two vectors: `x` and `y`, which are given below.
+    * `x <- c(4, 8, 6, 10, 2)`
+    * `y <- c(8, 5, 9, 2, 4, 7, 10, 6)`
 
     Which code would reorder `y` to match the order of `x`?
     
@@ -152,7 +152,7 @@
     - scale_color_manual(c("purple", "white", "orange"))
     - **scale_fill_manual(c("purple", "white", "orange"))**
     
-1. How many theme() layers can you have in a ggplot code chunk?
+1. How many `theme()` layers can you have in a ggplot code chunk?
     - 3
     - 8
     - **no limit**
@@ -160,7 +160,7 @@
 
 ## Finding help (JHL)
 1. Which of the following is **NOT** the best practice when finding help:
-    - Include sessionInfo() output
+    - Include `sessionInfo()` output
     - Attach a representative, yet smaller dataset if needed
     - Be precise about the terminology
     - **Post the question online without checking previous solutions**
