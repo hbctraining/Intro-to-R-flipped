@@ -147,7 +147,7 @@
 1. I have used the following code to make a barplot
     `ggplot(data_frame) + geom_bar(aes(x = column1, y = column6, fill = column3))`
   
-  What function (layer) should I add to make sure that my selected colors are used for the plot?
+    What function (layer) should I add to make sure that my selected colors are used for the plot?
   
     - `color(c("purple", "white", "orange"))`
     - `fill(c("purple", "white", "orange"))`
