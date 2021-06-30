@@ -96,13 +96,13 @@
 * colnames(metadata) is: [1] "genotype" "celltype" "replicate"
 * rownames(metadata) is: [1] "sample1" "sample2" "sample3" "sample4"
 
-Which of the following does **NOT** return the element row 3 & column 1
+Which of the following does **NOT** return the element row 3 & column 1?
 
-    - `metadata$genotype[3]`
-    - **`metadata[1, 3]`**
-    - `metadata["sample3", "genotype"]`
-    - `metadata[rownames(metadata) == "sample3", colnames(metadata) == "genotype"]`
-  
+    * `metadata$genotype[3]`
+    * **`metadata[1, 3]`**
+    * `metadata["sample3", "genotype"]`
+    * `metadata[rownames(metadata) == "sample3", colnames(metadata) == "genotype"]`
+
   
 ## The %in% operator (MP)
 
