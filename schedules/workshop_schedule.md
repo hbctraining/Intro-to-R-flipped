@@ -5,7 +5,7 @@
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 10:00 - 10:30 | [Workshop Introduction](../lectures/Intro_to_workshop_all.pdf) | Jihe |
-| 10:30 - 11:45 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Meeta |
+| 10:30 - 11:45 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Radhika |
 | 11:45 - 12:00 | Overview of self-learning materials and homework submission | Mary |
 
 ### Before the next class:
@@ -30,7 +30,7 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:50 | Questions about self-learning & [cheatsheet](https://docs.google.com/spreadsheets/d/1nZtAOWxYV0ocQeAIyb0OHIMliji7zWM_3-olXetvBzE/edit?usp=sharing) creation | Meeta |
+| 10:00 - 10:50 | Questions about self-learning & [cheatsheet](https://docs.google.com/spreadsheets/d/1nZtAOWxYV0ocQeAIyb0OHIMliji7zWM_3-olXetvBzE/edit?usp=sharing) creation | Radhika |
 | 10:50 - 11:15 | [In-class exercises](../activities/Day2_activities.md) + [Answer key](../activities/Day2_activities_answer_key.R) | Jihe |
 | 11:15 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Mary |
 
@@ -65,7 +65,7 @@
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 10:00 - 10:35 | Questions about self-learning lessons | All |
 | 10:35 - 11:15 | [In-class exercises](../activities/Day3_activities.md) + [Answer key](../activities/Day3_activities_answer_key.R)| Mary |
-| 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/11_ggplot2.md) | Meeta |
+| 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/11_ggplot2.md) | Radhika |
 
 ### Before the next class:
 
