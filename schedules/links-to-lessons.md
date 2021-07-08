@@ -48,7 +48,7 @@ Download the most recent versions of R and RStudio:
 1. [Generating a boxplot with ggplot2](../lessons/12_boxplot_exercise.md)
 1. [Writing to file and exporting plots](../lessons/13_exporting_data_and_plots.md)
 1. [Finding help](../lessons/14_finding_help.md)
-1. [Tidyverse](https://hbctraining.github.io/Training-modules/Tidyverse_ggplot2/lessons/intro_tidyverse.html)
+1. [Tidyverse](../lessons/15_tidyverse.md)
     
 * [Solution to exercises in above lessons](../homework/day1_hw_answer-key.R)
     
