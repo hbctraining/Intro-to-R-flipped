@@ -74,7 +74,7 @@
     * [Generating a boxplot with ggplot2](../lessons/12_boxplot_exercise.md)
     * [Writing to file and exporting plots](../lessons/13_exporting_data_and_plots.md)
     * [Finding help](../lessons/14_finding_help.md)
-    * [Tidyverse](https://hbctraining.github.io/Training-modules/Tidyverse_ggplot2/lessons/intro_tidyverse.html)
+    * [Tidyverse](../lessons/15_tidyverse.md)
 
 2. **Complete the exercises**:
    * Each lesson above contain exercises; please go through each of them.
