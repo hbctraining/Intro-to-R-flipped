@@ -236,6 +236,7 @@ You can access the files we need for this workshop using the links provided belo
 
 * Download the **normalized counts file** by right clicking on [this link](https://raw.githubusercontent.com/hbc/NGS_Data_Analysis_Course/master/sessionII/data/counts.rpkm.csv)
 * Download **metadata file** using [this link](https://github.com/hbc/NGS_Data_Analysis_Course/raw/master/sessionII/data/mouse_exp_design.csv)
+* Download the **functional analysis output file** using [this link](https://github.com/hbctraining/Training-modules/blob/master/Tidyverse_ggplot2/data/gprofiler_results_Mov10oe.csv?raw=true) 
 
 > *NOTE:* If the files download automatically to some other location on your laptop, you can move them to the your working directory using your file explorer or finder (outside RStudio), or navigating to the files in the `Files` tab of the bottom right panel of RStudio
 
@@ -253,6 +254,10 @@ The first column contains the row names, and **note that these are identical to 
 <img src="../img/metadata_view.png" width="400"> 
 
 R is particularly good at handling this type of **categorical data**. Rather than simply storing this information as text, the data is represented in a specific data structure which allows the user to sort and manipulate the data in a quick and efficient manner. We will discuss this in more detail as we go through the different lessons in R!  
+
+### The functional analysis results
+
+We will be using the results of the functional analysis to learn about packages/functions from the [Tidyverse suite of integrated packages](https://www.tidyverse.org/packages/). These packages are designed to work together to make common data science operations like data wrangling, tidying, reading/writing, parsing, and visualizing, more user-friendly. 
 
 ## Best practices
 
