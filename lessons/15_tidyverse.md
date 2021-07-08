@@ -234,7 +234,6 @@ Let's generate gene ratios to reflect the number of DE genes associated with eac
 # Create gene ratio column based on other columns in dataset
 bp_oe <- bp_oe %>%
   mutate(gene_ratio = overlap.size / query.size)
-
 ```
 
 ***
@@ -248,18 +247,15 @@ Our final data for plotting should look like the table below:
 
 <img src="../img/bp_oe_ready_to_plot.png" width="1200">
 
-## 7. Plot results
+## Next steps
 
-Now that we have our results ready for plotting, we can use the [ggplot2](https://ggplot2.tidyverse.org) package to plot our results.
-
-The [ggplot2](https://ggplot2.tidyverse.org) package uses a syntax for plotting based on [The Grammar for Graphics](http://amzn.to/2ef1eWp), and [this lesson](https://hbctraining.github.io/Training-modules/Tidyverse_ggplot2/lessons/ggplot2.html) will dive into how to use the special graphics syntax to create our detailed custom plots.
+Now that we have our results ready for plotting, we can use the [ggplot2](https://ggplot2.tidyverse.org) package to plot our results. If you are interested, you can follow [this lesson](https://hbctraining.github.io/Training-modules/Tidyverse_ggplot2/lessons/ggplot2.html) and dive into how to use `ggplot2` to create the plots with this dataset.
 
 ### Additional resources
 
 -   [R for Data Science](http://r4ds.had.co.nz)
 -   [teach the tidyverse](http://varianceexplained.org/r/teach-tidyverse/)
 -   [tidy style guide](http://style.tidyverse.org/)
-
 
 ---
 *This lesson has been developed by members of the teaching team at the [Harvard Chan Bioinformatics Core (HBC)](http://bioinformatics.sph.harvard.edu/). These are open access materials distributed under the terms of the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.*
