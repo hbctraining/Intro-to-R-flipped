@@ -251,7 +251,7 @@ Our final data for plotting should look like the table below:
 
 ## Next steps
 
-Now that we have our results ready for plotting, we can use the [ggplot2](https://ggplot2.tidyverse.org) package to plot our results. If you are interested, you can follow [this lesson](https://hbctraining.github.io/Training-modules/Tidyverse_ggplot2/lessons/ggplot2.html) and dive into how to use `ggplot2` to create the plots with this dataset.
+Now that we have our results ready for plotting, we can use the [ggplot2](https://ggplot2.tidyverse.org) package to plot our results. If you are interested, you can follow [this lesson](https://hbctraining.github.io/Training-modules/Tidyverse_ggplot2/lessons/03_ggplot2.html) and dive into how to use `ggplot2` to create the plots with this dataset.
 
 ### Additional resources
 
