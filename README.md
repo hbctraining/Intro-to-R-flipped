@@ -17,7 +17,7 @@ This repository has teaching materials for a hands-on **Introduction to R** work
 4. **Visualizing data**: Demonstrate the use of the ggplot2 package to create plots for easy data visualization.
 
 ### Lessons
-* [Workshop schedule (trainer-led learning)](schedules/)
+* [Workshop schedule (trainer-led learning)](schedules/workshop_schedule.md)
 * [Self-learning](schedules/links-to-lessons.md)
 
 ### Installation Requirements
