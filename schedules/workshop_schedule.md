@@ -100,7 +100,7 @@
 * [**Exercises**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html)
 
 ### Answer Keys
-* **Day 1 homework**
+* [**Day 1 homework**](../homework/day1_hw_answer-key.R)
 * **Day 2 homework**
 * **Day 3 homework**
 * [**Final exercises**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_key.html)
