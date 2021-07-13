@@ -46,7 +46,7 @@
 2. **Complete the exercises**:
    * Each lesson above contain exercises; please go through each of them.
    * **Copy over** your code from the exercises into a text file. 
-   * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/N3z2PwAYFWwTDLaXtUoQ) the **day before the next class**.
+   * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/X8UyFj8gjDLIu8Mishc4) the **day before the next class**.
 
 3. Prepare for **in-class exercise**:
       * Download the [animals.csv](https://raw.githubusercontent.com/hbctraining/Intro-to-R-flipped/master/data/animals.csv), by right-clicking on the link and "Save Link As..." to place the file into the `data` directory.
