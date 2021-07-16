@@ -121,7 +121,7 @@
     * `x <- c(4, 8, 6, 10, 2)`
     * `y <- c(8, 5, 9, 2, 4, 7, 10, 6)`
 
-    Which code would reorder `y` to match the order of `x`?
+    Which code would reorder and subset `y` to match `x`?
     
     - **`y[c(5,1,8,7,4)]`**
     - `y[c(2,NA,NA,5,1,NA,4,3)]`
