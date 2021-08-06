@@ -72,7 +72,7 @@ Tibbles can be created directly using the `tibble()` function or data frames can
 
 We're going to explore the Tidyverse suite of tools to wrangle our data to prepare it for visualization. You should have downloaded the file called `gprofiler_results_Mov10oe.txt` into your R project's `data` folder earlier. 
 
-> If you do not have the `gprofiler_results_Mov10oe.txt` file in your `data` folder, you can right click and download it into the `data` folder [using this link](https://github.com/hbctraining/Training-modules/blob/master/Tidyverse_ggplot2/data/gprofiler_results_Mov10oe.csv?raw=true).
+> If you do not have the `gprofiler_results_Mov10oe.txt` file in your `data` folder, you can right click and download it into the `data` folder [using this link](https://github.com/hbctraining/Training-modules/blob/master/Tidyverse_ggplot2/data/gprofiler_results_Mov10oe.tsv?raw=true).
 
 **The dataset:**
 
@@ -115,7 +115,7 @@ While the base R packages have perfectly fine methods for reading in data, the `
 
 ```r
 # Read in the functional analysis results
-functional_GO_results <- read_delim(file = "data/gprofiler_results_Mov10oe.csv", delim = "\t" )
+functional_GO_results <- read_delim(file = "data/gprofiler_results_Mov10oe.tsv", delim = "\t" )
 
 # Take a look at the results
 functional_GO_results
