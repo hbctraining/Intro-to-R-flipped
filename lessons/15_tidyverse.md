@@ -175,7 +175,7 @@ The `select()` function also allows for negative selection. So we could have alt
 # DO NOT RUN
 # Selecting columns to remove
 bp_oe <- bp_oe %>%
-    select(-c(query.number, significant, recall, precision, subgraph.number, relative.depth))
+    select(-c(query.number, significant, recall, precision, subgraph.number, relative.depth, domain))
 ```
 
 <img src="../img/bp_oe_selection.png" width="1200">
