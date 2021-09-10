@@ -110,7 +110,7 @@
 * [Single-cell RNA-seq workshop](https://hbctraining.github.io/scRNA-seq/)
 * [RMarkdown](https://hbctraining.github.io/Training-modules/Rmarkdown/)
 * [Functional analysis](https://hbctraining.github.io/Training-modules/DGE-functional-analysis/)
-* [More ggplot2](https://hbctraining.github.io/Training-modules/Tidyverse_ggplot2/lessons/ggplot2.html)
+* [More ggplot2](https://hbctraining.github.io/publication_perfect/)
 * [ggplot2 cookbook](http://www.cookbook-r.com/Graphs/)
 
 ## Resources
