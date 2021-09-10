@@ -112,6 +112,7 @@
 * [Functional analysis](https://hbctraining.github.io/Training-modules/DGE-functional-analysis/)
 * [More ggplot2](https://hbctraining.github.io/Training-modules/Tidyverse_ggplot2/lessons/ggplot2.html)
 * [ggplot2 cookbook](http://www.cookbook-r.com/Graphs/)
+* [More about plots! "Publication Perfect"](https://hbctraining.github.io/publication_perfect/)
 
 ## Resources
 * [Online learning resources](https://hbctraining.github.io/bioinformatics_online/lists/online_trainings.html)
