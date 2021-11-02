@@ -6,7 +6,7 @@
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 10:00 - 10:30 | [Workshop Introduction](../lectures/Intro_to_workshop_all.pdf) | Jihe |
 | 10:30 - 11:45 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Radhika |
-| 11:45 - 12:00 | Overview of self-learning materials and homework submission | Mary |
+| 11:45 - 12:00 | Overview of self-learning materials and homework submission | Will |
 
 ### Before the next class:
 
