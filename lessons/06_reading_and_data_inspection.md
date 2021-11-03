@@ -116,6 +116,7 @@ When you do this the metadata table will pop up on the top left hand corner of R
 You should see a subtle coloring (blue-gray) of the first row and first column, the rest of the table will have a white background. This is because your first row and first columns have different properties than the rest of the table, they are the names of the rows and columns respectively. 
 
 <img src="../img/metadata_display_row_cols.png" width="300">
+
 Earlier we noted that the file we just read in had column names (first row of values) and how `read.csv()` deals with "headers". In addition to column headers, `read.csv()` also assumes that the first column contains the row names. Not all functions in the `read.table()` family of functions will do this and depending on which one you use, you may have to specify an additional argument to properly assign the row names and column names.
 
 > Row names and column names are really handy when subsetting data structures and they are also helpful to identify samples or genes. We almost always use them with data frames.
