@@ -193,13 +193,15 @@ bp_oe <- bp_oe %>%
   arrange(p.value)
 ```
 
-> **NOTE:** If you wanted to arrange in descending order, then you could have run the following instead:
+> **NOTE1:** If you wanted to arrange in descending order, then you could have run the following instead:
 > ```r
 > # DO NOT RUN
 > # Order by adjusted p-value descending
 > bp_oe <- bp_oe %>%
 >   arrange(desc(p.value))
 > ```
+
+> **NOTE2:** Ordering variables in `ggplot2` is a bit different. [This post](https://www.r-graph-gallery.com/267-reorder-a-variable-in-ggplot2.html) introduces a few ways of ordering variables in a plot.
 
 ## 5. Rename columns to be more intuitive
 
