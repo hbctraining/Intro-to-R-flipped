@@ -112,6 +112,7 @@
 * [Functional analysis](https://hbctraining.github.io/Training-modules/DGE-functional-analysis/)
 * [More ggplot2](https://hbctraining.github.io/publication_perfect/)
 * [ggplot2 cookbook](http://www.cookbook-r.com/Graphs/)
+* [Running R and Rstudio on O2](https://harvardmed.atlassian.net/wiki/spaces/O2/pages/1623425967/RStudio+on+O2)
 
 ## Resources
 * [Online learning resources](https://hbctraining.github.io/bioinformatics_online/lists/online_trainings.html)
