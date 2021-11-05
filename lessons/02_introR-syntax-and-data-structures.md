@@ -271,8 +271,6 @@ df <- data.frame(species, glengths)
 
 We can see that a new variable called `df` has been created in our `Environment` within a new section called `Data`. In the `Environment`, it specifies that `df` has 3 observations of 2 variables. What does that mean? In R, rows always come first, so it means that `df` has 3 rows and 2 columns. We can get additional information if we click on the blue circle with the white triangle in the middle next to `df`. It will display information about each of the columns in the data frame, giving information about what the data type is of each of the columns and the first few values of those columns.
 
-Note that the species column is now a factor even though we added it as a character vector. It turns out that the `data.frame()` function will turn all **character vectors into factors** by default. There are ways that we can change the default behavior of the function as we will see in later lessons.
-
 Another handy feature in RStudio is that if we hover the cursor over the variable name in the `Environment`, `df`, it will turn into a pointing finger. If you click on `df`, it will open the data frame as it's own tab next to the script editor. We can explore the table interactively within this window. To close, just click on the X on the tab.
 
 As with any variable, we can print the values stored inside to the console if we type the variable's name and run. 
