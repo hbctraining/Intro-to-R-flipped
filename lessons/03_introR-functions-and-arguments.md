@@ -8,8 +8,8 @@ Approximate time: 30 min
 ## Learning Objectives
 
 * Describe and utilize functions in R. 
-* Modify default behavior of functions using arguments in R.
-* Identify R-specific sources of help to get more information about functions.
+* Modify default behavior of a function using arguments.
+* Identify R-specific sources of obtaining more information about functions.
 * Demonstrate how to create user-defined functions in R
 
 ## Functions and their arguments
