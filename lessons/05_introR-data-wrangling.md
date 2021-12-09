@@ -9,7 +9,7 @@ Approximate time: 60 min
 
 * Demonstrate how to subset vectors and factors
 * Explain the use of logical operators when subsetting vectors and factors
-* Demonstrate how to relevel factors such that the assignment is no longer alphabetical
+* Demonstrate how to relevel factors in a desired order
 
 
 ## Selecting data using indices and sequences
