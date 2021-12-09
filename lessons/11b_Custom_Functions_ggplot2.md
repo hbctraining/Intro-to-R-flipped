@@ -1,3 +1,7 @@
+## Learning Objectives 
+
+* Apply custom function to generate consistent plots.
+
 ## Consistent formatting using custom functions
 
 When publishing, it is helpful to ensure all plots have similar formatting. To do this we can create a custom function with our preferences for the theme. Remember the structure of a function is:
