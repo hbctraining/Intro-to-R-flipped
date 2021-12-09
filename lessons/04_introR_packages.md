@@ -7,7 +7,7 @@ Approximate time: 25 min
 
 ## Learning Objectives
 
-* Understand different ways to to install external packages to extend R’s functionality 
+* Explain different ways to install external R packages
 * Demonstrate how to load a library and to find functions specific to a package 
 
 ## Packages and Libraries
