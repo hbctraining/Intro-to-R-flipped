@@ -8,7 +8,7 @@ Approximate time: 70 min
 ## Learning Objectives
 
 * Employ variables in R.
-* Describe the various data types used in R. 
+* Describe frequently-used data types in R. 
 * Construct data structures to store data.
 
 ## The R syntax
