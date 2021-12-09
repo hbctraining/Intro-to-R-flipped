@@ -7,7 +7,7 @@ Approximate time: 30 min
 
 ## Learning Objectives
 
-* Identify different R-specific and external sources of help to (1) troubleshoot errors and (2) get more information about functions and packages.
+* Identify different R-specific external sources to help with troubleshooting errors and obtaining more information about functions and packages.
 
 ## Asking for help
 
