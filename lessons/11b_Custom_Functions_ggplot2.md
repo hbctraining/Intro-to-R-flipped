@@ -1,6 +1,6 @@
 ## Learning Objectives 
 
-* Apply custom function to generate consistent plots.
+* Apply the custom function to generate consistent plots.
 
 ## Consistent formatting using custom functions
 
