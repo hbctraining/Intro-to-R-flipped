@@ -9,8 +9,8 @@ Approximate time: 45 min
 
 ## Learning Objectives
 
-* Determine whether the same values are present in two vectors
-* Identify whether the same values are in the same order in two vectors
+* Describe the use of `%in%` operator.
+* Explain the user case for `any` and `all` functions.
 
 ## Logical operators for identifying matching elements 
 
