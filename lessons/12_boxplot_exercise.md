@@ -6,6 +6,10 @@ date: "Wednesday, December 4, 2019"
 
 Approximate time: 60 minutes
 
+## Learning Objectives 
+
+* Generate the box plot using ggplot2
+
 ## Generating a Boxplot with ggplot2
 
 A boxplot provides a graphical view of the distribution of data based on a five number summary: 
