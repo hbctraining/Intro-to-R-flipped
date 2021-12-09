@@ -8,7 +8,8 @@ Approximate time: 60 minutes
 
 ## Learning Objectives 
 
-* Explain the syntax to utilize the "ggplot2" package to visualize data.
+* Explain the syntax of ggplot2
+* Apply ggplot2 package to visualize data.
 
 ## Data Visualization with `ggplot2`
 
