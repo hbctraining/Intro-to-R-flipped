@@ -9,7 +9,7 @@ Approximate time: 45 minutes
 
 * Describe what R and RStudio are.
 * Interact with R using RStudio.
-* Use the various components of RStudio.
+* Familiarize various components of RStudio.
 
 ## What is R?
 
