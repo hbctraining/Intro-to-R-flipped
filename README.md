@@ -11,10 +11,10 @@ This repository has teaching materials for a hands-on **Introduction to R** work
 
 ### Learning Objectives
 
-1. **R syntax**: Understand the different 'parts of speech'.
-2. **Data types structures in R**: Describe the various data types and data structures.
+1. **R syntax**: Familiarize the basic syntax and the use of Rstudio.
+2. **Data types and data structures**: Describe frequently-used data types and data structures in R.
 3. **Data inspection and wrangling**: Demonstrate the utilization of functions and indices to inspect and subset data from various data structures.
-4. **Visualizing data**: Demonstrate the use of the ggplot2 package to create plots for easy data visualization.
+4. **Data visualization**: Apply the ggplot2 package to create plots for data visualization.
 
 ### Lessons
 * [Workshop schedule (trainer-led learning)](schedules/workshop_schedule.md)
