@@ -7,7 +7,7 @@ date: "Wednesday, December 4, 2019"
 
 ## Learning Objectives 
 
-* Describe the "map" function for iterative tasks on data structures.
+* Describe the `map()` function for iterative tasks on data structures.
 
 ## Setting up a data frame for visualization
 
