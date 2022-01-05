@@ -18,7 +18,7 @@
 2. **Complete the exercises**:
    * Each lesson above contain exercises; please go through each of them.
    * **Copy over** your code from the exercises into a text file. 
-   * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/C8HqwJwHNk3LJJc50wJf) the **day before the next class**.
+   * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/SKio2i8WHJZbML30sE6f) the **day before the next class**.
    
 ### Questions?
 * ***If you get stuck due to an error*** while runnning code in the lesson, [email us](mailto:hbctraining@hsph.harvard.edu) 
@@ -100,9 +100,9 @@
 * [**Exercises**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html)
 
 ### Answer Keys
-* [**Day 1 homework**](../homework/day1_hw_answer-key.R)
-* [**Day 2 homework**](../homework/day2_hw_answer-key.R)
-* [**Day 3 homework**](../homework/day3_hw_answer-key.R)
+* **Day 1 homework**
+* **Day 2 homework**
+* **Day 3 homework**
 * [**Final exercises**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_key.html)
 
 ## Building on the basic R knowledge
