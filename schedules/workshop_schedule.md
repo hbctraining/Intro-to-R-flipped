@@ -10,12 +10,17 @@
 
 ### Before the next class:
 
-1. Please **study the contents** and **work through all the code** within the following lessons:
-   * [R Syntax and Data Structure](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html)
-   * [Functions and Arguments](../lessons/03_introR-functions-and-arguments.md)
-   * [Reading in and inspecting data](../lessons/06_reading_and_data_inspection.md)
+I. Please **study the contents** and **work through all the code** within the following lessons:
+   1. [R Syntax and Data Structure:](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html)
+  
+      In order to utilize R effectively, you will need to understand what types of data you can use in R and also how you can store data in "objects" or "variables". The "R Syntax and Data Structure" lesson will cover:
+        - How can you assign a value to a object?
+        - What types of information can you store in R?
+        - What are the different objects that you can use to store data in R?
+   2. [Functions and Arguments](../lessons/03_introR-functions-and-arguments.md)
+   3. [Reading in and inspecting data](../lessons/06_reading_and_data_inspection.md)
 
-2. **Complete the exercises**:
+II. **Complete the exercises**:
    * Each lesson above contain exercises; please go through each of them.
    * **Copy over** your code from the exercises into a text file. 
    * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/SKio2i8WHJZbML30sE6f) the **day before the next class**.
