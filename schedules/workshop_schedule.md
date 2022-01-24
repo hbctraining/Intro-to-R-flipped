@@ -12,13 +12,31 @@
 
 I. Please **study the contents** and **work through all the code** within the following lessons:
    1. [R Syntax and Data Structure:](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html)
-  
-      In order to utilize R effectively, you will need to understand what types of data you can use in R and also how you can store data in "objects" or "variables". The "R Syntax and Data Structure" lesson will cover:
-        - How can you assign a value to a object?
-        - What types of information can you store in R?
-        - What are the different objects that you can use to store data in R?
+      <details>
+       <summary><i>Click here for a preview of this lesson</i></summary>
+         <br>In order to utilize R effectively, you will need to understand what types of data you can use in R and also how you can store data in "objects" or "variables". The "R Syntax and Data Structure" lesson will cover:<br><br>
+             - How can you assign a value to a object<br>
+             - What types of information can you store in R<br>
+             - What are the different objects that you can use to store data in R<br>
+        </details>
+   
    2. [Functions and Arguments](../lessons/03_introR-functions-and-arguments.md)
+      <details>
+       <summary><i>Click here for a preview of this lesson</i></summary>
+         <br>You will sometimes run into the cases where you want to iterate or make a shortcut of a process in R. One way to do this is to use or create a function. In this lesson you will explore functions, specifically:<br><br>
+            - How to use built-in functions in R<br>
+            - How to create your own custom functions<br>
+         </details>
+
    3. [Reading in and inspecting data](../lessons/06_reading_and_data_inspection.md)
+      <details>
+       <summary><i>Click here for a preview of this lesson</i></summary>
+         <br>Oftentimes when using R, you would like to be able to read in your dataset. In this lesson you will learn:<br><br>
+            - What types of data can be read into R<br>
+            - How to read that data into R<br>
+            - How to figure out the structure of data within R<br>
+        </details>
+
 
 II. **Complete the exercises**:
    * Each lesson above contain exercises; please go through each of them.
