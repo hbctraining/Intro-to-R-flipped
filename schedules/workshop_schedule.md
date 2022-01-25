@@ -14,7 +14,7 @@ I. Please **study the contents** and **work through all the code** within the fo
    1. [R Syntax and Data Structure:](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html)
       <details>
        <summary><i>Click here for a preview of this lesson</i></summary>
-         <br>In order to utilize R effectively, you will need to understand what types of data you can use in R and also how you can store data in "objects" or "variables". The "R Syntax and Data Structure" lesson will cover:<br><br>
+         <br>In order to utilize R effectively, you will need to understand what types of data you can use in R and also how you can store data in "objects" or "variables". <br><br>This lesson will cover:<br>
              - How can you assign a value to a object<br>
              - What types of information can you store in R<br>
              - What are the different objects that you can use to store data in R<br>
@@ -25,7 +25,7 @@ I. Please **study the contents** and **work through all the code** within the fo
        <summary><i>Click here for a preview of this lesson</i></summary>
          <br>Functions are the basic "commands" used in R to get something done. To use functions (denoted by function_name followed by "()"), one has to enter some information within the parenthesis and optionally some arguments to change the default behavior of a function. 
          <br>You can also create your own functions! When you want to perform a task or a series of tasks more than once, creating a custom function is the best way to go. 
-         <br>In this lesson you will explore:<br><br>
+         <br><br>In this lesson you will explore:<br>
             - How to use built-in functions<br>
             - How to create your own custom functions<br>
          </details>
@@ -33,9 +33,9 @@ I. Please **study the contents** and **work through all the code** within the fo
    3. [Reading in and inspecting data](../lessons/06_reading_and_data_inspection.md)
       <details>
        <summary><i>Click here for a preview of this lesson</i></summary>
-         <br>When using R, it is almost a certainty that you will have to bring data into the R environment. In this lesson you will learn:<br><br>
+         <br>When using R, it is almost a certainty that you will have to bring data into the R environment. <br><br>In this lesson you will learn:<br>
             - How to read different types (formats) of data<br>
-            - How to inspect its contents and structure once you have read in the data<br>
+            - How to inspect the contents and structure of the dataset once you have read it in<br>
         </details>
 
 II. **Complete the exercises**:
