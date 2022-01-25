@@ -17,7 +17,7 @@ I. Please **study the contents** and **work through all the code** within the fo
          <br>In order to utilize R effectively, you will need to understand what types of data you can use in R and also how you can store data in "objects" or "variables". <br><br>This lesson will cover:<br>
              - How can you assign a value to a object<br>
              - What types of information can you store in R<br>
-             - What are the different objects that you can use to store data in R<br>
+             - What are the different objects that you can use to store data in R<br><br>
         </details>
    
    2. [Functions and Arguments](../lessons/03_introR-functions-and-arguments.md)
@@ -27,7 +27,7 @@ I. Please **study the contents** and **work through all the code** within the fo
          <br>You can also create your own functions! When you want to perform a task or a series of tasks more than once, creating a custom function is the best way to go. 
          <br><br>In this lesson you will explore:<br>
             - How to use built-in functions<br>
-            - How to create your own custom functions<br>
+            - How to create your own custom functions<br><br>
          </details>
 
    3. [Reading in and inspecting data](../lessons/06_reading_and_data_inspection.md)
@@ -35,7 +35,7 @@ I. Please **study the contents** and **work through all the code** within the fo
        <summary><i>Click here for a preview of this lesson</i></summary>
          <br>When using R, it is almost a certainty that you will have to bring data into the R environment. <br><br>In this lesson you will learn:<br>
             - How to read different types (formats) of data<br>
-            - How to inspect the contents and structure of the dataset once you have read it in<br>
+            - How to inspect the contents and structure of the dataset once you have read it in<br><br>
         </details>
 
 II. **Complete the exercises**:
