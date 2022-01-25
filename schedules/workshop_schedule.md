@@ -23,20 +23,20 @@ I. Please **study the contents** and **work through all the code** within the fo
    2. [Functions and Arguments](../lessons/03_introR-functions-and-arguments.md)
       <details>
        <summary><i>Click here for a preview of this lesson</i></summary>
-         <br>You will sometimes run into the cases where you want to iterate or make a shortcut of a process in R. One way to do this is to use or create a function. In this lesson you will explore functions, specifically:<br><br>
-            - How to use built-in functions in R<br>
+         <br>Functions are the basic "commands" used in R to get something done. To use functions (denoted by function_name followed by "()"), one has to enter some information within the parenthesis and optionally some arguments to change the default behavior of a function. 
+         <br>You can also create your own functions! When you want to perform a task or a series of tasks more than once, creating a custom function is the best way to go. 
+         <br>In this lesson you will explore:<br><br>
+            - How to use built-in functions<br>
             - How to create your own custom functions<br>
          </details>
 
    3. [Reading in and inspecting data](../lessons/06_reading_and_data_inspection.md)
       <details>
        <summary><i>Click here for a preview of this lesson</i></summary>
-         <br>Oftentimes when using R, you would like to be able to read in your dataset. In this lesson you will learn:<br><br>
-            - What types of data can be read into R<br>
-            - How to read that data into R<br>
-            - How to figure out the structure of data within R<br>
+         <br>When using R, it is almost a certainty that you will have to bring data into the R environment. In this lesson you will learn:<br><br>
+            - How to read different types (formats) of data<br>
+            - How to inspect its contents and structure once you have read in the data<br>
         </details>
-
 
 II. **Complete the exercises**:
    * Each lesson above contain exercises; please go through each of them.
