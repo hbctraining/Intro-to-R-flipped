@@ -91,7 +91,7 @@ I. Please **study the contents** and **work through all the code** within the fo
    4. [Reordering and matching](../lessons/09_reordering-to-match-datasets.md)
        <details>
          <summary><i>Click here for a preview of this lesson</i></summary>
-           <br>When working in R, sometimes you will want to rearrange values within a vector (row names or column names). The <code>match()</code> function can be very powerful for this task.<br><br>This lesson will cover:<br>
+           <br>Sometimes you will want to rearrange values within a vector (row names or column names). The <code>match()</code> function can be very powerful for this task.<br><br>This lesson will cover:<br>
              - Maunually rearranging values within a vector<br>
              - Implementing the <code>match()</code> function to automatically rearrange the values within a vector<br><br>
          </details>
@@ -100,10 +100,10 @@ I. Please **study the contents** and **work through all the code** within the fo
        <details>
          <summary><i>Click here for a preview of this lesson</i></summary>
            <br>We will be starting with visualization in the next class. To set up for this, you need to create a new metadata data frame with information from the counts data frame. You will need to use a function over every column within the counts data frame iteratively. You could do that manually, but it is error-prone, the <code>map()</code> family of functions makes this more efficient.<br><br>This lesson will cover:<br>
-             - Utilizing map_dbl() to take the average of every column in a data frame<br>
-             - Briefly discuss other functions within the <code>map()</code> family of functions<br><br>
+             - Utilizing <code>map_dbl()</code> to take the average of every column in a data frame<br>
+             - Briefly discuss other functions within the <code>map()</code> family of functions<br>
+             - Create a new data frame for plotting<br><br>
          </details>
-             - Create a new data frame for plotting
 
 II. **Complete the exercises**:
    * Each lesson above contains exercises; please go through each of them.
