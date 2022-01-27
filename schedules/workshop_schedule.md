@@ -82,7 +82,7 @@ I. Please **study the contents** and **work through all the code** within the fo
    3. [The %in% operator](../lessons/08_identifying-matching-elements.md)
        <details>
          <summary><i>Click here for a preview of this lesson</i></summary>
-           <br>Very often you will have to compare two vectors ti figure our if, and which, values are common between them. The <code>%in%</code> operator can be used for this purpose.<br><br>This lesson will cover:<br>
+           <br>Very often you will have to compare two vectors to figure out if, and which, values are common between them. The <code>%in%</code> operator can be used for this purpose.<br><br>This lesson will cover:<br>
              - Implementing the <code>%in%</code> operator to evaluate two vectors<br>
              - Distinguishing <code>%in%</code> from <code>==</code> and other logical operators<br>
              - Using <code>any()</code> and <code>all()</code> functions<br><br>
