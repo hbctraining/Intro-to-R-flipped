@@ -15,7 +15,7 @@ I. Please **study the contents** and **work through all the code** within the fo
       <details>
        <summary><i>Click here for a preview of this lesson</i></summary>
          <br>In order to utilize R effectively, you will need to understand what types of data you can use in R and also how you can store data in "objects" or "variables". <br><br>This lesson will cover:<br>
-             - How can you assign a value to a object<br>
+             - Assigning a value to a object<br>
              - What types of information can you store in R<br>
              - What are the different objects that you can use to store data in R<br><br>
         </details>
@@ -26,16 +26,16 @@ I. Please **study the contents** and **work through all the code** within the fo
          <br>Functions are the basic "commands" used in R to get something done. To use functions (denoted by function_name followed by "()"), one has to enter some information within the parenthesis and optionally some arguments to change the default behavior of a function. 
          <br>You can also create your own functions! When you want to perform a task or a series of tasks more than once, creating a custom function is the best way to go. 
          <br><br>In this lesson you will explore:<br>
-            - How to use built-in functions<br>
-            - How to create your own custom functions<br><br>
+            - Using built-in functions<br>
+            - Creating your own custom functions<br><br>
          </details>
 
    3. [Reading in and inspecting data](../lessons/06_reading_and_data_inspection.md)
       <details>
        <summary><i>Click here for a preview of this lesson</i></summary>
          <br>When using R, it is almost a certainty that you will have to bring data into the R environment. <br><br>In this lesson you will learn:<br>
-            - How to read different types (formats) of data<br>
-            - How to inspect the contents and structure of the dataset once you have read it in<br><br>
+            - Reading different types (formats) of data<br>
+            - Inspecting the contents and structure of the dataset once you have read it in<br><br>
         </details>
 
 II. **Complete the exercises**:
@@ -59,19 +59,56 @@ II. **Complete the exercises**:
 
 ### Before the next class:
 
-1. Please **study the contents** and **work through all the code** within the following lessons:
-    * [Packages and libraries](../lessons/04_introR_packages.md)
-    * [Data wrangling: data frames, matrices and lists](../lessons/07_introR-data-wrangling2.md)
-    * [The %in% operator](../lessons/08_identifying-matching-elements.md)
-    * [Reordering and matching](../lessons/09_reordering-to-match-datasets.md)
-    * [Setting up a data frame to plot (+ the `map()` function)](../lessons/10_setting_up_to_plot.md)
+I. Please **study the contents** and **work through all the code** within the following lessons:
 
-2. **Complete the exercises**:
+   1. [Packages and libraries](../lessons/04_introR_packages.md)
+       <details>
+         <summary><i>Click here for a preview of this lesson</i></summary>
+           <br>Base R is incrediably powerful, but it cannot do everything. However, R has an extensive community around it that develops supplemental add-ons, or "packages", that can help you do your desired analysis. <br><br>This lesson will cover:<br>
+             - Installing a package<br>
+             - Loading a package<br>
+             - Accessing the documention for your installed packages<br><br>
+         </details>
+        
+   2. [Data wrangling: data frames, matrices and lists](../lessons/07_introR-data-wrangling2.md)
+       <details>
+         <summary><i>Click here for a preview of this lesson</i></summary>
+           <br>When using R, data is often stored in two-dimensional tables called "data frames". It is important that you be able to perform basic operations on these data frames.<br><br>This lesson will cover:<br>
+             - Subsetting, merging and creating data frames<br>
+             - Retreiving information from lists<br><br>
+         </details>
+
+   3. [The %in% operator](../lessons/08_identifying-matching-elements.md)
+       <details>
+         <summary><i>Click here for a preview of this lesson</i></summary>
+           <br>Sometimes you will have two vectors and you will want to know if and which values are common between those two vectors. The <code>%in%</code> operator is used for this purpose.<br><br>This lesson will cover:<br>
+             - Implementing the <code>%in%</code> operator to evaluate two vectors<br>
+             - Distinguishing <code>%in%</code> from <code>==</code><br>
+             - Using <code>any()</code> and <code>all()</code> functions<br><br>
+         </details>
+
+   4. [Reordering and matching](../lessons/09_reordering-to-match-datasets.md)
+       <details>
+         <summary><i>Click here for a preview of this lesson</i></summary>
+           <br>When you are working with vectors, sometimes you will want to rearrange the values within the vecotr. The <code>match()</code> function can be very powerful for this task.<br><br>This lesson will cover:<br>
+             - Maunually rearranging values within a vector<br>
+             - Implementing the <code>match()</code> function to automatically rearrange the values within a vector<br><br>
+         </details>
+
+   5. [Setting up a data frame to plot (+ the `map()` function)](../lessons/10_setting_up_to_plot.md)
+       <details>
+         <summary><i>Click here for a preview of this lesson</i></summary>
+           <br>When using data frames, sometimes you will want to iterate a process over every column within the data frame. To do this, the <code>map()</code> family of functions is very helpful.<br><br>This lesson will cover:<br>
+             - Utilizing map_dbl() to take the average of every column in a data frame<br>
+             - Briefly discuss other functions within the <code>map()</code> family of functions<br><br>
+         </details>
+
+II. **Complete the exercises**:
    * Each lesson above contain exercises; please go through each of them.
    * **Copy over** your code from the exercises into a text file. 
    * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/IwdtDOrbe75tWYyZV6td) the **day before the next class**.
 
-3. Prepare for **in-class exercise**:
+III. Prepare for **in-class exercise**:
       * Download the [animals.csv](https://raw.githubusercontent.com/hbctraining/Intro-to-R-flipped/master/data/animals.csv), by right-clicking on the link and "Save Link As..." to place the file into the `data` directory.
       * Read the `.csv` file into your environment and assign it to a variable called `animals`. **Be sure to check that your row names are the different animals.**
       * Save the R project when you close Rstudio.
