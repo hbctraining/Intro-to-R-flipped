@@ -39,7 +39,7 @@ I. Please **study the contents** and **work through all the code** within the fo
         </details>
 
 II. **Complete the exercises**:
-   * Each lesson above contain exercises; please go through each of them.
+   * Each lesson above contains exercises; please go through each of them.
    * **Copy over** your code from the exercises into a text file. 
    * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/SKio2i8WHJZbML30sE6f) the **day before the next class**.
    
@@ -64,33 +64,34 @@ I. Please **study the contents** and **work through all the code** within the fo
    1. [Packages and libraries](../lessons/04_introR_packages.md)
        <details>
          <summary><i>Click here for a preview of this lesson</i></summary>
-           <br>Base R is incrediably powerful, but it cannot do everything. However, R has an extensive community around it that develops supplemental add-ons, or "packages", that can help you do your desired analysis. <br><br>This lesson will cover:<br>
+           <br>Base R is incredibly powerful, but it cannot do everything. R has been built to encourage community involvement in expanding functionality. Thousands of supplemental add-ons, also called "packages" have been contributed by the community. Each package comprises of several functions that enable users to perform their desired analysis. <br><br>This lesson will cover:<br>
+             - Descriptions of package repositories<br>
              - Installing a package<br>
              - Loading a package<br>
-             - Accessing the documention for your installed packages<br><br>
+             - Accessing the documention for your installed packages and getting help<br><br>
          </details>
         
    2. [Data wrangling: data frames, matrices and lists](../lessons/07_introR-data-wrangling2.md)
        <details>
          <summary><i>Click here for a preview of this lesson</i></summary>
-           <br>When using R, data is often stored in two-dimensional tables called "data frames". It is important that you be able to perform basic operations on these data frames.<br><br>This lesson will cover:<br>
-             - Subsetting, merging and creating data frames<br>
+           <br>In class we covered data wrangling (extracting/subsetting) information from single-dimensional objects (vectors, factors). The next step is to learn how to wrangle data in two-dimensional objects.<br><br>This lesson will cover:<br>
+             - Examining and extracting values from two-dimensional data structures using indices, row names, or column names<br>
              - Retreiving information from lists<br><br>
          </details>
 
    3. [The %in% operator](../lessons/08_identifying-matching-elements.md)
        <details>
          <summary><i>Click here for a preview of this lesson</i></summary>
-           <br>Sometimes you will have two vectors and you will want to know if and which values are common between those two vectors. The <code>%in%</code> operator is used for this purpose.<br><br>This lesson will cover:<br>
+           <br>Very often you will have to compare two vectors ti figure our if, and which, values are common between them. The <code>%in%</code> operator can be used for this purpose.<br><br>This lesson will cover:<br>
              - Implementing the <code>%in%</code> operator to evaluate two vectors<br>
-             - Distinguishing <code>%in%</code> from <code>==</code><br>
+             - Distinguishing <code>%in%</code> from <code>==</code> and other logical operators<br>
              - Using <code>any()</code> and <code>all()</code> functions<br><br>
          </details>
 
    4. [Reordering and matching](../lessons/09_reordering-to-match-datasets.md)
        <details>
          <summary><i>Click here for a preview of this lesson</i></summary>
-           <br>When you are working with vectors, sometimes you will want to rearrange the values within the vecotr. The <code>match()</code> function can be very powerful for this task.<br><br>This lesson will cover:<br>
+           <br>When working in R, sometimes you will want to rearrange values within a vector (row names or column names). The <code>match()</code> function can be very powerful for this task.<br><br>This lesson will cover:<br>
              - Maunually rearranging values within a vector<br>
              - Implementing the <code>match()</code> function to automatically rearrange the values within a vector<br><br>
          </details>
@@ -98,13 +99,14 @@ I. Please **study the contents** and **work through all the code** within the fo
    5. [Setting up a data frame to plot (+ the `map()` function)](../lessons/10_setting_up_to_plot.md)
        <details>
          <summary><i>Click here for a preview of this lesson</i></summary>
-           <br>When using data frames, sometimes you will want to iterate a process over every column within the data frame. To do this, the <code>map()</code> family of functions is very helpful.<br><br>This lesson will cover:<br>
+           <br>We will be starting with visualization in the next class. To set up for this, you need to create a new metadata data frame with information from the counts data frame. You will need to use a function over every column within the counts data frame iteratively. You could do that manually, but it is error-prone, the <code>map()</code> family of functions makes this more efficient.<br><br>This lesson will cover:<br>
              - Utilizing map_dbl() to take the average of every column in a data frame<br>
              - Briefly discuss other functions within the <code>map()</code> family of functions<br><br>
          </details>
+             - Create a new data frame for plotting
 
 II. **Complete the exercises**:
-   * Each lesson above contain exercises; please go through each of them.
+   * Each lesson above contains exercises; please go through each of them.
    * **Copy over** your code from the exercises into a text file. 
    * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/IwdtDOrbe75tWYyZV6td) the **day before the next class**.
 
@@ -137,7 +139,7 @@ III. Prepare for **in-class exercise**:
     * [Tidyverse](../lessons/15_tidyverse.md)
 
 2. **Complete the exercises**:
-   * Each lesson above contain exercises; please go through each of them.
+   * Each lesson above contains exercises; please go through each of them.
    * **Copy over** your code from the exercises into a text file. 
    * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/JdM83c8AKrm9nNFEyvL6) the **day before the next class**.
    
