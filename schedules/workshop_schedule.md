@@ -99,7 +99,7 @@ I. Please **study the contents** and **work through all the code** within the fo
    5. [Setting up a data frame to plot (+ the `map()` function)](../lessons/10_setting_up_to_plot.md)
        <details>
          <summary><i>Click here for a preview of this lesson</i></summary>
-           <br>We will be starting with visualization in the next class. To set up for this, you need to create a new metadata data frame with information from the counts data frame. You will need to use a function over every column within the counts data frame iteratively. You could do that manually, but it is error-prone, the <code>map()</code> family of functions makes this more efficient.<br><br>This lesson will cover:<br>
+           <br>We will be starting with visualization in the next class. To set up for this, you need to create a new metadata data frame with information from the counts data frame. You will need to use a function over every column within the counts data frame iteratively. You could do that manually, but it is error-prone; the <code>map()</code> family of functions makes this more efficient.<br><br>This lesson will cover:<br>
              - Utilizing <code>map_dbl()</code> to take the average of every column in a data frame<br>
              - Briefly discuss other functions within the <code>map()</code> family of functions<br>
              - Create a new data frame for plotting<br><br>
