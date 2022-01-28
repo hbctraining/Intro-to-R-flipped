@@ -141,7 +141,7 @@ III. Prepare for **in-class exercise**:
 2. **Complete the exercises**:
    * Each lesson above contains exercises; please go through each of them.
    * **Copy over** your code from the exercises into a text file. 
-   * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/JdM83c8AKrm9nNFEyvL6) the **day before the next class**.
+   * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/7GoNol6i5WeX9hR9PhTj) the **day before the next class**.
    
 ### Questions?
 * ***If you get stuck due to an error*** while runnning code in the lesson, [email us](mailto:hbctraining@hsph.harvard.edu) 
