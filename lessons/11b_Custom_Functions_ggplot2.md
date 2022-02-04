@@ -1,3 +1,11 @@
+---
+title: "Custom functions for consistent plots"
+author: "Mary Piper, Meeta Mistry, Radhika Khetani, Will Gammerdinger"
+date: "Wednesday, February 4, 2021"
+---
+
+Approximate time: 20 minutes
+
 ## Learning Objectives 
 
 * Apply the custom function to generate consistent plots.
