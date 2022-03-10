@@ -1,18 +1,16 @@
 # Day 2 Activities - Answer Key
 
-# 1. Let's first create a function fahrenheit_to_celsius, which converts temperature from Fahrenheit to Celsius. The formula is as follows: Temp_Celsius = (Temp_Fahrenheit - 32) * 5 / 9. Test your function - fahrenheit_to_celsius(32) should give output of 0.
-fahrenheit_to_celsius <- function(temp_F) {
-  temp_C <- (temp_F - 32) * 5 / 9
-  return (temp_C)
-}
-fahrenheit_to_celsius(32)
+1. **Custom Functions** - Let's create a function `temp_conv`, which converts the temperature in Fahrenheit (input) to the temperature in Kelvin (output). We could perform a two-step calculation: first convert from Fahrenheit to Celsius, and then convert from Celsius to Kelvin. The formula for these two calculations are as follows: temp_c = (temp_f - 32) * 5 / 9; temp_k = temp_c + 273.15. 
 
-# 2. Then let's create another function celsius_to_kelvin, which converts temperature from Celsius to Kelvin. The formula is as follows: Temp_Kelvin = Temp_Celsius + 273.15. Test your function - celsius_to_kelvin(0) should give output of 273.15.
-celsius_to_kelvin <- function(temp_C) {
-  temp_K <- temp_C + 273.15
-  return (temp_K)
-}
-celsius_to_kelvin(0)
+To test your function, if your input is 70, the result of `temp_conv(70)` should be 294.2611.
 
-# 3. Using the two functions above, write one line code that converts temperature of 32 in Fahrenheit to corresponding temperature in Kelvin. Hint: think about "nesting" one function inside another one.
-celsius_to_kelvin(fahrenheit_to_celsius(32))
+temp_conv <- function(temp_f) {
+  temp_c = (temp_f - 32) * 5 / 9
+  temp_k = temp_c + 273.15
+  return (temp_k)
+}
+
+2. **Nesting functions** - Now we want to round the temperature in Kelvin (output) to one decimal place. Use the `round()` function with the newly-created  `temp_conv()` function to achieve this in one line of code. If your input is 70, the output should now be 294.3.
+
+round(temp_conv(70), digits = 1)
+
