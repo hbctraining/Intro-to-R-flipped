@@ -1,4 +1,4 @@
-# Workshop Schedule
+# Workshop Schedule (HSPH)
 
 ## Day 1
 
