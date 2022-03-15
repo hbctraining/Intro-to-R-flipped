@@ -111,9 +111,9 @@ II. **Complete the exercises**:
    * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/aIMu1E4hJkBWSef30u7D) the **day before the next class**.
 
 III. Prepare for **in-class exercise**:
-      * Download the [animals.csv](https://raw.githubusercontent.com/hbctraining/Intro-to-R-flipped/master/data/animals.csv), by right-clicking on the link and "Save Link As..." to place the file into the `data` directory.
-      * Read the `.csv` file into your environment and assign it to a variable called `animals`. **Be sure to check that your row names are the different animals.**
-      * Save the R project when you close Rstudio.
+   * Download the [animals.csv](https://raw.githubusercontent.com/hbctraining/Intro-to-R-flipped/master/data/animals.csv), by right-clicking on the link and "Save Link As..." to place the file into the `data` directory.
+   * Read the `.csv` file into your environment and assign it to a variable called `animals`. **Be sure to check that your row names are the different animals.**
+   * Save the R project when you close Rstudio.
    
 ### Questions?
 * ***If you get stuck due to an error*** while runnning code in the lesson, [email us](mailto:hbctraining@hsph.harvard.edu) 
