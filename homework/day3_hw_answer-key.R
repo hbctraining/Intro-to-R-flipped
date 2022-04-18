@@ -112,10 +112,20 @@ factor(rep_number) %>% head()
 bp_oe <- bp_oe %>% 
   filter(relative.depth > 4)
 
+# Using Base R 
+# bp_oe <- subset(bp_oe, relative.depth > 4)
+
 #Rename the intersection column to genes to reflect the fact that these are the DE genes associated with the GO process.
 bp_oe <- bp_oe %>% 
   dplyr::rename(genes = intersection)
 
+# Using Base R 
+# colnames(bp_oe)[colnames(bp_oe) == "intersection"] <- "genes"
+
 #Create a column in bp_oe called term_percent to determine the percent of DE genes associated with the GO term relative to the total number of genes associated with the GO term (overlap.size / term.size)
 bp_oe <- bp_oe %>% 
   mutate(term_percent = overlap.size / term.size)
+
+# Using Base R 
+# bp_oe <- cbind(bp_oe, term_percent = bp_oe$overlap.size / bp_oe$term.size)
+

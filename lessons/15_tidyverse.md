@@ -125,6 +125,14 @@ functional_GO_results <- read_delim(file = "data/gprofiler_results_Mov10oe.tsv",
 functional_GO_results
 ```
 
+<details>
+	<summary><i>Click here to see how to do this in base R</i></summary>
+	<br><pre><code># Read in the functional analysis results<br>
+functional_GO_results <- read.delim(file = "data/gprofiler_results_Mov10oe.tsv", sep = "\t" )</code><br>
+<code># Take a look at the results
+functional_GO_results</code></pre><br>
+</details>
+
 Notice that the results were automatically read in as a tibble and the output gives the number of rows, columns and the data type for each of the columns.
 
 > **NOTE**: A large number of tidyverse functions will work with both tibbles and dataframes, and the data structure of the output will be identical to the input. However, there are some functions that will return a tibble (without row names), whether or not a tibble or dataframe is provided.
@@ -147,6 +155,12 @@ bp_oe <- functional_GO_results %>%
   
 View(bp_oe)
 ```
+<details>
+	<summary><i>Click here to see how to do this in base R</i></summary>
+	<br><pre><code># Return only GO biological processes
+bp_oe <- subset(functional_GO_results, domain == "BP")</code><br>
+<code>View(bp_oe)</code></pre><br>
+</details>
 
 Now we have returned only those rows with a `domain` of `BP`. **How have the dimensions of our results changed?**
 
@@ -171,8 +185,18 @@ To extract columns from a data frame/tibble we can use the `select()` function. 
 # Selecting columns to keep
 bp_oe <- bp_oe %>%
   select(term.id, term.name, p.value, query.size, term.size, overlap.size, intersection)
-```
 
+View(bp_oe)
+```
+	
+<details>
+	<summary><i>Click here to see how to do this in base R</i></summary>
+	<br><pre><code># Selecting columns to keep
+bp_oe <- bp_oe[, c("term.id", "term.name", "p.value", "query.size", "term.size", "overlap.size", "intersection")]</code><br>
+<code>View(bp_oe)</code></pre><br>
+</details>
+	
+	
 The `select()` function also allows for negative selection. So we could have alternately removed columns with negative selection. Note that we need to put the column names inside of the combine (`c()`) function with a `-` preceding it for this functionality.
 
 ``` r
@@ -182,6 +206,14 @@ bp_oe <- bp_oe %>%
     select(-c(query.number, significant, recall, precision, subgraph.number, relative.depth, domain))
 ```
 
+<details>
+	<summary><i>Click here to see how to do this in base R</i></summary>
+	<br><pre><code># DO NOT RUN</code>
+</code># Selecting columns to remove
+bp_oe <- bp_oe[, !(colnames(bp_oe) %in% c("query.number", "significant", "recall", "precision", "subgraph.number", "relative.depth", "domain"))]</code></pre><br>
+</details>
+
+	
 <img src="../img/bp_oe_selection.png" width="1200">
 
 
@@ -196,7 +228,13 @@ Let's sort the rows by adjusted p-value with the `arrange()` function.
 bp_oe <- bp_oe %>%
   arrange(p.value)
 ```
-
+<details>
+	<summary><i>Click here to see how to do this in base R</i></summary>
+	<br><pre><code># Order by adjusted p-value ascending
+bp_oe <- bp_oe[order(bp_oe$p.value),]</code></pre><br>
+</details>
+	
+	
 > **NOTE1:** If you wanted to arrange in descending order, then you could have run the following instead:
 > ```r
 > # DO NOT RUN
@@ -204,6 +242,13 @@ bp_oe <- bp_oe %>%
 > bp_oe <- bp_oe %>%
 >   arrange(desc(p.value))
 > ```
+>
+><details>
+>	<summary><i>Click here to see how to do this in base R</i></summary>
+>	<br><pre><code># DO NOT RUN</code>
+></code># Order by adjusted p-value descending
+>bp_oe <- bp_oe[order(bp_oe$p.value, decreasing = TRUE),]</code></pre>
+></details>
 
 > **NOTE2:** Ordering variables in `ggplot2` is a bit different. [This post](https://www.r-graph-gallery.com/267-reorder-a-variable-in-ggplot2.html) introduces a few ways of ordering variables in a plot.
 
@@ -220,7 +265,13 @@ bp_oe <- bp_oe %>%
   dplyr::rename(GO_id = term.id, 
                 GO_term = term.name)
 ```
-
+<details>
+	<summary><i>Click here to see how to do this in base R</i></summary>
+	<br><pre><code># Provide better names for columns
+colnames(bp_oe)[colnames(bp_oe) == "term.id"] <- "term.name"</code></pre><br>
+</details>
+	
+	
 > **NOTE:**  In the case of two packages with identical function names, you can use `::` with the package name before and the function name after (e.g `stats::filter()`) to ensure that the correct function is implemented. The `::` can also be used to bring in a function from a library without loading it first.
 > 
 > In the example above, we wanted to use the `rename()` function specifically from the `dplyr` package, and not any of the other packages (or base R) which may have the `rename()` function.
@@ -243,7 +294,13 @@ Let's generate gene ratios to reflect the number of DE genes associated with eac
 bp_oe <- bp_oe %>%
   mutate(gene_ratio = overlap.size / query.size)
 ```
-
+<details>
+	<summary><i>Click here to see how to do this in base R</i></summary>
+	<br><pre><code># Create gene ratio column based on other columns in dataset
+bp_oe <- cbind(bp_oe, gene_ratio = bp_oe$overlap.size / bp_oe$query.size)</code></pre><br>
+</details>
+	
+	
 ***
 **Exercise**
 
