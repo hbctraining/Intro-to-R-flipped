@@ -4,7 +4,7 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:30 | [Workshop Introduction](../lectures/Intro_to_workshop_HSPH.pdf) | Will |
+| 10:00 - 10:30 | [Workshop Introduction](../lectures/Intro_to_workshop_all.pdf) | Will |
 | 10:30 - 11:45 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Meeta |
 | 11:45 - 12:00 | Overview of self-learning materials and homework submission | Will |
 
@@ -186,7 +186,7 @@ II. **Complete the exercises**:
 | 10:00 - 10:35 | Questions about self-learning lessons | All |
 | 10:35 - 11:15 | [In-class exercises](../activities/Day4_activities.md) + [Answer key](../activities/Day4_activities_answer_key.R) | Will |
 | 11:15 - 11:45 | Discussion, Q & A | All |
-| 11:45 - 12:00 | [Wrap Up]() | Radhika |
+| 11:45 - 12:00 | [Wrap Up](..//lectures/R_workshop_wrapup_all.pdf) | Radhika |
 
 ### Final Exercises
 * [**Exercises**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html)
