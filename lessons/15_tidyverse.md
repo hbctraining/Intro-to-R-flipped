@@ -192,7 +192,7 @@ View(bp_oe)
 <details>
 	<summary><i>Click here to see how to do this in base R</i></summary>
 	<br><pre><code># Selecting columns to keep
-bp_oe <- bp_oe[c("term.id", "term.name", "p.value", "query.size", "term.size", "overlap.size", "intersection")]</code><br>
+bp_oe <- bp_oe[, c("term.id", "term.name", "p.value", "query.size", "term.size", "overlap.size", "intersection")]</code><br>
 <code>View(bp_oe)</code></pre><br>
 </details>
 	
