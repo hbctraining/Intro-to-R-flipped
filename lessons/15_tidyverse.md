@@ -158,7 +158,8 @@ View(bp_oe)
 <details>
 	<summary><i>Click here to see how to do this in base R</i></summary>
 	<br><pre><code># Return only GO biological processes
-bp_oe <- subset(functional_GO_results, domain == "BP")</code><br>
+idx <- functional_GO_results$domain == "BP"
+bp_oe2 <- functional_GO_results[idx,]</code><br>
 <code>View(bp_oe)</code></pre><br>
 </details>
 
@@ -210,7 +211,8 @@ bp_oe <- bp_oe %>%
 	<summary><i>Click here to see how to do this in base R</i></summary>
 	<br><pre><code># DO NOT RUN</code>
 </code># Selecting columns to remove
-bp_oe <- bp_oe[, !(colnames(bp_oe) %in% c("query.number", "significant", "recall", "precision", "subgraph.number", "relative.depth", "domain"))]</code></pre><br>
+idx <- !(colnames(bp_oe) %in% c("query.number", "significant", "recall", "precision", "subgraph.number", "relative.depth", "domain"))
+bp_oe <- bp_oe[, idx]</code></pre><br>
 </details>
 
 	
@@ -231,7 +233,8 @@ bp_oe <- bp_oe %>%
 <details>
 	<summary><i>Click here to see how to do this in base R</i></summary>
 	<br><pre><code># Order by adjusted p-value ascending
-bp_oe <- bp_oe[order(bp_oe$p.value),]</code></pre><br>
+idx <- order(bp_oe$p.value)
+bp_oe <- bp_oe[idx,]</code></pre><br>
 </details>
 	
 	
@@ -247,7 +250,8 @@ bp_oe <- bp_oe[order(bp_oe$p.value),]</code></pre><br>
 >	<summary><i>Click here to see how to do this in base R</i></summary>
 >	<br><pre><code># DO NOT RUN</code>
 ></code># Order by adjusted p-value descending
->bp_oe <- bp_oe[order(bp_oe$p.value, decreasing = TRUE),]</code></pre>
+>idx <- order(bp_oe$p.value, decreasing = TRUE)
+>bp_oe <- bp_oe[idx,]</code></pre>
 ></details>
 
 > **NOTE2:** Ordering variables in `ggplot2` is a bit different. [This post](https://www.r-graph-gallery.com/267-reorder-a-variable-in-ggplot2.html) introduces a few ways of ordering variables in a plot.
@@ -268,7 +272,8 @@ bp_oe <- bp_oe %>%
 <details>
 	<summary><i>Click here to see how to do this in base R</i></summary>
 	<br><pre><code># Provide better names for columns
-colnames(bp_oe)[colnames(bp_oe) == "term.id"] <- "term.name"</code></pre><br>
+colnames(bp_oe)[colnames(bp_oe) == "term.id"] <- "GO_id"
+colnames(bp_oe)[colnames(bp_oe) == "term.name"] <- "GO_term"</code></pre><br>
 </details>
 	
 	
