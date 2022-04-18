@@ -1,6 +1,6 @@
 ---
-title: "Tidyverse data wrangling"
-author: "Mary Piper", "Jihe Liu", "Meeta Mistry", "Radhika Khetani"
+title: Tidyverse data wrangling
+author: Mary Piper, Jihe Liu, Meeta Mistry, Radhika Khetani, Will Gammerdinger
 ---
 
 Approximate time: 75 minutes
