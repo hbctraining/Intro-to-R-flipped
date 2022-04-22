@@ -11,7 +11,7 @@
 ### Before the next class:
 
 I. Please **study the contents** and **work through all the code** within the following lessons:
-   1. [R Syntax and Data Structure:](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html)
+   1. [R Syntax and Data Structure](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html)
       <details>
        <summary><i>Click here for a preview of this lesson</i></summary>
          <br>In order to utilize R effectively, you will need to understand what types of data you can use in R and also how you can store data in "objects" or "variables". <br><br>This lesson will cover:<br>
@@ -103,7 +103,7 @@ I. Please **study the contents** and **work through all the code** within the fo
              - Utilizing <code>map_dbl()</code> to take the average of every column in a data frame<br>
              - Briefly discuss other functions within the <code>map()</code> family of functions<br>
              - Create a new data frame for plotting<br><br>
-         </details>
+        </details>
 
 II. **Complete the exercises**:
    * Each lesson above contains exercises; please go through each of them.
@@ -111,9 +111,9 @@ II. **Complete the exercises**:
    * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/7vXAqDV2tnyI2j6FoXxm) the **day before the next class**.
 
 III. Prepare for **in-class exercise**:
-      * Download the [animals.csv](https://raw.githubusercontent.com/hbctraining/Intro-to-R-flipped/master/data/animals.csv), by right-clicking on the link and "Save Link As..." to place the file into the `data` directory.
-      * Read the `.csv` file into your environment and assign it to a variable called `animals`. **Be sure to check that your row names are the different animals.**
-      * Save the R project when you close Rstudio.
+   * Download the [animals.csv](https://raw.githubusercontent.com/hbctraining/Intro-to-R-flipped/master/data/animals.csv), by right-clicking on the link and "Save Link As..." to place the file into the `data` directory.
+   * Read the `.csv` file into your environment and assign it to a variable called `animals`. **Be sure to check that your row names are the different animals.**
+   * Save the R project when you close Rstudio.
    
 ### Questions?
 * ***If you get stuck due to an error*** while runnning code in the lesson, [email us](mailto:hbctraining@hsph.harvard.edu) 
