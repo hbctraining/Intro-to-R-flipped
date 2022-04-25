@@ -226,6 +226,94 @@ In addition to some of the shortcuts described earlier in this lesson, we have l
 
 ***
 
+## The R syntax
+Now that we know how to talk with R via the script editor or the console, we want to use R for something more than adding numbers. To do this, we need to know more about the R syntax. 
+
+
+The main "parts of speech" in R (syntax) include:
+
+  - the **comments** `#` and how they are used to document function and its content
+  - **variables** and **functions**
+  - the **assignment operator** `<-`
+  - the `=` for **arguments** in functions
+
+_NOTE: indentation and consistency in spacing is used to improve clarity and legibility_
+
+We will go through each of these "parts of speech" in more detail, starting with the assignment operator.
+
+## Assignment operator
+
+To do useful and interesting things in R, we need to assign _values_ to
+_variables_ using the assignment operator, `<-`.  For example, we can use the assignment operator to assign the value of `3` to `x` by executing:
+
+```r
+x <- 3
+```
+
+The assignment operator (`<-`) assigns **values on the right** to **variables on the left**. 
+
+*In RStudio, typing `Alt + -` (push `Alt` at the same time as the `-` key, on Mac type `option + -`) will write ` <- ` in a single keystroke.*
+
+
+## Variables
+
+A variable is a symbolic name for (or reference to) information. Variables in computer programming are analogous to "buckets", where information can be maintained and referenced. On the outside of the bucket is a name. When referring to the bucket, we use the name of the bucket, not the data stored in the bucket.
+
+In the example above, we created a variable or a 'bucket' called `x`. Inside we put a value, `3`. 
+
+Let's create another variable called `y` and give it a value of 5. 
+
+```r
+y <- 5
+```
+
+When assigning a value to an variable, R does not print anything to the console. You can force to print the value by using parentheses or by typing the variable name.
+
+```
+y
+```
+
+You can also view information on the variable by looking in your `Environment` window in the upper right-hand corner of the RStudio interface.
+
+![Viewing your environment](../img/environment.png)
+
+Now we can reference these buckets by name to perform mathematical operations on the values contained within. What do you get in the console for the following operation: 
+
+```r
+x + y
+```
+
+Try assigning the results of this operation to another variable called `number`. 
+
+```r
+number <- x + y
+```
+
+***
+**Exercises**
+
+1. Try changing the value of the variable `x` to 5. What happens to `number`?
+2. Now try changing the value of variable `y` to contain the value 10. What do you need to do, to update the variable `number`?
+
+***
+
+### Tips on variable names
+Variables can be given almost any name, such as `x`, `current_temperature`, or
+`subject_id`. However, there are some rules / suggestions you should keep in mind:
+
+- Make your names explicit and not too long.
+- Avoid names starting with a number (`2x` is not valid but `x2` is)
+- Avoid names of fundamental functions in R (e.g., `if`, `else`, `for`, see [here](https://statisticsglobe.com/r-functions-list/) for a complete list). In general, even if it's allowed, it's best to not use other function names (e.g., `c`, `T`, `mean`, `data`) as variable names. When in doubt
+check the help to see if the name is already in use. 
+- Avoid dots (`.`) within a variable name as in `my.dataset`. There are many functions
+in R with dots in their names for historical reasons, but because dots have a
+special meaning in R (for methods) and other programming languages, it's best to
+avoid them. 
+- Use nouns for object names and verbs for function names
+- Keep in mind that **R is case sensitive** (e.g., `genome_length` is different from `Genome_length`)
+- Be consistent with the styling of your code (where you put spaces, how you name variable, etc.). In R, two popular style guides are [Hadley Wickham's style guide](http://adv-r.had.co.nz/Style.html) and [Google's](http://web.stanford.edu/class/cs109l/unrestricted/resources/google-style.html).
+
+
 ## Interacting with data in R
 
 R is commonly used for handling big data, and so it only makes sense that we learn about R in the context of some kind of relevant data. Let's take a few minutes to add files to the folders we created and familiarize ourselves with the data.
