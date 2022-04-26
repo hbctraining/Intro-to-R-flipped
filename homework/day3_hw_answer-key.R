@@ -98,13 +98,19 @@ save(df, file = "data/df.RData")
 load(file="data/df.RData")
 
 # Tidyverse
-#Extract the replicate column from the metadata data frame (use the $ notation) and save the values to a vector named rep_number.
-rep_number <- metadata$replicate
 
-#Use the pipe (%>%) to perform two steps in a single line:
-#Turn rep_number into a factor.
-#Use the head() function to return the first six values of the rep_number factor.
-factor(rep_number) %>% head()
+# Create a vector of random numbers using the code below:
+random_numbers <- c(81, 90, 65, 43, 71, 29)
+
+# Use the pipe (%>%) to perform two steps in a single line:
+
+# Take the mean of random_numbers using the mean() function.
+random_numbers %>% mean()
+
+# Round the output to three digits using the round() function.
+random_numbers %>% 
+  mean() %>% 
+  round(digits = 3)
 
 #We would like to perform an additional round of filtering to only keep the most specific GO terms.
 #For bp_oe, use the filter() function to only keep those rows where the relative.depth is greater than 4.
