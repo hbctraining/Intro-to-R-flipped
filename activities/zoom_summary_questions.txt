@@ -49,13 +49,13 @@ c. geom_point(aes(x = age_in_days, y= samplemeans, shape=genotype), color = "blu
 d. geom_point(aes(x = age_in_days, y= samplemeans), color = "blue", shape=genotype)
 
 8. [Tidyverse] Which of the following function extracts a subset of rows from a dataframe based on logical conditions?
-a. rename
-b. filter (correct)
-c. select
-d. subset
+a. rename()
+b. filter() (correct)
+c. select()
+d. which()
 
 9. [Tidyverse] Which of the following function add new variables/columns through transforming existing variables?
-a. mutate (correct)
-b. add
-c. append
-d. arrange
+a. mutate() (correct)
+b. add()
+c. append()
+d. arrange()
