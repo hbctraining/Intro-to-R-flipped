@@ -1,5 +1,5 @@
 ---
-title: Functions in R
+title: Troubleshooting and finding help
 author: Data Carpentry contributors, Mary Piper
 date: "Wednesday, April 22, 2020"
 ---
