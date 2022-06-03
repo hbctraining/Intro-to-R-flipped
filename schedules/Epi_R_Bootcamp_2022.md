@@ -97,6 +97,7 @@ Below we have listed a few extra lessons for you to peruse through. These are de
                 - Exporting your figures from R using a variety of file formats<br>
                 - Writing your data from R to a file<br>
           </details>
+          
 * [Finding help](https://hbctraining.github.io/Intro-to-R-flipped/lessons/14_finding_help.html)
          <details>
             <summary><i>Click here for a preview of this lesson</i></summary>
@@ -104,6 +105,7 @@ Below we have listed a few extra lessons for you to peruse through. These are de
                 - Suggestions for how to best ask for help<br>
                 - Where to look for help<br>
           </details>
+          
 * [Tidyverse](https://hbctraining.github.io/Intro-to-R-flipped/lessons/15_tidyverse.html)
          <details>
             <summary><i>Click here for a preview of this lesson</i></summary>
