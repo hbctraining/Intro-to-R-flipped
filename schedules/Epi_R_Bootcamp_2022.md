@@ -21,7 +21,7 @@ Download the most recent versions of R and RStudio:
  - [RStudio](https://www.rstudio.com/products/rstudio/download/#download)
 
 
-## Workshop Schedule 
+# Workshop Schedule 
 
 ## Day 1
 | Time            |  Topic  | Instructor |
