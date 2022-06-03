@@ -27,7 +27,7 @@ Download the most recent versions of R and RStudio:
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-|13:00 - 13:30 | [Workshop Introduction]() | Meeta |
+|13:00 - 13:30 | [Workshop Introduction](https://github.com/hbctraining/Intro-to-R-flipped/raw/master/lectures/Intro_to_workshop_EpiR.pdf) | Meeta |
 |13:30 - 14:15 | [Introduction to R and RStudio](https://hbctraining.github.io/Intro-to-R-flipped/lessons/01_introR-R-and-RStudio.html) | Jihe |
 |14:15 - 14:20 | Break | |
 |14:20 - 15:00 | [R Syntax and Data Structure](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html) | Meeta |
