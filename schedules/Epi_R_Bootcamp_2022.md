@@ -1,4 +1,27 @@
-# Workshop Schedule 
+# R Bootcamp!
+
+Welcome to the R Bootcamp for HSPH's summer internship in Epidemiology.
+
+## Learning Objectives
+
+* **R syntax**: Understand the different 'parts of speech'.
+* **Data types structures in R**: Describe the various data types and data structures.
+* **Data inspection and wrangling**: Demonstrate the utilization of functions and indices to inspect and subset data from various data structures.
+* **Visualizing data**: Demonstrate the use of the ggplot2 package to create plots for easy data visualization.
+
+## Instructors
+
+[Dr. Meeta Mistry](https://bioinformatics.sph.harvard.edu/people/meeta-mistry) and [Dr. Jihe Liu](https://bioinformatics.sph.harvard.edu/people/jihe-liu)
+
+## Installations
+
+Download the most recent versions of R and RStudio:
+
+ - [R](https://cran.r-project.org/) 
+ - [RStudio](https://www.rstudio.com/products/rstudio/download/#download)
+
+
+## Workshop Schedule 
 
 ## Day 1
 | Time            |  Topic  | Instructor |
@@ -32,7 +55,6 @@
 | 14:05 - 14:30| [In-class exercise: Generating a boxplot](https://hbctraining.github.io/Intro-to-R-flipped/lessons/12_boxplot_exercise.html) | Jihe |
 | 14:30 - 14:45 | Review of additional materials and exercises | Jihe|
 | 14:30 - 14:45 | [Wrap-up]() | Meeta |
-
 
 
 ## Additional Lessons
@@ -96,3 +118,15 @@ Go ahead and give it a try!
 * [Fun with data wrangling](https://hbctraining.github.io/Intro-to-R-flipped/activities/Day3_activities.html) + [Answer key](https://hbctraining.github.io/Intro-to-R-flipped/activities/Day3_activities_answer_key.R)
 * [Tidyverse and data visualization](https://hbctraining.github.io/Intro-to-R-flipped/activities/Day4_activities.html) + [Answer key](https://hbctraining.github.io/Intro-to-R-flipped/activities/Day4_activities_answer_key.R)
 * [Overall practice with R](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html) + [Answer key](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_key.html)
+
+
+## Resources for Learning R
+* [R for Data Science online book](https://r4ds.had.co.nz/)
+* [RMarkdown](https://hbctraining.github.io/Training-modules/Rmarkdown/)
+* [More ggplot2](https://hbctraining.github.io/Training-modules/Tidyverse_ggplot2/lessons/ggplot2.html)
+* [ggplot2 cookbook](http://www.cookbook-r.com/Graphs/)
+
+## Cheatsheets
+* [base R cheatsheet](../cheatsheets/base-r.pdf)
+* [RStudio cheatsheet](../cheatsheets/rstudio-ide.pdf)
+* [ggplot2 cheatsheet](../cheatsheets/data-visualization-2.1.pdf)
