@@ -68,12 +68,12 @@ Below we have listed a few extra lessons for you to peruse through. These are de
 
 * [The %in% operator](https://hbctraining.github.io/Intro-to-R-flipped/lessons/08_identifying-matching-elements.html)
        <details>
-         <summary><i>Click here for a preview of this lesson</i></summary>
+       <summary><i>Click here for a preview of this lesson</i></summary>
            <br>Very often you will have to compare two vectors to figure out if, and which, values are common between them. The <code>%in%</code> operator can be used for this purpose.<br><br>This lesson will cover:<br>
              - Implementing the <code>%in%</code> operator to evaluate two vectors<br>
              - Distinguishing <code>%in%</code> from <code>==</code> and other logical operators<br>
              - Using <code>any()</code> and <code>all()</code> functions<br><br>
-         </details>
+        </details>
 
 * [Reordering and matching](https://hbctraining.github.io/Intro-to-R-flipped/lessons/09_reordering-to-match-datasets.html)
        <details>
