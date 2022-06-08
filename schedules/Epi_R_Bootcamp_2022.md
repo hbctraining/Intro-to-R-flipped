@@ -65,7 +65,7 @@ rpkm_ordered <- read.csv("data/ordered_counts_rpkm.csv")
 | 13:00 - 13:20|[Setting up for data visualization](https://hbctraining.github.io/Intro-to-R-flipped/lessons/10_setting_up_to_plot.html) | Meeta |
 | 13:20 - 14:00| [Plotting with the ggplot2 package](https://hbctraining.github.io/Intro-to-R-flipped/lessons/11_ggplot2.html) | Meeta |
 | 14:00 - 14:05 | Break | |
-| 14:05 - 14:30| [In-class exercise: Generating a boxplot](https://hbctraining.github.io/Intro-to-R-flipped/lessons/12_boxplot_exercise.html) | Jihe |
+| 14:05 - 14:30| [Introduction to tidyverse](https://hbctraining.github.io/Intro-to-R-flipped/lessons/15_tidyverse.html) | Jihe |
 | 14:30 - 14:45 | Review of additional materials and exercises | Jihe|
 | 14:30 - 14:45 | [Wrap-up]() | Meeta |
 
@@ -96,6 +96,13 @@ Below we have listed a few extra lessons for you to peruse through. These are de
           <br>When creating your plots in ggplot2 you may want to have consistent formatting (using <code>theme()</code> functions) across your plots, e.g. if you are generating plots for a manuscript. <br><br>This lesson will cover:<br>
             - Developing a custom function for creating consistently formatted plots<br>
         </details>
+        
+* [Generating a boxplot with ggplot2](../lessons/12_boxplot_exercise.md)
+        <details>
+         <summary><i>Click here for a preview of this lesson</i></summary>
+           <br>Previously, you created a scatterplot using ggplot2. However, ggplot2 can be used to create a very wide variety of plots. One of the other frequently used plots you can create with ggplot2 is a barplot.<br><br>This lesson will cover:<br>
+              - Creating and customizing a barplot using ggplot2<br>
+         </details>
 
 * [Writing to file and exporting plots](https://hbctraining.github.io/Intro-to-R-flipped/lessons/13_exporting_data_and_plots.html)
          <details>
@@ -113,14 +120,6 @@ Below we have listed a few extra lessons for you to peruse through. These are de
                 - Where to look for help<br>
           </details>
           
-* [Tidyverse](https://hbctraining.github.io/Intro-to-R-flipped/lessons/15_tidyverse.html)
-         <details>
-            <summary><i>Click here for a preview of this lesson</i></summary>
-             <br>The <a href="https://tidyverse.tidyverse.org/articles/paper.html">Tidyverse suite of integrated packages</a> are designed to work together to make common data science operations more user friendly. Tidyverse is becoming increasingly prevalent and it is necessary that R users are conversant in the basics of Tidyverse. We have already used two Tidyverse packages in this workshop (<code>ggplot2</code> and <code>purrr</code>) and in this lesson we will learn some key features from a few additional packages that make up Tidyverse. <br><br>This lesson will cover:<br>
-                - Usage of pipes for connecting together multiple commands<br>
-                - Tibbles for two-dimensional data storage<br>
-                - Data wrangling within Tidyverse
-          </details>
 
 ## Exercises
 
