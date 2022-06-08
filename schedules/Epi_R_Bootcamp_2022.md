@@ -53,6 +53,13 @@ Download the most recent versions of R and RStudio:
 
 ## Day 4
 
+For today's class you will need and additional data file. **Please download** the file by [right-clicking here](https://github.com/hbctraining/Intro-to-R-flipped/raw/master/data/ordered_counts_rpkm.csv) and "Save link as.." into your `data` directory. Once downloaded (and you see the file in your working directory), you can **load the data file in to your environment using the code below**:
+
+```r
+rpkm_ordered <- read.csv("data/ordered_counts_rpkm.csv")
+```
+
+
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 13:00 - 13:20|[Setting up for data visualization](https://hbctraining.github.io/Intro-to-R-flipped/lessons/10_setting_up_to_plot.html) | Meeta |
