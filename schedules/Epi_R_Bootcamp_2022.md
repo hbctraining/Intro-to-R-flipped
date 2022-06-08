@@ -67,7 +67,7 @@ rpkm_ordered <- read.csv("data/ordered_counts_rpkm.csv")
 | 14:00 - 14:05 | Break | |
 | 14:05 - 14:30| [Introduction to tidyverse](https://hbctraining.github.io/Intro-to-R-flipped/lessons/15_tidyverse.html) | Jihe |
 | 14:30 - 14:45 | Review of additional materials and exercises | Jihe|
-| 14:30 - 14:45 | [Wrap-up]() | Meeta |
+| 14:30 - 14:45 | [Wrap-up](https://github.com/hbctraining/Intro-to-R-flipped/raw/master/lectures/R_workshop_wrapup_EpiR.pdf) | Meeta |
 
 
 ## Additional Lessons
