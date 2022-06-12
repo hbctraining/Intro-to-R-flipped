@@ -75,7 +75,7 @@ Below we have listed a few extra lessons for you to peruse through. These are de
 
 * [The %in% operator](https://hbctraining.github.io/Intro-to-R-flipped/lessons/08_identifying-matching-elements.html)
        <details>
-       <summary><i>Click here for a preview of this lesson</i></summary>
+       <summary><i>X Click here for a preview of this lesson</i></summary>
            <br>Very often you will have to compare two vectors to figure out if, and which, values are common between them. The <code>%in%</code> operator can be used for this purpose.<br><br>This lesson will cover:<br>
              - Implementing the <code>%in%</code> operator to evaluate two vectors<br>
              - Distinguishing <code>%in%</code> from <code>==</code> and other logical operators<br>
@@ -83,12 +83,12 @@ Below we have listed a few extra lessons for you to peruse through. These are de
         </details>
 
 * [Reordering and matching](https://hbctraining.github.io/Intro-to-R-flipped/lessons/09_reordering-to-match-datasets.html)
-       <details>
-         <summary><i>Click here for a preview of this lesson</i></summary>
-           <br>Sometimes you will want to rearrange values within a vector (row names or column names). The <code>match()</code> function can be very powerful for this task.<br><br>This lesson will cover:<br>
+      <details>
+       <summary><i>Click here for a preview of this lesson</i></summary>
+         <br>Sometimes you will want to rearrange values within a vector (row names or column names). The <code>match()</code> function can be very powerful for this task.<br><br>This lesson will cover:<br>
              - Maunually rearranging values within a vector<br>
              - Implementing the <code>match()</code> function to automatically rearrange the values within a vector<br><br>
-         </details>
+        </details>
          
 * [Using custom functions for consistent plots](https://hbctraining.github.io/Intro-to-R-flipped/lessons/11b_Custom_Functions_ggplot2.html)
       <details>
