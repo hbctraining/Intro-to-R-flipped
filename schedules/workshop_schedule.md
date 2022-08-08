@@ -126,8 +126,8 @@ III. Prepare for **in-class exercise**:
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 10:00 - 10:35 | Questions about self-learning lessons | All |
-| 10:35 - 11:15 | [In-class exercises](../activities/Day3_activities.md) + [Answer key](../activities/Day3_activities_answer_key.R)| Radhika |
-| 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/11_ggplot2.md) | Will |
+| 10:35 - 11:15 | [In-class exercises](../activities/Day3_activities.md) + [Answer key](../activities/Day3_activities_answer_key.R)| Will |
+| 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/11_ggplot2.md) | Radhika |
 
 ### Before the next class:
 
