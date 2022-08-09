@@ -45,7 +45,7 @@ II. **Complete the exercises**:
    
 ### Questions?
 * ***If you get stuck due to an error*** while runnning code in the lesson, [email us](mailto:hbctraining@hsph.harvard.edu) 
-* Post any **conceptual questions** that you would like to have **reviewed in class** [here](https://PollEv.com/hbctraining945).
+* Post any **conceptual questions** that you would like to have **reviewed in class** [here](https://PollEv.com/discourses/dpXLe2Z2zma4PVQqCGhYz/respond).
 
 ---
 
@@ -117,7 +117,7 @@ III. Prepare for **in-class exercise**:
    
 ### Questions?
 * ***If you get stuck due to an error*** while runnning code in the lesson, [email us](mailto:hbctraining@hsph.harvard.edu) 
-* Post any **conceptual questions** that you would like to have **reviewed in class** [here](https://PollEv.com/hbctraining945).
+* Post any **conceptual questions** that you would like to have **reviewed in class** [here](https://PollEv.com/discourses/dpXLe2Z2zma4PVQqCGhYz/respond).
 
 ---
 
@@ -175,7 +175,7 @@ II. **Complete the exercises**:
    
 ### Questions?
 * ***If you get stuck due to an error*** while runnning code in the lesson, [email us](mailto:hbctraining@hsph.harvard.edu) 
-* Post any **conceptual questions** that you would like to have **reviewed in class** [here](https://PollEv.com/hbctraining945).
+* Post any **conceptual questions** that you would like to have **reviewed in class** [here](https://PollEv.com/discourses/dpXLe2Z2zma4PVQqCGhYz/respond).
 
 ---
 
