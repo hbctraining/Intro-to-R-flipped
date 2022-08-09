@@ -4,7 +4,7 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 1:00 - 1:30 | [Workshop Introduction](../lectures/Intro_to_workshop_all.pdf) | Will |
+| 1:00 - 1:30 | [Workshop Introduction](../lectures/Intro_to_workshop_all-nanocourse.pdf) | Will |
 | 1:30 - 2:45 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Jihe |
 | 2:45 - 3:00 | Overview of self-learning materials and homework submission | Will |
 
