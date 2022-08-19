@@ -186,7 +186,7 @@ II. **Complete the exercises**:
 | 1:00 - 11:35 | Questions about self-learning lessons | All |
 | 1:35 - 2:15 | [In-class exercises](../activities/Day4_activities.md) + [Answer key](../activities/Day4_activities_answer_key.R) | Will |
 | 2:15 - 2:45 | Discussion, Q & A | All |
-| 2:45 - 3:00 | [Wrap Up](..//lectures/R_workshop_wrapup_all.pdf) | Jihe |
+| 2:45 - 3:00 | [Wrap Up](../lectures/R_workshop_wrapup_all-nanocourse.pdf) | Jihe |
 
 ### Final Exercises
 * [**Exercises**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html)
