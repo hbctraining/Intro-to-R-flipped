@@ -30,31 +30,31 @@ b. FALSE FALSE FALSE TRUE FALSE FALSE FALSE FALSE
 c. 4
 d. 5
 
-5. [Reordering and matching] What is the output of this line of code: c(1,2,9,5,3,6,7,4) %in% 5?
+6. [Reordering and matching] What is the output of this line of code: c(1,2,9,5,3,6,7,4) %in% 5?
 a. TRUE 
 b. FALSE FALSE FALSE TRUE FALSE FALSE FALSE FALSE (correct)
 c. 4
 d. 5
 
-6. [Reordering and matching] What is the output of this line of code: match(5, c(1,2,9,5,3,6,7,4))?
+7. [Reordering and matching] What is the output of this line of code: match(5, c(1,2,9,5,3,6,7,4))?
 a. TRUE
 b. 1
 c. 4 (correct)
 d. 5
 
-7. [Plotting with the ggplot2 package] In our ggplot2 lesson, if we want all the data points to be colored blue, while each genotype plotted with a different shape, what should our geom.point() layer say?
+8. [Plotting with the ggplot2 package] In our ggplot2 lesson, if we want all the data points to be colored blue, while each genotype plotted with a different shape, what should our geom.point() layer say?
 a. geom_point(aes(x = age_in_days, y= samplemeans, color = "blue", shape=genotype)) 
 b. geom_point(aes(x = age_in_days, y= samplemeans, color = "blue"), shape=genotype) 
 c. geom_point(aes(x = age_in_days, y= samplemeans, shape=genotype), color = "blue") (correct)
 d. geom_point(aes(x = age_in_days, y= samplemeans), color = "blue", shape=genotype)
 
-8. [Tidyverse] Which of the following function extracts a subset of rows from a dataframe based on logical conditions?
+9. [Tidyverse] Which of the following function extracts a subset of rows from a dataframe based on logical conditions?
 a. rename()
 b. filter() (correct)
 c. select()
 d. which()
 
-9. [Tidyverse] Which of the following function add new variables/columns through transforming existing variables?
+10. [Tidyverse] Which of the following function add new variables/columns through transforming existing variables?
 a. mutate() (correct)
 b. add()
 c. append()
