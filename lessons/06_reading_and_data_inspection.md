@@ -75,16 +75,15 @@ In usage, all of the arguments listed for `read.table()` are the default values 
 
 ***The take-home from the "Usage" section for `read.csv()` is that it has one mandatory argument, the path to the file and filename in quotations; in our case that is `data/mouse_exp_design.csv` or `data/mouse_exp_design.txt`.***
 
-*** 
-#### Note on `stringsAsFactors`
-
-Note that the `read.table {utils}` family of functions has an argument called `stringsAsFactors`, which by default will take the value of `default.stringsAsFactors()`. 
-
-Type out `default.stringsAsFactors()` in the console to check what the default value is for your current R session. Is it `TRUE` or `FALSE`?
-
-If `default.stringsAsFactors()` is set to `TRUE`, then `stringsAsFactors = TRUE`. In that case any function in this family of functions will coerce `character` columns in the data you are reading in to `factor` columns (i.e. coerce from `vector` to `factor`) in the resulting data frame. 
-
-If you want to maintain the `character vector` data structure (e.g. for gene names), you will want to make sure that `stringsAsFactors = FALSE` (or that `default.stringsAsFactors()` is set to `FALSE`).
+> #### The `stringsAsFactors` argument
+> 
+> Note that the `read.table {utils}` family of functions has an argument called `stringsAsFactors`, which by default will take the value of `default.stringsAsFactors()`. 
+> 
+> Type out `default.stringsAsFactors()` in the console to check what the default value is for your current R session. Is it `TRUE` or `FALSE`?
+> 
+> If `default.stringsAsFactors()` is set to `TRUE`, then `stringsAsFactors = TRUE`. In that case any function in this family of functions will coerce `character` columns in the data you are reading in to `factor` columns (i.e. coerce from `vector` to `factor`) in the resulting data frame. 
+> 
+> If you want to maintain the `character vector` data structure (e.g. for gene names), you will want to make sure that `stringsAsFactors = FALSE` (or that `default.stringsAsFactors()` is set to `FALSE`).
 
 ***
 
