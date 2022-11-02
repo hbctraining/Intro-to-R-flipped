@@ -169,7 +169,7 @@ ggplot(new_metadata) +
 
 > *NOTE:* You can use the `example("geom_point")` function here to explore a multitude of different aesthetics and layers that can be added to your plot. As you scroll through the different plots, take note of how the code is modified. You can use this with any of the different geometric object layers available in ggplot2 to learn how you can easily modify your plots! 
 
-> *NOTE:* RStudio provide this very [useful cheatsheet](../cheatsheets/data-visualization-2.1.pdf) for plotting using `ggplot2`. Different example plots are provided and the associated code (i.e which `geom` or `theme` to use in the appropriate situation.) We also encourage you to persuse through this useful [online reference](https://ggplot2.tidyverse.org/reference/) for working with ggplot2.
+> *NOTE:* RStudio provide this very [useful cheatsheet](../cheatsheets/data-visualization-2.1.pdf) for plotting using `ggplot2`. Different example plots are provided and the associated code (i.e which `geom` or `theme` to use in the appropriate situation.) We also encourage you to peruse through this useful [online reference](https://ggplot2.tidyverse.org/reference/) for working with ggplot2.
 
 
 ***
