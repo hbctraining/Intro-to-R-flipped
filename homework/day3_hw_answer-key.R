@@ -11,8 +11,10 @@ ggplot(new_metadata) +
   theme(axis.title = element_text(size = rel(1.25))) +
   theme(plot.title=element_text(hjust = 0.5, size = rel(1.5)))
   
+#2. Changing the order of genotype
+new_metadata$genotype <- factor(new_metadata$genotype, levels = c("Wt", "KO"))
 
-#2. Changing default colors
+#3. Changing default colors
 
 #Add a new layer scale_color_manual(values=c("purple","orange")).
 #Do you observe a change?
