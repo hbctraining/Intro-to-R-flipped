@@ -55,7 +55,7 @@ proj_summary_ctrl <- cbind(proj_summary_ctrl, batch=ctrl_samples[m,])
 ## BONUS: Using `map_lgl()` 
 
 # 1. Subset `proj_summary` to keep only the "high" and "low" samples based on the treament column. Save the new dataframe to a variable called `proj_summary_noctl`
-proj_summary_noctl <- proj_summary[which(proj_summary$treatment != "control")]
+proj_summary_noctl <- proj_summary[which(proj_summary$treatment != "control"),]
 
 # 2. Further subset the dataframe to remove the non-numeric columns "Quality_format", and "treatment". Try to do this using the `map()` function in addition to `is.numeric()`. Save the new dataframe back to `proj_summary_noctl`
 
