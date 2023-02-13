@@ -20,7 +20,7 @@ In the previous lesson, we learned how to determine whether the same data is pre
 Indexing `[ ]` can be used to extract values from a dataset as we saw earlier, but we can also use it to rearrange our data values. 
 
 ```r
-teaching_team <- c("Jihe", "Mary", "Meeta", "Radhika")
+teaching_team <- c("Jihe", "Mary", "Meeta", "Radhika", "Will", "Emma")
 ```
 
 <img src="../img/teaching-team.png" width="400">
@@ -49,14 +49,14 @@ Similarly, we can extract all of the values and reorder them:
 
 ```r
 # Extracting all values and reordering them
-teaching_team[c(4, 2, 1, 3)]
+teaching_team[c(5, 4, 6, 2, 1, 3)]
 ```
 
 If we want to save our results, we need to assign to a variable:
 
 ```r
 # Saving the results to a variable
-reorder_teach <- teaching_team[c(4, 2, 1, 3)] 
+reorder_teach <- teaching_team[c(5, 4, 6, 2, 1, 3)] 
 ```
 
 ***
