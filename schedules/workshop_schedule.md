@@ -183,7 +183,7 @@ II. **Complete the exercises**:
 | 10:00 - 10:35 | Questions about self-learning lessons | All |
 | 10:35 - 11:15 | [In-class exercises](../activities/Day4_activities.md) + [Answer key](../activities/Day4_activities_answer_key.R) | Will |
 | 11:15 - 11:45 | Discussion, Q & A | All |
-| 11:45 - 12:00 | [Wrap Up](..//lectures/R_workshop_wrapup_all.pdf) | Will |
+| 11:45 - 12:00 | [Wrap Up](..//lectures/R_workshop_wrapup_all.pdf) | Radhika |
 
 ### Final Exercises
 * [**Exercises**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html)
