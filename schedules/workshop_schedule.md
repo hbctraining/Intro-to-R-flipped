@@ -54,7 +54,7 @@ II. **Complete the exercises**:
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 10:00 - 10:50 | Questions about self-learning | All |
 | 10:50 - 11:15 | [In-class exercises](../activities/Day2_activities.md) + [Answer key](../activities/Day2_activities_answer_key.R) | Will |
-| 11:15 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Meeta |
+| 11:15 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Radhika |
 
 ### Before the next class:
 
