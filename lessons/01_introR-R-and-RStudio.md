@@ -67,6 +67,8 @@ Let's create a new project directory for our "Introduction to R" lesson today.
 6. When RStudio opens, you will see three panels in the window.
 7. Go to the `File` menu and select `New File`, and select `R Script`. The RStudio interface should now look like the screenshot below.
 
+![](../img/Opening_RStudio.gif)
+
 ![RStudio interface](../img/Rstudio_interface.png)
 
 ### What is a project in RStudio?
