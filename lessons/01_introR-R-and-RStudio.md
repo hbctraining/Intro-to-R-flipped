@@ -63,11 +63,14 @@ Let's create a new project directory for our "Introduction to R" lesson today.
 2. Go to the `File` menu and select `New Project`.
 3. In the `New Project` window, choose `New Directory`. Then, choose `New Project`. Name your new directory `Intro-to-R` and then "Create the project as subdirectory of:" the Desktop (or location of your choice).
 4. Click on `Create Project`.
+
+<p align="center">
+<img src="../img/Opening_Project.gif" width="900">
+</p>
+
 5. After your project is completed, if the project does not automatically open in RStudio, then go to the `File` menu, select `Open Project`, and choose `Intro-to-R.Rproj`.
 6. When RStudio opens, you will see three panels in the window.
 7. Go to the `File` menu and select `New File`, and select `R Script`. The RStudio interface should now look like the screenshot below.
-
-![](../img/Opening_RStudio.gif)
 
 ![RStudio interface](../img/Rstudio_interface.png)
 
