@@ -70,7 +70,13 @@ Let's create a new project directory for our "Introduction to R" lesson today.
 
 5. After your project is completed, if the project does not automatically open in RStudio, then go to the `File` menu, select `Open Project`, and choose `Intro-to-R.Rproj`.
 6. When RStudio opens, you will see three panels in the window.
-7. Go to the `File` menu and select `New File`, and select `R Script`. The RStudio interface should now look like the screenshot below.
+7. Go to the `File` menu and select `New File`, and select `R Script`. 
+
+<p align="center">
+<img src="../img/Opening_Rscript.gif" width="900">
+</p>
+
+The RStudio interface should now look like the screenshot below.
 
 ![RStudio interface](../img/Rstudio_interface.png)
 
