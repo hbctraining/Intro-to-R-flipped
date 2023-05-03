@@ -144,11 +144,11 @@ This is more of a housekeeping task. We will be writing long lines of code in ou
 
 Click on "Tools" at the top of your RStudio screen and click on "Global Options" in the pull down menu.
 
-![options](../img/tools_options.png)
-
 On the left, select "Code" and put a check against "Soft-wrap R source files". Make sure you click the "Apply" button at the bottom of the Window before saying "OK".
 
-![wrap_options](../img/wrap_option.png)
+<p align="center">
+<img src="../img/Soft_wrapping_RStudio.gif" width="900">
+</p>
 
 ## Interacting with R
 
