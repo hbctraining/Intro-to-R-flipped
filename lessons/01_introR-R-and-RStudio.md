@@ -128,9 +128,11 @@ If you wanted to choose a different directory to be your working directory, you 
 ### Structuring your working directory
 To organize your working directory for a particular analysis, you should separate the original data (raw data) from intermediate datasets. For instance, you may want to create a `data/` directory within your working directory that stores the raw data, and have a `results/` directory for intermediate datasets and a `figures/` directory for the plots you will generate.
 
-Let's create these three directories within your working directory by clicking on `New Folder` within the `Files` tab. 
+<p align="center">
+<img src="../img/Add_folder_RStudio.gif" width="900">
+</p>
 
-![Structuring your working directory](../img/wd_setup.png)
+Let's create these three directories within your working directory by clicking on `New Folder` within the `Files` tab. 
 
 When finished, your working directory should look like:
 
