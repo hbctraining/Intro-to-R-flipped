@@ -73,7 +73,7 @@ Let's create a new project directory for our "Introduction to R" lesson today.
 7. Go to the `File` menu and select `New File`, and select `R Script`. 
 
 <p align="center">
-<img src="../img/Opening_Rscript.gif" width="900">
+<img src="../img/Opening_RScript.gif" width="900">
 </p>
 
 The RStudio interface should now look like the screenshot below.
