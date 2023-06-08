@@ -154,7 +154,7 @@ Click on "Tools" at the top of your RStudio screen and click on "Global Options"
 On the left, select "Code" and put a check against "Soft-wrap R source files". Make sure you click the "Apply" button at the bottom of the Window before saying "OK".
 
 <p align="center">
-<img src="../img/Soft_wrapping_RStudio.gif" width="900">
+<img src="../img/Soft_wrap_RStudio.gif" width="900">
 </p>
 
 ## Interacting with R
