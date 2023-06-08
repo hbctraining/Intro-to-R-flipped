@@ -170,7 +170,9 @@ Let's test it out:
 3 + 5
 ```
 
-![Running in the console](../img/console.png)
+<p align="center">
+<img src="../img/Console.png" width="400">
+</p>
 
 ### Script editor
 
@@ -189,18 +191,20 @@ Now let's try entering commands to the **script editor** and using the comments 
 	3+5
 
 <p align="center">
-<img src="../img/Run_code_1.gif" width="900">
+<img src="../img/Run_script_1.gif" width="700">
 </p>
 
 Alternatively, you can run by simply pressing the `Ctrl` and `Return/Enter` keys at the same time as a shortcut.
 
 <p align="center">
-<img src="../img/Run_code_2.gif" width="900">
+<img src="../img/Run_code_2.gif" width="700">
 </p>
 
 You should see the command run in the console and output the result.
 
-![Script editor output](../img/script_editor_output.png)
+<p align="center">
+<img src="../img/Script_editor_output.png" width="400">
+</p>
 	
 What happens if we do that same command without the comment symbol `#`? Re-run the command after removing the # sign in the front:
 
