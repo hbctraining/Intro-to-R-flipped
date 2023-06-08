@@ -126,7 +126,7 @@ You can visualize your working directory by selecting the `Files` tab from the *
 If you wanted to choose a different directory to be your working directory, you could navigate to a different folder in the `Files` tab, then, click on the `More` dropdown menu and select `Set As Working Directory`.
  
 <p align="center">
-<img src="../img/Sqet_wd.png" width="400">
+<img src="../img/Set_wd.png" width="400">
 </p>
 
 
@@ -141,7 +141,9 @@ Let's create these three directories within your working directory by clicking o
 
 When finished, your working directory should look like:
 
-![Your organized working directory](../img/complete_wd_setup.png)
+<p align="center">
+<img src="../img/Complete_wd_setup.png" width="400">
+</p>
 
 ### Setting up 
 
