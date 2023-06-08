@@ -123,7 +123,7 @@ You can visualize your working directory by selecting the `Files` tab from the *
 <img src="../img/Get_wd.png" width="400">
 </p>
 
-If you wanted to choose a different directory to be your working directory, you could navigate to a different folder in the `Files` tab, then, click on the `More` dropdown menu and select `Set As Working Directory`.
+If you wanted to choose a different directory to be your working directory, you could navigate to a different folder in the `Files` tab, then, click on the `More` dropdown menu which appears as a Cog and select `Set As Working Directory`.
  
 <p align="center">
 <img src="../img/Set_wd.png" width="400">
