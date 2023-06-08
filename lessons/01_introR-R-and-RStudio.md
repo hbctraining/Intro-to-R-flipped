@@ -119,18 +119,22 @@ Your working directory should be the `Intro-to-R` folder constructed when you cr
 
 You can visualize your working directory by selecting the `Files` tab from the **Files/Plots/Packages/Help** window. 
 
-![Viewing your working directory](../img/getwd.png)
+<p align="center">
+<img src="../img/Get_wd.png" width="400">
+</p>
 
 If you wanted to choose a different directory to be your working directory, you could navigate to a different folder in the `Files` tab, then, click on the `More` dropdown menu and select `Set As Working Directory`.
  
-![Setting your working directory](../img/setwd.png)
+<p align="center">
+<img src="../img/Sqet_wd.png" width="400">
+</p>
 
 
 ### Structuring your working directory
 To organize your working directory for a particular analysis, you should separate the original data (raw data) from intermediate datasets. For instance, you may want to create a `data/` directory within your working directory that stores the raw data, and have a `results/` directory for intermediate datasets and a `figures/` directory for the plots you will generate.
 
 <p align="center">
-<img src="../img/Add_folder_R_studio.gif" width="900">
+<img src="../img/Add_Rstudio_folder.gif" width="900">
 </p>
 
 Let's create these three directories within your working directory by clicking on `New Folder` within the `Files` tab. 
