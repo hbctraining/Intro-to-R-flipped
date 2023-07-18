@@ -71,7 +71,7 @@ Let's create a new project directory for our "Introduction to R" lesson today.
 5. After your project is completed, if the project does not automatically open in RStudio, then go to the `File` menu, select `Open Project`, and choose `Intro-to-R.Rproj`.
 6. When RStudio opens, you will see three panels in the window.
 7. Go to the `File` menu and select `New File`, and select `R Script`. 
-8. Go to the `File` mena and select `Save As...`, type `Intro-to-R.R` and select `Save`
+8. Go to the `File` menu and select `Save As...`, type `Intro-to-R.R` and select `Save`
 
 <p align="center">
 <img src="../img/Opening_RScript.gif" width="900">
