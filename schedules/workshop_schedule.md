@@ -4,8 +4,8 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 1:30 - 2:00 | [Workshop Introduction](../lectures/Intro_to_workshop_all.pdf) | Will |
-| 2:00 - 3:15 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Emma |
+| 1:30 - 2:00 | [Workshop Introduction](../lectures/Intro_to_workshop_all.pdf) | Radhika |
+| 2:00 - 3:15 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Will |
 | 3:15 - 3:30 | Overview of self-learning materials and homework submission | Will |
 
 ### Before the next class:
