@@ -90,6 +90,14 @@ new_metadata <- data.frame(metadata, samplemeans, age_in_days)
 View(new_metadata)
 ```
 
+> Note that we could have also combined columns using the `cbind()` function as shown in the code below:
+> ```
+> ## DO NOT RUN
+> new_metadata <- cbind(metadata, samplemeans, age_in_days)
+> ```
+> The two functions work identically with the exception of assigning row names. For example, if we were combining columns and wanted to add in a vector of row names, we could easily do so in `data.frame()` with the use of the `row.names` argument. This argument is not available for the `cbind()` function.
+> 
+
 We are now ready for plotting and data visualization!
 
 ---
