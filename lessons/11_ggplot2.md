@@ -15,7 +15,7 @@ Approximate time: 60 minutes
 
 ***
 
-For this lesson, you will need the `new_metadata` data frame. Please download it [from here](https://github.com/hbctraining/Intro-to-R-flipped/blob/master/data/new_metadata.RData?raw=true) to your project's data folder by right-clicking and "save file as" or "download file as".
+For this lesson, you will need the `new_metadata` data frame. Please download it [from here](https://github.com/hbctraining/Intro-to-R-flipped/raw/master/data/new_metadata.RData) to your project's data folder by right-clicking and "save file as" or "download file as".
 
 Once you have downloaded it, load it into your environment as follows:
 
