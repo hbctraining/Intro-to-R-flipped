@@ -4,8 +4,8 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 1:30 - 2:00 | [Workshop Introduction](../lectures/Intro_to_workshop_all.pdf) | Radhika |
-| 2:00 - 3:15 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Will |
+| 1:30 - 2:00 | [Workshop Introduction](../lectures/Intro_to_workshop_all.pdf) | Will |
+| 2:00 - 3:15 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Noor |
 | 3:15 - 3:30 | Overview of self-learning materials and homework submission | Will |
 
 ### Before the next class:
@@ -53,8 +53,8 @@ II. **Complete the exercises**:
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 1:30 - 2:20 | Questions about self-learning | All |
-| 2:20 - 2:45 | [In-class exercises](../activities/Day2_activities.md) + [Answer key](../activities/Day2_activities_answer_key.R) | Will |
-| 2:45 - 3:30 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Emma |
+| 2:20 - 2:45 | [In-class exercises](../activities/Day2_activities.md) + [Answer key](../activities/Day2_activities_answer_key.R) | Noor |
+| 2:45 - 3:30 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Will |
 
 ### Before the next class:
 
@@ -124,8 +124,8 @@ III. Prepare for **in-class exercise**:
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 1:30 - 2:05 | Questions about self-learning lessons | All |
-| 2:05 - 2:45 | [In-class exercises](../activities/Day3_activities.md) + [Answer key](../activities/Day3_activities_answer_key.R)| Emma |
-| 2:45 - 3:30 | [Plotting with the ggplot2 package](../lessons/11_ggplot2.md) | Will |
+| 2:05 - 2:45 | [In-class exercises](../activities/Day3_activities.md) + [Answer key](../activities/Day3_activities_answer_key.R)| Will |
+| 2:45 - 3:30 | [Plotting with the ggplot2 package](../lessons/11_ggplot2.md) | Noor |
 
 ### Before the next class:
 
@@ -181,9 +181,9 @@ II. **Complete the exercises**:
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 1:30 - 2:05 | Questions about self-learning lessons | All |
-| 2:05 - 2:45 | [In-class exercises](../activities/Day4_activities.md) + [Answer key](../activities/Day4_activities_answer_key.R) | Will |
+| 2:05 - 2:45 | [In-class exercises](../activities/Day4_activities.md) + [Answer key](../activities/Day4_activities_answer_key.R) | Noor |
 | 2:45 - 3:15 | Discussion, Q & A | All |
-| 3:15 - 3:30 | [Wrap Up](../lectures/R_workshop_wrapup_all.pdf) | Emma |
+| 3:15 - 3:30 | [Wrap Up](../lectures/R_workshop_wrapup_all.pdf) | Will |
 
 ### Final Exercises
 * [**Exercises**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html)
