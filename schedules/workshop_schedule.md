@@ -4,9 +4,9 @@
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:30 | [Workshop Introduction](../lectures/Intro_to_R_workshop_all.pdf) | Will |
-| 10:30 - 11:45 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Noor |
-| 11:45 - 12:00 | Overview of self-learning materials and homework submission | Will |
+| 10:00 - 10:30 | [Workshop Introduction](../lectures/Intro_to_R_workshop_all.pdf) | Meeta |
+| 10:30 - 11:45 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Heather |
+| 11:45 - 12:00 | Overview of self-learning materials and homework submission | Meeta  |
 
 ### Before the next class:
 
