@@ -12,7 +12,7 @@
   	<img src="../img/animals_unordered_ggplot2.png" width="425"/>
 	</p>
 
-3. We decide that our plot would look better with the animal names ordered from slowest to fastest. Using the `animals_tb` data frame, reorder the animals on the x-axis to start with the slowest animal on the left-hand side of the plot to the fastest animal on the right-hand side of the plot by completing the following steps:
+3. We decide that our plot would look better with the animal names ordered from slowest to fastest. Using the `animals_tb` tibble, reorder the animals on the x-axis to start with the slowest animal on the left-hand side of the plot to the fastest animal on the right-hand side of the plot by completing the following steps:
 
 	**a.** Use the `arrange()` function to order the rows by speed from slowest to fastest. Then use the `pull()` function to extract the `animal_names` column as a vector of character values. Save the new variable as `names_ordered_by_speed`.
 
