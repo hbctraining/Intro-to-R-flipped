@@ -123,7 +123,7 @@ Earlier we noted that the file we just read in had column names (first row of va
 ***
 **Exercise 1**
 
-1. Download [this tab-delimited `.txt` file](https://github.com/hbctraining/Intro-to-R-flipped/blob/master/data/project-summary.txt) and save it in your  project's `data` folder.
+1. Download [this tab-delimited `.txt` file](https://github.com/hbctraining/Training-modules/blob/master/data/project-summary.txt?raw=true) and save it in your  project's `data` folder.
 2. Read it in to R using `read.table()` with the approriate arguments and store it as the variable `proj_summary`. To figure out the appropriate arguments to use with `read.table()`, keep the following in mind:
 	- all the columns in the input text file have column name/headers
 	- you want the first column of the text file to be used as row names (hint: look up the input for the `row.names =` argument in `read.table()`)
