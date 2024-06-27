@@ -37,7 +37,7 @@ All the files used for the above lessons are linked within, but can also be [acc
 
 To cite material from this course in your publications, please use:
 
-> Meeta Mistry, Mary Piper, Jihe Liu, & Radhika Khetani. (2021, May 5). *hbctraining/Intro-to-R-flipped: R workshop first release*. Zenodo. https://doi.org/10.5281/zenodo.4739342
+> Meeta Mistry, Mary Piper, Jihe Liu, & Radhika Khetani. (2021, May 5). *hbctraining/Intro-to-R-flipped: R workshop first release*. Zenodo. https://doi.org/10.5281/zenodo.4739342. RRID:SCR_025373
 
 A lot of time and effort went into the preparation of these materials. Citations help us understand the needs of the community, gain recognition for our work, and attract further funding to support our teaching activities. Thank you for citing this material if it helped you in your data analysis.
 
