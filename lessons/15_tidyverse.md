@@ -210,7 +210,7 @@ bp_oe <- bp_oe %>%
 <details>
 	<summary><i>Click here to see how to do this in base R</i></summary>
 	<br><pre><code># DO NOT RUN</code>
-</code># Selecting columns to remove
+<code># Selecting columns to remove
 idx <- !(colnames(bp_oe) %in% c("query.number", "significant", "recall", "precision", "subgraph.number", "relative.depth", "domain"))
 bp_oe <- bp_oe[, idx]</code></pre><br>
 </details>
@@ -249,7 +249,7 @@ bp_oe <- bp_oe[idx,]</code></pre><br>
 ><details>
 >	<summary><i>Click here to see how to do this in base R</i></summary>
 >	<br><pre><code># DO NOT RUN</code>
-></code># Order by adjusted p-value descending
+><code># Order by adjusted p-value descending
 >idx <- order(bp_oe$p.value, decreasing = TRUE)
 >bp_oe <- bp_oe[idx,]</code></pre>
 ></details>
