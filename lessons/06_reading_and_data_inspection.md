@@ -1,5 +1,5 @@
 ---
-title: 'Data subsetting with base R: vectors and factors'
+title: 'Reading in and inspecting data'
 date: "Friday, September 8, 2017"
 authors: Meeta Mistry, Mary Piper, Radhika Khetani
 ---
