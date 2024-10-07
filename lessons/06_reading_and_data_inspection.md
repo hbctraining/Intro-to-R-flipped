@@ -25,7 +25,9 @@ Many functions exist to read data in, and the function in R you use will depend 
 |                         |           | `read_table()`    | readr              |
 |                         |           | `read_delim()`    | readr              |
 
-For example, if we have text file where the columns are separated by commas (comma-separated values or comma-delimited), you could use the function `read.csv`. However, if the data are separated by a different delimiter in a text file (e.g. ":", ";", " "), you could use the generic `read.table` function and specify the delimiter (`sep = " "`) as an argument in the function. 
+For example, if we have text file where the columns are separated by commas (comma-separated values or comma-delimited), you could use the function `read.csv`. However, if the data are separated by a different delimiter in a text file (e.g. ":", ";", " ", "\t"), you could use the generic `read.table` function and specify the delimiter (`sep = " "`) as an argument in the function. 
+
+> Note: The `"\t"` delimiter is shorthand for tab.
 
 In the above table we refer to base R functions as being contained in the "utils" package. In addition to base R functions, we have also listed functions from some other packages that can be used to import data, specifically the "readr" package that installs when you install the "tidyverse" suite of packages.
 
