@@ -1,17 +1,17 @@
-# Workshop Schedule (HSPH)
+# Workshop Schedule
 
 ## Day 1
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:30 | [Workshop Introduction](../lectures/Intro_to_workshop_HSPH.pdf) | Radhika |
-| 10:30 - 11:45 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Meeta |
-| 11:45 - 12:00 | Overview of self-learning materials and homework submission | Radhika |
+| 10:00 - 10:30 | [Workshop Introduction](../lectures/workshop_intro_slides.pdf) | Will |
+| 10:30 - 11:45 | [Introduction to R and RStudio](../lessons/01_introR-R-and-RStudio.md) | Elizabeth |
+| 11:45 - 12:00 | Overview of self-learning materials and homework submission | Will  |
 
 ### Before the next class:
 
 I. Please **study the contents** and **work through all the code** within the following lessons:
-   1. [R Syntax and Data Structure:](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html)
+   1. [R Syntax and Data Structure](https://hbctraining.github.io/Intro-to-R-flipped/lessons/02_introR-syntax-and-data-structures.html)
       <details>
        <summary><i>Click here for a preview of this lesson</i></summary>
          <br>In order to utilize R effectively, you will need to understand what types of data you can use in R and also how you can store data in "objects" or "variables". <br><br>This lesson will cover:<br>
@@ -40,12 +40,10 @@ I. Please **study the contents** and **work through all the code** within the fo
 
 II. **Complete the exercises**:
    * Each lesson above contains exercises; please go through each of them.
-   * **Copy over** your code from the exercises into a text file. 
-   * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/TkoPJ6FKfH6iMoSQhbGq) the **day before the next class**.
+   * **Copy over** your solutions into the [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfL04I7TVfs5At3n7OCLBieUsJ8nxZgjbO6mQQwCzKoBG1iLA/viewform?usp=sf_link) the **day before the next class**.
    
 ### Questions?
 * ***If you get stuck due to an error*** while runnning code in the lesson, [email us](mailto:hbctraining@hsph.harvard.edu) 
-* Post any **conceptual questions** that you would like to have **reviewed in class** [here](https://PollEv.com/hbctraining945).
 
 ---
 
@@ -53,9 +51,9 @@ II. **Complete the exercises**:
 
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
-| 10:00 - 10:35 | Questions about self-learning | All |
-| 10:35 - 11:05 | [In-class exercises](../activities/Day2_activities.md) + [Answer key](../activities/Day2_activities_answer_key.R) | Meeta |
-| 11:05 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Radhika |
+| 10:00 - 10:50 | Questions about self-learning | All |
+| 10:50 - 11:15 | [In-class exercises](../activities/Day2_activities.md) + [Answer key](../activities/Day2_activities_answer_key.R) | Elizabeth |
+| 11:15 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.md) | Will |
 
 ### Before the next class:
 
@@ -103,12 +101,11 @@ I. Please **study the contents** and **work through all the code** within the fo
              - Utilizing <code>map_dbl()</code> to take the average of every column in a data frame<br>
              - Briefly discuss other functions within the <code>map()</code> family of functions<br>
              - Create a new data frame for plotting<br><br>
-         </details>
+        </details>
 
 II. **Complete the exercises**:
    * Each lesson above contains exercises; please go through each of them.
-   * **Copy over** your code from the exercises into a text file. 
-   * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/aIMu1E4hJkBWSef30u7D) the **day before the next class**.
+   * **Copy over** your solutions into the [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSegEjBKDkK4TB7uhNfcBl6633hasPrGsYDnFuH683blpZNtfg/viewform?usp=sf_link) the **day before the next class**.
 
 III. Prepare for **in-class exercise**:
    * Download the [animals.csv](https://raw.githubusercontent.com/hbctraining/Intro-to-R-flipped/master/data/animals.csv), by right-clicking on the link and "Save Link As..." to place the file into the `data` directory.
@@ -117,7 +114,6 @@ III. Prepare for **in-class exercise**:
    
 ### Questions?
 * ***If you get stuck due to an error*** while runnning code in the lesson, [email us](mailto:hbctraining@hsph.harvard.edu) 
-* Post any **conceptual questions** that you would like to have **reviewed in class** [here](https://PollEv.com/hbctraining945).
 
 ---
 
@@ -126,8 +122,8 @@ III. Prepare for **in-class exercise**:
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 10:00 - 10:35 | Questions about self-learning lessons | All |
-| 10:35 - 11:15 | [In-class exercises](../activities/Day3_activities.md) + [Answer key](../activities/Day3_activities_answer_key.R)| Meeta |
-| 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/11_ggplot2.md) | Radhika |
+| 10:35 - 11:15 | [In-class exercises](../activities/Day3_activities.md) + [Answer key](../activities/Day3_activities_answer_key.R)| Will |
+| 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/11_ggplot2.md) | Elizabeth |
 
 ### Before the next class:
 
@@ -170,12 +166,10 @@ I. Please **study the contents** and **work through all the code** within the fo
 
 II. **Complete the exercises**:
    * Each lesson above contains exercises; please go through each of them.
-   * **Copy over** your code from the exercises into a text file. 
-   * **Upload the saved text file** to [Dropbox](https://www.dropbox.com/request/cMaQc1PtmPghbg3WIG5u) the **day before the next class**.
+   * **Copy over** your solutions into the [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSdelYtXxCGQZOWd2T28REjU5NC_NS4n-HZte8OEgFXS6Q5wcA/viewform?usp=sf_link) the **day before the next class**.
    
 ### Questions?
 * ***If you get stuck due to an error*** while runnning code in the lesson, [email us](mailto:hbctraining@hsph.harvard.edu) 
-* Post any **conceptual questions** that you would like to have **reviewed in class** [here](https://PollEv.com/hbctraining945).
 
 ---
 
@@ -184,9 +178,9 @@ II. **Complete the exercises**:
 | Time            |  Topic  | Instructor |
 |:------------------------:|:------------------------------------------------:|:--------:|
 | 10:00 - 10:35 | Questions about self-learning lessons | All |
-| 10:35 - 11:15 | [In-class exercises](../activities/Day4_activities.md) + [Answer key](../activities/Day4_activities_answer_key.R) | Meeta |
+| 10:35 - 11:15 | [In-class exercises](../activities/Day4_activities.md) + [Answer key](../activities/Day4_activities_answer_key.R) | Will |
 | 11:15 - 11:45 | Discussion, Q & A | All |
-| 11:45 - 12:00 | [Wrap Up](../lectures/R_workshop_wrapup_cfar.pdf) | Radhika |
+| 11:45 - 12:00 | [Wrap Up](../lectures/workshop_wrapup_slides.pdf) | Will |
 
 ### Final Exercises
 * [**Exercises**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_hw.html)
