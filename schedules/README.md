@@ -192,8 +192,8 @@ II. **Complete the exercises**:
 * [**Final exercises**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_key.html)
 
 ## Building on the basic R knowledge
-* [DGE workshop](https://hbctraining.github.io/DGE_workshop_salmon/)
-* [Single-cell RNA-seq workshop](https://hbctraining.github.io/scRNA-seq/)
+* [DGE workshop](https://hbctraining.github.io/DGE_workshop_salmon_online/)
+* [Single-cell RNA-seq workshop](https://hbctraining.github.io/scRNA-seq_online/)
 * [RMarkdown](https://hbctraining.github.io/Training-modules/Rmarkdown/)
 * [Functional analysis](https://hbctraining.github.io/Training-modules/DGE-functional-analysis/)
 * [More ggplot2](https://hbctraining.github.io/publication_perfect/)
