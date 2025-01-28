@@ -11,14 +11,9 @@ Approximate time: 30 min
 
 ## Asking for help
 
-The key to getting help from someone is for them to grasp your problem rapidly. You
-should make it as easy as possible to pinpoint where the issue might be.
+The key to getting help from someone is for them to grasp your problem rapidly. You should make it as easy as possible to pinpoint where the issue might be.
 
-1. Try to **use the correct words** to describe your problem. For instance, a package
-is not the same thing as a library. Most people will understand what you meant,
-but others have really strong feelings about the difference in meaning. The key
-point is that it can make things confusing for people trying to help you. **Be as
-precise as possible when describing your problem.**
+1. Try to **use the correct words** to describe your problem. For instance, a package is not the same thing as a library. Most people will understand what you meant, but others have really strong feelings about the difference in meaning. The key point is that it can make things confusing for people trying to help you. **Be as precise as possible when describing your problem.**
 
 2. **Always include the output of `sessionInfo()`** as it provides critical information about your platform, the versions of R and the packages that you are using, and other information that can be very helpful to understand your problem.
 
@@ -26,14 +21,8 @@ precise as possible when describing your problem.**
 	sessionInfo()  #This time it is not interchangeable with search()
 	```
 
-3. If possible, **reproduce the problem using a very small `data.frame`**
-instead of your 50,000 rows and 10,000 columns one, provide the small one with
-the description of your problem. When appropriate, try to generalize what you
-are doing so even people who are not in your field can understand the question. 
-	- To share an object with someone else, you can provide either the raw file (i.e., your CSV file) with
-your script up to the point of the error (and after removing everything that is
-not relevant to your issue). Alternatively, in particular if your questions is
-not related to a `data.frame`, you can save any other R data structure that you have in your environment to a file:
+3. If possible, **reproduce the problem using a very small `data.frame`** instead of your 50,000 rows and 10,000 columns one, provide the small one with the description of your problem. When appropriate, try to generalize what you are doing so even people who are not in your field can understand the question. 
+	- To share an object with someone else, you can provide either the raw file (i.e., your CSV file) with your script up to the point of the error (and after removing everything that is not relevant to your issue). Alternatively, in particular if your questions is not related to a `data.frame`, you can save any other R data structure that you have in your environment to a file:
 
 		```r
 		# DO NOT RUN THIS!
@@ -52,32 +41,18 @@ not related to a `data.frame`, you can save any other R data structure that you 
 ### Where to ask for help?
 
 * **Google** is often your best friend for finding answers to specific questions regarding R. 
-	- Cryptic error messages are very common in R - it is very likely that someone else has encountered this problem already! Start by googling the error message.  However, this doesn't always work because often, package developers rely on the error catching provided by R. You end up with general error messages that might not be very helpful to diagnose a problem (e.g. "subscript out of bounds").
+	- Cryptic error messages are very common in R - it is very likely that someone else has encountered this problem already! Start by googling the error message. However, this doesn't always work because often, package developers rely on the error catching provided by R. You end up with general error messages that might not be very helpful to diagnose a problem (e.g. "subscript out of bounds").
 * **Stackoverflow**: Search using the `[r]` tag. Most questions have already been answered, but the challenge is to use the right words in the search to find the answers: [http://stackoverflow.com/questions/tagged/r](http://stackoverflow.com/questions/tagged/r). If your question hasn't been answered before and is well crafted, chances are you will get an answer in less than 5 min.
-* **Your friendly colleagues**: if you know someone with more experience than you,
-  they might be able and willing to help you.
-* **The [R-help](https://stat.ethz.ch/mailman/listinfo/r-help)**: it is read by a
-  lot of people (including most of the R core team), a lot of people post to it,
-  but the tone can be pretty dry, and it is not always very welcoming to new
-  users. If your question is valid, you are likely to get an answer very fast
-  but don't expect that it will come with smiley faces. Also, here more than
-  everywhere else, be sure to use correct vocabulary (otherwise you might get an
-  answer pointing to the misuse of your words rather than answering your
-  question). You will also have more success if your question is about a base
-  function rather than a specific package.
+* **Your friendly colleagues**: if you know someone with more experience than you, they might be able and willing to help you.
+* **AI tools**: You can submit your line of code and the resulting error to ChatGPT or other tools and ask it to interpret the error for you, or ask ChatGPT to write R code to accomplish the task you are struggling with and see where your solutions differ. Importantly, if you use any code written by AI, make sure you review the generated code line by line to check that it works and that you understand what it is doing!
+* **The [R-help](https://stat.ethz.ch/mailman/listinfo/r-help)**: it is read by a lot of people (including most of the R core team), a lot of people post to it, but the tone can be pretty dry, and it is not always very welcoming to new users. If your question is valid, you are likely to get an answer very fast but don't expect that it will come with smiley faces. Also, here more than everywhere else, be sure to use correct vocabulary (otherwise you might get an answer pointing to the misuse of your words rather than answering your question). You will also have more success if your question is about a base function rather than a specific package.
 * **The [Bioconductor support site](https://support.bioconductor.org/)**. This is very useful and if you tag your post, there is a high likelihood of getting an answer from the developer.
-* If your question is about a specific package, see if there is a mailing list
-  for it. Usually it's included in the DESCRIPTION file of the package that can
-  be accessed using `packageDescription("name-of-package")`. You may also want
-  to try to **email the author** of the package directly.
-* There are also some **topic-specific mailing lists** (GIS, phylogenetics, etc...),
-  the complete list is [here](http://www.r-project.org/mail.html).
+* If your question is about a specific package, see if there is a mailing list for it. Usually it's included in the DESCRIPTION file of the package that can be accessed using `packageDescription("name-of-package")`. You may also want to try to **email the author** of the package directly.
+* There are also some **topic-specific mailing lists** (GIS, phylogenetics, etc...), the complete list is [here](http://www.r-project.org/mail.html).
   
 ### More resources
-* The [Posting Guide](http://www.r-project.org/posting-guide.html) for the R
-  mailing lists.
-* [How to ask for R help](http://blog.revolutionanalytics.com/2014/01/how-to-ask-for-r-help.html)
-  useful guidelines
+* The [Posting Guide](http://www.r-project.org/posting-guide.html) for the R mailing lists.
+* [How to ask for R help](http://blog.revolutionanalytics.com/2014/01/how-to-ask-for-r-help.html) useful guidelines
 * The [Introduction to R](http://cran.r-project.org/doc/manuals/R-intro.pdf) can also be dense for people with little programming experience but it is a good place to understand the underpinnings of the R language.
 * The [R FAQ](http://cran.r-project.org/doc/FAQ/R-FAQ.html) is dense and technical but it is full of useful information.
 
