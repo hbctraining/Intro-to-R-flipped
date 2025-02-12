@@ -56,37 +56,45 @@ write(glengths, file="data/genome_lengths.txt", ncolumns = 1)
 
 There are two ways in which figures and plots can be output to a file (rather than simply displaying on screen). 
 
-(1) The first (and easiest) is to export directly from the RStudio 'Plots' panel, by clicking on `Export` when the image is plotted. This will give you the option of `png` or `pdf` and selecting the directory to which you wish to save it to. It will also give you options to dictate the size and resolution of the output image.
+1. The first (and easiest) is to export directly from the RStudio 'Plots' panel, by clicking on `Export` when the image is plotted. This will give you the option of `png` or `pdf` and selecting the directory to which you wish to save it to. It will also give you options to dictate the size and resolution of the output image.
 
-(2) The second option is to use R functions and have the write to file hard-coded in to your script. This would allow you to run the script from start to finish and automate the process (not requiring human point-and-click actions to save).  In R’s terminology, **output is directed to a particular output device and that dictates the output format that will be produced**.  A device must be created or “opened” in order to receive graphical output and, for devices that create a file
-on disk, the device must also be closed in order to complete the output.
-
-If we wanted to print our scatterplot to a pdf file format, we would need to initialize a plot using a function which specifies the graphical format you intend on creating i.e.`pdf()`, `png()`, `tiff()` etc. Within the function you will need to specify a name for your image, and the with and height (optional). This will open up the device that you wish to write to:
+2. The second option is to use R functions and have the write to file hard-coded in to your script. This would allow you to run the script from start to finish and automate the process (not requiring human point-and-click actions to save).  In R’s terminology, **output is directed to a particular output device and that dictates the output format that will be produced**. If we wanted to save our scatterplot to a pdf file format we can use a function called `ggsave` within `ggplot2` to help us.
 
 ```r
-## Open device for writing
-pdf("figures/scatterplot.pdf")
+ggplot(new_metadata) +
+  geom_point(aes(x = age_in_days, y= samplemeans, color = genotype,
+  			shape=celltype), size=rel(3.0))
+ggsave("figures/scatterplot.pdf")
 ```
 
-If you wish to modify the size and resolution of the image you will need to add in the appropriate parameters as arguments to the function when you initialize. Then we plot the image to the device, using the ggplot scatterplot that we just created. 
+You can specify the file format you would like it to print to with the `device` argument. However, `ggsave` will try to guess your preferred format from the extension that you provide in your file name. 
 
-```r
+By default, `ggsave` will save the last image that you rendered. If you want to specify the plot to save you can store your image in an object and use the `plot` argument inside of `ggsave` to save that specific image.
+
+<details>
+<summary><b>Click here to see how to save an image in base R</b></summary>
+A device must be created or “opened” in order to receive graphical output and, for devices that create a file on disk, the device must also be closed in order to complete the output.<br><br>
+If we wanted to print our scatterplot to a pdf file format, we would need to initialize a plot using a function which specifies the graphical format you intend on creating i.e.<code>pdf()</code>, <code>png()</code>, <code>tiff()</code> etc. Within the function you will need to specify a name for your image, and the with and height (optional). This will open up the device that you wish to write to:<br><br>
+<pre>
+## Open device for writing
+pdf("figures/scatterplot.pdf")
+</pre>
+If you wish to modify the size and resolution of the image you will need to add in the appropriate parameters as arguments to the function when you initialize. Then we plot the image to the device, using the ggplot scatterplot that we just created.<br><br>
+<pre>
 ## Make a plot which will be written to the open device, in this case the temp file created by pdf()/png()
 ggplot(new_metadata) +
   geom_point(aes(x = age_in_days, y= samplemeans, color = genotype,
   			shape=celltype), size=rel(3.0)) 
-```
-
-Finally, close the "device", or file, using the `dev.off()` function. There are also `bmp`, `tiff`, and `jpeg` functions, though the jpeg function has proven less stable than the others. 
-  			
-```r    
+</pre>
+Finally, close the "device", or file, using the <code>dev.off()</code> function. There are also <code>bmp</code>, <code>tiff</code>, and <code>jpeg</code> functions, though the <code>jpeg</code> function has proven less stable than the others.<br><br>
+<pre>
 ## Closing the device is essential to save the temporary file created by pdf()/png()
 dev.off()
-```
-
-***Note 1:*** *You will not be able to open and look at your file using standard methods (Adobe Acrobat or Preview etc.) until you execute the `dev.off()` function.*
-
-***Note 2:*** *In the case of `pdf()`, if you had made additional plots before closing the device, they will all be stored in the same file with each plot usually getting its own page, unless otherwise specified.*
+</pre>
+<blockquote>
+<ol><li><i>You will not be able to open and look at your file using standard methods (Adobe Acrobat or Preview etc.) until you execute the <code>dev.off()</code> function.</i></li>
+<li><i>In the case of <code>pdf()</code>, if you had made additional plots before closing the device, they will all be stored in the same file with each plot usually getting its own page, unless otherwise specified.</i></li>
+</details>
 
 ---
 *This lesson has been developed by members of the teaching team at the [Harvard Chan Bioinformatics Core (HBC)](http://bioinformatics.sph.harvard.edu/). These are open access materials distributed under the terms of the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.*
