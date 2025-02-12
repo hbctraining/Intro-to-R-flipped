@@ -31,7 +31,6 @@ ggplot(animals_tb) +
         theme(plot.title=element_text(hjust=0.5))
 
 #4. Save the plot as a PDF called animals_by_speed_scatterplot.pdf to the results folder.
-pdf("results/animals_by_speed_scatterplot.pdf")
 
 ggplot(animals_tb) +
         geom_point(aes(x = animal_names, y = speed), color = "purple") +
@@ -40,8 +39,7 @@ ggplot(animals_tb) +
         ylab("Speed (km/h)") +
         xlab("Animal") +
         theme(plot.title=element_text(hjust=0.5))
-
-dev.off()
+ggsave("results/animals_by_speed_scatterplot.pdf")
 
 #5. Use the functions from the dplyr package to perform the following tasks:
 
