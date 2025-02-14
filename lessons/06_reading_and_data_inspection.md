@@ -104,6 +104,25 @@ metadata <- read.csv(file="data/mouse_exp_design.csv")
 
 > **NOTE:** RStudio supports the automatic completion of code using the <kbd>Tab</kbd> key. This is especially helpful for when reading in files to ensure the correct file path. The tab completion feature also provides a shortcut to listing objects, and inline help for functions. **Tab completion is your friend!** We encourage you to use it whenever possible.
 
+<details>
+<summary><b>Click here to see how to import data using the <kbd>Import Dataset</kbd> button</b></summary>
+<br>You can also use the <kbd>Import Dataset</kbd> button in your Environment pane to import data. This option is not as appealing because it can lack reproducibility if not documented properly, but it can be helpful when getting started. In order to use the <kbd>Import Dataset</kbd>:<br><br>
+<ol><li>Left-click the <kbd>Import Dataset</kbd> button in the Environment pane</li>
+<li>Left-click <kbd>From Text (base...)</kbd></li>
+<li>Navigate to the file you would like to import and select <kbd>Open</kbd></li>
+<li>Type the name you would like the imported object to be called in the <code>Name</code> textbox.</li>
+<li>Select the delimiter that your file is using in the <code>Separator</code> dropdown menu</li>
+<li>Left-click <kbd>Import</kbd></li></ol>
+These steps are summarized in the GIF below:<br><br>
+<img src="../img/Import_dataset.gif" width="1000"><br><br>
+Now the dataset has been imported into your environment.<br><br>
+<blockquote>
+Note: If you are going to use this method, it could impact the reproducibility of your work, because the steps to do that import are not recorded anywhere. If you are going to use this method of importing data, it is <b><i>STRONGLY RECOMMENDED</i></b> that you copy the command that read the dataset in and is present in the console to an Rscript file. In the future, you can run that line of code from the Rscript file to recreate the data object.
+</blockquote>
+<hr />
+</details>
+
+
 Go to your Global environment and click on the name of the data frame you just created. 
 
 <img src="../img/metadata_env.png" width="300">
