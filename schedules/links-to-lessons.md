@@ -50,7 +50,7 @@ Download the most recent versions of R and RStudio:
 1. [Finding help](../lessons/14_finding_help.md)
 1. [Tidyverse](../lessons/15_tidyverse.md)
     
-* [Solution to exercises in above lessons](../homework/day1_hw_answer-key.R)
+* [Solution to exercises in above lessons](../homework/day3_hw_answer-key.R)
     
 | [Practice exercises III](../activities/Day4_activities.md) | [Answer key III](../activities/Day4_activities_answer_key.R) |
 
