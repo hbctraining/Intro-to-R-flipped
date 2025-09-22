@@ -29,7 +29,7 @@ Download the most recent versions of R and RStudio for the appropriate OS using 
 
 ### Dataset
 
-All the files used for the above lessons are linked within, but can also be [accessed here](https://github.com/hbctraining/Intro-to-R-with-DGE/tree/master/data).
+All the files used for the above lessons are linked within, but can also be [accessed here](https://www.dropbox.com/scl/fo/dqarod6e6vxmg6d8ur4wu/AH20206dknLP3cmA-dVWnUY?rlkey=ukvswnrsn7lm9uq2x1rtxrf0w&st=8w49sgy9&dl=1).
 
 ---
 
