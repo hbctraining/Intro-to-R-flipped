@@ -1,0 +1,99 @@
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - img/
+    - css/
+    - slides/
+    - schedule/
+
+
+website:
+  title: "Introduction to R"
+  page-footer: >
+      This lesson has been developed by members of the teaching team at the [Harvard Chan Bioinformatics Core (HBC)](http://bioinformatics.sph.harvard.edu/). <br>
+      These are open access materials distributed under the terms of the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited. <br>
+      Some materials used are adapted from work that is Copyright © [Data Carpentry](http://datacarpentry.org/). All Data Carpentry instructional material is made available under the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0).
+  
+  
+  navbar:
+    left:
+      - text: "Schedule"
+        href: schedule/schedule.qmd
+    right:
+      - text: "HBC"
+        href: https://bioinformatics.sph.harvard.edu/
+      - text: "GitHub"
+        href: https://github.com/hbctraining/intro_r_rmd
+      - text: "Contact us"
+        href: mailto:hbctraining@hsph.harvard.edu
+  
+  
+  sidebar:
+    title: "Lessons"      # Optional title above the sidebar
+    style: "docked"       # Sidebar is docked to the left
+    collapse-level: 1     # At what header level to start collapsing
+    # contents: auto      # Creates automatic TOC from page headers (no sections)
+    contents:
+      - section: "Day 1:"
+        contents:
+          - lessons/01b_introR-R-and-RStudio.qmd  
+      - section: "Day 1 Self-learning:"
+        contents:
+          - lessons/02_introR-syntax-and-data-structures.qmd
+          - lessons/03_introR-functions-and-arguments.qmd
+          - lessons/06_reading_and_data_inspection.qmd
+
+      - section: "Day 2"
+        contents:
+          - lessons/Day2_activities.qmd
+          - lessons/05_introR-data-wrangling.qmd
+      - section: "Day 2 Self-learning"
+        contents:
+          - lessons/04_introR_packages.qmd
+          - lessons/07_introR-data-wrangling2.qmd
+          - lessons/08_identifying-matching-elements.qmd
+          - lessons/09_reordering-to-match-datasets.qmd
+          - lessons/10_setting_up_to_plot.qmd
+
+      - section: "Day 3"
+        contents:
+          - lessons/Day3_activities.qmd
+          - lessons/11_ggplot2.qmd
+      - section: "Day 3 Self-learning"
+        contents:
+          - lessons/11b_Custom_Functions_ggplot2.qmd
+          - lessons/12_boxplot_exercise.qmd
+          - lessons/13_exporting_data_and_plots.qmd
+          - lessons/14_finding_help.qmd
+          - lessons/15_tidyverse.qmd
+
+      - section: "Day 4"
+        contents:
+          - lessons/Day4_activities.qmd
+          
+
+format:
+  html:
+    theme: simplex
+    css: css/styles.css
+    fig-align: "center"
+    toc: true
+    number-sections: false
+    code-block-bg: true
+    code-copy: true      # enables copy button (default in most themes)
+    code-tools: true     # enables the copy button!
+    code-line-wrap: wrap
+    google-analytics: UA-150953419-1
+    prompt: true         
+    self-contained: true
+
+
+# Global Execution Defaults
+execute:
+  echo: true               # show code
+  eval: true               # run code
+  warning: false           # show warnings
+  error: false             # show errors
+  message: false           # show messages
+  prompt: true
