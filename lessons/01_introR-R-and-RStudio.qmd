@@ -5,6 +5,9 @@ date: "Friday, September 8, 2017"
 editor_options: 
   markdown: 
     wrap: 72
+format:
+  html:
+    self-contained: false
 ---
 
 Approximate time: 45 minutes
