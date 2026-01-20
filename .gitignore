@@ -4,3 +4,4 @@ docs/data
 *.RDS
 *.RData
 *.rds
+.Rhistory
