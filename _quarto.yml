@@ -70,7 +70,7 @@ website:
 
       - section: "Day 4"
         contents:
-          - lessons/19_Tidyverse_and_data_vizualization.qmd
+          - lessons/19_Tidyverse_and_data_visualization.qmd
           
 
 format:

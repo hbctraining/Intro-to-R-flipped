@@ -21,8 +21,7 @@ editor:
 I. Please **study the contents** and **work through all the code**
 within the following lessons:
 
-1.  [R Syntax and Data
-    Structure](../lessons/02_syntax-and-data-structures.qmd)
+1.  [R Syntax and Data Structure](../lessons/02_syntax-and-data-structures.qmd)
 
     <details>
     
@@ -315,7 +314,7 @@ II. **Complete the exercises**:
 | Time | Topic | Instructor |
 |:-----------------:|:------------------------------------:|:-------------:|
 | 10:00 - 10:35 | Questions about self-learning lessons | All |
-| 10:35 - 11:25 | [In-class exercises](../lessons/19_Tidyverse_and_data_vizualization.qmd) | Elizabeth |
+| 10:35 - 11:25 | [In-class exercises](../lessons/19_Tidyverse_and_data_visualization.qmd) | Elizabeth |
 | 11:25 - 11:45 | Discussion, Q & A | All |
 | 11:45 - 12:00 | [Wrap Up](../slides/workshop_wrapup_slides.pdf) | Will |
 

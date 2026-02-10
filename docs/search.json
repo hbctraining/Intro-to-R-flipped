@@ -675,7 +675,7 @@
     "href": "index.html#introduction-to-r",
     "title": "",
     "section": "Introduction to R",
-    "text": "Introduction to R\n\n\n\n\n\n\n\n\nAudience\nComputational skills required\nDuration\n\n\n\n\nBiologists\nNone\n4-session online workshop (~ 8 hours of trainer-led time)\n\n\n\n\nDescription\nThis repository has teaching materials for a hands-on Introduction to R workshop. The workshop will introduce participants to the basics of R and RStudio. R is a simple programming environment that enables the effective handling of data, while providing excellent graphical support. RStudio is a tool that provides a user-friendly environment for working with R. These materials are intended to provide both basic R programming knowledge and its application for increasing efficiency for data analysis.\nNote for Trainers: Please note that the schedule linked below assumes that learners will spend between 2-3 hours on reading through, and completing exercises from selected lessons between classes.\n\n\nLearning Objectives\n\nR syntax: Familiarize the basic syntax and the use of Rstudio.\nData types and data structures: Describe frequently-used data types and data structures in R.\nData inspection and wrangling: Demonstrate the utilization of functions and indices to inspect and subset data from various data structures.\nData visualization: Apply the ggplot2 package to create plots for data visualization.\n\n\n\nLessons\n\nWorkshop schedule (trainer-led learning) \n\n\n\nInstallation Requirements\nDownload the most recent versions of R and RStudio for the appropriate OS using the links below:\n\nR\nRStudio\n\n\n\nDataset\nAll the files used for the above lessons are linked within, but can also be accessed here.\n\n\n\nCitation\nTo cite material from this course in your publications, please use:\n\n\n\n\n\n\nImportant\n\n\n\nMeeta Mistry, Mary Piper, Jihe Liu, & Radhika Khetani. (2021, May 5). hbctraining/Intro-to-R-flipped: R workshop first release. Zenodo. https://doi.org/10.5281/zenodo.4739342. RRID:SCR_025373\n\n\nA lot of time and effort went into the preparation of these materials. Citations help us understand the needs of the community, gain recognition for our work, and attract further funding to support our teaching activities. Thank you for citing this material if it helped you in your data analysis."
+    "text": "Introduction to R\n\n\n\n\n\n\n\n\nAudience\nComputational skills required\nDuration\n\n\n\n\nBiologists\nNone\n4-session online workshop (~ 8 hours of trainer-led time)\n\n\n\n\nDescription\nThis repository has teaching materials for a hands-on Introduction to R workshop. The workshop will introduce participants to the basics of R and RStudio. R is a simple programming environment that enables the effective handling of data, while providing excellent graphical support. RStudio is a tool that provides a user-friendly environment for working with R. These materials are intended to provide both basic R programming knowledge and its application for increasing efficiency for data analysis.\nNote for Trainers: Please note that the schedule linked below assumes that learners will spend between 2-3 hours on reading through, and completing exercises from selected lessons between classes.\n\n\nLearning Objectives\n\nR syntax: Familiarize the basic syntax and the use of Rstudio.\nData types and data structures: Describe frequently-used data types and data structures in R.\nData inspection and wrangling: Demonstrate the utilization of functions and indices to inspect and subset data from various data structures.\nData visualization: Apply the ggplot2 package to create plots for data visualization.\n\n\n\nLessons\n\nWorkshop schedule (trainer-led learning)\nSelf-learning\n\n\n\nInstallation Requirements\nDownload the most recent versions of R and RStudio for the appropriate OS using the links below:\n\nR\nRStudio\n\n\n\nDataset\nAll the files used for the above lessons are linked within, but can also be accessed here.\n\n\n\nCitation\nTo cite material from this course in your publications, please use:\n\n\n\n\n\n\nImportant\n\n\n\nMeeta Mistry, Mary Piper, Jihe Liu, & Radhika Khetani. (2021, May 5). hbctraining/Intro-to-R-flipped: R workshop first release. Zenodo. https://doi.org/10.5281/zenodo.4739342. RRID:SCR_025373\n\n\nA lot of time and effort went into the preparation of these materials. Citations help us understand the needs of the community, gain recognition for our work, and attract further funding to support our teaching activities. Thank you for citing this material if it helped you in your data analysis."
   },
   {
     "objectID": "schedule/schedule.html",
@@ -2675,5 +2675,83 @@
     "title": "Transferring Project from Posit Cloud",
     "section": "Downloading the RStudio Project for local use",
     "text": "Downloading the RStudio Project for local use\nAlternatively, you can also download the RStudio Project and open it locally in RStudio. In order to be able to open the RStudio Project locally, you will need to have both R and RStudio installed on your local computer. You can download them from the links below:\n\nR\nRStudio\n\nOne advantage to this method is that you will not be limited in your computational resources like you would be on Posit Cloud. However, the disadvantage is that the installed packages will not transfer. This is because the packages were compiled against the operating system in Posit Cloud and not your local operating system.\nIn order to download the RStudio project, click on the download icon in the workspace corresponding to the Introduction to R project.\n\nThis will prepare the download and then let you know that the project is ready to download.\nClick the “Download” button and a .zip compressed directory will be downloaded. Uncompress the directory, enter the directory and double-click on the R project file (the file with the .Rproj extension). This should open up RStudio and allow you to work on the RStudio Project locally."
+  },
+  {
+    "objectID": "schedule/links-to-lessons.html",
+    "href": "schedule/links-to-lessons.html",
+    "title": "",
+    "section": "",
+    "text": "Code"
+  },
+  {
+    "objectID": "schedule/links-to-lessons.html#learning-objectives",
+    "href": "schedule/links-to-lessons.html#learning-objectives",
+    "title": "",
+    "section": "Learning Objectives",
+    "text": "Learning Objectives\n\nR syntax: Familiarize the basic syntax and the use of Rstudio.\nData types and data structures: Describe frequently-used data types and data structures in R.\nData inspection and wrangling: Demonstrate the utilization of functions and indices to inspect and subset data from various data structures.\nData visualization: Apply the ggplot2 package to create plots for data visualization."
+  },
+  {
+    "objectID": "schedule/links-to-lessons.html#installations",
+    "href": "schedule/links-to-lessons.html#installations",
+    "title": "",
+    "section": "Installations",
+    "text": "Installations\n\nR (version 4.4.0 or later)\nRStudio"
+  },
+  {
+    "objectID": "schedule/links-to-lessons.html#lessons",
+    "href": "schedule/links-to-lessons.html#lessons",
+    "title": "",
+    "section": "Lessons",
+    "text": "Lessons\n\nIntroduction to R and RStudio\nR Syntax and Data Structure\nFunctions and Arguments\nReading in and inspecting data\nCustom functions exercises\nData Wrangling: Subsetting Vectors and Factors\nPackages and libraries\nData wrangling: data frames, matrices and lists\nThe %in% operator\nReordering and matching\nSetting up a data frame to plot (+ the map() function)\nData wrangling exercises\nPlotting with the ggplot2 package\nUsing custom functions for consistent plots\nGenerating a boxplot with ggplot2\nWriting to file and exporting plots\nFinding help\nTidyverse\nTidyverse and Data visualization exercises\n\n\nFinal Exercises\n\nExercises + Answer Key"
+  },
+  {
+    "objectID": "schedule/links-to-lessons.html#building-on-the-basic-r-knowledge",
+    "href": "schedule/links-to-lessons.html#building-on-the-basic-r-knowledge",
+    "title": "",
+    "section": "Building on the basic R knowledge",
+    "text": "Building on the basic R knowledge\n\nDGE workshop\nSingle-cell RNA-seq workshop\nRMarkdown\nQuarto\nFunctional analysis\nMore ggplot2\nggplot2 cookbook\nRunning R and Rstudio on O2"
+  },
+  {
+    "objectID": "schedule/links-to-lessons.html#resources",
+    "href": "schedule/links-to-lessons.html#resources",
+    "title": "",
+    "section": "Resources",
+    "text": "Resources\n\nAll hbctraining materials"
+  },
+  {
+    "objectID": "schedule/links-to-lessons.html#cheatsheets",
+    "href": "schedule/links-to-lessons.html#cheatsheets",
+    "title": "",
+    "section": "Cheatsheets",
+    "text": "Cheatsheets\n\nbase R cheatsheet\nRStudio cheatsheet\nggplot2 cheatsheet"
+  },
+  {
+    "objectID": "lessons/19_Tidyverse_and_data_visualization.html",
+    "href": "lessons/19_Tidyverse_and_data_visualization.html",
+    "title": "Tidyverse and Data Visualization",
+    "section": "",
+    "text": "Change the animals data frame to a tibble called animals_tb. Save the row names to a column called animal_names before turning it into a tibble.\n\n\n\nUse ggplot2 to plot the animal names (x-axis) versus the speed of the animal (y-axis) in animals_tb using a scatterplot. Customize the plot to display as shown below.\n\n\n\nWe decide that our plot would look better with the animal names ordered from slowest to fastest. Using the animals_tb tibble, reorder the animals on the x-axis to start with the slowest animal on the left-hand side of the plot to the fastest animal on the right-hand side of the plot by completing the following steps:\na. Use the arrange() function to order the rows by speed from slowest to fastest. Then use the pull() function to extract the animal_names column as a vector of character values. Save the new variable as names_ordered_by_speed.\nb. Turn the animal_names column of animals_tb into a factor and specify the levels as names_ordered_by_speed from slowest to fastest (output in part a). Note: this step is crucial, because ggplot2 uses factor as plotting order, instead of the order we observe in data frame.\nc. Re-plot the scatterplot with the animal names in order from slowest to fastest.\n\n\n\n\n\n\n\n\nNote\n\n\n\nIf you are interested in exploring other ways to reorder a variable in ggplot2, refer to this post.\n\n\n\nSave the plot as a PDF called animals_by_speed_scatterplot.pdf to the results folder.\nUse the functions from the dplyr package to perform the following tasks:\n\na. Extract the rows of animals_tb tibble with color of gray or tan, order the rows based from slowest to fastest speed, and save to a variable called animals_gray_tan.\n\nb. Save animals_gray_tan as a comma-separated value file called animals_tb_ordered.csv to the results folder.",
+    "crumbs": [
+      "Day 4",
+      "Tidyverse and Data Visualization"
+    ]
+  },
+  {
+    "objectID": "lessons/19_Tidyverse_and_data_visualization.html#exercises",
+    "href": "lessons/19_Tidyverse_and_data_visualization.html#exercises",
+    "title": "Tidyverse and Data Visualization",
+    "section": "",
+    "text": "Change the animals data frame to a tibble called animals_tb. Save the row names to a column called animal_names before turning it into a tibble.\n\n\n\nUse ggplot2 to plot the animal names (x-axis) versus the speed of the animal (y-axis) in animals_tb using a scatterplot. Customize the plot to display as shown below.\n\n\n\nWe decide that our plot would look better with the animal names ordered from slowest to fastest. Using the animals_tb tibble, reorder the animals on the x-axis to start with the slowest animal on the left-hand side of the plot to the fastest animal on the right-hand side of the plot by completing the following steps:\na. Use the arrange() function to order the rows by speed from slowest to fastest. Then use the pull() function to extract the animal_names column as a vector of character values. Save the new variable as names_ordered_by_speed.\nb. Turn the animal_names column of animals_tb into a factor and specify the levels as names_ordered_by_speed from slowest to fastest (output in part a). Note: this step is crucial, because ggplot2 uses factor as plotting order, instead of the order we observe in data frame.\nc. Re-plot the scatterplot with the animal names in order from slowest to fastest.\n\n\n\n\n\n\n\n\nNote\n\n\n\nIf you are interested in exploring other ways to reorder a variable in ggplot2, refer to this post.\n\n\n\nSave the plot as a PDF called animals_by_speed_scatterplot.pdf to the results folder.\nUse the functions from the dplyr package to perform the following tasks:\n\na. Extract the rows of animals_tb tibble with color of gray or tan, order the rows based from slowest to fastest speed, and save to a variable called animals_gray_tan.\n\nb. Save animals_gray_tan as a comma-separated value file called animals_tb_ordered.csv to the results folder.",
+    "crumbs": [
+      "Day 4",
+      "Tidyverse and Data Visualization"
+    ]
+  },
+  {
+    "objectID": "lessons/19_Tidyverse_and_data_visualization-Answer_key.html",
+    "href": "lessons/19_Tidyverse_and_data_visualization-Answer_key.html",
+    "title": "Tidyverse and Data Visualization Answer Key",
+    "section": "",
+    "text": "Exercises\n\nChange the animals data frame to a tibble called animals_tb. Save the row names to a column called animal_names before turning it into a tibble.\n\n\n\n# Create animals_tb\nanimals_tb &lt;- animals %&gt;%\n        rownames_to_column(var = \"animal_names\") %&gt;%\n        as_tibble()\n\n\nUse ggplot2 to plot the animal names (x-axis) versus the speed of the animal (y-axis) in animals_tb using a scatterplot. Customize the plot to display as shown below.\n\n\n\n# Create scatterplot of animals_tb data\nggplot(animals_tb) +\n        geom_point(aes(x = animal_names, y = speed), color = \"purple\") +\n        theme_bw() +\n        ggtitle(\"Speed Comparisons Between Animals\") + \n        ylab(\"Speed (km/h)\") +\n        xlab(\"Animal\") +\n        theme(plot.title=element_text(hjust=0.5))\n\n\n\n\n\n\n\n\n\nWe decide that our plot would look better with the animal names ordered from slowest to fastest. Using the animals_tb tibble, reorder the animals on the x-axis to start with the slowest animal on the left-hand side of the plot to the fastest animal on the right-hand side of the plot by completing the following steps:\na. Use the arrange() function to order the rows by speed from slowest to fastest. Then use the pull() function to extract the animal_names column as a vector of character values. Save the new variable as names_ordered_by_speed.\n\n\n# Create vector with the names of animals ordered by their speed\nnames_ordered_by_speed &lt;- animals_tb %&gt;% arrange(speed) %&gt;%\n  pull(animal_names)\n\nb. Turn the animal_names column of animals_tb into a factor and specify the levels as names_ordered_by_speed from slowest to fastest (output in part a). Note: this step is crucial, because ggplot2 uses factor as plotting order, instead of the order we observe in data frame.\n\n# Convert animal_names column into a factor with the levels determined by the order of names_ordered_by_speed vector\nanimals_tb$animal_names &lt;- factor(animals_tb$animal_names, \n                                  levels = names_ordered_by_speed)\n\nc. Re-plot the scatterplot with the animal names in order from slowest to fastest.\n\n\n# Create plot with releveled animal_names\nggplot(animals_tb) +\n        geom_point(aes(x = animal_names, y = speed), color = \"purple\") +\n        theme_bw() +\n        ggtitle(\"Speed Comparisons Between Animals\") + \n        ylab(\"Speed (km/h)\") +\n        xlab(\"Animal\") +\n        theme(plot.title=element_text(hjust=0.5))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNote\n\n\n\nIf you are interested in exploring other ways to reorder a variable in ggplot2, refer to this post.\n\n\n\nSave the plot as a PDF called animals_by_speed_scatterplot.pdf to the results folder.\n\n\n# Save plot as a PDF\nggplot(animals_tb) +\n        geom_point(aes(x = animal_names, y = speed), color = \"purple\") +\n        theme_bw() +\n        ggtitle(\"Speed Comparisons Between Animals\") + \n        ylab(\"Speed (km/h)\") +\n        xlab(\"Animal\") +\n        theme(plot.title=element_text(hjust=0.5))\nggsave(\"results/animals_by_speed_scatterplot.pdf\")\n\n\nUse the functions from the dplyr package to perform the following tasks:\n\na. Extract the rows of animals_tb tibble with color of gray or tan, order the rows based from slowest to fastest speed, and save to a variable called animals_gray_tan.\n\n\n# Subset animals_tb by animals that are gray or tan then arrange them by their speed in ascending order\nanimals_gray_tan &lt;- animals_tb %&gt;% \n        filter(color == \"Gray\" | color == \"Tan\") %&gt;%\n        arrange(speed)\n\n# Print out animals_gray_tan\nanimals_gray_tan\n\n# A tibble: 3 × 3\n  animal_names speed color\n  &lt;fct&gt;        &lt;dbl&gt; &lt;chr&gt;\n1 Elephant        40 Gray \n2 Lion            80 Tan  \n3 Cheetah        120 Tan  \n\n\nb. Save animals_gray_tan as a comma-separated value file called animals_tb_ordered.csv to the results folder.\n\nwrite.csv(animals_gray_tan,\n          file = \"results/animals_tb_ordered.csv\",\n          quote = FALSE)"
   }
 ]
