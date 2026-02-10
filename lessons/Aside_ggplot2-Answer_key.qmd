@@ -1,0 +1,156 @@
+---
+title: "Plotting and data visualization in R Answer Key"
+author:
+  - Will Gammerdinger
+date: "2025-12-05"
+---
+
+```{r}
+#| label: load_libraries_data
+#| echo: false
+# Load Data
+load("data/GOs_for_plotting.RData")
+
+# Load libraries
+library(tidyverse)
+library(RColorBrewer)
+
+# Subset data frame
+bp_plot <- bp_oe[1:30, ]
+```
+
+# Exercise 1
+
+1. The current axis label text defaults to what we gave as input to `geom_point` (i.e the column headers). We can change this by **adding additional layers** called `xlab()` and `ylab()` for the x- and y-axis, respectively. Add these layers to the current plot such that:
+	- **x-axis label:** "Gene ratios"
+	- **y-axis label:** "Top 30 significant GO terms"
+
+```{r}
+#| label: add_axes_titles
+# Add axes titles
+ggplot(bp_plot) +
+  geom_point(aes(x = gene_ratio, y = GO_term, color = -log10(p.value)), 
+             size = 2) +
+  theme_bw() +
+  theme(axis.text.x = element_text(size=rel(1.15)),
+        axis.title = element_text(size=rel(1.15))) +
+  xlab("Gene ratios") +
+  ylab("Top 30 significant GO terms")
+```
+
+2. Add a `ggtitle()` layer to add a title to your plot. 
+
+*NOTE: Useful code to center your title over your plot can be done using `theme(plot.title=element_text(hjust=0.5, face = "bold"))`.*
+
+```{r}
+#| label: add_title
+# Add title
+ggplot(bp_plot) +
+  geom_point(aes(x = gene_ratio, y = GO_term, color = -log10(p.value)), 
+             size = 2) +
+  theme_bw() +
+  theme(axis.text.x = element_text(size=rel(1.15)),
+        axis.title = element_text(size=rel(1.15)),
+        plot.title=element_text(hjust=0.5, face = "bold")) +
+  xlab("Gene ratios") +
+  ylab("Top 30 significant GO terms") +
+  ggtitle("Dotplot of top 30 significant GO terms")
+```
+
+# Exercise 2
+
+1. Arrange `bp_oe` by `term_percent` in descending order.
+
+```{r}
+#| label: reorder_by_term_percent
+# bp_oe ordered by descending term_percent
+bp_oe_reordered <- bp_oe %>% 
+  arrange(desc(term_percent))
+```
+
+2. Create a dotplot with the top 30 GO terms with highest `term_percent`, with `term_percent` as x-axis and `GO_term` as the y-axis.
+
+```{r}
+#| label: reorder_replot
+# Subset reordered plot
+bp_plot_reordered <- bp_oe_reordered[1:30, ]
+
+# Plot GO Terms
+ggplot(bp_plot_reordered) +
+  geom_point(aes(x = term_percent, y = GO_term))
+```
+
+3. [Optional] Color the plot using the palette of your choice.
+
+```{r}
+#| label: add_color_palette
+# Create color palette
+mypalette <- brewer.pal(3, "Blues")
+
+# Add color palette to plot
+ggplot(bp_plot_reordered) +
+  geom_point(aes(x = term_percent, y = GO_term, color = term_percent)) +
+  scale_color_gradientn(colors = mypalette)
+```
+
+# Exercise 3
+
+Based on the number of genes associated with each GO term ("term.size" column) we can categorize them into "small", "large" or "medium" categories. Once we have done that, we want to determine what the spread of p-values is for each category; we can do this by drawing a boxplot.
+
+Use the following code to create a new column in `bp_oe` tibble for the new categories.
+
+```{r}
+#| label: create_new_column
+# Assign the term size column to x
+x <- bp_oe$term.size
+# Create a vector the same length as x with NA values called sizes
+sizes <- rep(NA, length(x) )
+
+# If the term size is greater than 3000, then make it's associate size "large"
+sizes[which(x > 3000)] <- "large"
+# If the term size is greater than 500 and up to including 3000, then make it's associate size "medium"
+sizes[which(x <= 3000 & x > 500 )] <- "medium"
+# If the term size is 500 or smaller, then make it's associate size "small"
+sizes[which(x <= 500)] <- "small"
+# Convert the vector to a factor and assign it to bp_oe
+bp_oe$term_cat <- factor(sizes, levels = c("small","medium","large"))
+```
+
+1. Create a boxplot with the new column (`term_cat`) on the x-axis and the -log10 of the `p.value` on the y-axis.
+
+```{r}
+#| label: create_boxplot
+# Subset data frame
+bp_plot <- bp_oe[1:30, ]
+
+# Create boxplot
+ggplot(bp_plot) +
+  geom_boxplot(aes(x = term_cat, y = -log10(p.value)))
+```
+
+2. Fill color into each boxplot based on that new column
+
+```{r}
+#| label: add_color_boxplot
+# Add color to boxplot
+ggplot(bp_plot) +
+  geom_boxplot(aes(x = term_cat, y = -log10(p.value), fill = term_cat))
+```
+
+3. Add appropriate labels and `theme()` layers to your liking.
+
+```{r}
+#| label: add_labels_themes_boxplot
+# Add labes and themes to boxplot
+ggplot(bp_plot) +
+  geom_boxplot(aes(x = term_cat, y = -log10(p.value), fill = term_cat)) +
+  xlab("Term Catergories") +
+  ylab("-log10 p-value") +
+  labs(fill = "Term Categories") +
+  theme(legend.title = element_text(size=rel(1.15),
+	  hjust=0.5, 
+	  face="bold")) +
+  ggtitle("Distribution of p-values by Term Category") +
+  theme(plot.title = element_text(hjust=0.5, 
+                                  face = "bold"))
+```

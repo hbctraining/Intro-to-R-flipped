@@ -1,0 +1,59 @@
+---
+title: "Plotting and data visualization in base R Answer Key"
+author:
+  - Will Gammerdinger
+date: "2025-12-05"
+---
+
+```{r}
+#| label: load_data_libraries
+#| echo: false
+# Load the purrr package
+library(purrr)
+
+# Load data
+metadata <- read.csv(file="data/mouse_exp_design.csv")
+rpkm_ordered  <- read.csv("data/ordered_counts_rpkm.csv",
+                          header=T, row.names = 1)
+
+samplemeans <- map_dbl(rpkm_ordered, mean) 
+
+age_in_days <- c(40, 32, 38, 35, 41, 32, 34, 26, 28, 28, 30, 32)    	
+new_metadata <- data.frame(metadata, samplemeans, age_in_days) 
+```
+
+# Exercise 1
+
+1. Change the color scheme in the scatterplot, such that it reflects the `genotype` of samples rather than `celltype`.
+
+```{r}
+#| label: color_by_genotype
+# Create factor of genotype
+new_metadata$genotype <- factor(new_metadata$genotype)
+
+# Create plot
+plot(samplemeans ~ age_in_days, data=new_metadata,
+     main="Expression changes with age",
+     xlab="Age (days)",
+     ylab="Mean expression",
+     pch="*",
+     cex=2.0,
+     col=c("blue", "green")[genotype])
+
+# Add legend
+legend("topleft",
+       pch="*",
+       col=c("blue", "green"),
+       c("A", "B"),
+       cex=0.8,
+       title="Genotype")
+```
+
+2. Use R help to find out how to increase the size of the text on the axis labels.
+
+```{r}
+#| label: par_help
+#| eval: false
+# Open graphical parameters help page
+?par
+```

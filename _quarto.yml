@@ -22,9 +22,9 @@ website:
         href: schedule/schedule.qmd
     right:
       - text: "HBC"
-        href: https://bioinformatics.sph.harvard.edu/
+        href: https://hsph.harvard.edu/research/bioinformatics/
       - text: "GitHub"
-        href: https://github.com/hbctraining/intro_r_rmd
+        href: https://github.com/hbctraining/Intro-to-R-flipped
       - text: "Contact us"
         href: mailto:hbctraining@hsph.harvard.edu
   
@@ -37,40 +37,40 @@ website:
     contents:
       - section: "Day 1:"
         contents:
-          - lessons/01b_introR-R-and-RStudio.qmd  
+          - lessons/01_R-and-RStudio.qmd
       - section: "Day 1 Self-learning:"
         contents:
-          - lessons/02_introR-syntax-and-data-structures.qmd
-          - lessons/03_introR-functions-and-arguments.qmd
-          - lessons/06_reading_and_data_inspection.qmd
+          - lessons/02_syntax-and-data-structures.qmd
+          - lessons/03_functions-and-arguments.qmd
+          - lessons/04_reading_and_data_inspection.qmd
 
       - section: "Day 2"
         contents:
-          - lessons/Day2_activities.qmd
-          - lessons/05_introR-data-wrangling.qmd
+          - lessons/05_Custom_functions.qmd
+          - lessons/06_data-wrangling.qmd
       - section: "Day 2 Self-learning"
         contents:
-          - lessons/04_introR_packages.qmd
-          - lessons/07_introR-data-wrangling2.qmd
-          - lessons/08_identifying-matching-elements.qmd
-          - lessons/09_reordering-to-match-datasets.qmd
-          - lessons/10_setting_up_to_plot.qmd
+          - lessons/07_packages.qmd
+          - lessons/08_data-wrangling-2.qmd
+          - lessons/09_identifying-matching-elements.qmd
+          - lessons/10_reordering-to-match-datasets.qmd
+          - lessons/11_setting_up_to_plot.qmd
 
       - section: "Day 3"
         contents:
-          - lessons/Day3_activities.qmd
-          - lessons/11_ggplot2.qmd
+          - lessons/12_Data_wrangling.qmd
+          - lessons/13_ggplot2.qmd
       - section: "Day 3 Self-learning"
         contents:
-          - lessons/11b_Custom_Functions_ggplot2.qmd
-          - lessons/12_boxplot_exercise.qmd
-          - lessons/13_exporting_data_and_plots.qmd
-          - lessons/14_finding_help.qmd
-          - lessons/15_tidyverse.qmd
+          - lessons/14_Custom_Functions_ggplot2.qmd
+          - lessons/15_boxplot_exercise.qmd
+          - lessons/16_exporting_data_and_plots.qmd
+          - lessons/17_finding_help.qmd
+          - lessons/18_tidyverse.qmd
 
       - section: "Day 4"
         contents:
-          - lessons/Day4_activities.qmd
+          - lessons/19_Tidyverse_and_data_vizualization.qmd
           
 
 format:

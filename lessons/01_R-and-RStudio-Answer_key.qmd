@@ -1,0 +1,64 @@
+---
+title: "Introduction to R and RStudio Answer Key"
+author:
+  - Will Gammerdinger
+date: "2025-05-30"
+---
+
+```{r}
+#| label: load_data
+#| echo: false
+# Assign values
+x <- 3
+y <- 5
+number <- x + y
+```
+
+
+# Exercise 1
+To organize your working directory for a particular analysis, you should separate the original data (raw data) from intermediate datasets. For instance, you may want to create a `data/` directory within your working directory that stores the raw data, a `scripts/` directory for your R scripts, a `results/` directory for intermediate datasets and a `figures/` directory for the plots you will generate.
+
+We have provided you with R project containing the `data/` directory and we made our `scripts/` directory together. For this exercise create the `results/` and `figures/` directories.
+
+When finished, your working directory should look like this:
+
+<img src="../img/Directories_made_annotated.png" width="400"/>
+
+Click on the `New Folder` button of the "Files" tab. Type `results` and click "OK". Click on the `New Folder` button of the "Files" tab. Type `figures` and click "OK". 
+
+# Exercise 2
+
+Try highlighting only `3 +` from your script editor and running it. Find a way to bring back the command prompt `>` in the console.
+
+Press the <kbd>ESC</kbd> button.
+
+# Exercise 3
+
+Try changing the value of the variable `x` to 5. What happens to `number`?
+
+```{r}
+#| label: change_x_value
+# Show value of number
+number
+# Change the value of x to 5
+x <- 5
+# Show value of number
+number
+```
+
+It doesn't change.
+
+Now try changing the value of variable `y` to contain the value 10. What do you need to do, to update the variable `number`?
+
+```{r}
+#| label: update_number
+# Show value of number
+number
+# Change the value of y to 10
+y <- 10
+# Update the value of number
+number <- x + y
+# Show value of number
+number
+```
+

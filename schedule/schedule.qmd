@@ -13,7 +13,7 @@ editor:
 | Time | Topic | Instructor |
 |:-----------------:|:------------------------------------:|:-------------:|
 | 10:00 - 10:30 | [Workshop Introduction](../slides/workshop_intro_slides.pdf) | Will |
-| 10:30 - 11:45 | [Introduction to R and RStudio](../lessons/01b_introR-R-and-RStudio.qmd) | Elizabeth |
+| 10:30 - 11:45 | [Introduction to R and RStudio](../lessons/01_R-and-RStudio.qmd) | Elizabeth |
 | 11:45 - 12:00 | Overview of self-learning materials and homework submission | Will |
 
 ### Before the next class:
@@ -22,10 +22,10 @@ I. Please **study the contents** and **work through all the code**
 within the following lessons:
 
 1.  [R Syntax and Data
-    Structure](../lessons/02_introR-syntax-and-data-structures.qmd)
+    Structure](../lessons/02_syntax-and-data-structures.qmd)
 
     <details>
-
+    
     <summary><i>Click here for a preview of this lesson</i></summary>
 
     <br>In order to utilize R effectively, you will need to understand
@@ -37,7 +37,7 @@ within the following lessons:
 
     </details>
 
-2.  [Functions and Arguments](../lessons/03_introR-functions-and-arguments.qmd)
+2.  [Functions and Arguments](../lessons/03_functions-and-arguments.qmd)
 
     <details>
 
@@ -55,7 +55,7 @@ within the following lessons:
 
     </details>
 
-3.  [Reading in and inspecting data](../lessons/06_reading_and_data_inspection.qmd)
+3.  [Reading in and inspecting data](../lessons/04_reading_and_data_inspection.qmd)
 
     <details>
 
@@ -91,15 +91,15 @@ II. **Complete the exercises**:
 | Time | Topic | Instructor |
 |:-----------------:|:------------------------------------:|:-------------:|
 | 10:00 - 10:50 | Questions about self-learning | All |
-| 10:50 - 11:15 | [In-class exercises](../lessons/Day2_activities.qmd) + [Answer key](../lessons/answer_keys/Day2_activities_answer_key.qmd) | Elizabeth |
-| 11:15 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/05_introR-data-wrangling.qmd) | Will |
+| 10:50 - 11:15 | [In-class exercises](../lessons/05_Custom_functions.qmd) | Elizabeth |
+| 11:15 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/06_data-wrangling.qmd) | Will |
 
 ### Before the next class:
 
 I. Please **study the contents** and **work through all the code**
 within the following lessons:
 
-1.  [Packages and libraries](../lessons/04_introR_packages.qmd)
+1.  [Packages and libraries](../lessons/07_packages.qmd)
 
     <details>
 
@@ -117,8 +117,7 @@ within the following lessons:
 
     </details>
 
-2.  [Data wrangling: data frames, matrices and
-    lists](../lessons/07_introR-data-wrangling2.qmd)
+2.  [Data wrangling: data frames, matrices and lists](../lessons/08_data-wrangling-2.qmd)
 
     <details>
 
@@ -134,7 +133,7 @@ within the following lessons:
 
     </details>
 
-3.  [The %in% operator](../lessons/08_identifying-matching-elements.qmd)
+3.  [The %in% operator](../lessons/09_identifying-matching-elements.qmd)
 
     <details>
 
@@ -150,7 +149,7 @@ within the following lessons:
 
     </details>
 
-4.  [Reordering and matching](../lessons/09_reordering-to-match-datasets.qmd)
+4.  [Reordering and matching](../lessons/10_reordering-to-match-datasets.qmd)
 
     <details>
 
@@ -165,8 +164,7 @@ within the following lessons:
 
     </details>
 
-5.  [Setting up a data frame to plot (+ the `map()`
-    function)](../lessons/10_setting_up_to_plot.qmd)
+5.  [Setting up a data frame to plot (+ the `map()` function)](../lessons/11_setting_up_to_plot.qmd)
 
     <details>
 
@@ -208,16 +206,15 @@ II. **Complete the exercises**:
 | Time | Topic | Instructor |
 |:-----------------:|:------------------------------------:|:-------------:|
 | 10:00 - 10:35 | Questions about self-learning lessons | All |
-| 10:35 - 11:15 | [In-class exercises](../lessons/Day3_activities.qmd) + [Answer key](../lessons/answer_keys/Day3_activities_answer_key.qmd) | Will |
-| 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/11_ggplot2.qmd) | Elizabeth |
+| 10:35 - 11:15 | [In-class exercises](../lessons/12_Data_wrangling.qmd) | Will |
+| 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/13_ggplot2.qmd) | Elizabeth |
 
 ### Before the next class:
 
 I. Please **study the contents** and **work through all the code**
 within the following lessons:
 
-1.  [Using custom functions for consistent
-    plots](../lessons/11b_Custom_Functions_ggplot2.qmd)
+1.  [Using custom functions for consistent plots](../lessons/14_Custom_Functions_ggplot2.qmd)
 
     <details>
 
@@ -231,7 +228,7 @@ within the following lessons:
 
     </details>
 
-2.  [Generating a boxplot with ggplot2](../lessons/12_boxplot_exercise.qmd)
+2.  [Generating a boxplot with ggplot2](../lessons/15_boxplot_exercise.qmd)
 
     <details>
 
@@ -245,8 +242,7 @@ within the following lessons:
 
     </details>
 
-3.  [Writing to file and exporting
-    plots](../lessons/13_exporting_data_and_plots.qmd)
+3.  [Writing to file and exporting plots](../lessons/16_exporting_data_and_plots.qmd)
 
     <details>
 
@@ -261,7 +257,7 @@ within the following lessons:
 
     </details>
 
-4.  [Finding help](../lessons/14_finding_help.qmd)
+4.  [Finding help](../lessons/17_finding_help.qmd)
 
     <details>
 
@@ -276,7 +272,7 @@ within the following lessons:
 
     </details>
 
-5.  [Tidyverse](../lessons/15_tidyverse.qmd)
+5.  [Tidyverse](../lessons/18_tidyverse.qmd)
 
     <details>
 
@@ -319,33 +315,24 @@ II. **Complete the exercises**:
 | Time | Topic | Instructor |
 |:-----------------:|:------------------------------------:|:-------------:|
 | 10:00 - 10:35 | Questions about self-learning lessons | All |
-| 10:35 - 11:15 | [In-class exercises](../lessons/Day4_activities.qmd) + [Answer key](../lessons/answer_keys/Day4_activities_answer_key.qmd) | Elizabeth |
-| 11:15 - 11:25 | [Saving your Posit Cloud project](../lessons/16_offboarding.qmd) | Will |
+| 10:35 - 11:25 | [In-class exercises](../lessons/19_Tidyverse_and_data_vizualization.qmd) | Elizabeth |
 | 11:25 - 11:45 | Discussion, Q & A | All |
 | 11:45 - 12:00 | [Wrap Up](../slides/workshop_wrapup_slides.pdf) | Will |
 
 ### Final Exercises
 
--   [**Exercises**](../lessons/homework/Intro_to_R_hw.qmd)
-
-### Answer Keys
-
--   [**Day 1 homework**](../lessons/homework/day1_hw_answer-key.R)
--   [**Day 2 homework**](../lessons/homework/day2_hw_answer-key.R)
--   [**Day 3 homework**](../lessons/homework/day3_hw_answer-key.R)
--   [**Final
-    exercises**](https://hbctraining.github.io/Intro-to-R/homework/Intro_to_R_key.qmd)
+-   [**Exercises**](../lessons/Additional_practice_Intro_to_R.qmd) + [**Answer Key**](../lessons/Additional_practice_Intro_to_R-Answer_key.qmd)
 
 ## Building on the basic R knowledge
 
 -   [DGE workshop](https://hbctraining.github.io/Intro-to-DGE/)
 -   [Single-cell RNA-seq workshop](https://hbctraining.github.io/Intro-to-scRNAseq/)
 -   [RMarkdown](https://hbctraining.github.io/Training-modules/Rmarkdown/)
--   [Functional
-    analysis](https://hbctraining.github.io/Training-modules/DGE-functional-analysis/)
+-   [Quarto](https://hbctraining.github.io/Training-modules/Quarto/)
+-   [Functional analysis](https://hbctraining.github.io/Training-modules/DGE-functional-analysis/)
 -   [More ggplot2](https://hbctraining.github.io/publication_perfect/)
 -   [ggplot2 cookbook](http://www.cookbook-r.com/Graphs/)
--   [Running R and Rstudio on O2](https://hbctraining.github.io/BMI713_Intro_to_HPC/schedule/workshop_schedule.html)
+-   [Running R and Rstudio on O2](https://hbctraining.github.io/BMI714_Intro_to_HPC/schedule/workshop_schedule.html)
 
 ## Resources
 
@@ -353,6 +340,6 @@ II. **Complete the exercises**:
 
 ## Cheatsheets
 
--   [base R cheatsheet](cheatsheets/base-r.pdf)
--   [RStudio cheatsheet](cheatsheets/rstudio-ide.pdf)
--   [ggplot2 cheatsheet](cheatsheets/data-visualization-2.1.pdf)
+-   [base R cheatsheet](../lessons/cheatsheets/base-r.pdf)
+-   [RStudio cheatsheet](../lessons/cheatsheets/rstudio-ide.pdf)
+-   [ggplot2 cheatsheet](../lessons/cheatsheets/data-visualization-2.1.pdf)

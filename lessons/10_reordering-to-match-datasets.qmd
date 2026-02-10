@@ -1,0 +1,274 @@
+---
+title: "Using the match() Function"
+description: |
+  This lesson introduces participants to the use of the `match()` function for aligning and reordering data. Participants learn how to manually reorder vectors, how `match()` simplifies the process for larger datasets and how to apply it. Through hands‑on examples, participants practice generating index vectors, handling missing matches and reordering both vectors and data frames to ensure consistent ordering.
+author:
+  - Mary Piper
+  - Meeta Mistry
+  - Radhika Khetani
+  - Will Gammerdinger
+date: "2025-05-30"
+categories: 
+  - R Programming
+  - Data wrangling
+keywords:
+  - R
+  - match
+  - vector reordering
+license: "CC-BY-4.0"
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+Approximate time: 45 min
+
+```{r}
+#| label: load_data
+#| eval: true
+#| echo: false
+# Load data
+rpkm_data <- read.csv("data/counts.rpkm.csv")
+metadata <- read.csv(file="data/mouse_exp_design.csv")
+```
+
+## Learning Objectives
+
+* Implement manual reordering of vectors and data frames
+* Utilize the `match()` function to reorder vectors and data frames so that unique identifiers are in the same order
+
+## Reordering data to match
+
+In the previous lesson, we learned how to determine whether the same data is present in two datasets, in addition to, whether it is in the same order. In this lesson, we will explore how to reorder the data such that the datasets are matching.
+
+## Manual reordering of data using indices
+
+Indexing `[ ]` can be used to extract values from a dataset as we saw earlier, but we can also use it to rearrange our data values. 
+
+```{r}
+#| label: create_teaching_team_vector
+teaching_team <- c("Jihe", "Mary", "Meeta", "Radhika", "Will", "Emma", 
+                   "Heather", "Elizabeth", "Noor", "Upen")
+```
+
+<img src="../img/teaching_team_vector.png" width="1000">
+
+Remember that we can return values in a vector by specifying it's position or index:
+
+```{r}
+#| label: return_specific_elements
+# Extracting values from a vector
+teaching_team[c(2, 4)] 
+```
+
+Also, note that we haven't changed the `teaching_team` variable. The only way to change the `teaching_team` variable would be to re-assign/overwrite it.
+
+```{r}
+#| label: print_teaching_team
+teaching_team
+```
+
+We can also extract the values and reorder them:
+
+```{r}
+#| label: extract_reorder_elements
+# Extracting values and reordering them
+teaching_team[c(4, 2)] 
+```
+
+Similarly, we can extract all of the values and reorder them:
+
+```{r}
+#| label: reorder_elements_manual
+# Extracting all values and reordering them
+teaching_team[c(5, 4, 10, 6, 9, 2, 8, 1, 7, 3)]
+```
+
+If we want to save our results, we need to assign to a variable:
+
+```{r}
+#| label: save_reorder
+# Saving the results to a variable
+reorder_teach <- teaching_team[c(5, 4, 10, 6, 9, 2, 8, 1, 7, 3)] 
+```
+
+::: {.callout-tip}
+# [**Exercise 1**](10_reordering-to-match-datasets-Answer_key.qmd#exercise-1)
+
+Now that we know how to reorder using indices, let's try to use it to reorder the contents of one vector to match the contents of another. Let's create the vectors `first` and `second` as detailed below:
+
+![](../img/match1.png)
+
+```{r}
+#| label: reorder_second
+# Create new second vector in a different order
+first <- c("A","B","C","D","E")
+second <- c("B","D","E","A","C")
+```
+
+1. How would you reorder the `second` vector to match `first`?
+:::
+
+If we had large datasets, it would be difficult to reorder them by searching for the indices of the matching elements, and it would be quite easy to make a typo or mistake. To help with matching datasets, there is a function called `match()`.
+
+## The `match` function
+
+We can use the `match()` function to match the values in two vectors. We'll be using it to evaluate which values are present in both vectors, and how to reorder the elements to make the values match.
+
+match() takes 2 arguments. The first argument is a vector of values in the order you want, while the second argument is the vector of values to be reordered such that it will match the first:
+
+1. a vector of values in the order you want
+2. a vector of values to be reordered
+
+The function returns the position of the matches (indices) with respect to the second vector, which can be used to re-order it so that it matches the order in the first vector.  Let's use match() on the first and second vectors we created.
+
+	
+```{r}
+#| label: match_example
+# Match using first and second
+match(first, second)
+```
+
+The output is the indices for how to reorder the second vector to match the first. *These indices match the indices that we derived manually before.*
+
+Now, we can just use the indices to reorder the elements of the `second` vector to be in the same positions as the matching elements in the `first` vector:
+
+```{r}
+#| label: create_index_from_match_first_second
+# Saving indices for how to reorder `second` to match `first`
+reorder_idx <- match(first,second) 
+```
+
+Then, we can use those indices to reorder the second vector similar to how we ordered with the manually derived indices.
+
+```{r}
+#| label: reorder_using_index
+# Reordering the second vector to match the order of the first vector
+second[reorder_idx]
+```
+
+If the output looks good, we can save the reordered vector to a new variable.
+
+```{r}
+#| label: save_reordered_vector
+# Reordering and saving the output to a variable
+second_reordered <- second[reorder_idx]  
+```
+
+![](../img/match3-reordered.png)
+
+Now that we know how `match()` works, let's change vector `second` so that only a subset are retained:
+
+```{r}
+#| label: remove_values
+# Create new first and second vector
+first <- c("A","B","C","D","E")
+second <- c("D","B","A")  # remove values
+```
+
+![](../img/match2.png)
+
+And try to `match()` again:
+
+```{r}
+#| label: match_first_second_missing_values
+# Run match on new first and second vectors
+match(first,second)
+```
+
+We see that the `match()` function takes every element in the first vector and finds the position of that element in the second vector, and if that element is not present, will return a missing value of NA. The value NA represents missing data for any data type within R. In this case, we can see that the `match()` function output represents the value at position 3 as first, which is A, then position 2 is next, which is B, the value coming next is supposed to be C, but it is not present in the `second` vector, so NA is returned, so on and so forth.
+
+::: {.callout-note}
+For values that don't match by default return an `NA` value. You can specify what values you would have it assigned using `nomatch` argument. Also, if there is more than one matching value found only the first is reported.
+:::
+
+If we rearrange `second` using these indices, then we should see that all the values present in both vectors are in the same positions and NAs are present for any missing values.
+
+```{r}
+#| label: reorder_second_missing_values
+# Rearrange second using match
+second[match(first, second)]
+```
+
+### Reordering genomic data using `match()` function
+
+While the input to the `match()` function is always going to be to vectors, often we need to use these vectors to reorder the rows or columns of a data frame to match the rows or columns of another dataframe. 
+
+Let's explore how to do this with our use case featuring RNA-seq data. To perform differential gene expression analysis, we have a data frame with the expression data or counts for every sample and another data frame with the information about to which condition each sample belongs. For the tools doing the analysis, the **samples in the counts data**, which are the column names, need to be the same and in the **same order as the samples in the metadata data frame**, which are the rownames.
+
+We can take a look at these samples in each dataset by using the `rownames()` and `colnames()` functions.
+
+```{r}
+#| label: view_rownames_colnames
+# Check row names of the metadata
+rownames(metadata)
+
+# Check the column names of the counts data
+colnames(rpkm_data)
+```
+
+We see the row names of the metadata are in a nice order starting at `sample1` and ending at `sample12`, while the column names of the counts data look to be the same samples, but are randomly ordered. 
+
+We will use the match function to match the row names of our metadata with the column names of our counts data, so these will be the arguments for `match()`. 
+
+* The rownames of the metadata is the vector in the order that we want, so this will be the first argument
+* The column names of the count or rpkm data is the vector to be reordered, and will be the second argument. 
+
+We will save these indices for how to reorder the column names, to a variable called `genomic idx`.
+
+```{r}
+#| label: create_metadata_match_index
+# Create match index vector
+genomic_idx <- match(rownames(metadata), colnames(rpkm_data))
+
+# Print match index vector
+genomic_idx
+```
+
+Now we can create a new counts data frame in which the columns are re-ordered based on the `match()` indices. Remember that to reorder the rows or columns in a data frame we give the name of the data frame followed by square brackets, and then the indices for how to reorder the rows or columns.
+
+```{r}
+#| label: reorder_rpkm
+# Reorder the counts data frame to have the sample names in the same order as the metadata data frame
+rpkm_ordered  <- rpkm_data[ , genomic_idx]
+```
+
+Our `genomic_idx` represents how to reorder the **columns** of our count data such that the column names would be in the same order as the row names of our metadata. Therefore, `genomic_idx` was used in the **columns position**.
+
+Check and see what happened by clicking on the `rpkm_ordered` in the Environment window or using the `View()` function. 
+
+```{r}
+#| label: view_reordered rpkm
+#| eval: false
+# View the reordered counts
+View(rpkm_ordered)
+```
+
+```{r}
+#| label: rendered_reordered rpkm
+#| echo: false
+# Load DT package
+library(DT)
+
+# Render the reordered counts
+datatable(rpkm_ordered)
+```
+
+We can see the sample names are now in a nice order from sample 1 to 12, just like the metadata. One thing to note is that you would never want to rearrange just the column names without the rest of the column because that would dissociate the sample name from it's values.
+
+You can also verify that column names of this new data matrix matches the metadata row names by using the `all` function:
+
+```{r}
+#| label: all_rownames_metadata_colnames_rpkm_ordered
+all(rownames(metadata) == colnames(rpkm_ordered))
+```
+
+Now that our samples are ordered the same in our metadata and counts data, **if these were raw counts (not RPKM)** we could proceed to perform differential expression analysis with this dataset.
+
+::: {.callout-tip}
+# [**Exercise 2**](10_reordering-to-match-datasets-Answer_key.qmd#exercise-2)
+
+1. After talking with your collaborator, it becomes clear that `sample2` and `sample9` were actually from a different mouse background than the other samples and should not be part of our analysis. Create a new variable called `subset_rpkm` that has these columns removed from the `rpkm_ordered` data frame.
+
+2. Use the `match()` function to subset the `metadata` data frame so that the row names of the `metadata` data frame match the column names of the `subset_rpkm` data frame.
+:::

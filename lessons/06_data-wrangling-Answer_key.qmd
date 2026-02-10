@@ -1,0 +1,82 @@
+---
+title: "Data Wrangling: Subsetting vectors and factors Answer Key"
+author:
+  - Will Gammerdinger
+date: "2025-07-01"
+---
+
+```{r}
+#| label: load_data
+#| echo: false
+# Create samplegroup
+samplegroup <- c("CTL", "CTL", "CTL", "KO", "KO", "KO", "OE", "OE", "OE")
+# Turn samplegroup into a factor
+samplegroup <- factor(samplegroup)
+```
+
+# Exercise 1
+
+1. Create a vector called `alphabets` with the following letters, C, D, X, L, F.
+
+```{r}
+#| label: create_alphabets
+# Create a vector with the letters C, D, X, L, F
+alphabets <- c("C", "D", "X", "L", "F")
+```
+
+2. Use the associated indices along with `[ ]` to do the following:
+
+* Only display C, D and F
+
+```{r}
+#| label: subset_c_d_f
+# Subset C, D and F from the alphabets vector
+alphabets[c(1,2,5)]
+```
+
+* Display all except X
+
+```{r}
+#| label: subset_all_but_x
+# Subset everything but X from the alphabets vector
+alphabets[-3]
+```
+
+* Display the letters in the opposite order (F, L, X, D, C)
+	
+```{r}
+#| label: alphabets_reverse_sequence
+# Reverse the order of the alphabets vector
+alphabets[5:1]
+```
+
+# Exercise 2
+
+Extract only those elements in `samplegroup` that are not KO (*nesting the logical operation is optional*).
+
+```{r}
+#| label: subset_all_but_ko
+# Create an boolean index vector for elements in samplegroup that are not "KO" 
+idx <- samplegroup != "KO"
+
+# Subset the samplegroup vector by the boolean index
+samplegroup[idx]
+```
+
+Alternatively, you can use a nested approach:
+
+```{r}
+#| label: nested_subset_all_but_ko
+# Subset the samplegroup vector by elements in samplegroup that are not "KO" 
+samplegroup[samplegroup != "KO"]
+```
+
+# Exercise 3
+
+Use the `samplegroup` factor we created in a previous lesson, and relevel it such that KO is the first level followed by CTL and OE. 
+
+```{r}
+#| label: relevel_samplegroup
+# Re-level the samplegroup factor vector with KO being the first level followed by CTL and OE
+factor(samplegroup, levels = c("KO", "CTL", "OE"))
+```

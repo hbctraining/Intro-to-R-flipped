@@ -1,0 +1,17 @@
+---
+title: "Packages and Libraries Answer Key"
+author:
+  - Will Gammerdinger
+date: "2025-07-01"
+---
+
+# Exercise 1
+
+The `ggplot2` package is part of the [`tidyverse` suite of integrated packages](https://www.tidyverse.org/packages/) which was designed to work together to make common data science operations more user-friendly. **We will be using the `tidyverse` suite in later lessons, and so let's install it**. *NOTE: This suite of packages is only available in CRAN.*
+
+```{r}
+#| eval: false
+# Install tidyverse
+install.packages("tidyverse")
+```
+

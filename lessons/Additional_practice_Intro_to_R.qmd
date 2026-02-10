@@ -1,0 +1,116 @@
+---
+title: "Overall Practice with R"
+description: |
+  A practical exercise in which participants apply a wide range of core R skills, including creating vectors, factors and data frames, subsetting and filtering data, manipulating lists and generating figures with `ggplot2`. Participants work through examples to reinforce data‑wrangling, visualization and general coding proficiency in R.
+author:
+  - Meeta Mistry
+  - Mary Piper
+  - Radhika Khetani
+  - Will Gammerdinger
+date: "2025-05-30"
+categories: 
+  - R Programming
+  - Data wrangling
+  - Data visualization
+keywords:
+  - R
+  - vectors
+  - lists
+  - ggplot2
+license: "CC-BY-4.0"
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+## [**Exercises**](Additional_practice_Intro_to_R-Answer_key.qmd)
+
+### Creating vectors/factors and dataframes
+
+1. We are performing RNA-Seq on cancer samples being treated with three different types of treatment (A, B, and P). You have 12 samples total, with 4 replicates per treatment. Write the R code you would use to construct your metadata table as described below.  
+     
+  - Create the vectors/factors for each column (Hint: you can type out each vector/factor, or if you want the process go faster try exploring the `rep()` function).
+  - Put them together into a dataframe called `meta`.
+  - Use the `rownames()` function to assign row names to the dataframe (Hint: you can type out the row names as a vector, or if you want the process go faster try exploring the `paste()` function).
+
+Your finished metadata table should have information for the variables `sex`, `stage`, `treatment`, and `myc` levels: 
+
+```{r}
+#| label: make_meta_df
+#| echo: false
+library(DT)
+sex <- c(rep(c("M", "F"),6)) 
+stage <- c(rep(c("I", "II", "II"), 4))
+treatment <- c(rep("A", 4), rep("B", 4), rep("P", 4))
+myc <- c(2343, 457, 4593, 9035, 3450, 3524, 958, 1053, 8674, 3424, 463, 5105)
+
+meta <- data.frame(sex, stage, treatment, myc) 
+
+rownames(meta) <- paste("sample", 1:12, sep="")
+
+datatable(meta)
+```
+
+### Subsetting vectors/factors and dataframes
+
+2. Using the `meta` data frame from question #1, write out the R code you would use to perform the following operations (questions **DO NOT** build upon each other):
+
+  - Return only the `treatment` and `sex` columns using `[]`:
+  - Return the `treatment` values for samples 5, 7, 9, and 10 using `[]`:
+  - Use `filter()` to return all data for those samples receiving treatment `P`:
+  - Use `filter()`/`select()`to return only the `stage` and `treatment` columns for those samples with `myc` > 5000:
+  - Remove the `treatment` column from the dataset using `[]`:
+  - Remove samples 7, 8 and 9 from the dataset using `[]`:
+  - Keep only samples 1-6 using `[]`:
+  - Add a column called `pre_treatment` to the beginning of the dataframe with the values T, F, F, F, T, T, F, T, F, F, T, T (Hint: use `cbind()`): 
+  - Change the names of the columns to: "A", "B", "C", "D":
+ 
+### Extracting components from lists
+
+3. Create a new list, `list_hw` with three components, the `glengths` vector, the dataframe `df`, and `number` value. Use this list to answer the questions below . `list_hw` has the following structure (NOTE: the components of this list are not currently named):
+
+```{r}
+#| label: create_list_hw
+#| echo: false
+glengths <- c(4.6, 3000, 50000)
+species <- c("ecoli", "human", "corn")
+number <- 8
+
+df <- data.frame(species, glengths)
+
+list_hw <- list(glengths, df, number)
+list_hw
+```
+
+Write out the R code you would use to perform the following operations (questions **DO NOT** build upon each other):
+
+  - Return the second component of the list:
+  - Return `50000.0` from the first component of the list:
+  - Return the value `human` from the second component: 
+  - Give the components of the list the following names: "genome_lengths", "genomes", "record":
+   
+### Creating figures with ggplot2
+
+4. Create the same plot as above using ggplot2 using the provided metadata and counts datasets. The metadata table (`Mov10_full_meta.txt`) describes an experiment that you have setup for RNA-seq analysis, while the associated count matrix (`normalized_counts.txt`) gives the normalized counts for each sample for every gene. Both files can be found within your `data` directory. 
+
+Follow the instructions below to build your plot. Write the code you used and provide the final image.
+
+  - Read in the metadata file using: `meta <- read.delim("Mov10_full_meta.txt", sep="\t", row.names=1)`
+  - Read in the count matrix file using: `data <- read.delim("normalized_counts.txt", sep="\t", row.names=1)`
+  - Create a vector called `expression` that contains the normalized count values from the row in normalized_counts that corresponds to the MOV10 gene.  
+  - Check the class of this expression vector. Then, convert it to a numeric vector using `as.numeric(expression)`
+  - Bind that vector to your metadata data frame (`meta`) and call the new data frame `df`. 
+  - Create a ggplot by constructing the plot line by line:
+    - Initialize a  ggplot with your `df` as input.
+    - Add the `geom_jitter()` geometric object with the required aesthetics which are x and y.
+    - Color the points based on `sampletype`
+    - Add the `theme_bw()` layer 
+    - Add the title "Expression of MOV10" to the plot
+    - Change the x-axis label to be blank
+    - Change the y-axis label to "Normalized counts"
+    - Using `theme()` change the following properties of the plot:
+      - Remove the legend (Hint: use ?theme help and scroll down to legend.position)
+      - Change the plot title size to 1.5x the default and center align
+      - Change the axis title to 1.5x the default size
+      - Change the size of the axis text only on the y-axis to 1.25x the default size
+      - Rotate the x-axis text to 45 degrees using `axis.text.x=element_text(angle=45, hjust=1)`

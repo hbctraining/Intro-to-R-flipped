@@ -1,0 +1,59 @@
+---
+title: "Functions and Arguments Answer Key"
+author:
+  - Will Gammerdinger
+date: "2025-07-01"
+---
+
+```{r}
+#| label: load_data
+#| echo: false
+glengths <- c(30, 4.6, 3000, 50000, 90)
+```
+
+# Exercise 1
+
+1.  Let's use base R function to calculate **mean** value of the `glengths` vector. You might need to search online to find what function can perform this task.
+
+```{r}
+#| label: mean_glengths
+# Obtain the mean of glengths
+mean(glengths)
+```
+
+2.  Create a new vector `test <- c(1, NA, 2, 3, NA, 4)`. Use the same base R function from exercise 1 (with addition of proper argument), and calculate mean value of the `test` vector. The output should be `2.5`.
+
+```{r}
+#| label: NA_mean_test
+# Create the test vector
+test <- c(1, NA, 2, 3, NA, 4)
+# Take the mean of the test vector while excluding NA values
+mean(test, na.rm = TRUE)
+```
+
+3.  Another commonly used base function is `sort()`. Use this function to sort the `glengths` vector in **descending** order.
+
+```{r}
+#| label: sort_glengths
+# Sort the glengths vector in descending order
+sort(glengths, decreasing = TRUE)
+```
+
+# Exercise 2
+
+Write a function called `multiply_it`, which takes two inputs: a numeric value `x`, and a numeric value `y`. The function will return the product of these two numeric values, which is `x * y`. For example, `multiply_it(x=4, y=6)` will return output `24`.
+
+```{r}
+#| label: create_use_multiply_it_function
+# Create the multiply_it function that accepts values of x and y
+multiply_it <- function(x,y) {
+  # Multiply x and y and assign the product to the object called product
+  product <- x * y
+  # Return the product object to the console
+  return(product)
+}
+
+# Using the multiply_it function, multiply x and y using 4 and 6, respectively
+multiply_it(x = 4, y = 6)
+```
+

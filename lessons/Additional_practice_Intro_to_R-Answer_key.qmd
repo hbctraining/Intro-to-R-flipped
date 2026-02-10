@@ -1,0 +1,287 @@
+---
+title: "Overall Practice with R Answer Key"
+author:
+  - Mary Piper
+  - Meeta Mistry
+  - Radhika Khetani
+  - Will Gammerdinger
+date: "2025-12-07"
+---
+
+## Exercises
+
+### Creating vectors/factors and dataframes
+
+1. We are performing RNA-Seq on cancer samples being treated with three different types of treatment (A, B, and P). You have 12 samples total, with 4 replicates per treatment. Write the R code you would use to construct your metadata table as described below.  
+
+  - Create the vectors/factors for each column (Hint: you can type out each vector/factor, or if you want the process go faster try exploring the `rep()` function).
+     
+```{r}
+#| label: create_vectors
+# Create vectors to use
+sex <- c(rep(c("M", "F"),6)) 
+stage <- c(rep(c("I", "II", "II"), 4))
+treatment <- c(rep("A", 4), rep("B", 4), rep("P", 4))
+myc <- c(2343, 457, 4593, 9035, 3450, 3524, 958, 1053, 8674, 3424, 463, 5105)
+```
+      
+  - Put them together into a dataframe called `meta`.
+     
+```{r}
+#| label: create_df
+# Assign vectors to a dataframe
+meta <- data.frame(sex, stage, treatment, myc) 
+```
+
+  - Use the `rownames()` function to assign row names to the dataframe (Hint: you can type out the row names as a vector, or if you want the process go faster try exploring the `paste()` function).
+     
+```{r}
+#| label: add_rownames
+# Two ways to add rownames to the dataframe
+rownames(meta) <- c("sample1", "sample2", "sample3", "sample4", "sample5", "sample6", "sample7", "sample8", "sample9", "sample10", "sample11", "sample12") 
+rownames(meta) <- paste("sample", 1:12, sep="")
+```
+     
+Your finished metadata table should have information for the variables `sex`, `stage`, `treatment`, and `myc` levels: 
+     
+```{r}
+#| label: view_meta
+#| eval: false
+# Print out meta
+meta
+```
+
+```{r}
+#| label: render_meta
+#| echo: false
+# Load DT library
+library(DT)
+
+# Render meta dataframe
+datatable(meta)
+```
+ 
+### Subsetting vectors/factors and dataframes
+
+2. Using the `meta` data frame from question #1, write out the R code you would use to perform the following operations (questions **DO NOT** build upon each other):
+
+  - Return only the `treatment` and `sex` columns using `[]`:
+     
+```{r}
+#| label: subset_treatment_sex
+# Subset the treatment and sex columns from meta
+meta[ , c(1,3)]
+```
+     
+  - Return the `treatment` values for samples 5, 7, 9, and 10 using `[]`:
+          
+```{r}
+#| label: subset_treatment_samples_5_7_9_10
+# Subset treatment for samples 5, 7, 9 and 10
+meta[c(5,7,9,10), 3]
+```
+     
+  - Use `filter()` to return all data for those samples receiving treatment `P`:
+          
+```{r}
+#| label: filter_treatment_p
+# Load tidyverse package
+library(tidyverse)
+
+# Filter meta for treatment equal to P
+filter(meta, treatment == "P")
+```
+     
+  - Use `filter()`/`select()` to return only the `stage` and `treatment` data for those samples with `myc` > 5000:
+          
+```{r}
+#| label: filter_myc_greater_than_5000_select_stage_treatment
+# Filter meta for myc greater than 5000 and select the stage and treatment columns
+filter(meta, myc > 5000) %>% 
+  select(stage, treatment)
+```
+     
+  - Remove the `treatment` column from the dataset using `[]`:
+          
+```{r}
+#| label: remove_treatment_column
+# Remove treatment column
+meta[, -3]
+```
+     
+  - Remove samples 7, 8 and 9 from the dataset using `[]`:
+          
+```{r}
+#| label: remove_samples_7_8_9
+# Remove samples 7, 8 and 9 from meta
+meta[-7:-9, ]
+```
+     
+  - Keep only samples 1-6 using `[]`:
+          
+```{r}
+#| label: subset_samples_1_though_6
+# Subset meta for samples 1 through 6
+meta [1:6, ]
+```
+     
+  - Add a column called `pre_treatment` to the beginning of the dataframe with the values T, F, F, F, T, T, F, T, F, F, T, T (Hint: use `cbind()`): 
+
+```{r}
+#| label: add_pretreatment_column
+# Create pre_treatment vector
+pre_treatment <- c(T, F, F, F, T, T, F, T, F, F, T, T)
+
+# Add pre_treatment column to meta
+cbind(pre_treatment, meta)
+```
+     
+  - Change the names of the columns to: "A", "B", "C", "D":
+          
+```{r}
+#| label: change_colnames
+# Change the column names of meta
+colnames(meta) <- c("A", "B", "C", "D")
+```
+
+### Extracting components from lists
+
+3. Create a new list, `list_hw` with three components, the `glengths` vector, the dataframe `df`, and `number` value. Use this list to answer the questions below . `list_hw` has the following structure (NOTE: the components of this list are not currently named):
+
+```{r}
+#| label: create_list_hw
+#| echo: false
+glengths <- c(4.6, 3000, 50000)
+species <- c("ecoli", "human", "corn")
+number <- 8
+
+df <- data.frame(species, glengths)
+
+list_hw <- list(glengths, df, number)
+list_hw
+```
+
+```{r}
+#| label: create_list_hw_answer
+# Create list_hw
+list_hw <- list(glengths, df, number)
+
+# Print list_hw
+list_hw
+```
+
+Write out the R code you would use to perform the following operations (questions **DO NOT** build upon each other):
+
+  - Return the second component of the list:
+ 
+```{r}
+#| label: subset_second_item
+# Subset list_hw for the second item
+list_hw[[2]]
+```
+ 
+  - Return `50000.0` from the first component of the list:
+  
+```{r}
+#| label: subset_first_item_return_third_element
+# Subset list_hw for the first item and return the third element from the vector
+list_hw[[1]][3]
+```
+ 
+  - Return the value `human` from the second component: 
+  
+```{r}
+#| label: subset_second_item_return_human
+# Subset list_hw for the second item and return the item in the second row and first column
+list_hw[[2]][2, 1]
+```
+ 
+  - Give the components of the list the following names: "genome_lengths", "genomes", "record":
+  
+```{r}
+#| label: name_list
+# Create names for list_hw
+names(list_hw) <- c("genome_lengths","genomes","record")
+
+# Print list_hw
+list_hw
+```
+
+### Creating figures with ggplot2
+
+4. Create the same plot as above using ggplot2 using the provided metadata and counts datasets. The metadata table (`Mov10_full_meta.txt`) describes an experiment that you have setup for RNA-seq analysis, while the associated count matrix (`normalized_counts.txt`) gives the normalized counts for each sample for every gene. Both files can be found within your `data` directory. 
+
+Follow the instructions below to build your plot. Write the code you used and provide the final image.
+
+  - Read in the metadata file using: `meta <- read.delim("data/Mov10_full_meta.txt", sep="\t", row.names=1)`
+
+  - Read in the count matrix file using: `data <- read.delim("data/normalized_counts.txt", sep="\t", row.names=1)`
+
+  - Create a vector called `expression` that contains the normalized count values from the row in `data` that corresponds to the `MOV10` gene.  
+    
+```{r}
+#| label: read_in_meta_data
+# Read in meta
+meta <- read.delim("data/Mov10_full_meta.txt", sep="\t", row.names=1)
+# Read in data
+data <- read.delim("data/normalized_counts.txt", sep="\t", row.names=1)
+
+# Create vector from MOV10 expression data
+expression <- data["MOV10", ]
+```     
+
+  - Check the class of this expression vector. `data.frame`
+     
+Then, will need to convert this to a numeric vector using `as.numeric(expression)`
+      
+```{r}
+#| label: class_expression
+# Show class of expression
+class(expression)
+
+# Convert expression to numeric
+expression <- as.numeric(expression)
+
+# Show class of expression again
+class(expression)
+```
+     
+  - Bind that vector to your metadata data frame (`meta`) and call the new data frame `df`. 
+      
+```{r}
+#| label: add_column
+# Two ways to add expression vector to meta
+df <- cbind(meta, expression)
+df <- data.frame(meta, expression)
+```
+     
+  - Create a ggplot by constructing the plot line by line:
+    - Initialize a  ggplot with your `df` as input.
+    - Add the `geom_jitter()` geometric object with the required aesthetics
+    - Color the points based on `sampletype`
+    - Add the `theme_bw()` layer 
+    - Add the title "Expression of MOV10" to the plot
+    - Change the x-axis label to be blank
+    - Change the y-axis label to "Normalized counts"
+    - Using `theme()` change the following properties of the plot:
+      - Remove the legend (Hint: use ?theme help and scroll down to legend.position)
+      - Change the plot title size to 1.5x the default and center align
+      - Change the axis title to 1.5x the default size
+      - Change the size of the axis text only on the y-axis to 1.25x the default size
+      - Rotate the x-axis text to 45 degrees using `axis.text.x=element_text(angle=45, hjust=1)`
+           
+```{r}
+#| label: create_plot
+# Create plot
+ggplot(df) +
+  geom_jitter(aes(x= sampletype, y= expression, color = sampletype)) +
+  theme_bw() +
+  ggtitle("Expression of MOV10") +
+  xlab(NULL) +
+  ylab("Normalized counts") +
+  theme(legend.position = "none",
+        plot.title=element_text(hjust=0.5, size=rel(1.5)),
+        axis.text=element_text(size=rel(1.25)),
+        axis.title=element_text(size=rel(1.5)),
+        axis.text.x=element_text(angle=45, hjust=1))
+```

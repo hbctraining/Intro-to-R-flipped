@@ -1,0 +1,75 @@
+---
+title: "R Syntax and Data Structures Answer Key"
+author:
+  - Will Gammerdinger
+date: "2025-05-30"
+---
+
+```{r}
+#| echo: false
+glengths <- c(4.6, 3000, 50000)
+species <- c("ecoli", "human", "corn")
+number <- 15
+```
+
+
+# Exercise 1
+
+1. Try to create a vector of numeric and character values by *combining* the two vectors that we just created (`glengths` and `species`). Assign this combined vector to a new variable called `combined`. *Hint: you will need to use the combine `c()` function to do this*. 
+
+```{r}
+# Assign the vector of glengths and species to combined
+combined <- c(glengths, species)
+```
+
+2. Print the `combined` vector in the console, what looks different compared to the original vectors?
+
+```{r}
+# Print the combined vector to the console
+combined
+```
+
+`glengths` has been coerced into being a character vector.
+
+# Exercise 2
+
+Let's say that in our experimental analyses, we are working with three different sets of cells: normal, cells knocked out for geneA (a very exciting gene), and cells overexpressing geneA. We have three replicates for each celltype.
+
+1.  Create a vector named `samplegroup` with nine elements: 3 control ("CTL") values, 3 knock-out ("KO") values, and 3 over-expressing ("OE") values.
+
+```{r}
+# Create the samplegroup vector with 3 CTL, 3 KO and 3 OE
+samplegroup <- c("CTL", "CTL", "CTL", "KO", "KO", "KO", "OE", "OE", "OE")
+```
+
+2.  Turn `samplegroup` into a factor data structure.
+
+```{r}
+# Convert samplegroup into a factor and re-assign it to samplegroup
+samplegroup <- factor(samplegroup)
+```
+
+# Exercise 3
+
+Create a data frame called `favorite_books` with the following vectors as columns:
+
+```{r}
+# Create a character vector containing book names and assign it to titles
+titles <- c("Catch-22", "Pride and Prejudice", "Nineteen Eighty Four")
+# Create a numeric vector containing page numbers and assign it to pages
+pages <- c(453, 432, 328)
+```
+
+```{r}
+# Create a data frame of titles and pages
+favorite_books <- data.frame(titles, pages)
+```
+
+# Exercise 4
+
+Create a list called `list2` containing `species`, `glengths`, and `number`.
+
+```{r}
+# Create a list called list2 composed of species, glengths and number
+list2 <- list(species, glengths, number)
+```

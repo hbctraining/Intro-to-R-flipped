@@ -1,0 +1,99 @@
+---
+title: "Reading in and inspecting data Answer Key"
+author:
+  - Will Gammerdinger
+date: "2025-07-01"
+---
+
+```{r}
+#| label: load_data
+#| echo: false
+# Read in metadata
+metadata <- read.csv(file="data/mouse_exp_design.csv")
+
+# Load glengths
+glengths <- c(30, 4.6, 3000, 50000, 90)
+
+# Create samplegroup vector
+samplegroup <- c("CTL", "CTL", "CTL", "KO", "KO", "KO", "OE", "OE", "OE")
+# Turn samplegroup into a factor
+samplegroup <- factor(samplegroup)
+```
+
+# Exercise 1
+
+1. Inside your project's `data` folder you should see a file called `project-summary.txt`. Read it in to R using `read.table()` with the appropriate arguments and store it as the variable `proj_summary`. To figure out the appropriate arguments to use with `read.table()`, keep the following in mind:
+	- all the columns in the input text file have column name/headers
+	- you want the first column of the text file to be used as row names (hint: look up the input for the `row.names =` argument in `read.table()`)
+
+```{r}
+#| label: read_proj_summary
+# Read in project-summary.txt from the data directory and let R know there is a header and that you want the first column to be converted to the rownames then assign it to an object called proj_summary
+proj_summary <- read.table("data/project-summary.txt", header = TRUE, row.names = 1)
+```
+
+2. Display the contents of `proj_summary` in your console
+
+```{r}
+#| label: view_proj_summary
+# Display the contents of proj_summary
+proj_summary
+```
+
+# Exercise 2
+
+1. Use the `class()` function on `glengths` and `metadata`, how does the output differ between the two?
+
+```{r}
+#| label: view_classes
+# Return the class of glengths
+class(glengths)
+# Return the class of metadata
+class(metadata)
+```
+
+`glengths` is a numeric vector and `metadata` is a data frame.
+
+2. Use the `summary()` function on the `proj_summary` dataframe, what is the median "rRNA_rate"?
+
+```{r}
+#| label: summary_proj_summary
+# Provide a summary of the proj_summary object
+summary(proj_summary)
+```
+
+The median "rRNA_rate" is 0.005345.
+
+3. How long is the `samplegroup` factor?
+
+```{r}
+#| label: length_samplegroup
+# Return the length of the samplegroup factor vector
+length(samplegroup)
+```
+
+4. What are the dimensions of the `proj_summary` dataframe?
+
+```{r}
+#| label: dimensions_proj_summary
+# Return the dimensions of the proj_summary dataframe
+dim(proj_summary)
+```
+
+5. When you use the `rownames()` function on `metadata`, what is the *data structure* of the output?
+
+```{r}
+#| label: structure_metadata_rownames
+# Return the data structure for the output of rownames() on the metadata data frame object
+str(rownames(metadata))
+```
+
+It is a character vector.
+
+[Optional] How many elements in (how long is) the output of `colnames(proj_summary)`? Don't count, but use another function to determine this.
+
+```{r}
+#| label: number_columns_proj_summary
+# Return the number of elements in colnames(proj_summary)
+length(colnames(proj_summary))
+```

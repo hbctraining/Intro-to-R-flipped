@@ -1,0 +1,185 @@
+---
+title: "Packages and Libraries"
+description: |
+  This lesson introduces participants to R packages and libraries, including how to install packages from CRAN, Bioconductor and source files. Participants will also learn how to load libraries, explore available functions and navigate help resources to support their analysis in R.
+author:
+  - Mary Piper
+  - Meeta Mistry
+  - Will Gammerdinger
+  - Noor Sohail
+date: "2025-05-30"
+categories: 
+  - R Programming
+keywords:
+  - R
+  - Packages
+  - Libraries
+  - CRAN
+  - Bioconductor
+license: "CC-BY-4.0"
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+Approximate time: 30 min
+
+```{r}
+#| label: setting_mirror
+#| eval: true
+#| include: false
+# Setting the mirror so we know where to install packages from
+options(repos = c(CRAN = "https://cloud.r-project.org"))
+```
+
+## Learning Objectives
+
+-   Explain different ways to install external R packages
+-   Demonstrate how to load a library and how to find functions specific to a package
+
+## Packages and Libraries
+
+**Packages** are collections of R functions, data, and compiled code in a well-defined format, created to add specific functionality. There are 10,000+ user contributed packages and growing.
+
+There are a set of **standard (or base) packages** which are considered part of the R source code and automatically available as part of your R installation. Base packages contain the **basic functions** that allow R to work, and enable standard statistical and graphical functions on datasets; for example, all of the functions that we have been using so far in our examples.
+
+The directories in R where the packages are stored are called the **libraries**. The terms *package* and *library* are sometimes used synonymously and there has been [discussion](http://www.r-bloggers.com/packages-v-libraries-in-r/) amongst the community to resolve this. It is somewhat counter-intuitive to *load a package* using the `library()` function and so you can see how confusion can arise.
+
+You can check what libraries are loaded in your current R session by typing into the console:
+
+```{r}
+#| label: check_loaded_libraries
+# Print version information about R, the OS and loaded packages
+sessionInfo()
+
+# Gives a list of loaded packages
+search()
+```
+
+Previously we have introduced you to functions from the standard base packages. However, the more you work with R, you will come to realize that there is a cornucopia of R packages that offer a wide variety of functionality. To use additional packages will require installation. Many packages can be installed from the [CRAN](http://cran.r-project.org/) or [Bioconductor](https://www.bioconductor.org/) repositories.
+
+::: {.callout-note}
+# Helpful tips for package installations
+
+-   Package names are case sensitive!
+-   At any point (especially if you've used R/Bioconductor in the past), in the console R may ask you if you want to **"update any old packages by asking Update all/some/none? \[a/s/n\]:". If you see this, type "a" at the prompt and hit Enter** to update any old packages. *Updating packages can sometimes take awhile to run.* If you are short on time, you can choose "n" and proceed. Without updating, you run the risk of conflicts between your old packages and the ones from your updated R version later down the road.
+-   If you see a message in your console along the lines of "binary version available but the source version is later", followed by a question, **"Do you want to install from sources the package which needs compilation? y/n", type n for no, and hit enter.**
+:::
+
+### Package installation from CRAN
+
+CRAN is a repository where the latest downloads of R (and legacy versions) are found in addition to source code for thousands of different user contributed R packages.
+
+::: center
+<img src="../img/cran_packages.png" width="600"/>
+:::
+
+Packages for R can be installed from the [CRAN](http://cran.r-project.org/) package repository using the `install.packages` function. This function will download the source code from on the CRAN mirrors and install the package (and any dependencies) locally on your computer.
+
+An example is given below for the `ggplot2` package that will be required for some plots we will create later on. Run this code to install `ggplot2`.
+
+```{r}
+#| label: install_ggplot2
+#| eval: false
+# Install the ggplot2 package from CRAN
+install.packages("ggplot2")
+```
+
+### Package installation from Bioconductor
+
+Alternatively, packages can also be installed from [Bioconductor](https://www.bioconductor.org/), another repository of packages which provides tools for the analysis and comprehension of high-throughput **genomic data**. These packages includes (but is not limited to) tools for performing statistical analysis, annotation packages, and accessing public datasets.
+
+::: center
+<img src="../img/bioconductor_logo.png" width="300"/>
+:::
+
+There are many packages that are available in CRAN and Bioconductor, but there are also packages that are specific to one repository. Generally, you can find out this information with a Google search or by trial and error.
+
+To install from Bioconductor, you will first need to install BiocManager. *This only needs to be done once ever for your R installation.*
+
+```{r}
+#| label: install_biocmanager
+#| eval: false
+# DO NOT RUN
+# Install the BiocManager package from CRAN
+install.packages("BiocManager")
+```
+
+Now you can use the `install()` function from the `BiocManager` package to install a package by providing the name in quotations.
+
+Here we have the code to install `ggplot2`, through Bioconductor:
+
+```{r}
+#| label: install_ggplot2_through_biocmanager
+#| eval: false
+# DO NOT RUN
+# Install the ggplot2 package from Bioconductor
+BiocManager::install("ggplot2")
+```
+
+::: {.callout-note}
+The code above may not be familiar to you - it is essentially using a new operator, a double colon `::` to execute a function from a particular package. This is the syntax: `package::function_name()`.
+:::
+
+### Package installation from source
+
+Finally, R packages can also be installed from source. This is useful when you do not have an internet connection (and have the source files locally), since the other two methods are retrieving the source files from remote sites.
+
+To install from source, we use the same `install.packages` function but we have additional arguments that provide *specifications* to *change from defaults*:
+
+```{r}
+#| label: install_from_source
+#| eval: false
+# DO NOT RUN
+# Install the ggplot2 package from the source files locally
+install.packages("~/Downloads/ggplot2_1.0.1.tar.gz", type="source", repos=NULL)
+```
+
+### Loading libraries
+
+Once you have the package installed, you can **load the library** into your R session for use. Any of the functions that are specific to that package will be available for you to use by simply calling the function as you would for any of the base functions. *Note that quotations are not required here.*
+
+```{r}
+#| label: load_ggplot2
+# Load the ggplot2 library
+library(ggplot2)
+```
+
+You can also check what is loaded in your current environment by using `sessionInfo()` or `search()` and you should see your package listed as:
+
+```{r}
+#| label: view_loaded_packages
+#| eval: false
+other attached packages:
+[1] ggplot2_2.0.0
+```
+
+In this case there are several other packages that were also loaded along with `ggplot2`.
+
+We only need to install a package once on our computer. However, to use the package, we need to load the library every time we start a new R/RStudio environment. You can think of this as **installing a bulb** versus **turning on the light**.
+
+::: center
+<img src="../img/install_vs_library.jpeg" width="600"/>
+:::
+
+*Analogy and image credit to [Dianne Cook](https://twitter.com/visnut/status/1248087845589274624) of [Monash University](https://www.monash.edu/).*
+
+### Finding functions specific to a package
+
+This is your first time using `ggplot2`, how do you know where to start and what functions are available to you? One way to do this, is by using the `Package` tab in RStudio. If you click on the tab, you will see listed all packages that you have installed. For those *libraries that you have loaded*, you will see a blue checkmark in the box next to it. Scroll down to `ggplot2` in your list:
+
+::: center
+<img src="../img/ggplot_help.png" width="300"/>
+:::
+
+If your library is successfully loaded you will see the box checked, as in the screenshot above. Now, if you click on `ggplot2` RStudio will open up the help pages and you can scroll through.
+
+An alternative is to find the help manual online, which can be less technical and sometimes easier to follow. For example, [this website](https://ggplot2.tidyverse.org/reference/index.html) is much more comprehensive for ggplot2 and is the result of a Google search. Many of the Bioconductor packages also have very helpful vignettes that include comprehensive tutorials with mock data that you can work with.
+
+If you can't find what you are looking for, you can use the [rdocumention.org](https://www.rdocumentation.org/) website that search through the help files across all packages available.
+
+::: {.callout-tip}
+# [**Exercise 1**](07_packages-Answer_key.qmd#exercise-1)
+
+The `ggplot2` package is part of the [`tidyverse` suite of integrated packages](https://www.tidyverse.org/packages/) which was designed to work together to make common data science operations more user-friendly. **We will be using the `tidyverse` suite in later lessons, and so let's install it**. *NOTE: This suite of packages is only available in CRAN.*
+:::

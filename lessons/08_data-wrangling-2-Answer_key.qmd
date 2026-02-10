@@ -1,0 +1,113 @@
+---
+title: "Data Wrangling: Dataframes, Matrices, and Lists Answer Key"
+author:
+  - Will Gammerdinger
+date: "2025-07-01"
+---
+
+```{r}
+#| label: load_data
+#| echo: false
+# Read in metadata
+metadata <- read.csv(file="data/mouse_exp_design.csv")
+# Read in list1
+list1 <- readRDS(file="data/list1.RDS")
+
+# Create age vector
+age <- c(15, 22, 45, 52, 73, 81)
+
+# Create sample group factor
+samplegroup <- c("CTL", "CTL", "CTL", "KO", "KO", "KO", "OE", "OE", "OE")
+samplegroup <- factor(samplegroup)
+
+# Create number variable
+number <- 15
+```
+
+# Exercise 1
+
+1. Return a data frame with only the `genotype` and `replicate` column values for `sample2` and `sample8`.
+
+```{r}
+#| label: subset_metadata_by_rows_columns
+# Subset the metadata data frame to return the genotype and replicate columns and the sample2 and sample8 rows
+metadata[c("sample2", "sample8"), c("genotype", "replicate")]
+```
+
+2. Return the fourth and ninth values of the `replicate` column.
+
+```{r}
+#| label: subset_metadata_by_rows_replicate
+# Subset the metadata data frame to return the replicate column and the fourth and ninth rows
+metadata[c(4, 9), "replicate"]
+```
+
+3. Extract the `replicate` column as a data frame.
+
+```{r}
+#| label: subset_metadata_replicate_drop_false
+# Extract the replicate column from the metadata data frame, but retain the data frame structure
+metadata[, "replicate", drop = FALSE]
+```
+
+# Exercise 2
+
+Subset the `metadata` dataframe to return only the rows of data with a genotype of `KO`.
+
+```{r}
+#| label: subset_metadata_conditional
+# Create an boolean index vector for elements in the genotype column of the metadata data frame that are not "KO" 
+idx <- which(metadata$genotype=="KO")
+
+# Subset the rows of the metadata data frame by the boolean index
+metadata[idx, ]
+```
+
+Alternatively, you can use a nested approach:
+
+```{r}
+#| label: nested_subset_metadata_conditional
+# Subset the rows of the metadata data frame by the elements in the genotype column of the metadata data frame that are not "KO" 
+metadata[which(metadata$genotype=="KO"), ]
+```
+
+# Exercise 3
+
+1. Create a list named `random` with the following components: `metadata`, `age`, `list1`, `samplegroup` and `number`.
+
+```{r}
+#| label: create_random_list
+# Create a list called random composed of metadata, age, list1, samplegroup and number
+random <- list(metadata, age, list1, samplegroup, number)
+
+# Return the random list to the console for inspection
+random
+```
+
+2. Extract the `samplegroup` component.
+
+```{r}
+#| label: subset_random_list
+# Extract the samplegroup object from the random list which is the fourth object in the list
+random[[4]]
+```
+
+# Exercise 4
+
+Let's practice combining ways to extract data from the data structures we have covered so far:
+
+1. Set names for the `random` list you created in the last exercise.
+
+```{r}
+#| label: name_random_list
+# Set the names for the items in the random list
+names(random) <- c("metadata", "age", "list1", "samplegroup", "number")
+```
+
+2. Extract the `age` component using the `$` notation
+
+```{r}
+#| label: subset_by_name_random_list
+# Extract the age object from the random list
+random$age
+```

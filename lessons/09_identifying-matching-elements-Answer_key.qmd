@@ -1,0 +1,43 @@
+---
+title: "The %in% operator Answer Key"
+author:
+  - Will Gammerdinger
+date: "2025-07-01"
+---
+
+```{r}
+#| label: load_data
+#| echo: false
+# Set A and B vectors
+A <- c(1,3,5,7,9,11)   # odd numbers
+B <- c(2,4,6,8,1,5)  # add some odd numbers in 
+```
+
+# Exercise 1
+
+1. Using the `A` and `B` vectors created above, evaluate each element in `B` to see if there is a match in `A`
+	
+```{r}
+#| label: find_b_in_a
+# Return a boolean vector of elements in B that are in A
+B %in% A
+```
+2. Subset the `B` vector to only return those values that are also in `A`.
+	
+```{r}
+#| label: subset_b_in_a
+# Return a boolean vector of elements in B that are in A and assign it to the object intersectionBA
+intersectionBA <- B %in% A
+
+# Subset the B vector by the elements returning TRUE in intersectionBA
+B[intersectionBA]
+```
+
+Alternatively, you can use a nested approach:
+
+```{r}
+#| label: nested_subset_b_in_a
+# Identify the elements in B that are in A and subset the B vector by those elements
+B[B %in% A]
+```
+
