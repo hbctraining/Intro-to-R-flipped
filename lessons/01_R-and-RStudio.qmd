@@ -100,7 +100,7 @@ today.
 8.  Go to the `File` menu and select `Save As...`, type `Intro-to-R.R`
     and select `Save`
 
-<img src="../img/Opening_RScript.gif" width="900"/>
+<img src="../img/Opening_Rscript.gif" width="900"/>
 
 The RStudio interface should now look like the screenshot below.
 
