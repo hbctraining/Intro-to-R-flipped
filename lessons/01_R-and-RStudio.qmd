@@ -19,6 +19,9 @@ license: "CC-BY-4.0"
 editor_options: 
   markdown: 
     wrap: 72
+format:
+  html:
+    self-contained: false
 ---
 
 Approximate time: 30 minutes
