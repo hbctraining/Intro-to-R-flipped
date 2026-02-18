@@ -1,0 +1,80 @@
+---
+title: "The apply function"
+description: |
+  The lesson introduces participants to the `apply` family of functions to efficiently perform operations across rows, columns and elements of tabular data.
+author:
+  - Mary Piper
+  - Meeta Mistry
+  - Will Gammerdinger
+  - Noor Sohail
+date: "2025-05-30"
+categories: 
+  - R Programming
+  - Data Wrangling
+keywords:
+  - R
+  - apply
+  - apply family
+license: "CC-BY-4.0"
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+Approximate time: 10 minutes
+
+```{r}
+#| label: load_data
+#| echo: false
+# Read in rpkm_ordered
+rpkm_ordered  <- read.csv("data/ordered_counts_rpkm.csv",
+                          header=T,
+                          row.names=1)
+```
+
+## Learning Objectives
+
+- Utilize the apply family of functions to a dataset
+
+## The `apply` family of functions
+
+To obtain mean values for all samples we can use `mean` on each column individually, but there is also an easier way to go about it. Programming languages typically have a way to allow the execution of a single line of code or several lines of code multiple times, or in a "loop". By default R is not very good at looping, hence the `apply()` family of functions are used for this purpose. This family includes several functions, each differing slightly on the inputs or outputs. For example, we can use `apply()` to execute some task on every element in a vector, every row/column in a dataframe, and so on. 
+
+| Function | Description                                             |
+|:--------:|:-------------------------------------------------------:|
+| `apply()`  | Apply functions over array margins                      |
+| `by()`     | Apply a function to a data frame split by factors       |
+| `eapply()` | Apply a function over values in an environment          |
+| `lapply()` | Apply a function over a list or vector (returns list)   |
+| `sapply()` | Apply a function over a list or vector (returns vector) |
+| `mapply()` | Apply a function to multiple list or vector arguments   |
+| `rapply()` | Recursively apply a function to a list                  |
+| `tapply()` | Apply a function over a ragged array                    |
+
+We will be using `apply()` in the example below, but do take a moment on your own to explore the other related functions that are available.
+
+The `apply()` function lets you apply another function (like `mean()`, `sum()`, etc.) across the rows or columns of a table of values. In the help pages, you’ll see this described as what “applying a function to margins” of a matrix.
+
+In this context, margins correspond to:
+
+- `1` - Rows
+- `2` - Columns
+- `1:2` - Each individual cell (row and column)
+
+The syntax for the `apply{}` function is: 
+
+```{r}
+#| label: syntax_example
+#| eval: false
+# DO NOT RUN
+# apply() example syntax
+apply(dataframe/matrix, margin, function_to_apply)
+```
+
+Let's try this to obtain mean expression values for each sample in our RPKM matrix:
+
+```{r}
+#| label: apply_implementation
+# Use apply mean across the columns of rpkm_ordered
+apply(rpkm_ordered, 2, mean) 
+```

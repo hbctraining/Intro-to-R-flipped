@@ -66,7 +66,7 @@ That is great, if we only wanted the average from one of the samples (one column
 
 Programming languages typically have a way to allow the execution of a single line of code or several lines of code multiple times, or in a "loop". While "for loops" are available in R, there are other easier-to-use functions that can achieve this -  for example, the `apply()` family of functions and the `map()` family of functions. 
 
-The `map()` family is a bit more intuitive to use than `apply()` and we will be using it today. However, if you are interested in learning more about the`apply()` family of functions we have [materials available here](https://hbctraining.github.io/Intro-to-R/lessons/apply_functions.html).
+The `map()` family is a bit more intuitive to use than `apply()` and we will be using it today. However, if you are interested in learning more about the`apply()` family of functions we have [materials available here](Aside_apply.qmd).
 
 To obtain **mean values for all samples** we can use the `map_dbl()` function which generates a numeric vector. 
 
