@@ -35,6 +35,7 @@ Approximate time: 40 min
 # Create a character vector and store the vector as a variable called 'expression'
 expression <- c("low", "high", "medium", "high", "low", "medium", "high")
 expression <- factor(expression)
+test <- c(1, NA, 2, 3, NA, 4)
 ```
 
 ## Learning Objectives
@@ -184,6 +185,27 @@ age[idx_num]
 ```
 
 Notice that we get the same results regardless of whether or not we use the `which()`. Also note that while `which()` works the same as the logical expressions for indexing, it can be used for multiple other operations, where it is not interchangeable with logical expressions.
+
+::: {.callout-note}
+It should also be noted that `which()` and logical operators alone handle `NA` values differently. When R encounters an `NA` value while subsetting using just logical operators, it will retain that value. However, when we use `which()`, R will omit `NA` values. Let's observe this behavior using our `test` object from earlier: 
+
+```{r}
+#| label: print_test
+# Print test object
+test
+
+# Subset test just using a logical operator
+# NA values retained
+test[test > 1]
+
+# Subset test using which() around a logical operator
+# NA values discarded
+test[which(test > 1)]
+```
+
+This can be particularly useful if the dataset you are subsetting has `NA` values in it and you are wrapping your subsetting into a `length()` function to get the number of elements that pass that filtering. You may not want to include `NA` values in that count. If so, you will want to wrap your subsetting in a `which()` function prior to passing it to `length()`.
+
+:::
 
 ### Factors
 
