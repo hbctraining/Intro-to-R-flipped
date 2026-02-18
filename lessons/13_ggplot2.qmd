@@ -203,7 +203,7 @@ You can use the `example("geom_point")` function here to explore a multitude of 
 :::
 
 ::: {.callout-note}
-RStudio provide this very [useful cheatsheet](cheatsheets/data-visualization.pdf) for plotting using `ggplot2`. Different example plots are provided and the associated code (i.e which `geom` or `theme` to use in the appropriate situation.) We also encourage you to peruse through this useful [online reference](https://ggplot2.tidyverse.org/reference/) for working with ggplot2.
+RStudio provide this very [useful cheatsheet](cheatsheets/data-visualization-2.1.pdf) for plotting using `ggplot2`. Different example plots are provided and the associated code (i.e which `geom` or `theme` to use in the appropriate situation.) We also encourage you to peruse through this useful [online reference](https://ggplot2.tidyverse.org/reference/) for working with ggplot2.
 :::
 
 ::: {.callout-tip}

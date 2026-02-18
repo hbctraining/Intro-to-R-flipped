@@ -78,5 +78,5 @@ Use the `samplegroup` factor we created in a previous lesson, and relevel it suc
 ```{r}
 #| label: relevel_samplegroup
 # Re-level the samplegroup factor vector with KO being the first level followed by CTL and OE
-factor(samplegroup, levels = c("KO", "CTL", "OE"))
+samplegroup <- factor(samplegroup, levels = c("KO", "CTL", "OE"))
 ```

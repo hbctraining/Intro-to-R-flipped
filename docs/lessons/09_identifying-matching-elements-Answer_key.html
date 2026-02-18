@@ -4071,6 +4071,7 @@ text-align: left !important;
    
   <ul>
   <li><a href="#exercise-1" id="toc-exercise-1" class="nav-link active" data-scroll-target="#exercise-1">Exercise 1</a></li>
+  <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2">Exercise 2</a></li>
   </ul>
 </nav>
     </div>
@@ -4139,6 +4140,70 @@ text-align: left !important;
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>B[B <span class="sc">%in%</span> A]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 1 5</code></pre>
+</div>
+</div>
+</section>
+<section id="exercise-2" class="level1">
+<h1>Exercise 2</h1>
+<p>We have a list of 6 marker genes that we are very interested in. Our goal is to extract count data for these genes using the <code>%in%</code> operator from the <code>rpkm_data</code> data frame, instead of scrolling through <code>rpkm_data</code> and finding them manually.</p>
+<p>First, let’s create a vector called <code>important_genes</code> with the Ensembl IDs of the 6 genes we are interested in:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create important genes vector</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>important_genes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;ENSMUSG00000083700&quot;</span>, <span class="st">&quot;ENSMUSG00000080990&quot;</span>, <span class="st">&quot;ENSMUSG00000065619&quot;</span>, <span class="st">&quot;ENSMUSG00000047945&quot;</span>, <span class="st">&quot;ENSMUSG00000081010&quot;</span>, <span class="st">&quot;ENSMUSG00000030970&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol type="1">
+<li>Use the <code>%in%</code> operator to determine if all of these genes are present in the row names of the <code>rpkm_data</code> data frame.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(important_genes <span class="sc">%in%</span> <span class="fu">rownames</span>(rpkm_data))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Extract the rows from <code>rpkm_data</code> that correspond to these 6 genes using <code>[]</code> and the <code>%in%</code> operator. Double check the row names to ensure that you are extracting the correct rows.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract important genes using the %in% operator</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>rpkm_data[<span class="fu">which</span>(<span class="fu">rownames</span>(rpkm_data) <span class="sc">%in%</span> important_genes),]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                    sample2  sample5  sample7  sample8  sample9   sample4
+ENSMUSG00000030970 2.221180 0.537852 2.243810 2.599400 3.593970 0.1753800
+ENSMUSG00000047945 4.745070 0.323620 1.297810 3.896810 3.285470 0.2213430
+ENSMUSG00000065619 0.000000 0.000000 0.000000 0.000000 0.000000 0.0000000
+ENSMUSG00000080990 0.000000 0.000000 0.000000 0.000000 0.000000 0.0000000
+ENSMUSG00000081010 0.222275 0.349415 0.190397 0.167166 0.221353 0.4196660
+ENSMUSG00000083700 0.425214 0.337651 0.145973 0.142010 0.508757 0.0660419
+                    sample6 sample12  sample3 sample11 sample10  sample1
+ENSMUSG00000030970 0.435484 0.964169 2.151490 0.963523 1.014520 2.971420
+ENSMUSG00000047945 0.478836 3.581640 4.501390 1.442970 0.982691 5.199470
+ENSMUSG00000065619 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+ENSMUSG00000080990 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+ENSMUSG00000081010 0.248244 0.594672 0.214347 0.415823 0.452537 0.235848
+ENSMUSG00000083700 0.308669 0.488064 0.136998 0.222865 0.205934 0.124225</code></pre>
+</div>
+</div>
+<ol start="3" type="1">
+<li><strong>Bonus question:</strong> Extract the rows from <code>rpkm_data</code> that correspond to these 6 genes using <code>[]</code>, but without using the <code>%in%</code> operator.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract important genes without using the %in% operator</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>rpkm_data[important_genes, ]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>                    sample2  sample5  sample7  sample8  sample9   sample4
+ENSMUSG00000083700 0.425214 0.337651 0.145973 0.142010 0.508757 0.0660419
+ENSMUSG00000080990 0.000000 0.000000 0.000000 0.000000 0.000000 0.0000000
+ENSMUSG00000065619 0.000000 0.000000 0.000000 0.000000 0.000000 0.0000000
+ENSMUSG00000047945 4.745070 0.323620 1.297810 3.896810 3.285470 0.2213430
+ENSMUSG00000081010 0.222275 0.349415 0.190397 0.167166 0.221353 0.4196660
+ENSMUSG00000030970 2.221180 0.537852 2.243810 2.599400 3.593970 0.1753800
+                    sample6 sample12  sample3 sample11 sample10  sample1
+ENSMUSG00000083700 0.308669 0.488064 0.136998 0.222865 0.205934 0.124225
+ENSMUSG00000080990 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+ENSMUSG00000065619 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000
+ENSMUSG00000047945 0.478836 3.581640 4.501390 1.442970 0.982691 5.199470
+ENSMUSG00000081010 0.248244 0.594672 0.214347 0.415823 0.452537 0.235848
+ENSMUSG00000030970 0.435484 0.964169 2.151490 0.963523 1.014520 2.971420</code></pre>
 </div>
 </div>
 
@@ -4598,48 +4663,86 @@ text-align: left !important;
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class>
-<div class="sourceCode" id="cb7" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;The %in% operator Answer Key&quot;</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co">  - Will Gammerdinger</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> &quot;2025-07-01&quot;</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: load_data</span></span>
-<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Set A and B vectors</span></span>
-<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">7</span>,<span class="dv">9</span>,<span class="dv">11</span>)   <span class="co"># odd numbers</span></span>
-<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">6</span>,<span class="dv">8</span>,<span class="dv">1</span>,<span class="dv">5</span>)  <span class="co"># add some odd numbers in </span></span>
-<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a><span class="fu"># Exercise 1</span></span>
-<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Using the <span class="in">`A`</span> and <span class="in">`B`</span> vectors created above, evaluate each element in <span class="in">`B`</span> to see if there is a match in <span class="in">`A`</span></span>
-<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: find_b_in_a</span></span>
-<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a><span class="co"># Return a boolean vector of elements in B that are in A</span></span>
-<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>B <span class="sc">%in%</span> A</span>
-<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Subset the <span class="in">`B`</span> vector to only return those values that are also in <span class="in">`A`</span>.</span>
-<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: subset_b_in_a</span></span>
-<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a><span class="co"># Return a boolean vector of elements in B that are in A and assign it to the object intersectionBA</span></span>
-<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>intersectionBA <span class="ot">&lt;-</span> B <span class="sc">%in%</span> A</span>
-<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Subset the B vector by the elements returning TRUE in intersectionBA</span></span>
-<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>B[intersectionBA]</span>
-<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a>Alternatively, you can use a nested approach:</span>
-<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: nested_subset_b_in_a</span></span>
-<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a><span class="co"># Identify the elements in B that are in A and subset the B vector by those elements</span></span>
-<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a>B[B <span class="sc">%in%</span> A]</span>
-<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<div class="sourceCode" id="cb14" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;The %in% operator Answer Key&quot;</span></span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span></span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="co">  - Will Gammerdinger</span></span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> &quot;2025-07-01&quot;</span></span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: load_data</span></span>
+<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Set A and B vectors</span></span>
+<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">7</span>,<span class="dv">9</span>,<span class="dv">11</span>)   <span class="co"># odd numbers</span></span>
+<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">6</span>,<span class="dv">8</span>,<span class="dv">1</span>,<span class="dv">5</span>)  <span class="co"># add some odd numbers in </span></span>
+<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in the expression data</span></span>
+<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a>rpkm_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;data/counts.rpkm.csv&quot;</span>)</span>
+<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a><span class="fu"># Exercise 1</span></span>
+<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Using the <span class="in">`A`</span> and <span class="in">`B`</span> vectors created above, evaluate each element in <span class="in">`B`</span> to see if there is a match in <span class="in">`A`</span></span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: find_b_in_a</span></span>
+<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Return a boolean vector of elements in B that are in A</span></span>
+<span id="cb14-30"><a href="#cb14-30" aria-hidden="true" tabindex="-1"></a>B <span class="sc">%in%</span> A</span>
+<span id="cb14-31"><a href="#cb14-31" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-32"><a href="#cb14-32" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Subset the <span class="in">`B`</span> vector to only return those values that are also in <span class="in">`A`</span>.</span>
+<span id="cb14-33"><a href="#cb14-33" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb14-36"><a href="#cb14-36" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb14-37"><a href="#cb14-37" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: subset_b_in_a</span></span>
+<span id="cb14-38"><a href="#cb14-38" aria-hidden="true" tabindex="-1"></a><span class="co"># Return a boolean vector of elements in B that are in A and assign it to the object intersectionBA</span></span>
+<span id="cb14-39"><a href="#cb14-39" aria-hidden="true" tabindex="-1"></a>intersectionBA <span class="ot">&lt;-</span> B <span class="sc">%in%</span> A</span>
+<span id="cb14-40"><a href="#cb14-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-41"><a href="#cb14-41" aria-hidden="true" tabindex="-1"></a><span class="co"># Subset the B vector by the elements returning TRUE in intersectionBA</span></span>
+<span id="cb14-42"><a href="#cb14-42" aria-hidden="true" tabindex="-1"></a>B[intersectionBA]</span>
+<span id="cb14-43"><a href="#cb14-43" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-44"><a href="#cb14-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-45"><a href="#cb14-45" aria-hidden="true" tabindex="-1"></a>Alternatively, you can use a nested approach:</span>
+<span id="cb14-46"><a href="#cb14-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-49"><a href="#cb14-49" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb14-50"><a href="#cb14-50" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: nested_subset_b_in_a</span></span>
+<span id="cb14-51"><a href="#cb14-51" aria-hidden="true" tabindex="-1"></a><span class="co"># Identify the elements in B that are in A and subset the B vector by those elements</span></span>
+<span id="cb14-52"><a href="#cb14-52" aria-hidden="true" tabindex="-1"></a>B[B <span class="sc">%in%</span> A]</span>
+<span id="cb14-53"><a href="#cb14-53" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-54"><a href="#cb14-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-55"><a href="#cb14-55" aria-hidden="true" tabindex="-1"></a><span class="fu"># Exercise 2</span></span>
+<span id="cb14-56"><a href="#cb14-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-57"><a href="#cb14-57" aria-hidden="true" tabindex="-1"></a>We have a list of 6 marker genes that we are very interested in. Our goal is to extract count data for these genes using the <span class="in">`%in%`</span> operator from the <span class="in">`rpkm_data`</span> data frame, instead of scrolling through <span class="in">`rpkm_data`</span> and finding them manually.</span>
+<span id="cb14-58"><a href="#cb14-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-59"><a href="#cb14-59" aria-hidden="true" tabindex="-1"></a>First, let&#39;s create a vector called <span class="in">`important_genes`</span> with the Ensembl IDs of the 6 genes we are interested in:</span>
+<span id="cb14-60"><a href="#cb14-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-63"><a href="#cb14-63" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb14-64"><a href="#cb14-64" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: create_important_genes</span></span>
+<span id="cb14-65"><a href="#cb14-65" aria-hidden="true" tabindex="-1"></a><span class="co"># Create important genes vector</span></span>
+<span id="cb14-66"><a href="#cb14-66" aria-hidden="true" tabindex="-1"></a>important_genes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;ENSMUSG00000083700&quot;</span>, <span class="st">&quot;ENSMUSG00000080990&quot;</span>, <span class="st">&quot;ENSMUSG00000065619&quot;</span>, <span class="st">&quot;ENSMUSG00000047945&quot;</span>, <span class="st">&quot;ENSMUSG00000081010&quot;</span>, <span class="st">&quot;ENSMUSG00000030970&quot;</span>)</span>
+<span id="cb14-67"><a href="#cb14-67" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-68"><a href="#cb14-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-69"><a href="#cb14-69" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Use the <span class="in">`%in%`</span> operator to determine if all of these genes are present in the row names of the <span class="in">`rpkm_data`</span> data frame.</span>
+<span id="cb14-70"><a href="#cb14-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-73"><a href="#cb14-73" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb14-74"><a href="#cb14-74" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: important_genes_in_operator</span></span>
+<span id="cb14-75"><a href="#cb14-75" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(important_genes <span class="sc">%in%</span> <span class="fu">rownames</span>(rpkm_data))</span>
+<span id="cb14-76"><a href="#cb14-76" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-77"><a href="#cb14-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-78"><a href="#cb14-78" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Extract the rows from <span class="in">`rpkm_data`</span> that correspond to these 6 genes using <span class="in">`[]`</span> and the <span class="in">`%in%`</span> operator. Double check the row names to ensure that you are extracting the correct rows.</span>
+<span id="cb14-79"><a href="#cb14-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-82"><a href="#cb14-82" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb14-83"><a href="#cb14-83" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: extract_important_genes_in_operator</span></span>
+<span id="cb14-84"><a href="#cb14-84" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract important genes using the %in% operator</span></span>
+<span id="cb14-85"><a href="#cb14-85" aria-hidden="true" tabindex="-1"></a>rpkm_data[<span class="fu">which</span>(<span class="fu">rownames</span>(rpkm_data) <span class="sc">%in%</span> important_genes),]</span>
+<span id="cb14-86"><a href="#cb14-86" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb14-87"><a href="#cb14-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-88"><a href="#cb14-88" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Bonus question:** Extract the rows from <span class="in">`rpkm_data`</span> that correspond to these 6 genes using <span class="in">`[]`</span>, but without using the <span class="in">`%in%`</span> operator.</span>
+<span id="cb14-89"><a href="#cb14-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb14-92"><a href="#cb14-92" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb14-93"><a href="#cb14-93" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: extract_important_genes_without_in_operator</span></span>
+<span id="cb14-94"><a href="#cb14-94" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract important genes without using the %in% operator</span></span>
+<span id="cb14-95"><a href="#cb14-95" aria-hidden="true" tabindex="-1"></a>rpkm_data[important_genes, ]</span>
+<span id="cb14-96"><a href="#cb14-96" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
