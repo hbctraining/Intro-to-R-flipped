@@ -117,12 +117,12 @@ We get an error because each type of `geom` usually has a **required set of aest
 
 The `aes()` function has many different arguments, and all of those arguments take columns from the original data frame as input. It can be used to specify many plot elements including the following:
 
-* position (i.e., on the x and y axes)
-* color ("outside" color)
-* fill ("inside" color) 
-* shape (of points)
-* linetype
-* size
+- position (i.e., on the x and y axes)
+- color ("outside" color)
+- fill ("inside" color) 
+- shape (of points)
+- linetype
+- size
 
 To start, we will specify x- and y-axis since `geom_point` requires the most basic information about a scatterplot, i.e. what you want to plot on the x and y axes. All of the other plot elements mentioned above are optional.
 
