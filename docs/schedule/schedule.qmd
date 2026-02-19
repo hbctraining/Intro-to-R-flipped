@@ -1,4 +1,5 @@
 ---
+title: "Schedule"
 sidebar: false
 toc: false
 editor: 
