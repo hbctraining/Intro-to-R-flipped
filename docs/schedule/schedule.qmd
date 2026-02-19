@@ -148,22 +148,7 @@ within the following lessons:
 
     </details>
 
-4.  [Reordering and matching](../lessons/10_reordering-to-match-datasets.qmd)
-
-    <details>
-
-    <summary><i>Click here for a preview of this lesson</i></summary>
-
-    <br>Sometimes you will want to rearrange values within a vector (row
-    names or column names). The <code>match()</code> function can be
-    very powerful for this task.<br><br>This lesson will cover:<br> -
-    Maunually rearranging values within a vector<br> - Implementing the
-    <code>match()</code> function to automatically rearrange the values
-    within a vector<br><br>
-
-    </details>
-
-5.  [Setting up a data frame to plot (+ the `map()` function)](../lessons/11_setting_up_to_plot.qmd)
+4.  [Setting up a data frame to plot (+ the `map()` function)](../lessons/10_setting_up_to_plot.qmd)
 
     <details>
 
@@ -182,8 +167,6 @@ within the following lessons:
     for plotting<br><br>
 
     </details>
-
-<!-- -->
 
 II. **Complete the exercises**:
 
@@ -205,15 +188,15 @@ II. **Complete the exercises**:
 | Time | Topic | Instructor |
 |:-----------------:|:------------------------------------:|:-------------:|
 | 10:00 - 10:35 | Questions about self-learning lessons | All |
-| 10:35 - 11:15 | [In-class exercises](../lessons/12_Data_wrangling.qmd) | Will |
-| 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/13_ggplot2.qmd) | Elizabeth |
+| 10:35 - 11:15 | [In-class exercises](../lessons/11_Data_wrangling.qmd) | Will |
+| 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/12_ggplot2.qmd) | Elizabeth |
 
 ### Before the next class:
 
 I. Please **study the contents** and **work through all the code**
 within the following lessons:
 
-1.  [Using custom functions for consistent plots](../lessons/14_Custom_Functions_ggplot2.qmd)
+1.  [Using custom functions for consistent plots](../lessons/13_Custom_Functions_ggplot2.qmd)
 
     <details>
 
@@ -227,7 +210,7 @@ within the following lessons:
 
     </details>
 
-2.  [Generating a boxplot with ggplot2](../lessons/15_boxplot_exercise.qmd)
+2.  [Generating a boxplot with ggplot2](../lessons/14_boxplot_exercise.qmd)
 
     <details>
 
@@ -241,7 +224,7 @@ within the following lessons:
 
     </details>
 
-3.  [Writing to file and exporting plots](../lessons/16_exporting_data_and_plots.qmd)
+3.  [Writing to file and exporting plots](../lessons/15_exporting_data_and_plots.qmd)
 
     <details>
 
@@ -256,7 +239,7 @@ within the following lessons:
 
     </details>
 
-4.  [Finding help](../lessons/17_finding_help.qmd)
+4.  [Finding help](../lessons/16_finding_help.qmd)
 
     <details>
 
@@ -271,7 +254,7 @@ within the following lessons:
 
     </details>
 
-5.  [Tidyverse](../lessons/18_tidyverse.qmd)
+5.  [Tidyverse](../lessons/17_tidyverse.qmd)
 
     <details>
 
@@ -314,7 +297,7 @@ II. **Complete the exercises**:
 | Time | Topic | Instructor |
 |:-----------------:|:------------------------------------:|:-------------:|
 | 10:00 - 10:35 | Questions about self-learning lessons | All |
-| 10:35 - 11:25 | [In-class exercises](../lessons/19_Tidyverse_and_data_visualization.qmd) | Elizabeth |
+| 10:35 - 11:25 | [In-class exercises](../lessons/18_Tidyverse_and_data_visualization.qmd) | Elizabeth |
 | 11:25 - 11:45 | Discussion, Q & A | All |
 | 11:45 - 12:00 | [Wrap Up](../slides/workshop_wrapup_slides.pdf) | Will |
 

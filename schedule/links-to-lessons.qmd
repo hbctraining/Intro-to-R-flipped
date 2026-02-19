@@ -24,18 +24,17 @@
 7. [Packages and libraries](../lessons/07_packages.qmd)
 8. [Data wrangling: data frames, matrices and lists](../lessons/08_data-wrangling-2.qmd)
 9. [The %in% operator](../lessons/09_identifying-matching-elements.qmd)
-10. [Reordering and matching](../lessons/10_reordering-to-match-datasets.qmd)
-11. [Setting up a data frame to plot (+ the `map()` function)](../lessons/11_setting_up_to_plot.qmd)
-12. [Data wrangling exercises](../lessons/12_Data_wrangling.qmd)
-13. [Plotting with the ggplot2 package](../lessons/13_ggplot2.qmd)
-14. [Using custom functions for consistent plots](../lessons/14_Custom_Functions_ggplot2.qmd)
-15. [Generating a boxplot with ggplot2](../lessons/15_boxplot_exercise.qmd)
-16. [Writing to file and exporting plots](../lessons/16_exporting_data_and_plots.qmd)
-17. [Finding help](../lessons/17_finding_help.qmd)
-18. [Tidyverse](../lessons/18_tidyverse.qmd)
-19. [Tidyverse and Data visualization exercises](../lessons/19_Tidyverse_and_data_visualization.qmd)
+10. [Setting up a data frame to plot (+ the `map()` function)](../lessons/10_setting_up_to_plot.qmd)
+11. [Data wrangling exercises](../lessons/11_Data_wrangling.qmd)
+12. [Plotting with the ggplot2 package](../lessons/12_ggplot2.qmd)
+13. [Using custom functions for consistent plots](../lessons/13_Custom_Functions_ggplot2.qmd)
+14. [Generating a boxplot with ggplot2](../lessons/14_boxplot_exercise.qmd)
+15. [Writing to file and exporting plots](../lessons/15_exporting_data_and_plots.qmd)
+16. [Finding help](../lessons/16_finding_help.qmd)
+17. [Tidyverse](../lessons/17_tidyverse.qmd)
+18. [Tidyverse and Data visualization exercises](../lessons/18_Tidyverse_and_data_visualization.qmd)
 
-### Final Exercises
+## Final Exercises
 
 -   [**Exercises**](../lessons/Additional_practice_Intro_to_R.qmd) + [**Answer Key**](../lessons/Additional_practice_Intro_to_R-Answer_key.qmd)
 

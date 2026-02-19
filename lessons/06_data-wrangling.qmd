@@ -40,9 +40,9 @@ test <- c(1, NA, 2, 3, NA, 4)
 
 ## Learning Objectives
 
-* Demonstrate how to subset vectors and factors
-* Explain the use of logical operators when subsetting vectors and factors
-* Demonstrate how to relevel factors in a desired order
+- Demonstrate how to subset vectors and factors
+- Explain the use of logical operators when subsetting vectors and factors
+- Demonstrate how to relevel factors in a desired order
 
 
 ## Selecting data using indices and sequences

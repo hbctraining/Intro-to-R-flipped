@@ -53,24 +53,23 @@ website:
           - lessons/07_packages.qmd
           - lessons/08_data-wrangling-2.qmd
           - lessons/09_identifying-matching-elements.qmd
-          - lessons/10_reordering-to-match-datasets.qmd
-          - lessons/11_setting_up_to_plot.qmd
+          - lessons/10_setting_up_to_plot.qmd
 
       - section: "Day 3"
         contents:
-          - lessons/12_Data_wrangling.qmd
-          - lessons/13_ggplot2.qmd
+          - lessons/11_Data_wrangling.qmd
+          - lessons/12_ggplot2.qmd
       - section: "Day 3 Self-learning"
         contents:
-          - lessons/14_Custom_Functions_ggplot2.qmd
-          - lessons/15_boxplot_exercise.qmd
-          - lessons/16_exporting_data_and_plots.qmd
-          - lessons/17_finding_help.qmd
-          - lessons/18_tidyverse.qmd
+          - lessons/13_Custom_Functions_ggplot2.qmd
+          - lessons/14_boxplot_exercise.qmd
+          - lessons/15_exporting_data_and_plots.qmd
+          - lessons/16_finding_help.qmd
+          - lessons/17_tidyverse.qmd
 
       - section: "Day 4"
         contents:
-          - lessons/19_Tidyverse_and_data_visualization.qmd
+          - lessons/18_Tidyverse_and_data_visualization.qmd
           
 
 format:

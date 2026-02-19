@@ -37,8 +37,8 @@ metadata <- read.csv(file="data/mouse_exp_design.csv")
 
 ## Learning Objectives
 
-* Describe the use of `%in%` operator.
-* Explain the user case for `any` and `all` functions.
+- Describe the use of `%in%` operator.
+- Explain the user case for `any` and `all` functions.
 
 ## Logical operators for identifying matching elements 
 
@@ -223,7 +223,21 @@ We know that all samples are present, but **are they in the same order**?
 all(x == y)
 ```
 
-No, it looks like **they need to be reordered**. We will discuss how to do this in the next lesson!
+No, it looks like **they need to be reordered**. This can be accomplished in a few ways. We could use the [`match()` function](Aside_reordering-to-match-datasets.qmd) or we could provide a vector for how we would like our data to be reordered. We will do the latter:
+
+```{r}
+#| label: reorder_rpkm
+# Reorder rpkm_data
+rpkm_ordered  <- rpkm_data[, rownames(metadata)]
+```
+
+We can check to make sure that our reordering worked:
+
+```{r}
+#| label: confirm_reorder
+# Check that the reorder worked
+all(rownames(metadata) == colnames(rpkm_ordered))
+```
 
 ::: {.callout-tip}
 # [**Exercise 2**](09_identifying-matching-elements-Answer_key.qmd#exercise-2)

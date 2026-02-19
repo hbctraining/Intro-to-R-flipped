@@ -38,7 +38,7 @@ metadata <- read.csv(file="data/mouse_exp_design.csv")
 
 ## Learning Objectives
 
-* Demonstrate how to subset, merge, and create new datasets from existing data structures in R.
+- Demonstrate how to subset, merge, and create new datasets from existing data structures in R.
 
 ### Dataframes
 

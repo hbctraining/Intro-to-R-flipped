@@ -4182,13 +4182,7 @@ text-align: left !important;
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lessons/10_reordering-to-match-datasets.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Using the match() Function</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../lessons/11_setting_up_to_plot.html" class="sidebar-item-text sidebar-link">
+  <a href="../lessons/10_setting_up_to_plot.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Setting up for Data Visualization</span></a>
   </div>
 </li>
@@ -4205,13 +4199,13 @@ text-align: left !important;
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lessons/12_Data_wrangling.html" class="sidebar-item-text sidebar-link">
+  <a href="../lessons/11_Data_wrangling.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Fun with Data Wrangling</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lessons/13_ggplot2.html" class="sidebar-item-text sidebar-link">
+  <a href="../lessons/12_ggplot2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Plotting with the ggplot2 Package</span></a>
   </div>
 </li>
@@ -4228,31 +4222,31 @@ text-align: left !important;
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lessons/14_Custom_Functions_ggplot2.html" class="sidebar-item-text sidebar-link">
+  <a href="../lessons/13_Custom_Functions_ggplot2.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Custom functions for consistent plots</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lessons/15_boxplot_exercise.html" class="sidebar-item-text sidebar-link">
+  <a href="../lessons/14_boxplot_exercise.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Boxplot visualization</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lessons/16_exporting_data_and_plots.html" class="sidebar-item-text sidebar-link">
+  <a href="../lessons/15_exporting_data_and_plots.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Saving data and plots to file</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lessons/17_finding_help.html" class="sidebar-item-text sidebar-link">
+  <a href="../lessons/16_finding_help.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Troubleshooting and finding help</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lessons/18_tidyverse.html" class="sidebar-item-text sidebar-link">
+  <a href="../lessons/17_tidyverse.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tidyverse data wrangling</span></a>
   </div>
 </li>
@@ -4269,7 +4263,7 @@ text-align: left !important;
       <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../lessons/19_Tidyverse_and_data_visualization.html" class="sidebar-item-text sidebar-link">
+  <a href="../lessons/18_Tidyverse_and_data_visualization.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Tidyverse and Data Visualization</span></a>
   </div>
 </li>
@@ -4558,7 +4552,19 @@ Note
 <pre><code>[1] FALSE</code></pre>
 </div>
 </div>
-<p>No, it looks like <strong>they need to be reordered</strong>. We will discuss how to do this in the next lesson!</p>
+<p>No, it looks like <strong>they need to be reordered</strong>. This can be accomplished in a few ways. We could use the <a href="../lessons/Aside_reordering-to-match-datasets.html"><code>match()</code> function</a> or we could provide a vector for how we would like our data to be reordered. We will do the latter:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Reorder rpkm_data</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>rpkm_ordered  <span class="ot">&lt;-</span> rpkm_data[, <span class="fu">rownames</span>(metadata)]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>We can check to make sure that our reordering worked:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Check that the reorder worked</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(<span class="fu">rownames</span>(metadata) <span class="sc">==</span> <span class="fu">colnames</span>(rpkm_ordered))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+</div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -4572,8 +4578,8 @@ Note
 <p>We have a list of 6 marker genes that we are very interested in. Our goal is to extract count data for these genes using the <code>%in%</code> operator from the <code>rpkm_data</code> data frame, instead of scrolling through <code>rpkm_data</code> and finding them manually.</p>
 <p>First, let’s create a vector called <code>important_genes</code> with the Ensembl IDs of the 6 genes we are interested in:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create important genes vector</span></span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>important_genes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;ENSMUSG00000083700&quot;</span>, <span class="st">&quot;ENSMUSG00000080990&quot;</span>, <span class="st">&quot;ENSMUSG00000065619&quot;</span>, <span class="st">&quot;ENSMUSG00000047945&quot;</span>, <span class="st">&quot;ENSMUSG00000081010&quot;</span>, <span class="st">&quot;ENSMUSG00000030970&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Create important genes vector</span></span>
+<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>important_genes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;ENSMUSG00000083700&quot;</span>, <span class="st">&quot;ENSMUSG00000080990&quot;</span>, <span class="st">&quot;ENSMUSG00000065619&quot;</span>, <span class="st">&quot;ENSMUSG00000047945&quot;</span>, <span class="st">&quot;ENSMUSG00000081010&quot;</span>, <span class="st">&quot;ENSMUSG00000030970&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <ol type="1">
 <li><p>Use the <code>%in%</code> operator to determine if all of these genes are present in the row names of the <code>rpkm_data</code> data frame.</p></li>
@@ -5039,252 +5045,266 @@ Note
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class>
-<div class="sourceCode" id="cb34" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;The %in% operator&quot;</span></span>
-<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> |</span></span>
-<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a><span class="co">  This lesson introduces the `%in%` operator in R for identifying matching elements between vectors and demonstrates how to use `any()` and `all()` to efficiently evaluate logical conditions. Participants will apply these tools to check dataset consistency among sample identifiers.</span></span>
-<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span></span>
-<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a><span class="co">  - Mary Piper</span></span>
-<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a><span class="co">  - Meeta Mistry</span></span>
-<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a><span class="co">  - Radhika Khetani</span></span>
-<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a><span class="co">  - Jihe Liu</span></span>
-<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a><span class="co">  - Will Gammerdinger</span></span>
-<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a><span class="co">  - Noor Sohail</span></span>
-<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> &quot;2025-05-30&quot;</span></span>
-<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> </span></span>
-<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a><span class="co">  - R Programming</span></span>
-<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a><span class="co">  - data wrangling</span></span>
-<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a><span class="an">keywords:</span></span>
-<span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a><span class="co">  - R</span></span>
-<span id="cb34-18"><a href="#cb34-18" aria-hidden="true" tabindex="-1"></a><span class="co">  - in operator</span></span>
-<span id="cb34-19"><a href="#cb34-19" aria-hidden="true" tabindex="-1"></a><span class="co">  - vector matching</span></span>
-<span id="cb34-20"><a href="#cb34-20" aria-hidden="true" tabindex="-1"></a><span class="co">  - any</span></span>
-<span id="cb34-21"><a href="#cb34-21" aria-hidden="true" tabindex="-1"></a><span class="co">  - all</span></span>
-<span id="cb34-22"><a href="#cb34-22" aria-hidden="true" tabindex="-1"></a><span class="an">license:</span><span class="co"> &quot;CC-BY-4.0&quot;</span></span>
-<span id="cb34-23"><a href="#cb34-23" aria-hidden="true" tabindex="-1"></a><span class="an">editor_options:</span><span class="co"> </span></span>
-<span id="cb34-24"><a href="#cb34-24" aria-hidden="true" tabindex="-1"></a><span class="co">  markdown: </span></span>
-<span id="cb34-25"><a href="#cb34-25" aria-hidden="true" tabindex="-1"></a><span class="co">    wrap: 72</span></span>
-<span id="cb34-26"><a href="#cb34-26" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb34-27"><a href="#cb34-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-28"><a href="#cb34-28" aria-hidden="true" tabindex="-1"></a>Approximate time: 45 min</span>
-<span id="cb34-29"><a href="#cb34-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-32"><a href="#cb34-32" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb34-33"><a href="#cb34-33" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: load_data</span></span>
-<span id="cb34-34"><a href="#cb34-34" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb34-35"><a href="#cb34-35" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
-<span id="cb34-36"><a href="#cb34-36" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in metadata</span></span>
-<span id="cb34-37"><a href="#cb34-37" aria-hidden="true" tabindex="-1"></a>metadata <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file=</span><span class="st">&quot;data/mouse_exp_design.csv&quot;</span>)</span>
-<span id="cb34-38"><a href="#cb34-38" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb34-39"><a href="#cb34-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-40"><a href="#cb34-40" aria-hidden="true" tabindex="-1"></a><span class="fu">## Learning Objectives</span></span>
-<span id="cb34-41"><a href="#cb34-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-42"><a href="#cb34-42" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Describe the use of <span class="in">`%in%`</span> operator.</span>
-<span id="cb34-43"><a href="#cb34-43" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>Explain the user case for <span class="in">`any`</span> and <span class="in">`all`</span> functions.</span>
-<span id="cb34-44"><a href="#cb34-44" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-45"><a href="#cb34-45" aria-hidden="true" tabindex="-1"></a><span class="fu">## Logical operators for identifying matching elements </span></span>
-<span id="cb34-46"><a href="#cb34-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-47"><a href="#cb34-47" aria-hidden="true" tabindex="-1"></a>Oftentimes, we encounter different analysis tools that require multiple input datasets. It is not uncommon for these inputs to need to have the same row names, column names, or unique identifiers in the same order to perform the analysis. Therefore, knowing how to reorder datasets and determine whether the data matches is an important skill.</span>
-<span id="cb34-48"><a href="#cb34-48" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-49"><a href="#cb34-49" aria-hidden="true" tabindex="-1"></a>In our use case, we will be working with genomic data. We have gene expression data generated by RNA-seq, which we had downloaded previously; in addition, we have a metadata file corresponding to the RNA-seq samples. The metadata contains information about the samples present in the gene expression file, such as which sample group each sample belongs to and any batch or experimental variables present in the data. </span>
-<span id="cb34-50"><a href="#cb34-50" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-51"><a href="#cb34-51" aria-hidden="true" tabindex="-1"></a>Let&#39;s read in our gene expression data (RPKM matrix) that we downloaded previously:</span>
-<span id="cb34-52"><a href="#cb34-52" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-55"><a href="#cb34-55" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb34-56"><a href="#cb34-56" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: read_in_rpkm_data</span></span>
-<span id="cb34-57"><a href="#cb34-57" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in the expression data</span></span>
-<span id="cb34-58"><a href="#cb34-58" aria-hidden="true" tabindex="-1"></a>rpkm_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;data/counts.rpkm.csv&quot;</span>)</span>
-<span id="cb34-59"><a href="#cb34-59" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb34-60"><a href="#cb34-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-61"><a href="#cb34-61" aria-hidden="true" tabindex="-1"></a>Take a look at the first few lines of the data matrix to see what&#39;s in there.</span>
-<span id="cb34-62"><a href="#cb34-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-65"><a href="#cb34-65" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb34-66"><a href="#cb34-66" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: head_rpkm_data</span></span>
-<span id="cb34-67"><a href="#cb34-67" aria-hidden="true" tabindex="-1"></a><span class="co"># View the first six lines of rpkm_data</span></span>
-<span id="cb34-68"><a href="#cb34-68" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(rpkm_data)</span>
-<span id="cb34-69"><a href="#cb34-69" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb34-70"><a href="#cb34-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-71"><a href="#cb34-71" aria-hidden="true" tabindex="-1"></a>It looks as if the sample names (header) in our data matrix are similar to the row names of our metadata file, but it&#39;s hard to tell since they are not in the same order. We can do a quick check of the number of columns in the count data and the rows in the metadata and at least see if the numbers match up. </span>
-<span id="cb34-72"><a href="#cb34-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-75"><a href="#cb34-75" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb34-76"><a href="#cb34-76" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: sample_count</span></span>
-<span id="cb34-77"><a href="#cb34-77" aria-hidden="true" tabindex="-1"></a><span class="co"># Return the number of columns in rpkm_data </span></span>
-<span id="cb34-78"><a href="#cb34-78" aria-hidden="true" tabindex="-1"></a><span class="fu">ncol</span>(rpkm_data)</span>
-<span id="cb34-79"><a href="#cb34-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-80"><a href="#cb34-80" aria-hidden="true" tabindex="-1"></a><span class="co"># Return the number of rows in rpkm_data </span></span>
-<span id="cb34-81"><a href="#cb34-81" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(metadata)</span>
-<span id="cb34-82"><a href="#cb34-82" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb34-83"><a href="#cb34-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-84"><a href="#cb34-84" aria-hidden="true" tabindex="-1"></a>What we want to know is, **do we have data for every sample that we have metadata?** </span>
-<span id="cb34-85"><a href="#cb34-85" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-86"><a href="#cb34-86" aria-hidden="true" tabindex="-1"></a><span class="fu">## The `%in%` operator</span></span>
-<span id="cb34-87"><a href="#cb34-87" aria-hidden="true" tabindex="-1"></a> </span>
-<span id="cb34-88"><a href="#cb34-88" aria-hidden="true" tabindex="-1"></a>Although lacking in <span class="co">[</span><span class="ot">documentation</span><span class="co">](http://dr-k-lo.blogspot.com/2013/11/)</span>, this operator is well-used and convenient once you get the hang of it. The operator is used with the following syntax: </span>
-<span id="cb34-89"><a href="#cb34-89" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-92"><a href="#cb34-92" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb34-93"><a href="#cb34-93" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: in_operator_example</span></span>
-<span id="cb34-94"><a href="#cb34-94" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb34-95"><a href="#cb34-95" aria-hidden="true" tabindex="-1"></a><span class="co"># DO NOT RUN</span></span>
-<span id="cb34-96"><a href="#cb34-96" aria-hidden="true" tabindex="-1"></a><span class="co"># Example syntax</span></span>
-<span id="cb34-97"><a href="#cb34-97" aria-hidden="true" tabindex="-1"></a>vector1 <span class="sc">%in%</span> vector2</span>
-<span id="cb34-98"><a href="#cb34-98" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb34-99"><a href="#cb34-99" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-100"><a href="#cb34-100" aria-hidden="true" tabindex="-1"></a>It will take each element from vector1 as input, one at a time, and **evaluate if the element is present in vector2.** *The two vectors do not have to be the same size.* </span>
-<span id="cb34-101"><a href="#cb34-101" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-102"><a href="#cb34-102" aria-hidden="true" tabindex="-1"></a>This operation will **return a vector containing logical values** to indicate whether or not there is a match. The new vector will be of the **same length as vector1**. Take a look at the example below:</span>
-<span id="cb34-103"><a href="#cb34-103" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-106"><a href="#cb34-106" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb34-107"><a href="#cb34-107" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: in_operator_no_overlap</span></span>
-<span id="cb34-108"><a href="#cb34-108" aria-hidden="true" tabindex="-1"></a><span class="co"># Vector with odd numbers</span></span>
-<span id="cb34-109"><a href="#cb34-109" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">7</span>,<span class="dv">9</span>,<span class="dv">11</span>)</span>
-<span id="cb34-110"><a href="#cb34-110" aria-hidden="true" tabindex="-1"></a><span class="co"># Vector with even numbers</span></span>
-<span id="cb34-111"><a href="#cb34-111" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">6</span>,<span class="dv">8</span>,<span class="dv">10</span>,<span class="dv">12</span>)</span>
-<span id="cb34-112"><a href="#cb34-112" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-113"><a href="#cb34-113" aria-hidden="true" tabindex="-1"></a><span class="co"># Test to see if each of the elements of A is in B  </span></span>
-<span id="cb34-114"><a href="#cb34-114" aria-hidden="true" tabindex="-1"></a>A <span class="sc">%in%</span> B</span>
-<span id="cb34-115"><a href="#cb34-115" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb34-116"><a href="#cb34-116" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-117"><a href="#cb34-117" aria-hidden="true" tabindex="-1"></a>Since vector A contains only odd numbers and vector B contains only even numbers, the operation returns a logical vector containing six <span class="in">`FALSE`</span>, suggesting that no element in vector A is present in vector B. Let&#39;s change a couple of numbers inside vector B to match vector A:</span>
-<span id="cb34-118"><a href="#cb34-118" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-119"><a href="#cb34-119" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-122"><a href="#cb34-122" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb34-123"><a href="#cb34-123" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: in_operator_some_overlap</span></span>
-<span id="cb34-124"><a href="#cb34-124" aria-hidden="true" tabindex="-1"></a><span class="co"># Vector with odd numbers</span></span>
-<span id="cb34-125"><a href="#cb34-125" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">7</span>,<span class="dv">9</span>,<span class="dv">11</span>)</span>
-<span id="cb34-126"><a href="#cb34-126" aria-hidden="true" tabindex="-1"></a><span class="co"># Vector with odd and even numbers</span></span>
-<span id="cb34-127"><a href="#cb34-127" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">6</span>,<span class="dv">8</span>,<span class="dv">1</span>,<span class="dv">5</span>)</span>
-<span id="cb34-128"><a href="#cb34-128" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-129"><a href="#cb34-129" aria-hidden="true" tabindex="-1"></a><span class="co"># Test to see if each of the elements of A is in B</span></span>
-<span id="cb34-130"><a href="#cb34-130" aria-hidden="true" tabindex="-1"></a>A <span class="sc">%in%</span> B</span>
-<span id="cb34-131"><a href="#cb34-131" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb34-132"><a href="#cb34-132" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-133"><a href="#cb34-133" aria-hidden="true" tabindex="-1"></a>The returned logical vector denotes which elements in <span class="in">`A`</span> are also in <span class="in">`B`</span> - the first and third elements, which are 1 and 5.  </span>
-<span id="cb34-134"><a href="#cb34-134" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-135"><a href="#cb34-135" aria-hidden="true" tabindex="-1"></a>We saw previously that we could use the output from a logical expression to subset data by returning only the values corresponding to <span class="in">`TRUE`</span>. Therefore, we can use the output logical vector to subset our data, and return only those elements in <span class="in">`A`</span>, which are also in <span class="in">`B`</span> by returning only the TRUE values:</span>
-<span id="cb34-136"><a href="#cb34-136" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-137"><a href="#cb34-137" aria-hidden="true" tabindex="-1"></a><span class="al">![](../img/in-operator1.png)</span></span>
-<span id="cb34-138"><a href="#cb34-138" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-141"><a href="#cb34-141" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb34-142"><a href="#cb34-142" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: assign_overlap_in_operator</span></span>
-<span id="cb34-143"><a href="#cb34-143" aria-hidden="true" tabindex="-1"></a><span class="co"># Test to see if each of the elements of A is in B and assign the logical vector output to intersection</span></span>
-<span id="cb34-144"><a href="#cb34-144" aria-hidden="true" tabindex="-1"></a>intersection <span class="ot">&lt;-</span> A <span class="sc">%in%</span> B</span>
-<span id="cb34-145"><a href="#cb34-145" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-146"><a href="#cb34-146" aria-hidden="true" tabindex="-1"></a><span class="co"># Show the contents of intersection</span></span>
-<span id="cb34-147"><a href="#cb34-147" aria-hidden="true" tabindex="-1"></a>intersection</span>
-<span id="cb34-148"><a href="#cb34-148" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb34-149"><a href="#cb34-149" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-150"><a href="#cb34-150" aria-hidden="true" tabindex="-1"></a><span class="al">![](../img/in-operator2.png)</span></span>
-<span id="cb34-151"><a href="#cb34-151" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-154"><a href="#cb34-154" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb34-155"><a href="#cb34-155" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: subset_overlap_in_operator</span></span>
-<span id="cb34-156"><a href="#cb34-156" aria-hidden="true" tabindex="-1"></a><span class="co"># Subset the A vector by the values returning TRUE for being in both A and B</span></span>
-<span id="cb34-157"><a href="#cb34-157" aria-hidden="true" tabindex="-1"></a>A[intersection]</span>
-<span id="cb34-158"><a href="#cb34-158" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb34-159"><a href="#cb34-159" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-160"><a href="#cb34-160" aria-hidden="true" tabindex="-1"></a><span class="al">![](../img/in-operator3.png)</span></span>
-<span id="cb34-161"><a href="#cb34-161" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-162"><a href="#cb34-162" aria-hidden="true" tabindex="-1"></a>In these previous examples, the vectors were so small that it&#39;s easy to check every logical value by eye; but this is not practical when we work with large datasets (e.g. a vector with 1000 logical values). Instead, we can use <span class="in">`any`</span> function. Given a logical vector, this function will tell you whether **at least one value** is `TRUE`. It provides us a quick way to assess if **any of the values contained in vector A are also in vector B**:</span>
-<span id="cb34-163"><a href="#cb34-163" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-166"><a href="#cb34-166" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb34-167"><a href="#cb34-167" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: any_overlap_in_operator</span></span>
-<span id="cb34-168"><a href="#cb34-168" aria-hidden="true" tabindex="-1"></a><span class="co"># Test to see if any values of A are in B</span></span>
-<span id="cb34-169"><a href="#cb34-169" aria-hidden="true" tabindex="-1"></a><span class="fu">any</span>(A <span class="sc">%in%</span> B)</span>
-<span id="cb34-170"><a href="#cb34-170" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb34-171"><a href="#cb34-171" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-172"><a href="#cb34-172" aria-hidden="true" tabindex="-1"></a>The <span class="in">`all`</span> function is also useful. Given a logical vector, it will tell you whether **all values** are `TRUE`. If there is at least one `FALSE` value, the `all` function will return a `FALSE`. We can use this function to assess whether **all elements from vector A are contained in vector B**.</span>
-<span id="cb34-173"><a href="#cb34-173" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-176"><a href="#cb34-176" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb34-177"><a href="#cb34-177" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: all_overlap_in_operator</span></span>
-<span id="cb34-178"><a href="#cb34-178" aria-hidden="true" tabindex="-1"></a><span class="co"># Test to see if all values of A are in B</span></span>
-<span id="cb34-179"><a href="#cb34-179" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(A <span class="sc">%in%</span> B)</span>
-<span id="cb34-180"><a href="#cb34-180" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb34-181"><a href="#cb34-181" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-182"><a href="#cb34-182" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb34-183"><a href="#cb34-183" aria-hidden="true" tabindex="-1"></a><span class="fu"># [**Exercise 1**](09_identifying-matching-elements-Answer_key.qmd#exercise-1)</span></span>
-<span id="cb34-184"><a href="#cb34-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-185"><a href="#cb34-185" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Using the <span class="in">`A`</span> and <span class="in">`B`</span> vectors created above, evaluate each element in <span class="in">`B`</span> to see if there is a match in <span class="in">`A`</span></span>
-<span id="cb34-186"><a href="#cb34-186" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-187"><a href="#cb34-187" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Subset the <span class="in">`B`</span> vector to only return those values that are also in <span class="in">`A`</span>.</span>
-<span id="cb34-188"><a href="#cb34-188" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb34-189"><a href="#cb34-189" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-190"><a href="#cb34-190" aria-hidden="true" tabindex="-1"></a>Suppose we had two vectors containing same values. How can we check **if those values are in the same order in each vector**? In this case, we can use <span class="in">`==`</span> operator to compare each element of the same position from two vectors. </span>
-<span id="cb34-191"><a href="#cb34-191" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-192"><a href="#cb34-192" aria-hidden="true" tabindex="-1"></a>The operator returns a logical vector indicating TRUE/FALSE at each position. Then we can use <span class="in">`all()`</span> function to check if all values in the returned vector are TRUE. If all values are TRUE, we know that these two vectors are the same. Unlike <span class="in">`%in%`</span> operator, **`==` operator requires that two vectors are of equal length**.  </span>
-<span id="cb34-193"><a href="#cb34-193" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-196"><a href="#cb34-196" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb34-197"><a href="#cb34-197" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: vector_order_logical_tests</span></span>
-<span id="cb34-198"><a href="#cb34-198" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a vector of numbers</span></span>
-<span id="cb34-199"><a href="#cb34-199" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">10</span>,<span class="dv">20</span>,<span class="dv">30</span>,<span class="dv">40</span>,<span class="dv">50</span>)</span>
-<span id="cb34-200"><a href="#cb34-200" aria-hidden="true" tabindex="-1"></a><span class="co"># Create another vector of the same numbers but backwards</span></span>
-<span id="cb34-201"><a href="#cb34-201" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">50</span>,<span class="dv">40</span>,<span class="dv">30</span>,<span class="dv">20</span>,<span class="dv">10</span>)</span>
-<span id="cb34-202"><a href="#cb34-202" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-203"><a href="#cb34-203" aria-hidden="true" tabindex="-1"></a><span class="co"># Test to see if each element of A is in B</span></span>
-<span id="cb34-204"><a href="#cb34-204" aria-hidden="true" tabindex="-1"></a>A <span class="sc">%in%</span> B</span>
-<span id="cb34-205"><a href="#cb34-205" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-206"><a href="#cb34-206" aria-hidden="true" tabindex="-1"></a><span class="co"># Test to see if each element of A is in the same position in B</span></span>
-<span id="cb34-207"><a href="#cb34-207" aria-hidden="true" tabindex="-1"></a>A <span class="sc">==</span> B</span>
-<span id="cb34-208"><a href="#cb34-208" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-209"><a href="#cb34-209" aria-hidden="true" tabindex="-1"></a><span class="co"># Test if the vectors A and B are a perfect match</span></span>
-<span id="cb34-210"><a href="#cb34-210" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(A <span class="sc">==</span> B)</span>
-<span id="cb34-211"><a href="#cb34-211" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb34-212"><a href="#cb34-212" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-213"><a href="#cb34-213" aria-hidden="true" tabindex="-1"></a>Let&#39;s try this on our genomic data, and see whether we have metadata information for all samples in our expression data. We&#39;ll start by creating two vectors: one is the <span class="in">`rownames`</span> of the metadata, and one is the <span class="in">`colnames`</span> of the RPKM data. These are base functions in R which allow you to extract the row and column names as a vector:</span>
-<span id="cb34-214"><a href="#cb34-214" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-217"><a href="#cb34-217" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb34-218"><a href="#cb34-218" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: evaluate_samples</span></span>
-<span id="cb34-219"><a href="#cb34-219" aria-hidden="true" tabindex="-1"></a><span class="co"># Assign the rownames of the metadata data frame to x </span></span>
-<span id="cb34-220"><a href="#cb34-220" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">rownames</span>(metadata)</span>
-<span id="cb34-221"><a href="#cb34-221" aria-hidden="true" tabindex="-1"></a><span class="co"># Assign the column names of the rpkm_data data frame to y</span></span>
-<span id="cb34-222"><a href="#cb34-222" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">colnames</span>(rpkm_data)</span>
-<span id="cb34-223"><a href="#cb34-223" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb34-224"><a href="#cb34-224" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-225"><a href="#cb34-225" aria-hidden="true" tabindex="-1"></a>Now check to see that all of <span class="in">`x`</span> are in <span class="in">`y`</span>:</span>
-<span id="cb34-226"><a href="#cb34-226" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-229"><a href="#cb34-229" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb34-230"><a href="#cb34-230" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: all_samples_present_check</span></span>
-<span id="cb34-231"><a href="#cb34-231" aria-hidden="true" tabindex="-1"></a><span class="co"># Test if all of the rownames in the metadata data frame are also in the column names in the rpkm_data data frame</span></span>
-<span id="cb34-232"><a href="#cb34-232" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(x <span class="sc">%in%</span> y)</span>
-<span id="cb34-233"><a href="#cb34-233" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb34-234"><a href="#cb34-234" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-235"><a href="#cb34-235" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
-<span id="cb34-236"><a href="#cb34-236" aria-hidden="true" tabindex="-1"></a>Note that we can use nested functions in place of <span class="in">`x`</span> and <span class="in">`y`</span> and still get the same result.</span>
-<span id="cb34-237"><a href="#cb34-237" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-240"><a href="#cb34-240" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb34-241"><a href="#cb34-241" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: nested_all_samples_present_check</span></span>
-<span id="cb34-242"><a href="#cb34-242" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
-<span id="cb34-243"><a href="#cb34-243" aria-hidden="true" tabindex="-1"></a><span class="co"># Test if all of the rownames in the metadata data frame are also in the column names in the rpkm_data data frame</span></span>
-<span id="cb34-244"><a href="#cb34-244" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(<span class="fu">rownames</span>(metadata) <span class="sc">%in%</span> <span class="fu">colnames</span>(rpkm_data))</span>
-<span id="cb34-245"><a href="#cb34-245" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb34-246"><a href="#cb34-246" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb34-247"><a href="#cb34-247" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-248"><a href="#cb34-248" aria-hidden="true" tabindex="-1"></a>We know that all samples are present, but **are they in the same order**?</span>
-<span id="cb34-249"><a href="#cb34-249" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-252"><a href="#cb34-252" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb34-253"><a href="#cb34-253" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: same_samples_order_check</span></span>
-<span id="cb34-254"><a href="#cb34-254" aria-hidden="true" tabindex="-1"></a><span class="co"># Test if all of the rownames in the metadata data frame are also in the column names in the rpkm_data data frame and in the same order</span></span>
-<span id="cb34-255"><a href="#cb34-255" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(x <span class="sc">==</span> y)</span>
-<span id="cb34-256"><a href="#cb34-256" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb34-257"><a href="#cb34-257" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-258"><a href="#cb34-258" aria-hidden="true" tabindex="-1"></a>No, it looks like **they need to be reordered**. We will discuss how to do this in the next lesson!</span>
-<span id="cb34-259"><a href="#cb34-259" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-260"><a href="#cb34-260" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
-<span id="cb34-261"><a href="#cb34-261" aria-hidden="true" tabindex="-1"></a><span class="fu"># [**Exercise 2**](09_identifying-matching-elements-Answer_key.qmd#exercise-2)</span></span>
-<span id="cb34-262"><a href="#cb34-262" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-263"><a href="#cb34-263" aria-hidden="true" tabindex="-1"></a>We have a list of 6 marker genes that we are very interested in. Our goal is to extract count data for these genes using the <span class="in">`%in%`</span> operator from the <span class="in">`rpkm_data`</span> data frame, instead of scrolling through <span class="in">`rpkm_data`</span> and finding them manually.</span>
-<span id="cb34-264"><a href="#cb34-264" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-265"><a href="#cb34-265" aria-hidden="true" tabindex="-1"></a>First, let&#39;s create a vector called <span class="in">`important_genes`</span> with the Ensembl IDs of the 6 genes we are interested in:</span>
-<span id="cb34-266"><a href="#cb34-266" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-269"><a href="#cb34-269" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb34-270"><a href="#cb34-270" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: create_important_genes</span></span>
-<span id="cb34-271"><a href="#cb34-271" aria-hidden="true" tabindex="-1"></a><span class="co"># Create important genes vector</span></span>
-<span id="cb34-272"><a href="#cb34-272" aria-hidden="true" tabindex="-1"></a>important_genes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;ENSMUSG00000083700&quot;</span>, <span class="st">&quot;ENSMUSG00000080990&quot;</span>, <span class="st">&quot;ENSMUSG00000065619&quot;</span>, <span class="st">&quot;ENSMUSG00000047945&quot;</span>, <span class="st">&quot;ENSMUSG00000081010&quot;</span>, <span class="st">&quot;ENSMUSG00000030970&quot;</span>)</span>
-<span id="cb34-273"><a href="#cb34-273" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb34-274"><a href="#cb34-274" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-275"><a href="#cb34-275" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Use the <span class="in">`%in%`</span> operator to determine if all of these genes are present in the row names of the <span class="in">`rpkm_data`</span> data frame.</span>
-<span id="cb34-276"><a href="#cb34-276" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb34-277"><a href="#cb34-277" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Extract the rows from <span class="in">`rpkm_data`</span> that correspond to these 6 genes using <span class="in">`[]`</span> and the <span class="in">`%in%`</span> operator. Double check the row names to ensure that you are extracting the correct rows.</span>
-<span id="cb34-278"><a href="#cb34-278" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb34-279"><a href="#cb34-279" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Bonus question:** Extract the rows from <span class="in">`rpkm_data`</span> that correspond to these 6 genes using <span class="in">`[]`</span>, but without using the <span class="in">`%in%`</span> operator.</span>
-<span id="cb34-280"><a href="#cb34-280" aria-hidden="true" tabindex="-1"></a>:::</span>
+<div class="sourceCode" id="cb37" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;The %in% operator&quot;</span></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> |</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a><span class="co">  This lesson introduces the `%in%` operator in R for identifying matching elements between vectors and demonstrates how to use `any()` and `all()` to efficiently evaluate logical conditions. Participants will apply these tools to check dataset consistency among sample identifiers.</span></span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span></span>
+<span id="cb37-6"><a href="#cb37-6" aria-hidden="true" tabindex="-1"></a><span class="co">  - Mary Piper</span></span>
+<span id="cb37-7"><a href="#cb37-7" aria-hidden="true" tabindex="-1"></a><span class="co">  - Meeta Mistry</span></span>
+<span id="cb37-8"><a href="#cb37-8" aria-hidden="true" tabindex="-1"></a><span class="co">  - Radhika Khetani</span></span>
+<span id="cb37-9"><a href="#cb37-9" aria-hidden="true" tabindex="-1"></a><span class="co">  - Jihe Liu</span></span>
+<span id="cb37-10"><a href="#cb37-10" aria-hidden="true" tabindex="-1"></a><span class="co">  - Will Gammerdinger</span></span>
+<span id="cb37-11"><a href="#cb37-11" aria-hidden="true" tabindex="-1"></a><span class="co">  - Noor Sohail</span></span>
+<span id="cb37-12"><a href="#cb37-12" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> &quot;2025-05-30&quot;</span></span>
+<span id="cb37-13"><a href="#cb37-13" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span><span class="co"> </span></span>
+<span id="cb37-14"><a href="#cb37-14" aria-hidden="true" tabindex="-1"></a><span class="co">  - R Programming</span></span>
+<span id="cb37-15"><a href="#cb37-15" aria-hidden="true" tabindex="-1"></a><span class="co">  - data wrangling</span></span>
+<span id="cb37-16"><a href="#cb37-16" aria-hidden="true" tabindex="-1"></a><span class="an">keywords:</span></span>
+<span id="cb37-17"><a href="#cb37-17" aria-hidden="true" tabindex="-1"></a><span class="co">  - R</span></span>
+<span id="cb37-18"><a href="#cb37-18" aria-hidden="true" tabindex="-1"></a><span class="co">  - in operator</span></span>
+<span id="cb37-19"><a href="#cb37-19" aria-hidden="true" tabindex="-1"></a><span class="co">  - vector matching</span></span>
+<span id="cb37-20"><a href="#cb37-20" aria-hidden="true" tabindex="-1"></a><span class="co">  - any</span></span>
+<span id="cb37-21"><a href="#cb37-21" aria-hidden="true" tabindex="-1"></a><span class="co">  - all</span></span>
+<span id="cb37-22"><a href="#cb37-22" aria-hidden="true" tabindex="-1"></a><span class="an">license:</span><span class="co"> &quot;CC-BY-4.0&quot;</span></span>
+<span id="cb37-23"><a href="#cb37-23" aria-hidden="true" tabindex="-1"></a><span class="an">editor_options:</span><span class="co"> </span></span>
+<span id="cb37-24"><a href="#cb37-24" aria-hidden="true" tabindex="-1"></a><span class="co">  markdown: </span></span>
+<span id="cb37-25"><a href="#cb37-25" aria-hidden="true" tabindex="-1"></a><span class="co">    wrap: 72</span></span>
+<span id="cb37-26"><a href="#cb37-26" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb37-27"><a href="#cb37-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-28"><a href="#cb37-28" aria-hidden="true" tabindex="-1"></a>Approximate time: 45 min</span>
+<span id="cb37-29"><a href="#cb37-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-32"><a href="#cb37-32" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-33"><a href="#cb37-33" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: load_data</span></span>
+<span id="cb37-34"><a href="#cb37-34" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb37-35"><a href="#cb37-35" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: true</span></span>
+<span id="cb37-36"><a href="#cb37-36" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in metadata</span></span>
+<span id="cb37-37"><a href="#cb37-37" aria-hidden="true" tabindex="-1"></a>metadata <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="at">file=</span><span class="st">&quot;data/mouse_exp_design.csv&quot;</span>)</span>
+<span id="cb37-38"><a href="#cb37-38" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-39"><a href="#cb37-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-40"><a href="#cb37-40" aria-hidden="true" tabindex="-1"></a><span class="fu">## Learning Objectives</span></span>
+<span id="cb37-41"><a href="#cb37-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-42"><a href="#cb37-42" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Describe the use of <span class="in">`%in%`</span> operator.</span>
+<span id="cb37-43"><a href="#cb37-43" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Explain the user case for <span class="in">`any`</span> and <span class="in">`all`</span> functions.</span>
+<span id="cb37-44"><a href="#cb37-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-45"><a href="#cb37-45" aria-hidden="true" tabindex="-1"></a><span class="fu">## Logical operators for identifying matching elements </span></span>
+<span id="cb37-46"><a href="#cb37-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-47"><a href="#cb37-47" aria-hidden="true" tabindex="-1"></a>Oftentimes, we encounter different analysis tools that require multiple input datasets. It is not uncommon for these inputs to need to have the same row names, column names, or unique identifiers in the same order to perform the analysis. Therefore, knowing how to reorder datasets and determine whether the data matches is an important skill.</span>
+<span id="cb37-48"><a href="#cb37-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-49"><a href="#cb37-49" aria-hidden="true" tabindex="-1"></a>In our use case, we will be working with genomic data. We have gene expression data generated by RNA-seq, which we had downloaded previously; in addition, we have a metadata file corresponding to the RNA-seq samples. The metadata contains information about the samples present in the gene expression file, such as which sample group each sample belongs to and any batch or experimental variables present in the data. </span>
+<span id="cb37-50"><a href="#cb37-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-51"><a href="#cb37-51" aria-hidden="true" tabindex="-1"></a>Let&#39;s read in our gene expression data (RPKM matrix) that we downloaded previously:</span>
+<span id="cb37-52"><a href="#cb37-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-55"><a href="#cb37-55" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-56"><a href="#cb37-56" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: read_in_rpkm_data</span></span>
+<span id="cb37-57"><a href="#cb37-57" aria-hidden="true" tabindex="-1"></a><span class="co"># Read in the expression data</span></span>
+<span id="cb37-58"><a href="#cb37-58" aria-hidden="true" tabindex="-1"></a>rpkm_data <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">&quot;data/counts.rpkm.csv&quot;</span>)</span>
+<span id="cb37-59"><a href="#cb37-59" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-60"><a href="#cb37-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-61"><a href="#cb37-61" aria-hidden="true" tabindex="-1"></a>Take a look at the first few lines of the data matrix to see what&#39;s in there.</span>
+<span id="cb37-62"><a href="#cb37-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-65"><a href="#cb37-65" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-66"><a href="#cb37-66" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: head_rpkm_data</span></span>
+<span id="cb37-67"><a href="#cb37-67" aria-hidden="true" tabindex="-1"></a><span class="co"># View the first six lines of rpkm_data</span></span>
+<span id="cb37-68"><a href="#cb37-68" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(rpkm_data)</span>
+<span id="cb37-69"><a href="#cb37-69" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-70"><a href="#cb37-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-71"><a href="#cb37-71" aria-hidden="true" tabindex="-1"></a>It looks as if the sample names (header) in our data matrix are similar to the row names of our metadata file, but it&#39;s hard to tell since they are not in the same order. We can do a quick check of the number of columns in the count data and the rows in the metadata and at least see if the numbers match up. </span>
+<span id="cb37-72"><a href="#cb37-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-75"><a href="#cb37-75" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-76"><a href="#cb37-76" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: sample_count</span></span>
+<span id="cb37-77"><a href="#cb37-77" aria-hidden="true" tabindex="-1"></a><span class="co"># Return the number of columns in rpkm_data </span></span>
+<span id="cb37-78"><a href="#cb37-78" aria-hidden="true" tabindex="-1"></a><span class="fu">ncol</span>(rpkm_data)</span>
+<span id="cb37-79"><a href="#cb37-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-80"><a href="#cb37-80" aria-hidden="true" tabindex="-1"></a><span class="co"># Return the number of rows in rpkm_data </span></span>
+<span id="cb37-81"><a href="#cb37-81" aria-hidden="true" tabindex="-1"></a><span class="fu">nrow</span>(metadata)</span>
+<span id="cb37-82"><a href="#cb37-82" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-83"><a href="#cb37-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-84"><a href="#cb37-84" aria-hidden="true" tabindex="-1"></a>What we want to know is, **do we have data for every sample that we have metadata?** </span>
+<span id="cb37-85"><a href="#cb37-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-86"><a href="#cb37-86" aria-hidden="true" tabindex="-1"></a><span class="fu">## The `%in%` operator</span></span>
+<span id="cb37-87"><a href="#cb37-87" aria-hidden="true" tabindex="-1"></a> </span>
+<span id="cb37-88"><a href="#cb37-88" aria-hidden="true" tabindex="-1"></a>Although lacking in <span class="co">[</span><span class="ot">documentation</span><span class="co">](http://dr-k-lo.blogspot.com/2013/11/)</span>, this operator is well-used and convenient once you get the hang of it. The operator is used with the following syntax: </span>
+<span id="cb37-89"><a href="#cb37-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-92"><a href="#cb37-92" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-93"><a href="#cb37-93" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: in_operator_example</span></span>
+<span id="cb37-94"><a href="#cb37-94" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb37-95"><a href="#cb37-95" aria-hidden="true" tabindex="-1"></a><span class="co"># DO NOT RUN</span></span>
+<span id="cb37-96"><a href="#cb37-96" aria-hidden="true" tabindex="-1"></a><span class="co"># Example syntax</span></span>
+<span id="cb37-97"><a href="#cb37-97" aria-hidden="true" tabindex="-1"></a>vector1 <span class="sc">%in%</span> vector2</span>
+<span id="cb37-98"><a href="#cb37-98" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-99"><a href="#cb37-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-100"><a href="#cb37-100" aria-hidden="true" tabindex="-1"></a>It will take each element from vector1 as input, one at a time, and **evaluate if the element is present in vector2.** *The two vectors do not have to be the same size.* </span>
+<span id="cb37-101"><a href="#cb37-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-102"><a href="#cb37-102" aria-hidden="true" tabindex="-1"></a>This operation will **return a vector containing logical values** to indicate whether or not there is a match. The new vector will be of the **same length as vector1**. Take a look at the example below:</span>
+<span id="cb37-103"><a href="#cb37-103" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-106"><a href="#cb37-106" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-107"><a href="#cb37-107" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: in_operator_no_overlap</span></span>
+<span id="cb37-108"><a href="#cb37-108" aria-hidden="true" tabindex="-1"></a><span class="co"># Vector with odd numbers</span></span>
+<span id="cb37-109"><a href="#cb37-109" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">7</span>,<span class="dv">9</span>,<span class="dv">11</span>)</span>
+<span id="cb37-110"><a href="#cb37-110" aria-hidden="true" tabindex="-1"></a><span class="co"># Vector with even numbers</span></span>
+<span id="cb37-111"><a href="#cb37-111" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">6</span>,<span class="dv">8</span>,<span class="dv">10</span>,<span class="dv">12</span>)</span>
+<span id="cb37-112"><a href="#cb37-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-113"><a href="#cb37-113" aria-hidden="true" tabindex="-1"></a><span class="co"># Test to see if each of the elements of A is in B  </span></span>
+<span id="cb37-114"><a href="#cb37-114" aria-hidden="true" tabindex="-1"></a>A <span class="sc">%in%</span> B</span>
+<span id="cb37-115"><a href="#cb37-115" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-116"><a href="#cb37-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-117"><a href="#cb37-117" aria-hidden="true" tabindex="-1"></a>Since vector A contains only odd numbers and vector B contains only even numbers, the operation returns a logical vector containing six <span class="in">`FALSE`</span>, suggesting that no element in vector A is present in vector B. Let&#39;s change a couple of numbers inside vector B to match vector A:</span>
+<span id="cb37-118"><a href="#cb37-118" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-119"><a href="#cb37-119" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-122"><a href="#cb37-122" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-123"><a href="#cb37-123" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: in_operator_some_overlap</span></span>
+<span id="cb37-124"><a href="#cb37-124" aria-hidden="true" tabindex="-1"></a><span class="co"># Vector with odd numbers</span></span>
+<span id="cb37-125"><a href="#cb37-125" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">7</span>,<span class="dv">9</span>,<span class="dv">11</span>)</span>
+<span id="cb37-126"><a href="#cb37-126" aria-hidden="true" tabindex="-1"></a><span class="co"># Vector with odd and even numbers</span></span>
+<span id="cb37-127"><a href="#cb37-127" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>,<span class="dv">4</span>,<span class="dv">6</span>,<span class="dv">8</span>,<span class="dv">1</span>,<span class="dv">5</span>)</span>
+<span id="cb37-128"><a href="#cb37-128" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-129"><a href="#cb37-129" aria-hidden="true" tabindex="-1"></a><span class="co"># Test to see if each of the elements of A is in B</span></span>
+<span id="cb37-130"><a href="#cb37-130" aria-hidden="true" tabindex="-1"></a>A <span class="sc">%in%</span> B</span>
+<span id="cb37-131"><a href="#cb37-131" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-132"><a href="#cb37-132" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-133"><a href="#cb37-133" aria-hidden="true" tabindex="-1"></a>The returned logical vector denotes which elements in <span class="in">`A`</span> are also in <span class="in">`B`</span> - the first and third elements, which are 1 and 5.  </span>
+<span id="cb37-134"><a href="#cb37-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-135"><a href="#cb37-135" aria-hidden="true" tabindex="-1"></a>We saw previously that we could use the output from a logical expression to subset data by returning only the values corresponding to <span class="in">`TRUE`</span>. Therefore, we can use the output logical vector to subset our data, and return only those elements in <span class="in">`A`</span>, which are also in <span class="in">`B`</span> by returning only the TRUE values:</span>
+<span id="cb37-136"><a href="#cb37-136" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-137"><a href="#cb37-137" aria-hidden="true" tabindex="-1"></a><span class="al">![](../img/in-operator1.png)</span></span>
+<span id="cb37-138"><a href="#cb37-138" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-141"><a href="#cb37-141" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-142"><a href="#cb37-142" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: assign_overlap_in_operator</span></span>
+<span id="cb37-143"><a href="#cb37-143" aria-hidden="true" tabindex="-1"></a><span class="co"># Test to see if each of the elements of A is in B and assign the logical vector output to intersection</span></span>
+<span id="cb37-144"><a href="#cb37-144" aria-hidden="true" tabindex="-1"></a>intersection <span class="ot">&lt;-</span> A <span class="sc">%in%</span> B</span>
+<span id="cb37-145"><a href="#cb37-145" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-146"><a href="#cb37-146" aria-hidden="true" tabindex="-1"></a><span class="co"># Show the contents of intersection</span></span>
+<span id="cb37-147"><a href="#cb37-147" aria-hidden="true" tabindex="-1"></a>intersection</span>
+<span id="cb37-148"><a href="#cb37-148" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-149"><a href="#cb37-149" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-150"><a href="#cb37-150" aria-hidden="true" tabindex="-1"></a><span class="al">![](../img/in-operator2.png)</span></span>
+<span id="cb37-151"><a href="#cb37-151" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-154"><a href="#cb37-154" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-155"><a href="#cb37-155" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: subset_overlap_in_operator</span></span>
+<span id="cb37-156"><a href="#cb37-156" aria-hidden="true" tabindex="-1"></a><span class="co"># Subset the A vector by the values returning TRUE for being in both A and B</span></span>
+<span id="cb37-157"><a href="#cb37-157" aria-hidden="true" tabindex="-1"></a>A[intersection]</span>
+<span id="cb37-158"><a href="#cb37-158" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-159"><a href="#cb37-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-160"><a href="#cb37-160" aria-hidden="true" tabindex="-1"></a><span class="al">![](../img/in-operator3.png)</span></span>
+<span id="cb37-161"><a href="#cb37-161" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-162"><a href="#cb37-162" aria-hidden="true" tabindex="-1"></a>In these previous examples, the vectors were so small that it&#39;s easy to check every logical value by eye; but this is not practical when we work with large datasets (e.g. a vector with 1000 logical values). Instead, we can use <span class="in">`any`</span> function. Given a logical vector, this function will tell you whether **at least one value** is `TRUE`. It provides us a quick way to assess if **any of the values contained in vector A are also in vector B**:</span>
+<span id="cb37-163"><a href="#cb37-163" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-166"><a href="#cb37-166" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-167"><a href="#cb37-167" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: any_overlap_in_operator</span></span>
+<span id="cb37-168"><a href="#cb37-168" aria-hidden="true" tabindex="-1"></a><span class="co"># Test to see if any values of A are in B</span></span>
+<span id="cb37-169"><a href="#cb37-169" aria-hidden="true" tabindex="-1"></a><span class="fu">any</span>(A <span class="sc">%in%</span> B)</span>
+<span id="cb37-170"><a href="#cb37-170" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-171"><a href="#cb37-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-172"><a href="#cb37-172" aria-hidden="true" tabindex="-1"></a>The <span class="in">`all`</span> function is also useful. Given a logical vector, it will tell you whether **all values** are `TRUE`. If there is at least one `FALSE` value, the `all` function will return a `FALSE`. We can use this function to assess whether **all elements from vector A are contained in vector B**.</span>
+<span id="cb37-173"><a href="#cb37-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-176"><a href="#cb37-176" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-177"><a href="#cb37-177" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: all_overlap_in_operator</span></span>
+<span id="cb37-178"><a href="#cb37-178" aria-hidden="true" tabindex="-1"></a><span class="co"># Test to see if all values of A are in B</span></span>
+<span id="cb37-179"><a href="#cb37-179" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(A <span class="sc">%in%</span> B)</span>
+<span id="cb37-180"><a href="#cb37-180" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-181"><a href="#cb37-181" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-182"><a href="#cb37-182" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb37-183"><a href="#cb37-183" aria-hidden="true" tabindex="-1"></a><span class="fu"># [**Exercise 1**](09_identifying-matching-elements-Answer_key.qmd#exercise-1)</span></span>
+<span id="cb37-184"><a href="#cb37-184" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-185"><a href="#cb37-185" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Using the <span class="in">`A`</span> and <span class="in">`B`</span> vectors created above, evaluate each element in <span class="in">`B`</span> to see if there is a match in <span class="in">`A`</span></span>
+<span id="cb37-186"><a href="#cb37-186" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-187"><a href="#cb37-187" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Subset the <span class="in">`B`</span> vector to only return those values that are also in <span class="in">`A`</span>.</span>
+<span id="cb37-188"><a href="#cb37-188" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb37-189"><a href="#cb37-189" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-190"><a href="#cb37-190" aria-hidden="true" tabindex="-1"></a>Suppose we had two vectors containing same values. How can we check **if those values are in the same order in each vector**? In this case, we can use <span class="in">`==`</span> operator to compare each element of the same position from two vectors. </span>
+<span id="cb37-191"><a href="#cb37-191" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-192"><a href="#cb37-192" aria-hidden="true" tabindex="-1"></a>The operator returns a logical vector indicating TRUE/FALSE at each position. Then we can use <span class="in">`all()`</span> function to check if all values in the returned vector are TRUE. If all values are TRUE, we know that these two vectors are the same. Unlike <span class="in">`%in%`</span> operator, **`==` operator requires that two vectors are of equal length**.  </span>
+<span id="cb37-193"><a href="#cb37-193" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-196"><a href="#cb37-196" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-197"><a href="#cb37-197" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: vector_order_logical_tests</span></span>
+<span id="cb37-198"><a href="#cb37-198" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a vector of numbers</span></span>
+<span id="cb37-199"><a href="#cb37-199" aria-hidden="true" tabindex="-1"></a>A <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">10</span>,<span class="dv">20</span>,<span class="dv">30</span>,<span class="dv">40</span>,<span class="dv">50</span>)</span>
+<span id="cb37-200"><a href="#cb37-200" aria-hidden="true" tabindex="-1"></a><span class="co"># Create another vector of the same numbers but backwards</span></span>
+<span id="cb37-201"><a href="#cb37-201" aria-hidden="true" tabindex="-1"></a>B <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">50</span>,<span class="dv">40</span>,<span class="dv">30</span>,<span class="dv">20</span>,<span class="dv">10</span>)</span>
+<span id="cb37-202"><a href="#cb37-202" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-203"><a href="#cb37-203" aria-hidden="true" tabindex="-1"></a><span class="co"># Test to see if each element of A is in B</span></span>
+<span id="cb37-204"><a href="#cb37-204" aria-hidden="true" tabindex="-1"></a>A <span class="sc">%in%</span> B</span>
+<span id="cb37-205"><a href="#cb37-205" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-206"><a href="#cb37-206" aria-hidden="true" tabindex="-1"></a><span class="co"># Test to see if each element of A is in the same position in B</span></span>
+<span id="cb37-207"><a href="#cb37-207" aria-hidden="true" tabindex="-1"></a>A <span class="sc">==</span> B</span>
+<span id="cb37-208"><a href="#cb37-208" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-209"><a href="#cb37-209" aria-hidden="true" tabindex="-1"></a><span class="co"># Test if the vectors A and B are a perfect match</span></span>
+<span id="cb37-210"><a href="#cb37-210" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(A <span class="sc">==</span> B)</span>
+<span id="cb37-211"><a href="#cb37-211" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-212"><a href="#cb37-212" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-213"><a href="#cb37-213" aria-hidden="true" tabindex="-1"></a>Let&#39;s try this on our genomic data, and see whether we have metadata information for all samples in our expression data. We&#39;ll start by creating two vectors: one is the <span class="in">`rownames`</span> of the metadata, and one is the <span class="in">`colnames`</span> of the RPKM data. These are base functions in R which allow you to extract the row and column names as a vector:</span>
+<span id="cb37-214"><a href="#cb37-214" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-217"><a href="#cb37-217" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-218"><a href="#cb37-218" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: evaluate_samples</span></span>
+<span id="cb37-219"><a href="#cb37-219" aria-hidden="true" tabindex="-1"></a><span class="co"># Assign the rownames of the metadata data frame to x </span></span>
+<span id="cb37-220"><a href="#cb37-220" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="fu">rownames</span>(metadata)</span>
+<span id="cb37-221"><a href="#cb37-221" aria-hidden="true" tabindex="-1"></a><span class="co"># Assign the column names of the rpkm_data data frame to y</span></span>
+<span id="cb37-222"><a href="#cb37-222" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">colnames</span>(rpkm_data)</span>
+<span id="cb37-223"><a href="#cb37-223" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-224"><a href="#cb37-224" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-225"><a href="#cb37-225" aria-hidden="true" tabindex="-1"></a>Now check to see that all of <span class="in">`x`</span> are in <span class="in">`y`</span>:</span>
+<span id="cb37-226"><a href="#cb37-226" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-229"><a href="#cb37-229" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-230"><a href="#cb37-230" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: all_samples_present_check</span></span>
+<span id="cb37-231"><a href="#cb37-231" aria-hidden="true" tabindex="-1"></a><span class="co"># Test if all of the rownames in the metadata data frame are also in the column names in the rpkm_data data frame</span></span>
+<span id="cb37-232"><a href="#cb37-232" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(x <span class="sc">%in%</span> y)</span>
+<span id="cb37-233"><a href="#cb37-233" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-234"><a href="#cb37-234" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-235"><a href="#cb37-235" aria-hidden="true" tabindex="-1"></a>::: {.callout-note}</span>
+<span id="cb37-236"><a href="#cb37-236" aria-hidden="true" tabindex="-1"></a>Note that we can use nested functions in place of <span class="in">`x`</span> and <span class="in">`y`</span> and still get the same result.</span>
+<span id="cb37-237"><a href="#cb37-237" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-240"><a href="#cb37-240" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-241"><a href="#cb37-241" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: nested_all_samples_present_check</span></span>
+<span id="cb37-242"><a href="#cb37-242" aria-hidden="true" tabindex="-1"></a><span class="co">#| eval: false</span></span>
+<span id="cb37-243"><a href="#cb37-243" aria-hidden="true" tabindex="-1"></a><span class="co"># Test if all of the rownames in the metadata data frame are also in the column names in the rpkm_data data frame</span></span>
+<span id="cb37-244"><a href="#cb37-244" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(<span class="fu">rownames</span>(metadata) <span class="sc">%in%</span> <span class="fu">colnames</span>(rpkm_data))</span>
+<span id="cb37-245"><a href="#cb37-245" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-246"><a href="#cb37-246" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb37-247"><a href="#cb37-247" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-248"><a href="#cb37-248" aria-hidden="true" tabindex="-1"></a>We know that all samples are present, but **are they in the same order**?</span>
+<span id="cb37-249"><a href="#cb37-249" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-252"><a href="#cb37-252" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-253"><a href="#cb37-253" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: same_samples_order_check</span></span>
+<span id="cb37-254"><a href="#cb37-254" aria-hidden="true" tabindex="-1"></a><span class="co"># Test if all of the rownames in the metadata data frame are also in the column names in the rpkm_data data frame and in the same order</span></span>
+<span id="cb37-255"><a href="#cb37-255" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(x <span class="sc">==</span> y)</span>
+<span id="cb37-256"><a href="#cb37-256" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-257"><a href="#cb37-257" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-258"><a href="#cb37-258" aria-hidden="true" tabindex="-1"></a>No, it looks like **they need to be reordered**. This can be accomplished in a few ways. We could use the <span class="co">[</span><span class="ot">`match()` function</span><span class="co">](Aside_reordering-to-match-datasets.qmd)</span> or we could provide a vector for how we would like our data to be reordered. We will do the latter:</span>
+<span id="cb37-259"><a href="#cb37-259" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-262"><a href="#cb37-262" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-263"><a href="#cb37-263" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: reorder_rpkm</span></span>
+<span id="cb37-264"><a href="#cb37-264" aria-hidden="true" tabindex="-1"></a><span class="co"># Reorder rpkm_data</span></span>
+<span id="cb37-265"><a href="#cb37-265" aria-hidden="true" tabindex="-1"></a>rpkm_ordered  <span class="ot">&lt;-</span> rpkm_data[, <span class="fu">rownames</span>(metadata)]</span>
+<span id="cb37-266"><a href="#cb37-266" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-267"><a href="#cb37-267" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-268"><a href="#cb37-268" aria-hidden="true" tabindex="-1"></a>We can check to make sure that our reordering worked:</span>
+<span id="cb37-269"><a href="#cb37-269" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-272"><a href="#cb37-272" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-273"><a href="#cb37-273" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: confirm_reorder</span></span>
+<span id="cb37-274"><a href="#cb37-274" aria-hidden="true" tabindex="-1"></a><span class="co"># Check that the reorder worked</span></span>
+<span id="cb37-275"><a href="#cb37-275" aria-hidden="true" tabindex="-1"></a><span class="fu">all</span>(<span class="fu">rownames</span>(metadata) <span class="sc">==</span> <span class="fu">colnames</span>(rpkm_ordered))</span>
+<span id="cb37-276"><a href="#cb37-276" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-277"><a href="#cb37-277" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-278"><a href="#cb37-278" aria-hidden="true" tabindex="-1"></a>::: {.callout-tip}</span>
+<span id="cb37-279"><a href="#cb37-279" aria-hidden="true" tabindex="-1"></a><span class="fu"># [**Exercise 2**](09_identifying-matching-elements-Answer_key.qmd#exercise-2)</span></span>
+<span id="cb37-280"><a href="#cb37-280" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-281"><a href="#cb37-281" aria-hidden="true" tabindex="-1"></a>We have a list of 6 marker genes that we are very interested in. Our goal is to extract count data for these genes using the <span class="in">`%in%`</span> operator from the <span class="in">`rpkm_data`</span> data frame, instead of scrolling through <span class="in">`rpkm_data`</span> and finding them manually.</span>
+<span id="cb37-282"><a href="#cb37-282" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-283"><a href="#cb37-283" aria-hidden="true" tabindex="-1"></a>First, let&#39;s create a vector called <span class="in">`important_genes`</span> with the Ensembl IDs of the 6 genes we are interested in:</span>
+<span id="cb37-284"><a href="#cb37-284" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-287"><a href="#cb37-287" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb37-288"><a href="#cb37-288" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: create_important_genes</span></span>
+<span id="cb37-289"><a href="#cb37-289" aria-hidden="true" tabindex="-1"></a><span class="co"># Create important genes vector</span></span>
+<span id="cb37-290"><a href="#cb37-290" aria-hidden="true" tabindex="-1"></a>important_genes <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">&quot;ENSMUSG00000083700&quot;</span>, <span class="st">&quot;ENSMUSG00000080990&quot;</span>, <span class="st">&quot;ENSMUSG00000065619&quot;</span>, <span class="st">&quot;ENSMUSG00000047945&quot;</span>, <span class="st">&quot;ENSMUSG00000081010&quot;</span>, <span class="st">&quot;ENSMUSG00000030970&quot;</span>)</span>
+<span id="cb37-291"><a href="#cb37-291" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb37-292"><a href="#cb37-292" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-293"><a href="#cb37-293" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Use the <span class="in">`%in%`</span> operator to determine if all of these genes are present in the row names of the <span class="in">`rpkm_data`</span> data frame.</span>
+<span id="cb37-294"><a href="#cb37-294" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb37-295"><a href="#cb37-295" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Extract the rows from <span class="in">`rpkm_data`</span> that correspond to these 6 genes using <span class="in">`[]`</span> and the <span class="in">`%in%`</span> operator. Double check the row names to ensure that you are extracting the correct rows.</span>
+<span id="cb37-296"><a href="#cb37-296" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-297"><a href="#cb37-297" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>**Bonus question:** Extract the rows from <span class="in">`rpkm_data`</span> that correspond to these 6 genes using <span class="in">`[]`</span>, but without using the <span class="in">`%in%`</span> operator.</span>
+<span id="cb37-298"><a href="#cb37-298" aria-hidden="true" tabindex="-1"></a>:::</span>
 </code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

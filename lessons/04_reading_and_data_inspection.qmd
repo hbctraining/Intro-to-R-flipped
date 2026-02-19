@@ -28,8 +28,8 @@ Approximate time: 45 min
 
 ## Learning Objectives
 
-* Demonstrate how to read existing data into R
-* Utilize base R functions to inspect data structures
+- Demonstrate how to read existing data into R
+- Utilize base R functions to inspect data structures
 
 ## Reading data into R
 
