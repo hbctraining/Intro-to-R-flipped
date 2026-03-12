@@ -10,6 +10,7 @@ project:
 
 website:
   title: "Introduction to R"
+  google-analytics: G-68JBPLLNLG
   page-footer: >
       This lesson has been developed by members of the teaching team at the [Harvard Chan Bioinformatics Core (HBC)](http://bioinformatics.sph.harvard.edu/). <br>
       These are open access materials distributed under the terms of the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited. <br>
@@ -83,7 +84,6 @@ format:
     code-copy: true      # enables copy button (default in most themes)
     code-tools: true     # enables the copy button!
     code-line-wrap: wrap
-    google-analytics: UA-150953419-1
     prompt: true         
     self-contained: true
 
