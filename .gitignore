@@ -6,3 +6,4 @@ docs/data
 *.rds
 .Rhistory
 .DS_Store
+**/*.quarto_ipynb

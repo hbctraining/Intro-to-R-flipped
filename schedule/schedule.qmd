@@ -14,7 +14,7 @@ editor:
 | Time | Topic | Instructor |
 |:-----------------:|:------------------------------------:|:-------------:|
 | 10:00 - 10:30 | [Workshop Introduction](../slides/workshop_intro_slides.pdf) | Will |
-| 10:30 - 11:45 | [Introduction to R and RStudio](../lessons/01_R-and-RStudio.qmd) | Elizabeth |
+| 10:30 - 11:45 | [Introduction to R and RStudio](../lessons/01_R-and-RStudio.qmd) | Noor |
 | 11:45 - 12:00 | Overview of self-learning materials and homework submission | Will |
 
 ### Before the next class:
@@ -91,7 +91,7 @@ II. **Complete the exercises**:
 | Time | Topic | Instructor |
 |:-----------------:|:------------------------------------:|:-------------:|
 | 10:00 - 10:50 | Questions about self-learning | All |
-| 10:50 - 11:15 | [In-class exercises](../lessons/05_Custom_functions.qmd) | Elizabeth |
+| 10:50 - 11:15 | [In-class exercises](../lessons/05_Custom_functions.qmd) | Noor |
 | 11:15 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/06_data-wrangling.qmd) | Will |
 
 ### Before the next class:
@@ -190,7 +190,7 @@ II. **Complete the exercises**:
 |:-----------------:|:------------------------------------:|:-------------:|
 | 10:00 - 10:35 | Questions about self-learning lessons | All |
 | 10:35 - 11:15 | [In-class exercises](../lessons/11_Data_wrangling.qmd) | Will |
-| 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/12_ggplot2.qmd) | Elizabeth |
+| 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/12_ggplot2.qmd) | Noor |
 
 ### Before the next class:
 
@@ -298,7 +298,7 @@ II. **Complete the exercises**:
 | Time | Topic | Instructor |
 |:-----------------:|:------------------------------------:|:-------------:|
 | 10:00 - 10:35 | Questions about self-learning lessons | All |
-| 10:35 - 11:25 | [In-class exercises](../lessons/18_Tidyverse_and_data_visualization.qmd) | Elizabeth |
+| 10:35 - 11:25 | [In-class exercises](../lessons/18_Tidyverse_and_data_visualization.qmd) | Noor |
 | 11:25 - 11:45 | Discussion, Q & A | All |
 | 11:45 - 12:00 | [Wrap Up](../slides/workshop_wrapup_slides.pdf) | Will |
 
