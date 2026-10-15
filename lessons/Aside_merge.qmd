@@ -1,0 +1,268 @@
+---
+title: "Merging tables"
+description: |
+  This lesson introduces the `merge()` function for combining tables in R.
+author:
+  - Will Gammerdinger
+  - Noor Sohail
+  - Elizabeth Partan
+date: "2026-10-07"
+categories: 
+  - R Programming
+keywords:
+  - R
+  - Merge
+license: "CC-BY-4.0"
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r}
+#| label: load_libraries_data
+#| echo: true
+library(tidyverse)
+# For each file
+for (file_number in 1:2){
+  # Assign the file to an object called experiment_ followed by its file_number
+  assign(
+    paste0("experiment_", file_number),
+    read.csv(paste0("data/experiment_", file_number, ".csv"))
+  )
+}
+```
+
+Approximate time: 20 min
+
+## Learning Objectives
+
+- Explain the difference between combining tables by position and by a key.
+- Use `cbind()` to combine columns when row order is known to match.
+- Use `merge()` to combine tables based on a shared key.
+- Explain why row-aware methods are safer than position-based methods.
+
+## Merging Tables
+
+In the process of data wrangling, oftentimes you will encounter a situation where you have two data frames that you'd like to combine into a single data frame. Let's look at a few ways that you could approach this task.
+
+### Adding columns with `cbind()`
+
+Let's look at the two tables we read in during the [Loops lesson](Aside_loops.qmd).
+
+:::: {.columns}
+
+::: {.column}
+```{r}
+#| label: view_table_1
+# Print out experiment_1
+experiment_1
+```
+:::
+
+::: {.column}
+```{r}
+#| label: view_table_2
+# Print out experiment_2
+experiment_2
+```
+:::
+
+::::
+
+By inspecting the data, we could see that the data in `experiment_1` and `experiment_2` have the same length and the `Sample_IDs` are in the same order. In this case, we could use the `cbind` function to append columns to our data frame:
+
+```{r}
+#| label: create_combined_data+frame
+# Create combined_experiment data frame and add columns from experiment_2 using cbind()
+combined_experiment <- cbind(experiment_1,
+      Tissue = experiment_2$Tissue,
+      Date_sampled = experiment_2$Date_sampled)
+
+# Print out combined_experiment
+combined_experiment
+```
+
+Our `combined_experiment` object now has a data frame with the two datasets successfully combined. However, this only worked because the datasets were already aligned in the same order. Thus, position-based methods for merging data can work if the data is aligned properly.
+
+Because `cbind()` is a position-based method, it combines objects column by column. It does not look at the values in `Sample_ID` or any other column. It assumes that the rows are already in the correct order. In other words, `cbind()` combines rows by their positions: the first row of one table is combined with the first row of the other table, the second row with the second row and so on.
+
+Often, you will encounter data sets where the rows in each data frame are
+not aligned or **where you do not know whether the rows are aligned**. In this case, you'll want to use key-based methods for merging tables. Key-based methods look for a common key provided by the user and shared between the tables to link the data together. 
+
+In order to demonstrate this, let's reorder `experiment_1` to be sorted by `Replicate` rather than `Sample_ID`:
+
+```{r}
+#| label: arrange_by_replicate
+# Rearrange experiment_1 by the Replicate column
+experiment_1_replicate <- experiment_1 %>%
+  arrange(Replicate)
+```
+
+Now if we try the `cbind()` approach we did above, we can see why this method could be dangerous to use:
+
+:::{.panel-tabset}
+
+#### Unsorted
+
+```{r}
+#| label: view_table_1_unsorted
+# Print out the combined_experiment
+combined_experiment 
+```
+
+#### Sorted by Replicate
+
+```{r}
+#| label: view_table_1_sorted
+# Use cbind on the rearranged experiment_1 dataset
+combined_experiment_rearranged <- cbind(experiment_1_replicate,
+      Tissue = experiment_2$Tissue,
+      Date_sampled = experiment_2$Date_sampled)
+
+# Print out the combined_experiment_rearranged
+combined_experiment_rearranged
+```
+
+::::
+
+Let's take a close look at what happened by evaluating how `Sample_ID` 5 behaves in both tables. When the data was arranged correctly with the rows aligned, the result is:
+
+```{r}
+#| label: inspect_sample_ID_5
+# Print out Sample_ID 5 of the combined_experiment
+combined_experiment[combined_experiment$Sample_ID == 5, ]
+```
+
+But in our re-ordered dataset, we see that the data looks like:
+
+```{r}
+#| label: inspect_sample_ID_5_rearranged
+# Print out Sample_ID 5 of the rearranged combined_experiment
+combined_experiment_rearranged[combined_experiment_rearranged$Sample_ID == 5, ]
+```
+
+The tissues between both data frames are different! This is because when you used `cbind` to add columns to `experiment_1`, it did it in a way that was position-based and therefore unaware of the rows that we were combining on. The position-based approach only worked initially because the rows had been pre-sorted into the same order prior to combining them. **As a result, combining tables in a position-based way is generally a poor strategy and combining rows using a key-based strategy is much safer!**
+
+### Combining tables with `merge()`
+
+The `merge()` function in R allows the user to combine tables in a key-based manner. 
+
+```{r}
+#| label: merge_table  
+# Merge experiment_1 and experiment_2 by the key in the Sample_ID columns
+merged_experiment <- merge(x = experiment_1,
+      y = experiment_2,
+      by = "Sample_ID")
+
+# Print out the merged_experiment
+merged_experiment
+```
+
+The `merge()` function accepts two data frames and matches their rows using
+the column specified by the `by` argument. Here, rows are matched when they
+have the same key in `Sample_ID`. By default, `merge()` returns only rows with matching key values in both data frames. This behavior is called an inner join.
+
+Let's see how it performs with our rearranged dataset now:
+
+```{r}
+#| label: merge_rearranged
+# Create the merged dataframe with the rearranged dataset
+merged_experiment_replicate <- merge(x = experiment_1_replicate,
+      y = experiment_2,
+      by = "Sample_ID")
+
+# Print out merged_experiment_replicate
+merged_experiment_replicate
+```
+
+We can see that the values have been matched correctly, even though the
+input tables had different row orders. We can confirm that `Sample_ID` 5 is now the same in both tables:
+
+```{r}
+#| label: inspect_sample_ID_5_merged
+# Print out Sample_ID 5 of the merged_experiment
+merged_experiment[merged_experiment$Sample_ID == 5, ]
+```
+
+```{r}
+#| label: inspect_sample_ID_5_merged_rearranged
+# Print out Sample_ID 5 of the merged_experiment that was rearranged
+merged_experiment_replicate[merged_experiment_replicate$Sample_ID == 5, ]
+```
+
+Hopefully, it is clear why using a key-based method for merging together tables is much safer than using a position-based method like `cbind()`.
+
+:::{.callout-note collapse="true" title="Using `left_join()`/`right_join()` from `dplyr`"}
+The `dplyr` package provides several join functions for combining tables.
+Two of these are `left_join()` and `right_join()`. Below is an example of how to use `left_join()`.
+
+```{r}
+#| label: left_join
+# Use left_join() to combine tables by Sample_ID
+left_join(x = experiment_1_replicate,
+      y = experiment_2,
+      by = "Sample_ID")
+```
+
+`left_join()` and `right_join()` are mostly equivalent when both tables contain the same join keys. They differ when a key exists in one table but not the other.
+
+`left_join(x, y)` retains all rows from the first table, `x`. If a row in `x` has no matching key in `y`, the columns contributed by `y` contain `NA`. Rows whose keys occur only in `y` are omitted.
+
+`right_join(x, y)` retains all rows from the second table, `y`. If a row in `y` has no matching key in `x`, the columns contributed by `x` contain `NA`. Rows whose keys occur only in `x` are omitted.
+
+The `full_join()` function also exists and it retains all rows from both tables and fills unmatched values with `NA`.
+:::
+
+:::{.callout-tip}
+# [**Exercise 1**](Aside_merge-Answer_key.qmd#exercise-1)
+Create the following dataframes:
+```{r}
+#| label: exercise_dataframe_creation
+# Gene-expression measurements for five samples
+gene_expression <- data.frame(
+  Sample_ID = c("S01", "S02", "S03", "S04", "S05"),
+  TP53_expression = c(12.4, 8.7, 15.1, 10.2, 9.8)
+)
+
+# Cytokine measurements for five samples
+cytokine_data <- data.frame(
+  Samples = c("S03", "S01", "S06", "S02", "S04"),
+  IL6_concentration = c(4.8, 2.1, 7.3, 3.5, 5.2)
+)
+```
+
+:::: {.columns}
+
+::: {.column}
+```{r}
+#| label: view_table_1_exercise
+# Print out gene_expression
+gene_expression
+```
+:::
+
+::: {.column}
+```{r}
+#| label: view_table_2_exercise
+# Print out cytokine_data
+cytokine_data
+```
+:::
+
+::::
+
+1. Use `merge()` to combine the data frames without changing any of the column names.
+
+*Hint: Look up the arguments for `by.x` and `by.y`*
+
+2. Is `Sample_ID` or `Sample` retained as the column name?
+
+3. How many rows are in the merged data frame?
+
+4. Which samples are included in the result?
+
+5. Which samples were excluded, and why?
+
+6. Add the `all = TRUE` argument to your `merge` command. How does the output change?
+
+:::

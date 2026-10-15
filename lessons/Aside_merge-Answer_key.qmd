@@ -1,0 +1,93 @@
+---
+title: "`for` Loops Answer Key"
+author:
+  - Will Gammerdinger
+date: "2025-07-01"
+---
+
+# Exercise 1
+
+Create the following dataframes:
+```{r}
+#| label: exercise_dataframe_creation
+# Gene-expression measurements for five samples
+gene_expression <- data.frame(
+  Sample_ID = c("S01", "S02", "S03", "S04", "S05"),
+  TP53_expression = c(12.4, 8.7, 15.1, 10.2, 9.8)
+)
+
+# Cytokine measurements for five samples
+cytokine_data <- data.frame(
+  Sample = c("S03", "S01", "S06", "S02", "S04"),
+  IL6_concentration = c(4.8, 2.1, 7.3, 3.5, 5.2)
+)
+```
+
+:::: {.columns}
+
+::: {.column}
+```{r}
+#| label: view_table_1_exercise
+# Print out gene_expression
+gene_expression
+```
+:::
+
+::: {.column}
+```{r}
+#| label: view_table_2_exercise
+# Print out cytokine_data
+cytokine_data
+```
+:::
+
+::::
+
+1. Use `merge()` to combine the data frames without changing any of the column names.
+
+*Hint: Look up the arguments for `by.x` and `by.y`*
+
+```{r}
+#| label: merge_without_all
+# Merge the gene_expression and cytokine_data dataframes
+merged_data <- merge(x = gene_expression,
+      y = cytokine_data,
+      by.x = "Sample_ID",
+      by.y = "Sample")
+
+# Print out merged_data
+merged_data
+```
+
+2. Is `Sample_ID` or `Sample` retained as the column name?
+
+`Sample_ID` is retained as the column name.
+
+3. How many rows are in the merged data frame?
+
+There are four rows.
+
+4. Which samples are included in the result?
+
+Samples S01, S02, S03 and S04 are all retained.
+
+5. Which samples were excluded, and why?
+
+Sample S05 is excluded because it is not in `cytokine_data` and Sample S06 is excluded, because it is not in `gene_expression`.
+
+6. Add the `all = TRUE` argument to your `merge` command. How does the output change?
+
+```{r}
+#| label: merge_with_all
+# Merge the gene_expression and cytokine_data dataframes with all
+merged_data_all <- merge(x = gene_expression,
+      y = cytokine_data,
+      by.x = "Sample_ID",
+      by.y = "Sample",
+      all = TRUE)
+
+# Print out merged_data
+merged_data_all
+```
+
+The rows that were absent in one of the tables are now retained and have `NA` values.

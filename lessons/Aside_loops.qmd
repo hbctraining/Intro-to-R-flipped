@@ -125,7 +125,8 @@ experimental_data <- list()
 # For each file
 for (file_number in 1:2){
   # Read-in the CSV and assign it to a slot in the experimental_data list
-  experimental_data[[file_number]] <- read.csv(paste0("data/experiment_", file_number, ".csv"))
+  experimental_data[[file_number]] <- read.csv(
+    paste0("data/experiment_", file_number, ".csv"))
 }
 ```
 
