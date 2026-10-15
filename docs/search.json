@@ -3276,7 +3276,7 @@
     "href": "lessons/Aside_merge.html",
     "title": "Merging tables",
     "section": "",
-    "text": "library(tidyverse)\n# For each file\nfor (file_number in 1:2){\n  # Assign the file to an object called experiment_ followed by its file_number\n  assign(\n    paste0(\"experiment_\", file_number),\n    read.csv(paste0(\"data/experiment_\", file_number, \".csv\"))\n  )\n}\nApproximate time: 20 min"
+    "text": "Approximate time: 20 min"
   },
   {
     "objectID": "lessons/Aside_merge.html#learning-objectives",

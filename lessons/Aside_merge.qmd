@@ -20,7 +20,7 @@ editor_options:
 
 ```{r}
 #| label: load_libraries_data
-#| echo: true
+#| echo: false
 library(tidyverse)
 # For each file
 for (file_number in 1:2){
