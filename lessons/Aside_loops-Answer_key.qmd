@@ -1,0 +1,21 @@
+---
+title: "`for` Loops Answer Key"
+author:
+  - Will Gammerdinger
+date: "2025-07-01"
+---
+
+# Exercise 1
+
+1. Create a `for` loop that goes from 1 to 8 and prints each number appended to the end of the text "Processing sample_" to the console.
+
+*Hint:* One function we have not discussed previously but is helpful for this is `paste0()`, which *pastes* together strings. 
+
+```{r}
+#| label: for_loop_answer
+# For each number in the vector 1 to 8, assign each to sample_number
+for (sample_number in 1:8){
+  # Print the sample_number appended to "Processing sample_" to the console
+  print(paste0("Processing sample_", sample_number))
+}
+```
