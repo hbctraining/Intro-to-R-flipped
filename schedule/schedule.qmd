@@ -13,31 +13,18 @@ editor:
 
 | Time | Topic | Instructor |
 |:-----------------:|:------------------------------------:|:-------------:|
-| 10:00 - 10:30 | [Workshop Introduction](../slides/workshop_intro_slides.pdf) | Will |
-| 10:30 - 11:45 | [Introduction to R and RStudio](../lessons/01_R-and-RStudio.qmd) | Noor |
-| 11:45 - 12:00 | Overview of self-learning materials and homework submission | Will |
+| 9:30 - 10:00 | [Workshop Introduction](../slides/workshop_intro_slides.pdf) | Will |
+| 10:00 - 11:15 | [Introduction to R and RStudio](../lessons/01_R-and-RStudio.qmd) | Noor |
+| 11:15 - 11:55 | [R Syntax and Data Structure](../lessons/02_syntax-and-data-structures.qmd) | Noor |
+| 11:55 - 12:00 | Overview of self-learning materials and homework submission | Will |
 
 ### Before the next class:
 
 I. Please **study the contents** and **work through all the code**
 within the following lessons:
 
-1.  [R Syntax and Data Structure](../lessons/02_syntax-and-data-structures.qmd)
 
-    <details>
-    
-    <summary><i>Click here for a preview of this lesson</i></summary>
-
-    <br>In order to utilize R effectively, you will need to understand
-    what types of data you can use in R and also how you can store data
-    in "objects" or "variables". <br><br>This lesson will cover:<br> -
-    Assigning a value to a object<br> - What types of information can
-    you store in R<br> - What are the different objects that you can use
-    to store data in R<br><br>
-
-    </details>
-
-2.  [Functions and Arguments](../lessons/03_functions-and-arguments.qmd)
+1.  [Functions and Arguments](../lessons/03_functions-and-arguments.qmd)
 
     <details>
 
@@ -55,21 +42,6 @@ within the following lessons:
 
     </details>
 
-3.  [Reading in and inspecting data](../lessons/04_reading_and_data_inspection.qmd)
-
-    <details>
-
-    <summary><i>Click here for a preview of this lesson</i></summary>
-
-    <br>When using R, it is almost a certainty that you will have to
-    bring data into the R environment. <br><br>In this lesson you will
-    learn:<br> - Reading different types (formats) of data<br> -
-    Inspecting the contents and structure of the dataset once you have
-    read it in<br><br>
-
-    </details>
-
-<!-- -->
 
 II. **Complete the exercises**:
 
@@ -90,16 +62,19 @@ II. **Complete the exercises**:
 
 | Time | Topic | Instructor |
 |:-----------------:|:------------------------------------:|:-------------:|
-| 10:00 - 10:50 | Questions about self-learning | All |
-| 10:50 - 11:15 | [In-class exercises](../lessons/05_Custom_functions.qmd) | Noor |
-| 11:15 - 12:00 | [Data Wrangling: Subsetting Vectors and Factors](../lessons/06_data-wrangling.qmd) | Will |
+| 9:30 - 9:45 | Questions about self-learning | All |
+| 9:45 - 10:15 | [Reading in and inspecting data](../lessons/04_reading_and_data_inspection.qmd) | Will |
+| 10:15 - 10:35 | [In-class exercises](../lessons/05_Custom_functions.qmd) | Noor |
+| 10:35 - 11:20 | [Data wrangling: Subsetting vectors and factors](../lessons/06_data-wrangling.qmd) | Will |
+| 11:20 - 12:00 | [Data wrangling: Data frames, atrices and lists](../lessons/08_data-wrangling-2.qmd) | Will |
 
 ### Before the next class:
 
 I. Please **study the contents** and **work through all the code**
 within the following lessons:
 
-1.  [Packages and libraries](../lessons/07_packages.qmd)
+
+1. [Packages and libraries](../lessons/07_packages.qmd)
 
     <details>
 
@@ -116,24 +91,8 @@ within the following lessons:
     and getting help<br><br>
 
     </details>
-
-2.  [Data wrangling: data frames, matrices and lists](../lessons/08_data-wrangling-2.qmd)
-
-    <details>
-
-    <summary><i>Click here for a preview of this lesson</i></summary>
-
-    <br>In class we covered data wrangling (extracting/subsetting)
-    information from single-dimensional objects (vectors, factors). The
-    next step is to learn how to wrangle data in two-dimensional
-    objects.<br><br>This lesson will cover:<br> - Examining and
-    extracting values from two-dimensional data structures using
-    indices, row names, or column names<br> - Retreiving information
-    from lists<br><br>
-
-    </details>
-
-3.  [The %in% operator](../lessons/09_identifying-matching-elements.qmd)
+    
+2.  [The %in% operator](../lessons/09_identifying-matching-elements.qmd)
 
     <details>
 
@@ -149,25 +108,6 @@ within the following lessons:
 
     </details>
 
-4.  [Setting up a data frame to plot (+ the `map()` function)](../lessons/10_setting_up_to_plot.qmd)
-
-    <details>
-
-    <summary><i>Click here for a preview of this lesson</i></summary>
-
-    <br>We will be starting with visualization in the next class. To set
-    up for this, you need to create a new metadata data frame with
-    information from the counts data frame. You will need to use a
-    function over every column within the counts data frame iteratively.
-    You could do that manually, but it is error-prone; the
-    <code>map()</code> family of functions makes this more
-    efficient.<br><br>This lesson will cover:<br> - Utilizing
-    <code>map_dbl()</code> to take the average of every column in a data
-    frame<br> - Briefly discuss other functions within the
-    <code>map()</code> family of functions<br> - Create a new data frame
-    for plotting<br><br>
-
-    </details>
 
 II. **Complete the exercises**:
 
@@ -188,30 +128,21 @@ II. **Complete the exercises**:
 
 | Time | Topic | Instructor |
 |:-----------------:|:------------------------------------:|:-------------:|
-| 10:00 - 10:35 | Questions about self-learning lessons | All |
-| 10:35 - 11:15 | [In-class exercises](../lessons/11_Data_wrangling.qmd) | Will |
-| 11:15 - 12:00 | [Plotting with the ggplot2 package](../lessons/12_ggplot2.qmd) | Noor |
+| 9:30 - 10:00 | Questions about self-learning lessons | All |
+| 10:00 - 10:20 | [Setting up a data frame to plot (+ the `map()` function)](../lessons/10_setting_up_to_plot.qmd) | Will |
+| 10:20 - 10:40 | [In-class exercises](../lessons/11_Data_wrangling.qmd) | Will |
+| 10:40 - 11:20 | [Plotting with the ggplot2 package](../lessons/12_ggplot2.qmd) | Noor |
+| 11:20 - 11:40 | [Using custom functions for consistent plots](../lessons/13_Custom_Functions_ggplot2.qmd) | Noor |
+| 11:40 - 12:00 | [Writing to file and exporting plots](../lessons/15_exporting_data_and_plots.qmd) | Will |
+
 
 ### Before the next class:
 
 I. Please **study the contents** and **work through all the code**
 within the following lessons:
 
-1.  [Using custom functions for consistent plots](../lessons/13_Custom_Functions_ggplot2.qmd)
 
-    <details>
-
-    <summary><i>Click here for a preview of this lesson</i></summary>
-
-    <br>When creating your plots in ggplot2 you may want to have
-    consistent formatting (using <code>theme()</code> functions) across
-    your plots, e.g. if you are generating plots for a manuscript.
-    <br><br>This lesson will cover:<br> - Developing a custom function
-    for creating consistently formatted plots<br>
-
-    </details>
-
-2.  [Generating a boxplot with ggplot2](../lessons/14_boxplot_exercise.qmd)
+1.  [Generating a boxplot with ggplot2](../lessons/14_boxplot_exercise.qmd)
 
     <details>
 
@@ -225,22 +156,7 @@ within the following lessons:
 
     </details>
 
-3.  [Writing to file and exporting plots](../lessons/15_exporting_data_and_plots.qmd)
-
-    <details>
-
-    <summary><i>Click here for a preview of this lesson</i></summary>
-
-    <br>Now that you have completed some analysis in R, you will need to
-    eventually export that work out of R/RStudio. R provides lots of
-    flexibility in what and how you export your data and
-    plots.<br><br>This lesson will cover:<br> - Exporting your figures
-    from R using a variety of file formats<br> - Writing your data from
-    R to a file<br>
-
-    </details>
-
-4.  [Finding help](../lessons/16_finding_help.qmd)
+2.  [Finding help](../lessons/16_finding_help.qmd)
 
     <details>
 
@@ -255,7 +171,7 @@ within the following lessons:
 
     </details>
 
-5.  [Tidyverse](../lessons/17_tidyverse.qmd)
+3.  [Tidyverse](../lessons/17_tidyverse.qmd)
 
     <details>
 
@@ -276,8 +192,6 @@ within the following lessons:
 
     </details>
 
-<!-- -->
-
 II. **Complete the exercises**:
 
 -   Each lesson above contains exercises; please go through each of
@@ -297,9 +211,10 @@ II. **Complete the exercises**:
 
 | Time | Topic | Instructor |
 |:-----------------:|:------------------------------------:|:-------------:|
-| 10:00 - 10:35 | Questions about self-learning lessons | All |
-| 10:35 - 11:25 | [In-class exercises](../lessons/18_Tidyverse_and_data_visualization.qmd) | Noor |
-| 11:25 - 11:45 | Discussion, Q & A | All |
+| 9:30 - 10:10 | Questions about self-learning lessons | All |
+| 10:10 - 10:45 | [In-class exercises](../lessons/18_Tidyverse_and_data_visualization.qmd) | Noor |
+| 10:45 - 11:15 | [Loops](../lessons/Aside_loops.qmd) | Will |
+| 11:15 - 11:45 | [Merging tables](../lessons/Aside_merge.qmd) | Will |
 | 11:45 - 12:00 | [Wrap Up](../slides/workshop_wrapup_slides.pdf) | Will |
 
 ### Final Exercises
