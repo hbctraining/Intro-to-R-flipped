@@ -455,6 +455,60 @@ View(bp_oe)
 datatable(bp_oe)
 ```
 
+## Reading in Excel Files
+
+Excel files (`.xls` and `.xlsx` files) can be a useful for organizing your data in a table-friendly manner. You can export Excel files as a CSV and use the `read.csv()` tool that we discussed earlier to bring a file into R. However, `tidyverse` includes the `readxl` package that allows users to read in Excel files. You will be able to read in an Excel file like this:
+
+```{r}
+#| label: read_xl
+# Load readxl
+library(readxl)
+
+# Read-in Excel file
+excel_tb <- read_excel("data/excel_experiment.xlsx")
+
+# Print out tibble of the Excel file
+excel_tb
+```
+
+:::{.callout-note}
+### Why do I need to load `readxl`?
+
+It is important to not that while `readxl` is part of the `tidyverse` suite of packages and will install when you install `tidyverse`, it will not specifically load when you load `tidyverse` like `ggplot2` and `dplyr`. So we need to explicitly load `readxl`.
+:::
+
+Note it reads in the first sheet by default. Also, note that the Excel file is formatted in a tabular format. This means that lots of additional formatting that people may add to an Excel Spreadsheet like merging cells together and coloring cells ***WILL NOT*** carry over into R.
+
+To demonstrate this, we have an additional sheet in our Excel Spreadsheet (that we will access by using the `sheet =` argument) where there is additional formatting and we can see the resulting file:
+
+```{r}
+#| label: formatted_table
+# Read-in formatted Excel file
+formatted_tb <- read_excel("data/excel_experiment.xlsx", sheet = "formatted_table")
+
+# Print out formatted tibble of the Excel file
+formatted_tb
+```
+
+We can see that the "title" to our table containing the word "experiment" was made as the first column header and then column headers were created for the other columns and our real column headers were moved into the table itself. 
+
+:::{.callout-note}
+### What if I prefer Google Sheets?
+
+If you prefer Google Sheets over Excel, you can use the `read_sheet()` function within the `googlesheets4` package, which is also part of `tidyverse`. One note, if you plan on reading a private Google Sheet or editing a Google Sheet, you will need to authenticate your account using the `gs4_auth()` function. If it is asking you to authenticate for a public sheet that you are not planning on editing you can use the `gs4_deauth()` function to disable the authentication functionality of the package. You can read in a Google Sheet like:
+
+```{r}
+#| label: googlesheets
+# Load ggoglesheets4 library
+library(googlesheets4)
+
+# Load library
+google_sheet <- read_sheet("https://docs.google.com/spreadsheets/d/1xaTqnoVV0Lu7F-WGE1c741uCBaQi2vByhJ0Y64iP1-E/edit?usp=sharing")
+
+google_sheet
+```
+:::
+
 ## Next steps
 
 Now that we have our results ready for plotting, we can use the [ggplot2](https://ggplot2.tidyverse.org) package to plot our results. If you are interested, you can follow [this lesson](Aside_ggplot2.qmd) and dive into how to use `ggplot2` to create the plots with this dataset.
