@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.32">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -16,6 +16,9 @@
 
 <title>Introduction to R and RStudio – Introduction to R</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -78,10 +81,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-67e3698c9357a87fd1a0e9aab97ce577.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-84aaa60ab5db7c70b2768b9d890a0a0c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -515,7 +518,7 @@ gtag('config', 'G-68JBPLLNLG', { 'anonymize_ip': true});
 <li>Open source</li>
 </ul>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Local</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Posit Cloud</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Local</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Posit Cloud</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <section id="create-a-new-project-directory-in-rstudio" class="level2">
@@ -562,7 +565,7 @@ gtag('config', 'G-68JBPLLNLG', { 'anonymize_ip': true});
 <p>In order to add a directory, or folder, within your RStudio project, you can click the “Create a new folder” button at the top-left of the <strong>Files/Plots/Packages/Help</strong> window. It looks like a folder with a plus sign on top of it. Let’s name the directory <code>scripts</code> and click “OK”.</p>
 <p>Next, we are going to add the <code>data</code> directory:</p>
 <ol type="1">
-<li>This directory can be downloaded from <a href="https://www.dropbox.com/scl/fi/yszqm3ri6p4uf5ppuflp1/data.zip?rlkey=c496frt1ioud8rrbo9ea1614p&amp;st=fw7fhif8&amp;dl=1">here</a>. Right-click on this link and select “Save Link As…”.</li>
+<li>This directory can be downloaded from <a href="https://www.dropbox.com/scl/fi/4x33ft7bx9xyn2w5od1dx/data.zip?rlkey=6tmzd5mchicvu92f0z98dbnhx&amp;dl=1">here</a>. Right-click on this link and select “Save Link As…”.</li>
 <li>Navigate to your RStudio project and save the file.</li>
 <li>Go to the file in your file browser and double-click on the <code>data.zip</code> file to uncompress it.</li>
 </ol>
@@ -711,7 +714,7 @@ Note
 <h3 class="anchored" data-anchor-id="viewing-your-working-directory">Viewing your working directory</h3>
 <p>Before we organize our working directory, let’s check to see where our current working directory is located by typing into the console:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>Your working directory should be the folder where the R project is located on your computer. The working directory is where RStudio will automatically look for any files you bring in and where it will automatically save any files you create, unless otherwise specified.</p>
 <p>You can visualize your working directory by selecting the <code>Files</code> tab from the <strong>Files/Plots/Packages/Help</strong> window.</p>
@@ -724,7 +727,7 @@ Note
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<a href="../lessons/01_R-and-RStudio-Answer_key.html#exercise-1"><strong>Exercise 1</strong></a>
+<span class="screen-reader-only">Tip</span><a href="../lessons/01_R-and-RStudio-Answer_key.html#exercise-1"><strong>Exercise 1</strong></a>
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -752,7 +755,7 @@ Note
 <p>The <strong>console window</strong> (in RStudio, the bottom left panel) is the place where R is waiting for you to tell it what to do, and where it will show the results of a command. You can type commands directly into the console, but they will be forgotten when you close the session.</p>
 <p>Let’s test it out:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="sc">+</span> <span class="dv">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="sc">+</span> <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 8</code></pre>
 </div>
@@ -764,13 +767,13 @@ Note
 <p><strong>The Rstudio script editor allows you to ‘send’ the current line or the currently highlighted text to the R console by clicking on the <code>Run</code> button in the upper-right hand corner of the script editor</strong>.</p>
 <p>Now let’s try entering commands to the <strong>script editor</strong> and using the comments character <code>#</code> to add descriptions and highlighting the text to run:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Intro to R Lesson</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Intro to R Lesson</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># July 7th, 2025</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Interacting with R</span></span>
 <span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Add 3 and 5</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="sc">+</span> <span class="dv">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="sc">+</span> <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 8</code></pre>
 </div>
@@ -786,8 +789,8 @@ Note
 <p><img src="../img/Console_commands_annotated.png" width="600"></p>
 <p>What happens if we do that same command without the comment symbol <code>#</code>? Re-run the command after removing the # sign in the front:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>Add <span class="dv">3</span> and <span class="dv">5</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="sc">+</span> <span class="dv">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>Add <span class="dv">3</span> and <span class="dv">5</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="sc">+</span> <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-error">
 <pre><code>Error in parse(text = input): &lt;text&gt;:1:5: unexpected numeric constant
 1: Add 3
@@ -856,7 +859,7 @@ Note
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<a href="../lessons/01_R-and-RStudio-Answer_key.html#exercise-2"><strong>Exercise 2</strong></a>
+<span class="screen-reader-only">Tip</span><a href="../lessons/01_R-and-RStudio-Answer_key.html#exercise-2"><strong>Exercise 2</strong></a>
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -882,8 +885,8 @@ Note
 <h2 class="anchored" data-anchor-id="assignment-operator">Assignment operator</h2>
 <p>To do useful and interesting things in R, we need to assign <em>values</em> to <em>variables</em> using the assignment operator, <code>&lt;-</code>. For example, we can use the assignment operator to assign the value of <code>3</code> to <code>x</code> by executing:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assign the value of 3 to the object called x</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assign the value of 3 to the object called x</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>The assignment operator (<code>&lt;-</code>) assigns <strong>values on the right</strong> to <strong>variables on the left</strong>.</p>
 <p><em>In RStudio, typing <kdb>Alt + <kdb>-</kdb> (push <kdb>Alt</kdb> at the same time as the <kdb>-</kdb> key, on Mac type <kdb>option</kdb> + <kdb>-</kdb>) will write <code>&lt;-</code> in a single keystroke.</kdb></em></p>
@@ -894,13 +897,13 @@ Note
 <p>In the example above, we created a variable or a “bucket” called <code>x</code>. Inside we put a value, <code>3</code>.</p>
 <p>Let’s create another variable called <code>y</code> and give it a value of 5.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assign the value of 5 to the object called y</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Assign the value of 5 to the object called y</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="dv">5</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <p>When assigning a value to an variable, R does not print anything to the console. You can force it to print the value by using parentheses or by typing the variable name.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the object y</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the object y</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>y</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 5</code></pre>
 </div>
@@ -911,16 +914,16 @@ Note
 </div>
 <p>Now we can reference these buckets by name to perform mathematical operations on the values contained within. What do you get in the console for the following operation:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Add x and y</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>x <span class="sc">+</span> y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Add x and y</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>x <span class="sc">+</span> y</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] 8</code></pre>
 </div>
 </div>
 <p>Try assigning the results of this operation to another variable called <code>number</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Add x and y and assign their sum to the object called number</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>number <span class="ot">&lt;-</span> x <span class="sc">+</span> y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Add x and y and assign their sum to the object called number</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>number <span class="ot">&lt;-</span> x <span class="sc">+</span> y</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
@@ -928,7 +931,7 @@ Note
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<a href="../lessons/01_R-and-RStudio-Answer_key.html#exercise-3"><strong>Exercise 3</strong></a>
+<span class="screen-reader-only">Tip</span><a href="../lessons/01_R-and-RStudio-Answer_key.html#exercise-3"><strong>Exercise 3</strong></a>
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -1062,13 +1065,14 @@ Note
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
@@ -1461,7 +1465,7 @@ Note
     }
   });
   </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb15" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Introduction to R and RStudio"</span></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> |</span></span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="co">  This lesson introduces participants to the R programming environment and the RStudio interface. Participants will learn how to navigate RStudio, create and manage R projects, work with scripts, use the console and understand core R concepts such as variables, functions and the assignment operator. The lesson also guides participants through organizing project directories, interacting with data and adopting recommended practices for reproducible workflows in R.</span></span>
@@ -1605,7 +1609,7 @@ Note
 <span id="cb15-142"><a href="#cb15-142" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-143"><a href="#cb15-143" aria-hidden="true" tabindex="-1"></a>Next, we are going to add the <span class="in">`data`</span> directory:</span>
 <span id="cb15-144"><a href="#cb15-144" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-145"><a href="#cb15-145" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>This directory can be downloaded from <span class="co">[</span><span class="ot">here</span><span class="co">](https://www.dropbox.com/scl/fi/yszqm3ri6p4uf5ppuflp1/data.zip?rlkey=c496frt1ioud8rrbo9ea1614p&amp;st=fw7fhif8&amp;dl=1)</span>. Right-click on this link and select "Save Link As...".</span>
+<span id="cb15-145"><a href="#cb15-145" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>This directory can be downloaded from <span class="co">[</span><span class="ot">here</span><span class="co">](https://www.dropbox.com/scl/fi/4x33ft7bx9xyn2w5od1dx/data.zip?rlkey=6tmzd5mchicvu92f0z98dbnhx&amp;dl=1)</span>. Right-click on this link and select "Save Link As...".</span>
 <span id="cb15-146"><a href="#cb15-146" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Navigate to your RStudio project and save the file.</span>
 <span id="cb15-147"><a href="#cb15-147" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>Go to the file in your file browser and double-click on the <span class="in">`data.zip`</span> file to uncompress it.</span>
 <span id="cb15-148"><a href="#cb15-148" aria-hidden="true" tabindex="-1"></a></span>
@@ -2027,7 +2031,7 @@ Note
 <span id="cb15-582"><a href="#cb15-582" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Code and workflows are more reproducible if we can document everything that we do. Our end goal is not just to "do stuff", but to do it in a way that anyone can easily and exactly replicate our workflow and results. **All code should be written in the script editor and saved to file, rather than working in the console.**</span>
 <span id="cb15-583"><a href="#cb15-583" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>The **R console** should be mainly used to inspect objects, test a function or get help.</span>
 <span id="cb15-584"><a href="#cb15-584" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Use <span class="in">`#`</span> signs to comment. **Comment liberally** in your R scripts. This will help future you and other collaborators know what each line of code (or code block) was meant to do. Anything to the right of a <span class="in">`#`</span> is ignored by R. *A shortcut for this is* <span class="dt">&lt;</span><span class="kw">kbd</span><span class="dt">&gt;</span>Ctrl<span class="dt">&lt;/</span><span class="kw">kbd</span><span class="dt">&gt;</span>+<span class="dt">&lt;</span><span class="kw">kbd</span><span class="dt">&gt;</span>Shift<span class="dt">&lt;/</span><span class="kw">kbd</span><span class="dt">&gt;</span>+<span class="dt">&lt;</span><span class="kw">kbd</span><span class="dt">&gt;</span>C<span class="dt">&lt;/</span><span class="kw">kbd</span><span class="dt">&gt;</span> if you want to comment an entire chunk of text.</span>
-</code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
+</code></pre></div><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 <footer class="footer">

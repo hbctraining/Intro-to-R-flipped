@@ -101,21 +101,7 @@ two sets of values must be processed.
 
 When analyzing data, one might have a separate data file for each sample. As a result, one common use case for using `for` loops is for reading in multiple data files rather than reading them in individually. In our `data` directory, we will see that we have two CSV files named `experiment_1.csv` and `experiment_2.csv`. We will use a `for` loop to read them in. While it might not be the most efficient use case when you only have two data files, you could imagine that this could be dozens or hundreds of data files and then the use case is more clear.
 
-```{r}
-#| label: reading_in_data_for_loops
-# For each file
-for (file_number in 1:2){
-  # Assign the file to an object called experiment_ followed by its file_number
-  assign(
-    paste0("experiment_", file_number),
-    read.csv(paste0("data/experiment_", file_number, ".csv"))
-  )
-}
-```
-
-The `assign` function is also a new function for us. It allows us to assign objects into the environment similarly to the assignment operator, `<-`. The first argument specifies the name of the object and the second argument specifies the value to assign to it. The `assign` function allows us to use dynamic naming like we are doing here, while the `<-` forces us to conform to static naming. 
-
-One possible approach is to use `assign()` to create dynamically named objects, as we did above. **However, this is usually not recommended because it scatters related data across many objects in the environment.** A list is generally a better choice because it keeps related data together and makes it easier to process the files programmatically. For example, functions such as `lapply()` can apply an operation to every element of a list. We can instead read the data into a list like:
+One possible approach is to use `assign()` function to create dynamically named objects within a `for` loop. **However, this is usually not recommended because it scatters related data across many objects in the environment.** A list is generally a better choice because it keeps related data together and makes it easier to process the files programmatically. For example, functions such as `lapply()` can apply an operation to every element of a list. We can instead read the data into a list like:
 
 ```{r}
 #| label: for_loop_list

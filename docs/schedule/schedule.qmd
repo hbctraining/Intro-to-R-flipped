@@ -63,10 +63,10 @@ II. **Complete the exercises**:
 | Time | Topic | Instructor |
 |:-----------------:|:------------------------------------:|:-------------:|
 | 9:30 - 9:45 | Questions about self-learning | All |
-| 9:45 - 10:15 | [Reading in and inspecting data](../lessons/04_reading_and_data_inspection.qmd) | Will |
-| 10:15 - 10:35 | [In-class exercises](../lessons/05_Custom_functions.qmd) | Noor |
+| 9:45 - 10:05 | [In-class exercises](../lessons/05_Custom_functions.qmd) | Noor |
+| 10:05 - 10:35 | [Reading in and inspecting data](../lessons/04_reading_and_data_inspection.qmd) | Will |
 | 10:35 - 11:20 | [Data wrangling: Subsetting vectors and factors](../lessons/06_data-wrangling.qmd) | Will |
-| 11:20 - 12:00 | [Data wrangling: Data frames, atrices and lists](../lessons/08_data-wrangling-2.qmd) | Will |
+| 11:20 - 12:00 | [Data wrangling: Data frames, matrices and lists](../lessons/08_data-wrangling-2.qmd) | Will |
 
 ### Before the next class:
 

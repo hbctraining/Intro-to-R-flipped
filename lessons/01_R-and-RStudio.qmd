@@ -142,7 +142,7 @@ In order to add a directory, or folder, within your RStudio project, you can cli
 
 Next, we are going to add the `data` directory:
 
-1. This directory can be downloaded from [here](https://www.dropbox.com/scl/fi/yszqm3ri6p4uf5ppuflp1/data.zip?rlkey=c496frt1ioud8rrbo9ea1614p&st=fw7fhif8&dl=1). Right-click on this link and select "Save Link As...".
+1. This directory can be downloaded from [here](https://www.dropbox.com/scl/fi/4x33ft7bx9xyn2w5od1dx/data.zip?rlkey=6tmzd5mchicvu92f0z98dbnhx&dl=1). Right-click on this link and select "Save Link As...".
 2. Navigate to your RStudio project and save the file.
 3. Go to the file in your file browser and double-click on the `data.zip` file to uncompress it.
 
