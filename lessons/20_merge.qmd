@@ -47,7 +47,7 @@ In the process of data wrangling, oftentimes you will encounter a situation wher
 
 ### Adding columns with `cbind()`
 
-Let's look at the two tables we read in during the [Loops lesson](Aside_loops.qmd).
+Let's look at the two tables we read in during the [Loops lesson](19_loops.qmd).
 
 :::: {.columns}
 
@@ -214,7 +214,7 @@ The `full_join()` function also exists and it retains all rows from both tables 
 :::
 
 :::{.callout-tip}
-# [**Exercise 1**](Aside_merge-Answer_key.qmd#exercise-1)
+# [**Exercise 1**](20_merge-Answer_key.qmd#exercise-1)
 Create the following dataframes:
 ```{r}
 #| label: exercise_dataframe_creation

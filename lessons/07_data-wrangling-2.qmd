@@ -157,7 +157,7 @@ metadata$genotype[1:5]
 Unfortunately, there is no equivalent `$` syntax to select a row by name. 
 
 ::: {.callout-tip}
-# [**Exercise 1**](08_data-wrangling-2-Answer_key.qmd#exercise-1)
+# [**Exercise 1**](07_data-wrangling-2-Answer_key.qmd#exercise-1)
 
 1. Return a data frame with only the `genotype` and `replicate` column values for `sample2` and `sample8`.
 
@@ -263,7 +263,7 @@ sub_meta <- metadata[which(metadata$replicate > 1), ]
 ```
 
 ::: {.callout-tip}
-# [**Exercise 2**](08_data-wrangling-2-Answer_key.qmd#exercise-2)
+# [**Exercise 2**](07_data-wrangling-2-Answer_key.qmd#exercise-2)
 
 Subset the `metadata` dataframe to return only the rows of data with a genotype of `KO`.
 :::
@@ -316,7 +316,7 @@ Using the single bracket notation also works wth lists. The difference is the cl
 :::
 
 ::: {.callout-tip}
-# [**Exercise 3**](08_data-wrangling-2-Answer_key.qmd#exercise-3)
+# [**Exercise 3**](07_data-wrangling-2-Answer_key.qmd#exercise-3)
 
 1. Create a list named `random` with the following components: `metadata`, `age`, `list1`, `samplegroup` and `number`.
 
@@ -359,7 +359,7 @@ list1$df
 ```
 
 ::: {.callout-tip}
-# [**Exercise 4**](08_data-wrangling-2-Answer_key.qmd#exercise-4)
+# [**Exercise 4**](07_data-wrangling-2-Answer_key.qmd#exercise-4)
 
 Let's practice combining ways to extract data from the data structures we have covered so far:
 

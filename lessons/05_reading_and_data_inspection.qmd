@@ -177,7 +177,7 @@ Row names and column names are really handy when subsetting data structures and 
 :::
 
 ::: {.callout-tip}
-# [**Exercise 1**](04_reading_and_data_inspection-Answer_key.qmd#exercise-1)
+# [**Exercise 1**](05_reading_and_data_inspection-Answer_key.qmd#exercise-1)
 
 1. Inside your project's `data` folder you should see a file called `project-summary.txt`. Read it in to R using `read.table()` with the appropriate arguments and store it as the variable `proj_summary`. To figure out the appropriate arguments to use with `read.table()`, keep the following in mind:
 	- all the columns in the input text file have column name/headers
@@ -230,7 +230,7 @@ We have some exercises below that will allow you to gain more familiarity with t
 	- **`colnames()`:** returns the column names in the dataset
 
 ::: {.callout-tip}
-# [**Exercise 2**](04_reading_and_data_inspection-Answer_key.qmd#exercise-2)
+# [**Exercise 2**](05_reading_and_data_inspection-Answer_key.qmd#exercise-2)
 
 1. Use the `class()` function on `glengths` and `metadata`, how does the output differ between the two?
 

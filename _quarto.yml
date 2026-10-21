@@ -39,39 +39,38 @@ website:
       - section: "Day 1:"
         contents:
           - lessons/01_R-and-RStudio.qmd
+          - lessons/02_syntax-and-data-structures.qmd
       - section: "Day 1 Self-learning:"
         contents:
-          - lessons/02_syntax-and-data-structures.qmd
           - lessons/03_functions-and-arguments.qmd
-          - lessons/04_reading_and_data_inspection.qmd
-
       - section: "Day 2"
         contents:
-          - lessons/05_Custom_functions.qmd
+          - lessons/04_Custom_functions.qmd
+          - lessons/05_reading_and_data_inspection.qmd
           - lessons/06_data-wrangling.qmd
+          - lessons/07_data-wrangling-2.qmd
       - section: "Day 2 Self-learning"
         contents:
-          - lessons/07_packages.qmd
-          - lessons/08_data-wrangling-2.qmd
+          - lessons/08_packages.qmd
           - lessons/09_identifying-matching-elements.qmd
-          - lessons/10_setting_up_to_plot.qmd
 
       - section: "Day 3"
         contents:
+          - lessons/10_setting_up_to_plot.qmd
           - lessons/11_Data_wrangling.qmd
           - lessons/12_ggplot2.qmd
+          - lessons/13_Custom_Functions_ggplot2.qmd
+          - lessons/14_exporting_data_and_plots.qmd
       - section: "Day 3 Self-learning"
         contents:
-          - lessons/13_Custom_Functions_ggplot2.qmd
-          - lessons/14_boxplot_exercise.qmd
-          - lessons/15_exporting_data_and_plots.qmd
+          - lessons/15_boxplot_exercise.qmd
           - lessons/16_finding_help.qmd
           - lessons/17_tidyverse.qmd
-
       - section: "Day 4"
         contents:
           - lessons/18_Tidyverse_and_data_visualization.qmd
-          
+          - lessons/19_loops.qmd
+          - lessons/20_merge.qmd
 
 format:
   html:

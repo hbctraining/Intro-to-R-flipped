@@ -56,7 +56,7 @@ In this case, **outliers** are determined using the interquartile range (IQR), w
 # Outline of the Boxplot
 
 ::: {.callout-tip}
-# [**Exercise 1**](14_boxplot_exercise-Answer_key.qmd#exercise-1)
+# [**Exercise 1**](15_boxplot_exercise-Answer_key.qmd#exercise-1)
 
 Generate a boxplot using the data in the `new_metadata` dataframe. Create a ggplot2 code chunk with the following instructions:
 
@@ -96,7 +96,7 @@ ggplot(new_metadata) +
 # Changing the order of genotype on the Boxplot
 
 ::: {.callout-tip}
-# [**Exercise 2**](14_boxplot_exercise-Answer_key.qmd#exercise-2)
+# [**Exercise 2**](15_boxplot_exercise-Answer_key.qmd#exercise-2)
 
 Let's say you wanted to have the "Wt" boxplots displayed first on the left side, and "KO" on the right. How might you go about doing this?
 
@@ -132,7 +132,7 @@ ggplot(new_metadata) +
 # Changing default colors
 
 ::: {.callout-tip}
-# [**Exercise 3**](14_boxplot_exercise-Answer_key.qmd#exercise-3)
+# [**Exercise 3**](15_boxplot_exercise-Answer_key.qmd#exercise-3)
 
 You can color the boxplot differently by using some specific layers:
 
@@ -157,7 +157,7 @@ We have [a separate lesson about using color palettes from the package RColorBre
 You are not restricted to using colors by writing them out as character vectors. You have the choice of a lot of colors in R, and you can do so by using their *hexadecimal code*. For example, "#FF0000" would be red and "#00FF00" would be green similarly, "#FFFFFF" would be white and "#000000" would be black. [Click here for more information about color palettes in R](http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/#hexadecimal-color-code-chart) or you can use this [helpful cheatsheet](https://www.stat.auckland.ac.nz/~ihaka/downloads/R-colours-a4.pdf) that lists many popular colors in R.
 
 ::: {.callout-tip}
-# [**Exercise 4**](14_boxplot_exercise-Answer_key.qmd#exercise-4)
+# [**Exercise 4**](15_boxplot_exercise-Answer_key.qmd#exercise-4)
 
 Find the hexadecimal code for your 2 favorite colors (from the final exercise) and replace the color names with the hexadecimal codes within the ggplot2 code chunk.
 :::

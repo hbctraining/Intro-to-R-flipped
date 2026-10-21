@@ -63,10 +63,10 @@ II. **Complete the exercises**:
 | Time | Topic | Instructor |
 |:-----------------:|:------------------------------------:|:-------------:|
 | 9:30 - 9:45 | Questions about self-learning | All |
-| 9:45 - 10:05 | [In-class exercises](../lessons/05_Custom_functions.qmd) | Noor |
-| 10:05 - 10:35 | [Reading in and inspecting data](../lessons/04_reading_and_data_inspection.qmd) | Will |
+| 9:45 - 10:05 | [In-class exercises](../lessons/04_Custom_functions.qmd) | Noor |
+| 10:05 - 10:35 | [Reading in and inspecting data](../lessons/05_reading_and_data_inspection.qmd) | Will |
 | 10:35 - 11:20 | [Data wrangling: Subsetting vectors and factors](../lessons/06_data-wrangling.qmd) | Will |
-| 11:20 - 12:00 | [Data wrangling: Data frames, matrices and lists](../lessons/08_data-wrangling-2.qmd) | Will |
+| 11:20 - 12:00 | [Data wrangling: Data frames, matrices and lists](../lessons/07_data-wrangling-2.qmd) | Will |
 
 ### Before the next class:
 
@@ -74,7 +74,7 @@ I. Please **study the contents** and **work through all the code**
 within the following lessons:
 
 
-1. [Packages and libraries](../lessons/07_packages.qmd)
+1. [Packages and libraries](../lessons/08_packages.qmd)
 
     <details>
 
@@ -133,7 +133,7 @@ II. **Complete the exercises**:
 | 10:20 - 10:40 | [In-class exercises](../lessons/11_Data_wrangling.qmd) | Will |
 | 10:40 - 11:20 | [Plotting with the ggplot2 package](../lessons/12_ggplot2.qmd) | Noor |
 | 11:20 - 11:40 | [Using custom functions for consistent plots](../lessons/13_Custom_Functions_ggplot2.qmd) | Noor |
-| 11:40 - 12:00 | [Writing to file and exporting plots](../lessons/15_exporting_data_and_plots.qmd) | Will |
+| 11:40 - 12:00 | [Writing to file and exporting plots](../lessons/14_exporting_data_and_plots.qmd) | Will |
 
 
 ### Before the next class:
@@ -142,7 +142,7 @@ I. Please **study the contents** and **work through all the code**
 within the following lessons:
 
 
-1.  [Generating a boxplot with ggplot2](../lessons/14_boxplot_exercise.qmd)
+1.  [Generating a boxplot with ggplot2](../lessons/15_boxplot_exercise.qmd)
 
     <details>
 
@@ -202,7 +202,7 @@ II. **Complete the exercises**:
 
 ### Questions?
 
--   ***If you get stuck due to an error*** while runnning code in the
+-   ***If you get stuck due to an error*** while running code in the
     lesson, [email us](mailto:hbctraining@hsph.harvard.edu)
 
 ------------------------------------------------------------------------
@@ -213,8 +213,8 @@ II. **Complete the exercises**:
 |:-----------------:|:------------------------------------:|:-------------:|
 | 9:30 - 10:10 | Questions about self-learning lessons | All |
 | 10:10 - 10:45 | [In-class exercises](../lessons/18_Tidyverse_and_data_visualization.qmd) | Noor |
-| 10:45 - 11:15 | [Loops](../lessons/Aside_loops.qmd) | Will |
-| 11:15 - 11:45 | [Merging tables](../lessons/Aside_merge.qmd) | Will |
+| 10:45 - 11:15 | [Loops](../lessons/19_loops.qmd) | Will |
+| 11:15 - 11:45 | [Merging tables](../lessons/20_merge.qmd) | Will |
 | 11:45 - 12:00 | [Wrap Up](../slides/workshop_wrapup_slides.pdf) | Will |
 
 ### Final Exercises

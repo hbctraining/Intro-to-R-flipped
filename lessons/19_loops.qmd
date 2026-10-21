@@ -68,7 +68,7 @@ Note that the `print()` function displays an object or text in the console.
 :::
 
 :::{.callout-tip}
-# [**Exercise 1**](Aside_loops-Answer_key.qmd#exercise-1)
+# [**Exercise 1**](19_loops-Answer_key.qmd#exercise-1)
 1. Create a `for` loop that goes from 1 to 8 and prints each number appended to the end of the text "Processing sample_" to the console.
 
 *Hint:* One function we have not discussed previously but is helpful for this is `paste0()`, which *pastes* together strings. 
