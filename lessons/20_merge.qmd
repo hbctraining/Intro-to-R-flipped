@@ -22,13 +22,15 @@ editor_options:
 #| label: load_libraries_data
 #| echo: false
 library(tidyverse)
+
+# Create list to hold experimental data
+experimental_data <- list()
+
 # For each file
 for (file_number in 1:2){
-  # Assign the file to an object called experiment_ followed by its file_number
-  assign(
-    paste0("experiment_", file_number),
-    read.csv(paste0("data/experiment_", file_number, ".csv"))
-  )
+  # Read-in the CSV and assign it to a slot in the experimental_data list
+  experimental_data[[file_number]] <- read.csv(
+    paste0("data/experiment_", file_number, ".csv"))
 }
 ```
 
@@ -47,7 +49,16 @@ In the process of data wrangling, oftentimes you will encounter a situation wher
 
 ### Adding columns with `cbind()`
 
-Let's look at the two tables we read in during the [Loops lesson](19_loops.qmd).
+Let's look at the two tables we read in during the [Loops lesson](19_loops.qmd). First, let's assign the objects from the two slots in the list to objects in our environment:
+
+```{r}
+#| label: assign_list_objects_to_objects
+# Assign the first object in the list to experiment_1 object
+experiment_1 <- experimental_data[[1]]
+
+# Assign the second object in the list to experiment_2 object
+experiment_2 <- experimental_data[[2]]
+```
 
 :::: {.columns}
 
